@@ -1,0 +1,6 @@
+#
+# FreeFileSync ignore list
+#
+
+test-output.xml
+.pytest_cache/
