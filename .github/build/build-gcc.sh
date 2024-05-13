@@ -1,7 +1,7 @@
 #!/bin/bash
 # https://raw.githubusercontent.com/Subere/build-FreeFileSync-on-raspberry-pi/master/build_gcc.sh
 
-set -eux
+set -eaux
 
 #
 #  This is the new GCC version to install.
@@ -39,9 +39,9 @@ cd obj || exit
 #
 
 # Pi4
-../configure --enable-languages=c,c++ --with-cpu=cortex-a72 \
-    --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf \
-    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
+#../configure --enable-languages=c,c++ --with-cpu=cortex-a72 \
+#    --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf \
+#    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
 
 # Pi3+, Pi3, and new Pi2
 #../configure --enable-languages=c,c++ --with-cpu=cortex-a53 \
@@ -54,7 +54,7 @@ cd obj || exit
 #  --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
 
 # x86_64
-#../configure --disable-multilib --enable-languages=c,d,c++,fortran --enable-checking=no
+../configure --disable-multilib --enable-languages=c,d,c++,fortran --enable-checking=no
 
 # Odroid-C2 AArch64
 #../configure --enable-languages=c,d,c++,fortran --with-cpu=cortex-a53 --enable-checking=no

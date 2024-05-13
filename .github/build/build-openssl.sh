@@ -1,9 +1,10 @@
 #!/bin/bash
 
-set -eux
-wget https://www.openssl.org/source/openssl-3.0.0.tar.gz
-tar xvf openssl-3.0.0.tar.gz
-cd openssl-3.0.0 || exit
+set -eaux
+VERSION="${VERSION:-${1:-3.0.0}}"
+wget "https://www.openssl.org/source/openssl-$VERSION.tar.gz"
+tar xvf "openssl-$VERSION.tar.gz"
+cd "openssl-$VERSION" || exit
 mkdir -p build
 cd build || exit
 ../config
