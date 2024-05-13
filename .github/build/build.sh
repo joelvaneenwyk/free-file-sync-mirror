@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eux
+set -eaux
 ./build-gcc.sh
 ./build-curl.sh
 ./build-openssl.sh
