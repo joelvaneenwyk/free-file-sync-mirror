@@ -1,6 +1,8 @@
 #!/bin/bash
 # https://raw.githubusercontent.com/Subere/build-FreeFileSync-on-raspberry-pi/master/build_gcc.sh
 
+set -eax
+
 #
 #  This is the new GCC version to install.
 #
@@ -12,22 +14,22 @@ VERSION=10.1.0
 #  For the Pi or any computer with less than 2GB of memory.
 #
 if [ -f /etc/dphys-swapfile ]; then
-  sudo sed -i 's/^CONF_SWAPSIZE=[0-9]*$/CONF_SWAPSIZE=1024/' /etc/dphys-swapfile
-  sudo /etc/init.d/dphys-swapfile restart
+    sudo sed -i 's/^CONF_SWAPSIZE=[0-9]*$/CONF_SWAPSIZE=1024/' /etc/dphys-swapfile
+    sudo /etc/init.d/dphys-swapfile restart
 fi
 
 if [ -d gcc-$VERSION ]; then
-  cd gcc-$VERSION
-  rm -rf obj
+    cd gcc-$VERSION || exit
+    rm -rf obj
 else
-  wget ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-$VERSION/gcc-$VERSION.tar.xz
-  tar xf gcc-$VERSION.tar.xz
-  rm -f gcc-$VERSION.tar.xz
-  cd gcc-$VERSION
-  contrib/download_prerequisites
+    wget ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-$VERSION/gcc-$VERSION.tar.xz
+    tar xf gcc-$VERSION.tar.xz
+    rm -f gcc-$VERSION.tar.xz
+    cd gcc-$VERSION || exit
+    contrib/download_prerequisites
 fi
 mkdir -p obj
-cd obj
+cd obj || exit
 
 #
 #  Now run the ./configure which must be checked/edited beforehand.
@@ -38,8 +40,8 @@ cd obj
 
 # Pi4
 ../configure --enable-languages=c,c++ --with-cpu=cortex-a72 \
-  --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf \
-  --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
+    --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf \
+    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
 
 # Pi3+, Pi3, and new Pi2
 #../configure --enable-languages=c,c++ --with-cpu=cortex-a53 \
@@ -71,12 +73,11 @@ cd obj
 #  The new compiler is placed in /usr/local/bin, the existing compiler remains
 #  in /usr/bin and may be used by giving its version gcc-6 (say).
 #
-if make -j `nproc`
-then
-  echo
-  read -p "Do you wish to install the new GCC (y/n)? " yn
-  case $yn in
-   [Yy]* ) sudo make install ;;
-	 * ) exit ;;
-  esac
+if make -j "$(nproc)"; then
+    echo
+    read -r -p "Do you wish to install the new GCC (y/n)? " yn
+    case $yn in
+    [Yy]*) sudo make install ;;
+    *) exit ;;
+    esac
 fi
