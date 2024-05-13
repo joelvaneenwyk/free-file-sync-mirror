@@ -1,7 +1,7 @@
 #!/bin/bash
 # https://raw.githubusercontent.com/Subere/build-FreeFileSync-on-raspberry-pi/master/build_gcc.sh
 
-set -eax
+set -eux
 
 #
 #  This is the new GCC version to install.

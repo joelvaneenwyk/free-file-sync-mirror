@@ -131,7 +131,7 @@ cd wxWidgets-3.2.3/
 mkdir gtk-build
 cd gtk-build/
 ../configure --disable-shared --enable-unicode --enable-no_exceptions
-make
+make -j 8
 sudo make install
 ```
 
