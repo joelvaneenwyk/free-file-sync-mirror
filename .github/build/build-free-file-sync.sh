@@ -8,7 +8,7 @@ set -eax
 #
 # takes about 4 hours (Raspberry Pi 4, 4GB)
 #
-VERSION=10.1.0
+VERSION="${VERSION:-${1:-10.1.0}}"
 
 #
 #  For the Pi or any computer with less than 2GB of memory.
@@ -18,14 +18,14 @@ if [ -f /etc/dphys-swapfile ]; then
     sudo /etc/init.d/dphys-swapfile restart
 fi
 
-if [ -d gcc-$VERSION ]; then
-    cd gcc-$VERSION || exit
+if [ -d "gcc-$VERSION" ]; then
+    cd "gcc-$VERSION" || exit
     rm -rf obj
 else
-    wget ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-$VERSION/gcc-$VERSION.tar.xz
-    tar xf gcc-$VERSION.tar.xz
-    rm -f gcc-$VERSION.tar.xz
-    cd gcc-$VERSION || exit
+    wget "ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-$VERSION/gcc-$VERSION.tar.xz"
+    tar xf "gcc-$VERSION.tar.xz"
+    rm -f "gcc-$VERSION.tar.xz"
+    cd "gcc-$VERSION" || exit
     contrib/download_prerequisites
 fi
 mkdir -p obj
