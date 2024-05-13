@@ -1,9 +1,12 @@
 #
-# FreeFileSync ignore list
+# FreeFileSync | Ignore list
 #
 
 test-output.xml
 .pytest_cache/
+.clj-kondo/
+.cache/
+/gcc-*/
 .build/
 .task/
 out/
