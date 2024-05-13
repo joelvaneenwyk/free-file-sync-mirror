@@ -1,2 +1,4 @@
 /openssl-*/
+/wxWidgets-*/
 /*.tar.gz
+/*.tar.bz2
