@@ -1,40 +1,40 @@
-When manually compiling FreeFileSync, you should also fix the following bugs in its library dependencies.
-FreeFileSync generally uses the latest library versions and works with upstream to get the bugs fixed
-that affect FreeFileSync. Therefore it is NOT RECOMMENDED TO COMPILE AGAINST OLDER library versions than
+# Contributing
+
+When manually compiling `FreeFileSync`, you should also fix the following bugs in its library dependencies.
+`FreeFileSync` generally uses the latest library versions and works with upstream to get the bugs fixed
+that affect `FreeFileSync`. Therefore it is **not recommended to compile against older library versions** other than
 the ones mentioned below. The remaining issues that are yet to be fixed are listed in the following:
 
+## libcurl 8.7.0
 
-----------------
-| libcurl 8.7.0|
-----------------
+```diff
 __________________________________________________________________________________________________________
 /lib/ftp.c
 https://github.com/curl/curl/issues/1455
-
-+	static bool is_routable_ip_v4(unsigned int ip[4])
-+	{
-+		if (ip[0] == 127 || //127.0.0.0/8 (localhost)
-+			ip[0] == 10  || //10.0.0.0/8 (private)
-+			(ip[0] == 192 && ip[1] == 168) ||  //192.168.0.0/16 (private)
-+			(ip[0] == 169 && ip[1] == 254) ||  //169.254.0.0/16 (link-local)
-+			(ip[0] == 172 && ip[1] / 16 == 1)) //172.16.0.0/12 (private)
-+			return false;
-+		return true;
-+	}
++    static bool is_routable_ip_v4(unsigned int ip[4])
++    {
++        if (ip[0] == 127 || //127.0.0.0/8 (localhost)
++            ip[0] == 10  || //10.0.0.0/8 (private)
++            (ip[0] == 192 && ip[1] == 168) ||  //192.168.0.0/16 (private)
++            (ip[0] == 169 && ip[1] == 254) ||  //169.254.0.0/16 (link-local)
++            (ip[0] == 172 && ip[1] / 16 == 1)) //172.16.0.0/12 (private)
++            return false;
++        return true;
++    }
 
 
 - if (data->set.ftp_skip_ip)
-+	bool skipIp = data->set.ftp_skip_ip;
-+	if (!skipIp && !is_routable_ip_v4(ip))
-+	{
-+		unsigned int ip_ctrl[4];
-+		if (4 != sscanf(control_address(conn), "%u.%u.%u.%u",
-+						&ip_ctrl[0], &ip_ctrl[1], &ip_ctrl[2], &ip_ctrl[3]) ||
-+			is_routable_ip_v4(ip_ctrl))
-+			skipIp = true;
-+	}
++    bool skipIp = data->set.ftp_skip_ip;
++    if (!skipIp && !is_routable_ip_v4(ip))
++    {
++        unsigned int ip_ctrl[4];
++        if (4 != sscanf(control_address(conn), "%u.%u.%u.%u",
++                        &ip_ctrl[0], &ip_ctrl[1], &ip_ctrl[2], &ip_ctrl[3]) ||
++            is_routable_ip_v4(ip_ctrl))
++            skipIp = true;
++    }
 +
-+	if (skipIp)
++    if (skipIp)
 
 __________________________________________________________________________________________________________
 /lib/ftp.c
@@ -42,13 +42,13 @@ https://github.com/curl/curl/issues/4342
 
 - result = ftp_nb_type(conn, TRUE, FTP_LIST_TYPE);
 + result = ftp_nb_type(conn, data->set.prefer_ascii, FTP_LIST_TYPE);
+```
 
 __________________________________________________________________________________________________________
 
+## libssh2 master 2022-11-11
 
------------------------------
-| libssh2 master 2022-11-11 |
------------------------------
+```diff
 __________________________________________________________________________________________________________
 src/session.c
 memory leak: https://github.com/libssh2/libssh2/issues/28
@@ -59,14 +59,14 @@ memory leak: https://github.com/libssh2/libssh2/issues/28
 __________________________________________________________________________________________________________
 move the following constants from src/sftp.h to include/libssh2_sftp.h:
 
-	#define MAX_SFTP_OUTGOING_SIZE 30000
-	#define MAX_SFTP_READ_SIZE 30000
+    #define MAX_SFTP_OUTGOING_SIZE 30000
+    #define MAX_SFTP_READ_SIZE 30000
 __________________________________________________________________________________________________________
+```
 
+## wxWidgets 3.2.4
 
--------------------
-| wxWidgets 3.2.4 |
--------------------
+```diff
 __________________________________________________________________________________________________________
 /include/wx/features.h
 wxWidgets/GTK2 on some Linux systems incorrectly detects high DPI: https://freefilesync.org/forum/viewtopic.php?t=6114
@@ -120,14 +120,14 @@ Fix incorrect pane height calculations:
 +            wxAuiPaneInfo& pane = *dock.panes.Item(j);
 +            if (pane.min_size != wxDefaultSize)
 +            {
-+				int paneSize = dock.IsHorizontal() ? pane.min_size.y : pane.min_size.x;
++                int paneSize = dock.IsHorizontal() ? pane.min_size.y : pane.min_size.x;
 +                if (pane.HasBorder())
-+					paneSize += 2 * pane_borderSize;
++                    paneSize += 2 * pane_borderSize;
 +                if (pane.HasCaption() && dock.IsHorizontal())
-+					paneSize += caption_size;
++                    paneSize += caption_size;
 +
-+				if (paneSize > dock_min_size)
-+					dock_min_size = paneSize;
++                if (paneSize > dock_min_size)
++                    dock_min_size = paneSize;
 +            }
 +        }
 +
@@ -161,7 +161,7 @@ Backspace not working in filter dialog: http://www.freefilesync.org/forum/viewto
 -        g_source_attach(source, NULL);
 -        g_source_unref(source);
 -    }
- 
+
      g_signal_connect (widget, "key_press_event",
                        G_CALLBACK (gtk_window_key_press_callback), this);
 
@@ -172,3 +172,4 @@ See: http://soundfile.sapp.org/doc/WaveFormat/ => skip 8 bytes (Subchunk2ID and 
 
 -    m_data->m_data = (&m_data->m_dataWithHeader[data_offset]);
 +    m_data->m_data = (&m_data->m_dataWithHeader[data_offset + 8]);
+```
