@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://json.schemastore.org/clangd.json
+CompileFlags:
+  Add:
+    - -xc++
+    - -W2
+    - -IFreeFileSync/Source
