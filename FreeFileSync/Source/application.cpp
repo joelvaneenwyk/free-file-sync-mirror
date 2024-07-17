@@ -441,7 +441,7 @@ void Application::onEnterEventLoop()
 
                 replaceDirectories(guiCfg.mainCfg); //throw FileError
                 //what about simulating changed config due to directory replacement?
-                //-> propably fine to not show as changed on GUI and not ask user to save on exit!
+                //-> probably fine to not show as changed on GUI and not ask user to save on exit!
 
                 runGuiMode(globalConfigFilePath, guiCfg, {filePath}, !openForEdit); //caveat: guiCfg and filepath do not match if directories were set/replaced via command line!
             }
