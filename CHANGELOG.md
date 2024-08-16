@@ -8,6 +8,8 @@ Replace:
  | ## $1
 -->
 
+<!-- markdownlint-disable MD033 -->
+
 ## FreeFileSync 13.7 [2024-06-20]
 
 Support copying symlinks between SFTP devices
@@ -75,7 +77,7 @@ Configure individual directions for DB-based sync
 Detect moved files with "Update" sync variant (requires sync.ffs_db files)
 Update variant: Do not restore files that were deleted on target
 Distinguish file renames from file moves and simplify grid display
-Fixed ERROR_NOT_SUPPORTED when copying files with NTFS extended attributes
+Fixed `ERROR_NOT_SUPPORTED` when copying files with NTFS extended attributes
 Fixed error during process initialization while connecting with quick launch
 Avoid redundant file reopen when setting file times during copy
 Set working directory to match FFS configuration file when double-clicking (Linux)
@@ -97,12 +99,12 @@ Work around FTP servers silently renaming unsupported characters of temporary fi
 
 Show dynamic error and warning count in progress dialogs
 Show process elevation status in title bar (Administrator, root)
-Fixed libcurl bug CURLE_URL_MALFORMAT for numerical host name
+Fixed `libcurl` bug `CURLE_URL_MALFORMAT` for numerical host name
 Don't discard config panel last log after no changes found
 Set taskbar relaunch command to launcher executable (Windows)
-Fixed Btrfs compression not being applied during copy (Linux)
-Run on file systems with buggy GetFinalPathNameByHandle() implementation, e.g. Dokany-based
-Save selected view mode (F11) in batch config file
+Fixed `Btrfs` compression not being applied during copy (Linux)
+Run on file systems with buggy `GetFinalPathNameByHandle()` implementation, e.g. `Dokany`-based
+Save selected view mode (<kbd>F11</kbd>) in batch config file
 
 ## FreeFileSync 12.3 [2023-05-17]
 
@@ -200,7 +202,7 @@ Fixed free disk space calculation if target folder not yet created
 Faster file copy for SSD-based hard drives (Linux, macOS)
 Don't fill the OS file cache during file copy (macOS)
 Removed redundant memory buffering during file copy
-Fixed ERROR_FILE_EXISTS on Samba share when copying files with NTFS extended attributes
+Fixed `ERROR_FILE_EXISTS` on Samba share when copying files with NTFS extended attributes
 Show warning when recycle bin is not available (macOS, Linux)
 Customize config item background colors
 Fixed macOS menu bar not showing after app start
@@ -211,8 +213,8 @@ Don't allow creating file names ending with dot character (Windows)
 ## FreeFileSync 11.25 [2022-08-31]
 
 Fixed crash when normalizing Unicode non-characters
-Fixed crash when accesssing Google Drive
-Fixed regession for decomposed Unicode comparison
+Fixed crash when accessing Google Drive
+Fixed regression for decomposed Unicode comparison
 Fixed "exit code 106: --sign is required" error on macOS
 Reset icon cache after each comparison
 
@@ -223,7 +225,7 @@ Fixed "Some files will be synchronized as part of multiple base folders": no mor
 Detect full path filter items and convert to relative path
 Auto-detect FTP server character encoding (UTF8 or ANSI)
 Cancel grid selection via Escape key or second mouse button
-Apply conflict preview limit accross all folder pairs
+Apply conflict preview limit across all folder pairs
 Require config type and file extension to match
 Fixed view filter panel vertical layout
 Strict validation of UTF encoding
@@ -257,7 +259,7 @@ Avoid Two-Way conflict when changing folder name upper/lower-case
 List hidden warning messages in options dialog
 Fixed buffer overflow while receiving SFTP server banner
 Create crash dumps even if FFS-internal crash handling doesn't kick in
-Log time when error occured, not when it is reported
+Log time when error occurred, not when it is reported
 Swap sides: Require confirmation only after comparison
 Updated translation files
 
@@ -271,10 +273,10 @@ Fixed user language set to English after update
 Improved performance for huge exclusion filter lists: linear to constant(!) time
 Support sync with Google Drive starred folders
 Access "My Computers" (as created by Google Backup and Sync) if starred
-Western Digital Mycloud NAS: fixed ERROR_ALREADY_EXISTS when changing case
+Western Digital Mycloud NAS: fixed `ERROR_ALREADY_EXISTS` when changing case
 Added per-file progress for "copy to" function
 Have filter wildcard ? not match path separator
-Work around WBEM_E_INVALID_NAMESPACE error during installation
+Work around `WBEM_E_INVALID_NAMESPACE` error during installation
 Fixed login user incorrectly displayed as root (macOS)
 Save Google Drive buffer before system shutdown
 
@@ -325,7 +327,7 @@ Improved WinMerge detection for external app integration
 ## FreeFileSync 11.14 [2021-09-20]
 
 Authenticate (S)FTP connections using OpenSSL 3.0
-Fixed E_NOINTERFACE error after synchronization
+Fixed `E_NOINTERFACE` error after synchronization
 Preempt crashes due to Nahimic Sonic Studio 3
 Hide main window when minimizing progress window (macOS)
 Avoid second dock icon when minimizing progress window (macOS)
@@ -334,7 +336,7 @@ Avoid second dock icon when minimizing progress window (macOS)
 
 Manage default filter settings via GUI
 Support arbitrary location for local app installation (macOS)
-Fixed ERROR_FILE_NOT_FOUND masking real file access error (Windows)
+Fixed `ERROR_FILE_NOT_FOUND` masking real file access error (Windows)
 Copy full file paths to clipboard (CTRL + C)
 Preserve clipboard contents until after program exit
 Always enable external command if independent of file items
@@ -355,7 +357,7 @@ Present file sizes in powers of 1000 bytes (Linux, macOS)
 
 Fixed Shared Drive synchronization with Google Drive
 Directly open exported file list (.CSV) as temporary file
-Avoid EIO error for F_PREALLOCATE (macOS)
+Avoid EIO error for `F_PREALLOCATE` (macOS)
 Watch socket using "poll" instead of "select" (Linux, macOS)
 Fixed user-specific time/date format (Windows)
 Fixed system_profiler not found error (macOS)
@@ -399,7 +401,7 @@ Added application uninstaller: uninstall.sh (Linux)
 Use login user config path when running as root (macOS, Linux)
 Fixed detection of moved files with unstable device IDs (macOS, Linux)
 Strict checking for duplicate file IDs
-Avoid EINVAL invalid argument error when using F_PREALLOCATE (macOS)
+Avoid EINVAL invalid argument error when using `F_PREALLOCATE` (macOS)
 Restore input focus after closing log panel
 Double-click on file to open Google Drive web interface
 Fixed alpha channel image scaling glitch
@@ -546,7 +548,7 @@ Support Google Drive Shortcuts
 Prioritize item name rendering if lacking horizontal space
 Report "out of memory" during startup instead of crashing
 Fixed excess memory consumption when loading variable-size data blocks
-Fixed VERSION_ID missing on Arch Linux
+Fixed `VERSION_ID` missing on Arch Linux
 Fixed IWbemServices::ConnectServer error during auto-update
 Fixed row being skipped during main grid page up/down
 Fixed MSSearch files not found when using Volume Shadow Copy
@@ -563,16 +565,16 @@ Support double-click/"Browse directory" for (S)FTP/Google Drive (Linux)
 ## FreeFileSync 10.24 [2020-05-17]
 
 Increased SFTP buffer sizes for faster upload/download
-New %WeekDay%, %WeekDayName", and %MonthName% macros
-Support Linux systems without lsb_release
-Don't exclude desktop.ini by default
+New `%WeekDay%`, `%WeekDayName%`, and `%MonthName%` macros
+Support Linux systems without `lsb_release`
+Don't exclude `desktop.ini` by default
 Merge error messages of failed error handling
-Added ".DocumentRevisions-V100" to default exclude filter (macOS)
+Added `.DocumentRevisions-V100` to default exclude filter (macOS)
 Fixed deletion error not reported during versioning
 RealTimeSync: don't block when command fails with exit code > 0
 Visualize error status in macOS Dock and Windows Superbar
 Show error code constants for Windows Shell errors
-Suppport ProFTPD with "MultilineRFC2228 on"
+Support ProFTPD with "MultilineRFC2228 on"
 SFTP option to enable/disable zlib compression
 
 ## FreeFileSync 10.23 [2020-04-17]
@@ -591,7 +593,7 @@ Raise exit code if saving log file or sending email failed
 Report all documented MTP error descriptions
 Updated default exclude filter (macOS/Linux)
 Added image outlines for improved dark mode support
-Work around WBEM_E_INVALID_CLASS error during installation
+Work around `WBEM_E_INVALID_CLASS` error during installation
 Align file path rendering with app layout direction
 Play sound notification also when "cancel on first error" is set
 Cleaner file path formatting (macOs, Linux)
@@ -694,7 +696,7 @@ Access FTP files by full path and avoid CWDs
 Support FTP home paths with non-ASCII chars
 Work around libcurl bug failing to buffer FTP TLS authentication
 Skip redundant FTP SIZE check before downloading file
-Use ISO 8601 week of the year definition for %week% macro
+Use ISO 8601 week of the year definition for `%week%` macro
 Show login prompt for disconnected NAS share
 Force icon resolution to 96 DPI in GTK2 build (Linux)
 Notify missing full disk access permission (macOS)
@@ -1633,7 +1635,7 @@ Show config status icons in notebook panel caption
 Redesigned configuration dialog layouts
 Fixed startup error after moving installation directory
 Fixed retry on failure to resolve path by volume name
-Resolved ERROR_ALREADY_EXISTS when creating temporary recycle bin subdirectory
+Resolved `ERROR_ALREADY_EXISTS` when creating temporary recycle bin subdirectory
 Added "save as GUI job" button on main dialog
 Added Bulgarian language
 
@@ -1642,7 +1644,7 @@ Added Bulgarian language
 No wait time anymore while searching for recycle bin (Windows Vista and later)
 Revised synchronization progress graph
 Clean up "On completion" considering last usage
-Fixed CTRL + C keyboard short cut in filter dialog (OS X)
+Fixed <kbd>CTRL</kbd> + <kbd>C</kbd> keyboard short cut in filter dialog (OS X)
 Resolved static initialization order issues
 Reduced disk accesses when resolving directory name
 Added view filter labels
@@ -1862,7 +1864,7 @@ Status feedback before blocking while creating a Volume Shadow Copy
 Do not show dummy texts while initializing progress dialog (OS X)
 Allow to maximize filter dialog
 New column for item count on overview panel
-Allow CTRL + C to copy selection to clipboard on overview panel
+Allow <kbd>CTRL</kbd> + <kbd>C</kbd> to copy selection to clipboard on overview panel
 Consider current view filter for file selection on overview panel
 Work around silent failure to set modification times on NTFS volumes (Linux)
 Avoid main dialog flash when closing progress dialog (Linux)
@@ -1943,7 +1945,7 @@ Redesigned configuration dialog layout
 Enhanced all file I/O error messages to show locking processes (Windows Vista and later)
 Separator in CSV file now locale dependent
 Avoid "Windows Error Code 2" for truly empty directories
-Macro %month% resolves to decimal number
+Macro `%month%` resolves to decimal number
 New macro %timestamp%
 Revised sync progress graph
 Fixed progress graph graphics glitch for RTL layout
@@ -2124,7 +2126,7 @@ Fixed "Windows Error Code 59: An unexpected network error occurred"
 New filter pattern: *\* matches all files in sub directories of base directories
 Fixed "*?" filter sub-sequence
 Fixed "Cannot convert from the charset 'Unknown encoding (-1)'!"
-Support CTRL + A in filter dialog
+Support <kbd>CTRL</kbd> + <kbd>A</kbd> in filter dialog
 Support large filter lists > 32 kByte
 Allow to hide file icons
 Avoid switching monitor when main dialog is maximized on multiple monitor systems
@@ -2283,7 +2285,7 @@ Allow saving log files in both silent and non-silent batch jobs
 Reduced main dialog flicker when switching configurations
 Database and lock files created by FreeFileSync do not trigger RealTimeSync anymore
 Restrict maximum number of visible folder pairs to 6 (configurable via GlobalSettings.xml)
-New macros: %day%, %hour%, %min%, %sec%
+New macros: `%day%`, `%hour%`, `%min%`, %sec%
 
 ## FreeFileSync 3.18 [2011-07-03]
 
@@ -2374,8 +2376,9 @@ Process case sensitive file/directory/symlink names
 Synchronize name/attributes only avoiding full copy if appropriate
 Prevent hibernation/sleep mode during comparison and synchronization (Windows)
 New database format: single file for FreeFileSync 32 and 64 bit versions
- - full sync suggested before migrating to v3.13
- - old sync.x64.ffs_db files may be deleted
+
+- full sync suggested before migrating to v3.13
+- old sync.x64.ffs_db files may be deleted
 Improved algorithm to calculate remaining time
 Allow resizing window containing multiple folder pairs
 Show folder short names in column file name
@@ -2397,7 +2400,7 @@ Allow empty folder pairs without complaining
 Automatically exclude database and lock files from all (sub-)directories (not only from base)
 Resize grid columns on both sides in parallel
 Fixed tooltip foreground text color (Linux)
-Search via CTRL + F and F3 now as global hotkeys
+Search via <kbd>CTRL</kbd> + <kbd>F</kbd> and F3 now as global hotkeys
 Fully portable use of directory locking (Windows/Linux, 32/64 bit)
 RealTimeSync: Treat missing network path the same as missing local path
 Show current job name during synchronization (batch/gui)
@@ -2444,15 +2447,16 @@ Updated translation files
 Advanced locking strategy to allow multiple processes synchronize the same directories (e.g. via network share)
 Merge multiple *.ffs_batch,*.ffs_gui files or combinations of both via drag & drop
 Copy file and folder permissions (requires admin rights):
- - Windows: owner, group, DACL, SACL
- - Linux: owner, group, permissions
- - correctly handle Symbolic Links
- - new option in global settings
+
+- Windows: owner, group, DACL, SACL
+- Linux: owner, group, permissions
+- correctly handle Symbolic Links
+- new option in global settings
 Compare by content evaluates Symbolic Links
 32-Bit build compiled with MinGW/GCC to preserve Windows 2000 compatibility
 RealTimeSync: Handle requests for device removal (USB stick) while monitoring
 Sort by file size: group symlinks before directories
-Added macros %week%, %month%, %year% for creating time-stamped directories
+Added macros `%week%`, `%month%`, `%year%` for creating time-stamped directories
 Touch database file when changes occurred only
 Moved settings "file time tolerance" and "verify copied files" to GlobalSettings.xml
 Updated translation files
@@ -2514,7 +2518,7 @@ Recycle Bin support for Linux
 Performance: Reduced binary comparison sequential read time (by up to 75% for CD/DVD access)
 Improved synchronization sequence to avoid disk space shortage: overwrite large files by small ones first
 Fixed problems with file renaming on Samba share
-New free text grid search via shortcuts CTRL + F and F3
+New free text grid search via shortcuts <kbd>CTRL</kbd> + <kbd>F</kbd> and F3
 Show number of processed files at end of synchronization
 New optional grid column: file extension
 New comparison category icons
@@ -2584,7 +2588,7 @@ Fixed calculation of remaining objects
 Fixed swapping grids
 Show scanned files when traversing with filter enabled
 New default filter values
-New macros %time%, %date% for creating time-stamped directories
+New macros `%time%`, `%date%` for creating time-stamped directories
 Avoid corrupted data when program is terminated unexpectedly
 Prevent deletion when source-directory (temporarily) is not accessible
 Native Unicode support for Linux build
@@ -2715,9 +2719,10 @@ Updated translation files
 ## FreeFileSync 1.17 [2009-04-05]
 
 Full support for Windows/Linux symbolic links:
- - traverse, copy, delete symbolic links
- - handle broken symbolic links
- - new options in GlobalSettings.xml: TraverseDirectorySymlinks, CopyFileSymlinks
+
+- traverse, copy, delete symbolic links
+- handle broken symbolic links
+- new options in GlobalSettings.xml: TraverseDirectorySymlinks, CopyFileSymlinks
 New menu option: "Check for new version"
 Copy folder attributes and security settings when implicitly creating folders
 Maximum file time difference now fully configurable
@@ -2761,14 +2766,15 @@ Fixed locale related issue when comparing. Big thanks to Persson Henric for prov
 New check if more than 50% of files will be overwritten/deleted
 Save memory by clearing old results before re-comparing
 Usability improvements:
- - name of config file in window title
- - refresh view filters on configuration load
- - default to ascending sort when changing column
- - maximum length of config file history customizable through xml
- - new "load configuration" button
- - check/uncheck option for middle grid
- - support for CTRL + A (select all)
- - enhanced error messages (windows only)
+
+- name of config file in window title
+- refresh view filters on configuration load
+- default to ascending sort when changing column
+- maximum length of config file history customizable through xml
+- new "load configuration" button
+- check/uncheck option for middle grid
+- support for <kbd>CTRL</kbd> + <kbd>A</kbd> (select all)
+- enhanced error messages (windows only)
 Updated translation files
 
 ## FreeFileSync 1.15 [2009-02-22]
