@@ -1,0 +1,2299 @@
+<header>
+	<language>Türkçe</language>
+	<translator>Kaya Zeren</translator>
+	<locale>tr</locale>
+	<image>flag_turkey</image>
+	<plural_count>2</plural_count>
+	<plural_definition>n == 1 ? 0 : 1</plural_definition>
+</header>
+
+<source>Cannot read file %x.</source>
+<target>%x dosyası okunamadı.</target>
+
+<source>Unexpected size of data stream:</source>
+<target>Veri akışının boyutu beklenmeyen bir değerde:</target>
+
+<source>Expected:</source>
+<target>Beklenen değer:</target>
+
+<source>Cannot write file %x.</source>
+<target>%x dosyası yazılamadı.</target>
+
+<source>Cannot write permissions of %x.</source>
+<target>%x izinleri yazılamadı.</target>
+
+<source>Operation not supported between different devices.</source>
+<target>Bu işlem farklı aygıtlar arasında yapılamaz.</target>
+
+<source>Cannot create directory %x.</source>
+<target>%x klasörü oluşturulamadı.</target>
+
+<source>The name %x is already used by another item.</source>
+<target>%x adı başka bir öge tarafından kullanılıyor.</target>
+
+<source>Cannot delete directory %x.</source>
+<target>%x klasörü silinemedi.</target>
+
+<source>Cannot rename %x to %y.</source>
+<target>%x %y olarak yeniden adlandırılamadı.</target>
+
+<source>Cannot move %x to %y.</source>
+<target>%x %y olarak taşınamadı.</target>
+
+<source>Cannot copy symbolic link %x to %y.</source>
+<target>%x sembolik bağlantısı %y üzerine kopyalanamadı.</target>
+
+<source>The item %x is currently in use.</source>
+<target>%x ögesi şu anda kullanılıyor.</target>
+
+<source>Invalid character encoding:</source>
+<target>Karakter kodlaması geçersiz:</target>
+
+<source>Failed to auto-detect character encoding:</source>
+<target>Karakter kodlaması otomatik olarak algılanamadı:</target>
+
+<source>Server name must not be empty.</source>
+<target>Sunucu adı boş olmamalıdır.</target>
+
+<source>Cannot resolve symbolic link %x.</source>
+<target>%x sembolik bağlantısı çözümlenemedi.</target>
+
+<source>Cannot read directory %x.</source>
+<target>%x klasörü okunamadı.</target>
+
+<source>Cannot write modification time of %x.</source>
+<target>%x dosyasının değişiklik tarihi yazılamadı.</target>
+
+<source>Unable to connect to %x.</source>
+<target>%x bağlantısı kurulamadı.</target>
+
+<source>%x does not exist.</source>
+<target>%x bulunamadı.</target>
+
+<source>Cannot read file attributes of %x.</source>
+<target>%x dosyasının öznitelikleri okunamadı.</target>
+
+<source>Cannot delete file %x.</source>
+<target>%x dosyası silinemedi.</target>
+
+<source>Cannot delete symbolic link %x.</source>
+<target>%x sembolik bağlantısı silinemedi.</target>
+
+<source>Cannot determine final path for %x.</source>
+<target>%x dosyasının son yolu belirlenemedi.</target>
+
+<source>Operation not supported by device.</source>
+<target>Bu işlem bu aygıt üzerinde yapılamaz.</target>
+
+<source>Password prompt not permitted by current settings.</source>
+<target>Geçerli ayarlar parola sorulmasına izin vermiyor.</target>
+
+<source>Please enter your password to connect to %x.</source>
+<target>%x ile bağlantı kurmak için parolanızı yazın.</target>
+
+<source>The password will only be remembered until FreeFileSync is closed.</source>
+<target>Parola yalnızca FreeFileSync kapatılana kadar hatırlanır.</target>
+
+<source>The recycle bin is not available for %x.</source>
+<target>%x için geri dönüşüm kutusu kullanılamıyor.</target>
+
+<source>empty</source>
+<target>boş</target>
+
+<source>Error code %x</source>
+<target>Hata kodu %x</target>
+
+<source>Authentication completed.</source>
+<target>Kimlik doğrulandı.</target>
+
+<source>You may close this page now and continue with FreeFileSync.</source>
+<target>Bu pencereyi kapatıp FreeFileSync kullanmaya devam edebilirsiniz.</target>
+
+<source>Authentication failed.</source>
+<target>Kimlik doğrulanamadı.</target>
+
+<source>Please set up a shorter time out for Google Drive.</source>
+<target>Lütfen Google Drive için daha kısa bir zaman aşımı ayarlayın.</target>
+
+<source>
+	<pluralform>1 sec</pluralform>
+	<pluralform>%x sec</pluralform>
+</source>
+<target>
+	<pluralform>1 saniye</pluralform>
+	<pluralform>%x saniye</pluralform>
+</target>
+
+<source>The name %x is used by more than one item in the folder.</source>
+<target>%x adı klasördeki birden fazla öge için kullanılmış.</target>
+
+<source>Please add a connection to user account %x first.</source>
+<target>Lütfen önce %x kullanıcı hesabına bir bağlantı ekleyin.</target>
+
+<source>File content is corrupted.</source>
+<target>Dosya içeriği bozulmuş.</target>
+
+<source>Unsupported data format.</source>
+<target>Veri biçimi desteklenmiyor.</target>
+
+<source>Version: %x</source>
+<target>Sürüm: %x</target>
+
+<source>Cannot read database file %x.</source>
+<target>%x veri tabanı dosyası okunamadı.</target>
+
+<source>Cannot open file %x.</source>
+<target>%x dosyası açılamadı.</target>
+
+<source>Cannot copy file %x to %y.</source>
+<target>%x dosyası %y üzerine kopyalanamadı.</target>
+
+<source>Cannot determine free disk space for %x.</source>
+<target>%x için boş disk alanı belirlenemedi.</target>
+
+<source>Unable to move %x to the recycle bin.</source>
+<target>%x geri dönüşüm kutusuna atılamadı.</target>
+
+<source>Unable to disconnect from %x.</source>
+<target>%x bağlantısı kesilemedi.</target>
+
+<source>Cannot find device %x.</source>
+<target>%x aygıtı bulunamadı.</target>
+
+<source>Cannot open directory %x.</source>
+<target>%x klasörü açılamadı.</target>
+
+<source>Unsupported item type.</source>
+<target>Dosya türü desteklenmiyor.</target>
+
+<source>The server does not support authentication via %x.</source>
+<target>Sunucu %x üzerinden kimlik doğrulamasını desteklemiyor.</target>
+
+<source>Required:</source>
+<target>Zorunlu:</target>
+
+<source>
+	<pluralform>Operation timed out after 1 second.</pluralform>
+	<pluralform>Operation timed out after %x seconds.</pluralform>
+</source>
+<target>
+	<pluralform>İşlem 1 saniye sonunda zaman aşımına uğradı.</pluralform>
+	<pluralform>İşlem %x saniye sonunda zaman aşımına uğradı.</pluralform>
+</target>
+
+<source>
+	<pluralform>Cannot wait on more than 1 connection at a time.</pluralform>
+	<pluralform>Cannot wait on more than %x connections at a time.</pluralform>
+</source>
+<target>
+	<pluralform>Aynı anda 1 taneden fazla bağlantı beklenemez.</pluralform>
+	<pluralform>Aynı anda %x taneden fazla bağlantı beklenemez.</pluralform>
+</target>
+
+<source>Failed to open SFTP channel number %x.</source>
+<target>%x SFTP kanal numarası açılamadı.</target>
+
+<source>Temporary access error:</source>
+<target>Geçici erişim sorunu:</target>
+
+<source>Command line</source>
+<target>Komut satırı</target>
+
+<source>Syntax:</source>
+<target>Yazım:</target>
+
+<source>config files:</source>
+<target>yapılandırma dosyaları:</target>
+
+<source>directory</source>
+<target>klasör</target>
+
+<source>global config file:</source>
+<target>genel yapılandırma dosyası:</target>
+
+<source>Any number of FreeFileSync "ffs_gui" and/or "ffs_batch" configuration files.</source>
+<target>FreeFileSync "ffs_gui" ya da "ffs_batch" yapılandırma dosyalarının sayısı.</target>
+
+<source>Any number of alternative directory pairs for at most one config file.</source>
+<target>En fazla bir yapılandırma dosyası için herhangi bir sayıda alternatif klasör çifti.</target>
+
+<source>Open the selected configuration for editing only, without executing it.</source>
+<target>Seçilmiş yapılandırmayı yürütmeden yalnızca düzenlemek için açar.</target>
+
+<source>Path to an alternate GlobalSettings.xml file.</source>
+<target>Alternatif GlobalSettings.xml dosyasının yolu.</target>
+
+<source>Error</source>
+<target>Sorun</target>
+
+<source>Error during process initialization.</source>
+<target>İşlemeye hazırlanırken sorun çıktı.</target>
+
+<source>A left and a right directory path are expected after %x.</source>
+<target>%x ardından sol ve sağ klasör belirtilmelidir.</target>
+
+<source>Unexpected file extension:</source>
+<target>Dosya uzantısı beklenmiyordu:</target>
+
+<source>The config file must not contain settings at directory pair level when directories are set via command line.</source>
+<target>Klasörler komut satırından seçildiği zaman, yapılandırma dosyasında klasör çifti düzeyinde ayarlar bulunmamalıdır.</target>
+
+<source>Directories cannot be set for more than one configuration file.</source>
+<target>Klasörler birden fazla yapılandırma dosyasında kullanılamaz.</target>
+
+<source>The following batch options have been changed because the current process does not allow user interaction:</source>
+<target>Geçerli işlem kullanıcı etkileşimine izin vermediğinden şu toplu işlem seçenekleri değiştirildi:</target>
+
+<source>Auto-close</source>
+<target>Otomatik kapat</target>
+
+<source>Enabled</source>
+<target>Etkin</target>
+
+<source>Errors:</source>
+<target>Hatalar:</target>
+
+<source>Stop synchronization at first error</source>
+<target>Çıkan ilk sorunda eşitleme durdurulsun</target>
+
+<source>Exit code %x</source>
+<target>Çıkış kodu %x</target>
+
+<source>Executing command:</source>
+<target>Komut yürütülüyor:</target>
+
+<source>Command %x failed.</source>
+<target>%x komutu yürütülemedi.</target>
+
+<source>Sending email notification to %x</source>
+<target>Bildirim e-postası %x adresine gönderiliyor</target>
+
+<source>Cannot determine sync-direction:</source>
+<target>Eşitleme yönü belirlenemedi:</target>
+
+<source>The items have different names, but it's unknown which side was renamed.</source>
+<target>Ögelerin adları farklı ancak hangi tarafın yeniden adlandırıldığı bilinmiyor.</target>
+
+<source>The items have different content, but it's unknown which side has changed.</source>
+<target>Ögelerin içerikleri farklı ancak hangi tarafın değiştirildiği bilinmiyor.</target>
+
+<source>Both sides have changed since last synchronization.</source>
+<target>Son eşitlemeden bu yana iki tarafında içeriği değişmiş.</target>
+
+<source>No change since last synchronization.</source>
+<target>Son eşitlemeden bu yana bir değişiklik olmamış.</target>
+
+<source>The database entry is not in sync, considering current settings.</source>
+<target>Geçerli kayıtlar ile veri tabanı kaydı aynı değil.</target>
+
+<source>The database entry is ambiguous.</source>
+<target>Veri tabanı kaydı belirsiz.</target>
+
+<source>Database file is not available: Setting default directions for synchronization.</source>
+<target>Veri tabanı dosyası kullanılamıyor: Eşitleme için varsayılan yönler kullanılacak.</target>
+
+<source>Calculating sync directions...</source>
+<target>Eşitleme yönleri hesaplanıyor...</target>
+
+<source>Creating file %x</source>
+<target>%x dosyası oluşturuluyor</target>
+
+<source>Creating folder %x</source>
+<target>%x klasörü oluşturuluyor</target>
+
+<source>Creating symbolic link %x</source>
+<target>%x sembolik bağlantısı oluşturuluyor</target>
+
+<source>Deleting file %x</source>
+<target>%x dosyası siliniyor</target>
+
+<source>Moving file %x to the recycle bin</source>
+<target>%x dosyası geri dönüşüm kutusuna atılıyor</target>
+
+<source>Deleting symbolic link %x</source>
+<target>%x sembolik bağlantısı siliniyor</target>
+
+<source>Moving symbolic link %x to the recycle bin</source>
+<target>%x simgesel bağlantısı geri dönüşüm kutusuna atılıyor</target>
+
+<source>Deleting folder %x</source>
+<target>%x klasörü siliniyor</target>
+
+<source>Moving folder %x to the recycle bin</source>
+<target>%x klasörü geri dönüşüm kutusuna atılıyor</target>
+
+<source>Ignore and delete permanently each time recycle bin is unavailable?</source>
+<target>Geri dönüşüm kutusu kullanılamadığı zaman yok sayılıp kalıcı olarak silinsin mi?</target>
+
+<source>Recycle bin unavailable</source>
+<target>Geri dönüşüm kutusu kullanılamıyor</target>
+
+<source>Renaming file %x to %y</source>
+<target>%x dosyası %y olarak yeniden adlandırılıyor</target>
+
+<source>Renaming symbolic link %x to %y</source>
+<target>%x sembolik bağlantısı %y olarak yeniden adlandırılıyor</target>
+
+<source>Renaming folder %x to %y</source>
+<target>%x klasörü %y olarak yeniden adlandırılıyor</target>
+
+<source>Normalizing folder paths...</source>
+<target>Klasör yolları normalleştiriliyor...</target>
+
+<source>Cannot find the following folders:</source>
+<target>Aşağıdaki klasörler bulunamadı:</target>
+
+<source>The following folders do not yet exist:</source>
+<target>Şu klasörler bulunamadı:</target>
+
+<source>The folders are created automatically when needed.</source>
+<target>Klasörler gerektiğinde otomatik olarak oluşturulur.</target>
+
+<source>The following folder paths differ in case. Please use a single form in order to avoid duplicate accesses.</source>
+<target>Şu klasör yolu büyük küçük harf olarak farklı. Lütfen çift erişimleri engellemek için tek bir biçim kullanın.</target>
+
+<source>Scanning:</source>
+<target>Taranıyor:</target>
+
+<source>Comparison finished:</source>
+<target>Karşılaştırma tamamlandı:</target>
+
+<source>
+	<pluralform>1 item found</pluralform>
+	<pluralform>%x items found</pluralform>
+</source>
+<target>
+	<pluralform>1 öge bulundu</pluralform>
+	<pluralform>%x öge bulundu</pluralform>
+</target>
+
+<source>Time elapsed:</source>
+<target>Geçen süre:</target>
+
+<source>File %x has an invalid date.</source>
+<target>%x dosyasının tarihi geçersiz.</target>
+
+<source>Date:</source>
+<target>Tarih:</target>
+
+<source>Files have the same date but a different size.</source>
+<target>Dosyaların tarihleri aynı ancak boyutları farklı.</target>
+
+<source>Size:</source>
+<target>Boyut:</target>
+
+<source>Content comparison was skipped for excluded files.</source>
+<target>Katılmayan dosyalar için içerik karşılaştırması atlandı.</target>
+
+<source>Resolving symbolic link %x</source>
+<target>%x sembolik bağlantısı çözümleniyor</target>
+
+<source>Comparing content of files %x</source>
+<target>%x dosyalarının içeriği karşılaştırılıyor</target>
+
+<source>Generating file list...</source>
+<target>Dosya listesi oluşturuluyor...</target>
+
+<source>A folder input field is empty.</source>
+<target>Bir klasör giriş alanı boş.</target>
+
+<source>The corresponding folder will be considered as empty.</source>
+<target>Karşıdaki klasör boş olarak kabul edilecek.</target>
+
+<source>Exclude:</source>
+<target>Katılmayacak ögeler:</target>
+
+<source>One folder of the folder pair is a subfolder of the other.</source>
+<target>Klasör çiftinin bir klasörü diğerinin alt klasörü.</target>
+
+<source>The folder should be excluded via filter.</source>
+<target>Klasörün süzgeç ile katılmaması gerekir.</target>
+
+<source>Out of memory.</source>
+<target>Bellek yetersiz.</target>
+
+<source>Database file %x does not yet exist.</source>
+<target>%x veri tabanı dosyası henüz yok.</target>
+
+<source>Loading file %x...</source>
+<target>%x dosyaları yükleniyor...</target>
+
+<source>Saving file %x...</source>
+<target>%x dosyası kaydediliyor...</target>
+
+<source>Searching for folder %x...</source>
+<target>%x klasörü aranıyor...</target>
+
+<source>Cannot get process information.</source>
+<target>İşlem bilgisi alınamadı.</target>
+
+<source>Waiting while directory is in use:</source>
+<target>Klasör kullanılmakta olduğundan bekleniyor:</target>
+
+<source>Username:</source>
+<target>Kullanıcı adı:</target>
+
+<source>Lock file apparently abandoned...</source>
+<target>Görünüşe göre kilit dosyası terk edilmiş...</target>
+
+<source>Both sides are equal</source>
+<target>İki taraf eşit</target>
+
+<source>Items differ in name only</source>
+<target>Yalnızca adı farklı olan ögeler</target>
+
+<source>Item exists on left side only</source>
+<target>Yalnızca solda bulunan ögeler</target>
+
+<source>Item exists on right side only</source>
+<target>Yalnızca sağda bulunan ögeler</target>
+
+<source>Left side is newer</source>
+<target>Soldaki daha yeni ögeler</target>
+
+<source>Right side is newer</source>
+<target>Sağdaki daha yeni ögeler</target>
+
+<source>Items have different content</source>
+<target>İçeriği farklı ögeler</target>
+
+<source>Conflict/item cannot be categorized</source>
+<target>Uyuşmayan/sınıflanamayan ögeler</target>
+
+<source>Copy new item to left</source>
+<target>Yeni öge sola kopyalansın</target>
+
+<source>Copy new item to right</source>
+<target>Yeni öge sağa kopyalansın</target>
+
+<source>Delete left item</source>
+<target>Soldaki öge silinsin</target>
+
+<source>Delete right item</source>
+<target>Sağdaki öge silinsin</target>
+
+<source>Move left file</source>
+<target>Soldaki dosyayı taşı</target>
+
+<source>Move right file</source>
+<target>Sağdaki dosyayı taşı</target>
+
+<source>Update left item</source>
+<target>Soldaki öge güncellensin</target>
+
+<source>Update right item</source>
+<target>Sağdaki öge güncellensin</target>
+
+<source>Do nothing</source>
+<target>Hiçbir işlem yapılmasın</target>
+
+<source>Rename left item</source>
+<target>Soldaki ögeyi yeniden adlandır</target>
+
+<source>Rename right item</source>
+<target>Sağdaki ögeyi yeniden adlandır</target>
+
+<source>Cannot set directory locks for the following folders:</source>
+<target>Şu klasörler kilitlenemedi:</target>
+
+<source>
+	<pluralform>1 thread</pluralform>
+	<pluralform>%x threads</pluralform>
+</source>
+<target>
+	<pluralform>1 işlem</pluralform>
+	<pluralform>%x işlem</pluralform>
+</target>
+
+<source>Please run the 64-bit version of FreeFileSync to create shadow copies on this system.</source>
+<target>Lütfen bu sistemde gölge kopyalar oluşturmak için FreeFileSync uygulamasının 64 bit sürümünü kullanın.</target>
+
+<source>Drive path %x not found at the start of file path %y.</source>
+<target>%x sürücü yolu %y dosya yolunun başında bulunamadı.</target>
+
+<source>The Volume Shadow Copy Service could not create a snapshot of %x.</source>
+<target>Birim Gölge Kopya Hizmeti %x için anlık görüntü oluşturamadı.</target>
+
+<source>%x/sec</source>
+<target>%x/saniye</target>
+
+<source>%x items</source>
+<target>%x öge</target>
+
+<source>Multiple...</source>
+<target>Çoklu...</target>
+
+<source>File time and size</source>
+<target>Zamana göre</target>
+
+<source>File content</source>
+<target>İçeriğe göre</target>
+
+<source>File size</source>
+<target>Boyuta göre</target>
+
+<source>Two way</source>
+<target>Çift yönlü</target>
+
+<source>Mirror</source>
+<target>Yansıtma</target>
+
+<source>Update</source>
+<target>Güncelleme</target>
+
+<source>Custom</source>
+<target>Özel</target>
+
+<source>Cannot write file attributes of %x.</source>
+<target>%x dosya öznitelikleri yazılamadı.</target>
+
+<source>%x and %y have different content.</source>
+<target>%x ve %y farklı içeriklere sahip.</target>
+
+<source>Data verification error:</source>
+<target>Veri doğrulama sorunu:</target>
+
+<source>Moving file %x to %y</source>
+<target>%x dosyası %y içine taşınıyor</target>
+
+<source>Moving symbolic link %x to %y</source>
+<target>%x sembolik bağlantısı %y içine taşınıyor</target>
+
+<source>Moving folder %x to %y</source>
+<target>%x klasörü %y içine taşınıyor</target>
+
+<source>Updating file %x</source>
+<target>%x dosyası güncelleniyor</target>
+
+<source>Updating symbolic link %x</source>
+<target>%x sembolik bağlantısı güncelleniyor</target>
+
+<source>Verifying file %x</source>
+<target>%x dosyası doğrulanıyor</target>
+
+<source>Source item %x is not existing</source>
+<target>%x kaynak ögesi bulunamadı</target>
+
+<source>Parent folder %x is not existing.</source>
+<target>%x üst klasörü bulunamadı.</target>
+
+<source>Creating a Volume Shadow Copy for %x...</source>
+<target>%x için Birim Gölge Hizmeti oluşturuluyor...</target>
+
+<source>The folder %x is already existing, but was not found earlier during comparison.</source>
+<target>%x klasörü zaten var ancak karşılaştırma sırasında bulunamamıştı.</target>
+
+<source>Skipping folder pair because %x could not be accessed during comparison.</source>
+<target>Karşılaştırma sırasında %x bulunamadığından klasör çifti atlanıyor.</target>
+
+<source>Source folder %x not found.</source>
+<target>%x kaynak klasörü bulunamadı.</target>
+
+<source>Please enter a target folder.</source>
+<target>Lütfen bir hedef klasör yazın.</target>
+
+<source>The following items have unresolved conflicts and will not be synchronized:</source>
+<target>Uyuşmazlığı çözümlenmemiş şu ögeler eşitlenmeyecek:</target>
+
+<source>Folder pair:</source>
+<target>Klasör çifti:</target>
+
+<source>
+	<pluralform>Showing %y of 1 item</pluralform>
+	<pluralform>Showing %y of %x items</pluralform>
+</source>
+<target>
+	<pluralform>%y / 1 öge görüntüleniyor</pluralform>
+	<pluralform>%y / %x öge görüntüleniyor</pluralform>
+</target>
+
+<source>The following folders are significantly different. Please check that the correct folders are selected for synchronization.</source>
+<target>Şu klasörler birbirinden çok farklı. Lütfen eşitleme için doğru klasörleri seçtiğinizden emin olun.</target>
+
+<source>Not enough free disk space available in:</source>
+<target>Şurada yeterli boş disk alanı yok:</target>
+
+<source>Available:</source>
+<target>Kullanılabilir:</target>
+
+<source>Some files will be synchronized as part of multiple folder pairs.</source>
+<target>Bazı dosyalar çoklu klasör çiftinin parçası olarak eşitlenecek.</target>
+
+<source>To avoid conflicts, set up exclude filters so that each updated file is included by only one folder pair.</source>
+<target>Çakışmaları önlemek için katılmayacak süzgecini ayarlayarak, güncellenen her dosyanın yalnızca bir klasör çifti tarafından katılmasını sağlayın.</target>
+
+<source>Write access</source>
+<target>Yazma izni</target>
+
+<source>Read access</source>
+<target>Okuma izni</target>
+
+<source>Selected folder:</source>
+<target>Seçilmiş klasör:</target>
+
+<source>Versioning folder:</source>
+<target>Sürüm klasörü:</target>
+
+<source>The versioning folder is part of the synchronization.</source>
+<target>Sürüm tutma klasörü eşitlemenin bir parçasıdır.</target>
+
+<source>Synchronizing folder pair:</source>
+<target>Eşitlenen klasör çifti:</target>
+
+<source>Searching for old file versions:</source>
+<target>Önceki dosya sürümleri aranıyor:</target>
+
+<source>Removing old file versions:</source>
+<target>Önceki dosya sürümleri siliniyor:</target>
+
+<source>Unable to create time stamp for versioning:</source>
+<target>Sürümlendirme için zaman damgası oluşturulamadı:</target>
+
+<source>Fail-safe file copy</source>
+<target>Dosyalar sorunsuz kopyalansın</target>
+
+<source>Disabled</source>
+<target>Devre dışı</target>
+
+<source>Copy locked files</source>
+<target>Kilitli dosyalar da kopyalansın</target>
+
+<source>Copy file access permissions</source>
+<target>Dosya erişim izinleri de kopyalansın</target>
+
+<source>File time tolerance</source>
+<target>Yok sayılacak dosya zamanı farkı</target>
+
+<source>Run with background priority</source>
+<target>Arka plan önceliği ile çalışsın</target>
+
+<source>Lock directories during sync</source>
+<target>Klasörler eşitleme sırasında kilitlensin</target>
+
+<source>Verify copied files</source>
+<target>Kopyalanmış dosyalar doğrulansın</target>
+
+<source>Using non-default global settings:</source>
+<target>Varsayılan olmayan genel ayarlar kullanılıyor:</target>
+
+<source>Show in Explorer</source>
+<target>Tarayıcıda görüntüle</target>
+
+<source>Show in file manager</source>
+<target>Dosya gezgininde görüntüle</target>
+
+<source>Reveal in Finder</source>
+<target>Finder ile görüntüle</target>
+
+<source>Open with default application</source>
+<target>Varsayılan uygulama ile aç</target>
+
+<source>Configuration file %x is incomplete. The missing elements have been set to their default values.</source>
+<target>%x yapılandırma dosyası eksik. Eksik bileşenler varsayılan değerlerine ayarlandı.</target>
+
+<source>The following XML elements could not be read:</source>
+<target>Şu XML bileşenleri okunamadı:</target>
+
+<source>File %x does not contain a valid configuration.</source>
+<target>%x dosyasında geçerli yapılandırma bilgileri yok.</target>
+
+<source>Error parsing file %x, row %y, column %z.</source>
+<target>%x dosyası işlenirken sorun çıktı, satır %y, sütun %z.</target>
+
+<source>Services</source>
+<target>Hizmetler</target>
+
+<source>Hide Others</source>
+<target>Diğerlerini gizle</target>
+
+<source>Show All</source>
+<target>Tümünü görüntüle</target>
+
+<source>Hide %x</source>
+<target>%x ögesini gizle</target>
+
+<source>Quit %x</source>
+<target>%x uygulamasından çık</target>
+
+<source>Warnings:</source>
+<target>Uyarılar:</target>
+
+<source>Items processed:</source>
+<target>İşlenen öge:</target>
+
+<source>Items remaining:</source>
+<target>Kalan öge:</target>
+
+<source>Total time:</source>
+<target>Toplam süre:</target>
+
+<source>Errors and warnings:</source>
+<target>Hata ve uyarılar:</target>
+
+<source>Log file:</source>
+<target>Günlük dosyası:</target>
+
+<source>Cleaning up log files:</source>
+<target>Günlük dosyaları temizleniyor:</target>
+
+<source>
+	<pluralform>1 day</pluralform>
+	<pluralform>%x days</pluralform>
+</source>
+<target>
+	<pluralform>1 gün</pluralform>
+	<pluralform>%x gün</pluralform>
+</target>
+
+<source>Warning</source>
+<target>Uyarı</target>
+
+<source>Stopped</source>
+<target>Durduruldu</target>
+
+<source>Please enter a valid email address.</source>
+<target>Lütfen geçerli bir e-posta adresi yazın.</target>
+
+<source>Requires FreeFileSync Donation Edition</source>
+<target>Bu özellik FreeFileSync Bağış sürümünde bulunur</target>
+
+<source>Cannot send notification email to %x.</source>
+<target>Bildirim e-postası %x adresine gönderilemedi.</target>
+
+<source>Drag && drop</source>
+<target>Dosyaları sürükleyip buraya bırakın</target>
+
+<source>%x is not a valid folder path.</source>
+<target>%x geçerli bir klasör yolu değil.</target>
+
+<source>Select a folder</source>
+<target>Bir klasör seçin</target>
+
+<source>&New</source>
+<target>&Yeni</target>
+
+<source>&Open...</source>
+<target>&Aç...</target>
+
+<source>Save &as...</source>
+<target>F&arklı kaydet...</target>
+
+<source>E&xit</source>
+<target>Çı&k</target>
+
+<source>&File</source>
+<target>&Dosya</target>
+
+<source>&View help</source>
+<target>&Yardım konuları</target>
+
+<source>&About</source>
+<target>H&akkında</target>
+
+<source>&Help</source>
+<target>&Yardım</target>
+
+<source>To get started, just import a "ffs_batch" file.</source>
+<target>Başlamak için bir "ffs_batch" dosyasını içe aktarın.</target>
+
+<source>Show examples</source>
+<target>Örneklere bakın</target>
+
+<source>Folders to watch for changes:</source>
+<target>Değişiklikleri izlenecek klasörler:</target>
+
+<source>Add folder</source>
+<target>Klasör ekle</target>
+
+<source>Remove folder</source>
+<target>Klasörü sil</target>
+
+<source>Browse</source>
+<target>Göz at</target>
+
+<source>Command line to run when changes are detected:</source>
+<target>Değişiklik algılandığında yürütülecek komut satırı komutu:</target>
+
+<source>
+The command is triggered if:
+- files or subfolders change
+- new folders arrive (e.g. USB stick insert)
+</source>
+<target>
+Komut şu durumlarda yürütülür:
+- Dosya ya alt klasörler değiştiğinde
+- Yeni klasörler algılandığında (örneğin bir USB bellek takıldığında)
+</target>
+
+<source>Minimum idle time (in seconds) before running command:</source>
+<target>Komut yürütülmeden önce en kısa boşta bekleme süresi (saniye):</target>
+
+<source>Idle time between last detected change and execution of command</source>
+<target>Son algılanan değişiklik ile komutun yürütülmesi arasında beklenecek süre</target>
+
+<source>Start</source>
+<target>Başlat</target>
+
+<source>Automated Synchronization</source>
+<target>Otomatik eşitleme</target>
+
+<source>About</source>
+<target>Hakkında</target>
+
+<source>All files</source>
+<target>Tüm dosyalar</target>
+
+<source>The %x protocol does not support directory monitoring:</source>
+<target>%x iletişim kuralı klasör izlemesini desteklemiyor:</target>
+
+<source>Directory monitoring active</source>
+<target>Klasör izlemesi yapılıyor</target>
+
+<source>Waiting until directory is available:</source>
+<target>Klasörün kullanılabilir olması bekleniyor:</target>
+
+<source>&Configure</source>
+<target>&Yapılandır</target>
+
+<source>&Show error message</source>
+<target>&Hata iletisini görüntüle</target>
+
+<source>&Quit</source>
+<target>Çı&k</target>
+
+<source>&Retry</source>
+<target>&Yeniden dene</target>
+
+<source>Completed successfully</source>
+<target>Tamamlandı</target>
+
+<source>Completed with warnings</source>
+<target>Uyarılar ile tamamlandı</target>
+
+<source>Completed with errors</source>
+<target>Sorunlar ile tamamlandı</target>
+
+<source>
+	<pluralform>1 byte</pluralform>
+	<pluralform>%x bytes</pluralform>
+</source>
+<target>
+	<pluralform>1 bayt</pluralform>
+	<pluralform>%x bayt</pluralform>
+</target>
+
+<source>%x MB</source>
+<target>%x MB</target>
+
+<source>%x KB</source>
+<target>%x KB</target>
+
+<source>%x GB</source>
+<target>%x GB</target>
+
+<source>Loading...</source>
+<target>Yükleniyor...</target>
+
+<source>Scanning...</source>
+<target>Taranıyor...</target>
+
+<source>configuration file</source>
+<target>yapılandırma dosyası</target>
+
+<source>System: Sleep</source>
+<target>Sistem: Uyku</target>
+
+<source>System: Shut down</source>
+<target>Sistem: Kapat</target>
+
+<source>Nothing to synchronize</source>
+<target>Eşitlenecek bir şey yok</target>
+
+<source>You can switch to FreeFileSync's main window to resolve this issue.</source>
+<target>Bu sorunu çözmek için FreeFileSync ana penceresine geçebilirsiniz.</target>
+
+<source>&Don't show this warning again</source>
+<target>Bu &uyarı bir daha görüntülenmesin</target>
+
+<source>&Ignore</source>
+<target>&Yok say</target>
+
+<source>&Switch</source>
+<target>&Değiştir</target>
+
+<source>Switching to FreeFileSync's main window</source>
+<target>FreeFileSync ana penceresine geçiliyor</target>
+
+<source>Automatic retry</source>
+<target>Otomatik yeniden denensin</target>
+
+<source>Ignore &all</source>
+<target>Tümünü yok s&ay</target>
+
+<source>Retrying operation...</source>
+<target>İşlem yeniden deneniyor...</target>
+
+<source>Last session</source>
+<target>Önceki oturum</target>
+
+<source>Today</source>
+<target>Bugün</target>
+
+<source>Name</source>
+<target>Ad</target>
+
+<source>Last sync</source>
+<target>Son eşitleme</target>
+
+<source>Log</source>
+<target>Günlük</target>
+
+<source>Folder</source>
+<target>Klasör</target>
+
+<source>Symlink</source>
+<target>Smblkbağlantı</target>
+
+<source>Item name</source>
+<target>Öge adı</target>
+
+<source>Relative path</source>
+<target>Göreli yol</target>
+
+<source>Full path</source>
+<target>Tam yol</target>
+
+<source>Size</source>
+<target>Boyut</target>
+
+<source>Date</source>
+<target>Tarih</target>
+
+<source>Extension</source>
+<target>Uzantı</target>
+
+<source>Item not existing</source>
+<target>Öge bulunamadı</target>
+
+<source>Difference</source>
+<target>Fark</target>
+
+<source>Action</source>
+<target>İşlem</target>
+
+<source>Local comparison settings</source>
+<target>Yerel karşılaştırma ayarları</target>
+
+<source>Local synchronization settings</source>
+<target>Yerel eşitleme ayarları</target>
+
+<source>Local filter</source>
+<target>Yerel Süzgeç</target>
+
+<source>Active</source>
+<target>Etkin</target>
+
+<source>None</source>
+<target>Yok</target>
+
+<source>Remove local settings</source>
+<target>Yerel ayarları sil</target>
+
+<source>Cu&t</source>
+<target>&Kes</target>
+
+<source>&Copy</source>
+<target>K&opyala</target>
+
+<source>&Paste</source>
+<target>&Yapıştır</target>
+
+<source>The selected folder %x cannot be used with FreeFileSync.</source>
+<target>Seçilmiş %x klasörü FreeFileSync ile birlikte kullanılamaz.</target>
+
+<source>Please select a folder on a local file system, network or an MTP device.</source>
+<target>Lütfen yerel dosya sistemi, ağ ya da MTP aygıtı üzerinde bulunan bir klasör seçin.</target>
+
+<source>&Save</source>
+<target>&Kaydet</target>
+
+<source>Save as &batch job...</source>
+<target>&Toplu iş olarak kaydet...</target>
+
+<source>Show &log</source>
+<target>Gün&lüğü görüntüle</target>
+
+<source>Start &comparison</source>
+<target>&Karşılaştırmayı başlat</target>
+
+<source>C&omparison settings</source>
+<target>K&arşılaştırma ayarları</target>
+
+<source>&Filter settings</source>
+<target>&Süzme ayarları</target>
+
+<source>S&ynchronization settings</source>
+<target>Eşi&tleme ayarları</target>
+
+<source>Start &synchronization</source>
+<target>&Eşitlemeyi başlat</target>
+
+<source>&Actions</source>
+<target>İş&lemler</target>
+
+<source>&Preferences</source>
+<target>&Ayarlar</target>
+
+<source>&Language</source>
+<target>&Dil</target>
+
+<source>&Find...</source>
+<target>A&rama...</target>
+
+<source>&Export file list</source>
+<target>&Dosya listesini dışa aktar</target>
+
+<source>&Reset layout</source>
+<target>Görünümü &sıfırla</target>
+
+<source>&Tools</source>
+<target>&Araçlar</target>
+
+<source>&Check for updates now</source>
+<target>&Güncelleme denetimi</target>
+
+<source>Check &automatically once a week</source>
+<target>&Haftada bir denetlensin</target>
+
+<source>Cancel</source>
+<target>İptal</target>
+
+<source>Compare</source>
+<target>Karşılaştır</target>
+
+<source>Synchronize</source>
+<target>Eşitle</target>
+
+<source>Add folder pair</source>
+<target>Klasör çifti ekle</target>
+
+<source>Remove folder pair</source>
+<target>Klasör çiftini sil</target>
+
+<source>Access online storage</source>
+<target>Çevrim içi depolama erişimi</target>
+
+<source>Close search bar</source>
+<target>Arama çubuğunu kapat</target>
+
+<source>Find:</source>
+<target>Aranacak ifade:</target>
+
+<source>Match case</source>
+<target>Büyük küçük harf uyumu göz önüne alınsın</target>
+
+<source>Processed:</source>
+<target>İşlenen:</target>
+
+<source>Remaining:</source>
+<target>Kalan:</target>
+
+<source>New</source>
+<target>Yeni</target>
+
+<source>Open...</source>
+<target>Aç...</target>
+
+<source>Save</source>
+<target>Kaydet</target>
+
+<source>Save as...</source>
+<target>Farklı kaydet...</target>
+
+<source>Statistics:</source>
+<target>İstatistikler:</target>
+
+<source>Number of files and folders that will be deleted</source>
+<target>Silinecek dosya ve klasör sayısı</target>
+
+<source>Number of files that will be updated</source>
+<target>Güncellenecek dosya sayısı</target>
+
+<source>Number of files and folders that will be created</source>
+<target>Eklenecek dosya ve klasör sayısı</target>
+
+<source>Total bytes to copy</source>
+<target>Toplam kopyalanacak bayt</target>
+
+<source>Arrange folder pair</source>
+<target>Klasör çiftini belirleyin</target>
+
+<source>Common settings:</source>
+<target>Ortak ayarlar:</target>
+
+<source>Use local settings:</source>
+<target>Yerel ayarlar kullanılsın:</target>
+
+<source>Select a variant:</source>
+<target>İşlem türünü seçin:</target>
+
+<source>Include &symbolic links:</source>
+<target>&Sembolik bağlantılar katılsın:</target>
+
+<source>&Follow</source>
+<target>İ&zlensin</target>
+
+<source>As &link</source>
+<target>&Bağlantı olarak</target>
+
+<source>More information</source>
+<target>Ayrıntılı bilgiler</target>
+
+<source>&Ignore exact time shift [hh:mm]</source>
+<target>&Kesin zaman farkı yok sayılsın [ss:dd]</target>
+
+<source>List of file time offsets to ignore</source>
+<target>Zaman farkı yok sayılacak dosyaların listesi</target>
+
+<source>Example:</source>
+<target>Örnek:</target>
+
+<source>Handle daylight saving time</source>
+<target>Yaz saati hakkında bilgiler</target>
+
+<source>Ignore errors</source>
+<target>Sorunlar yok sayılsın</target>
+
+<source>Retry count:</source>
+<target>Deneme sayısı:</target>
+
+<source>Delay (in seconds):</source>
+<target>Bekleme (saniye):</target>
+
+<source>Performance improvements:</source>
+<target>Başarım iyileştirmeleri:</target>
+
+<source>Parallel file operations:</source>
+<target>Eş zamanlı işlenecek dosya sayısı:</target>
+
+<source>How to get the best performance?</source>
+<target>En iyi başarım nasıl sağlanır?</target>
+
+<source>Local settings:</source>
+<target>Yerel ayarlar:</target>
+
+<source>Include:</source>
+<target>Katılacak ögeler:</target>
+
+<source>File size:</source>
+<target>Dosya boyutu:</target>
+
+<source>Minimum:</source>
+<target>En küçük:</target>
+
+<source>Maximum:</source>
+<target>En büyük:</target>
+
+<source>Time span:</source>
+<target>Zaman aralığı:</target>
+
+<source>Select filter rules to exclude certain files from synchronization. Enter file paths relative to their corresponding folder pair.</source>
+<target>Eşitlenmeyecek dosyaların süzülme kurallarını belirleyin. Dosya yollarını bulundukları klasör çiftine göre yazın.</target>
+
+<source>&Default</source>
+<target>&Varsayılan</target>
+
+<source>C&lear</source>
+<target>&Temizle</target>
+
+<source>Use database file to detect changes</source>
+<target>Değişiklikleri algılamak için veri tabanı dosyası kullanılsın</target>
+
+<source>
+- Not supported by all file systems
+- Requires and creates database files
+- Detection not available for first sync
+</source>
+<target>
+- Tüm dosya sistemleri tarafından desteklenmez
+- Veri tabanı dosyalarının kullanılması gerekir
+- Algılama, ilk eşitleme sırasında kullanılamaz
+</target>
+
+<source>Detect moved files</source>
+<target>Taşınmış dosyalar algılansın</target>
+
+<source>Create:</source>
+<target>Oluştur:</target>
+
+<source>Update:</source>
+<target>Güncelle:</target>
+
+<source>Delete:</source>
+<target>Sil:</target>
+
+<source>Left</source>
+<target>Sol</target>
+
+<source>Right</source>
+<target>Sağ</target>
+
+<source>Delete and overwrite:</source>
+<target>Silinsin ve üzerine yazılsın:</target>
+
+<source>&Recycle bin</source>
+<target>Ge&ri dönüşüm kutusuna atılsın</target>
+
+<source>&Permanent</source>
+<target>&Kalıcı olarak silinsin</target>
+
+<source>&Versioning</source>
+<target>Eski &sürüm olarak saklansın</target>
+
+<source>Move files to a user-defined folder</source>
+<target>Dosyalar kullanıcının belirteceği şu klasöre taşınsın</target>
+
+<source>Naming convention:</source>
+<target>Adlandırma kuralı:</target>
+
+<source>Limit file versions:</source>
+<target>Dosya sürümü sayısı:</target>
+
+<source>Last x days:</source>
+<target>Son x gün:</target>
+
+<source>Send email notification:</source>
+<target>Bildirim e-postası gönderilsin:</target>
+
+<source>&Change log folder:</source>
+<target>&Günlük klasörünü değiştir:</target>
+
+<source>Run a command:</source>
+<target>Bir komut yürüt:</target>
+
+<source>Notes:</source>
+<target>Notlar:</target>
+
+<source>Add &notes</source>
+<target>&Not ekle</target>
+
+<source>OK</source>
+<target>Tamam</target>
+
+<source>Connection type:</source>
+<target>Bağlantı türü:</target>
+
+<source>Connected user accounts:</source>
+<target>Bağlantılı kullanıcı hesapları:</target>
+
+<source>&Add connection</source>
+<target>&Bağlantı ekle</target>
+
+<source>&Disconnect</source>
+<target>Bağlantıyı &kes</target>
+
+<source>Select drive:</source>
+<target>Sürücü seçin:</target>
+
+<source>Server name or IP address:</source>
+<target>Sunucu adı / IP adresi:</target>
+
+<source>Port:</source>
+<target>Kapı:</target>
+
+<source>Encryption:</source>
+<target>Şifreleme:</target>
+
+<source>&Disabled</source>
+<target>&Devre dışı</target>
+
+<source>&Explicit SSL/TLS</source>
+<target>&Açık SSL/TLS</target>
+
+<source>Authentication:</source>
+<target>Kimlik doğrulaması:</target>
+
+<source>&Password</source>
+<target>&Parola</target>
+
+<source>&Key file</source>
+<target>Anahtar &dosyası</target>
+
+<source>&SSH agent</source>
+<target>&SSH istemcisi</target>
+
+<source>Private key file:</source>
+<target>Özel anahtar dosyası:</target>
+
+<source>&Show password</source>
+<target>Parola &görüntülensin</target>
+
+<source>Prompt during login</source>
+<target>Oturum açarken sorulsun</target>
+
+<source>Directory on server:</source>
+<target>Sunucudaki klasör:</target>
+
+<source>Access timeout (in seconds):</source>
+<target>Erişim zaman aşımı (saniye):</target>
+
+<source>SFTP channels per connection:</source>
+<target>Bir bağlantı için SFTP kanalı sayısı:</target>
+
+<source>Detect server limit</source>
+<target>Sunucu sınırı bulunsun</target>
+
+<source>Enable &compression</source>
+<target>&Sıkıştırma kullanılsın</target>
+
+<source>Select Folder</source>
+<target>Klasör seçin</target>
+
+<source>Variant:</source>
+<target>İşlem türü:</target>
+
+<source>&Don't show this dialog again</source>
+<target>Bu ileti bir daha &görüntülenmesin</target>
+
+<source>Bytes:</source>
+<target>Bayt:</target>
+
+<source>Items:</source>
+<target>Ögeler:</target>
+
+<source>Synchronizing...</source>
+<target>Eşitleniyor...</target>
+
+<source>Minimize to notification area</source>
+<target>Bildirim alanına küçült</target>
+
+<source>Bytes</source>
+<target>Bayt</target>
+
+<source>Items</source>
+<target>Öge</target>
+
+<source>When finished:</source>
+<target>Tamamlandığında:</target>
+
+<source>Close</source>
+<target>Kapat</target>
+
+<source>&Pause</source>
+<target>&Duraklat</target>
+
+<source>Stop</source>
+<target>Durdur</target>
+
+<source>Create a batch file for unattended synchronization. To start, double-click this file or schedule in a task planner: %x</source>
+<target>Eşitleme işleminin hiç bir soru sorulmadan yapılması için bir toplu iş dosyası oluşturun. İşlemi başlatmak için bu dosyaya çift tıklayın ya da bir görev zamanlayıcıya şu şekilde ekleyin: %x</target>
+
+<source>Progress dialog:</source>
+<target>İlerleme penceresi:</target>
+
+<source>Run minimized</source>
+<target>Küçültülmüş çalıştırılsın</target>
+
+<source>Show pop-up on errors or warnings</source>
+<target>Sorun ya da uyarılar açılır pencerede görüntülenir</target>
+
+<source>&Cancel</source>
+<target>İ&ptal edilsin</target>
+
+<source>How can I schedule a batch job?</source>
+<target>Toplu işlem zamanlaması hakkında bilgiler</target>
+
+<source>&Keep relative paths</source>
+<target>Bağıl yollar &korunsun</target>
+
+<source>&Overwrite existing files</source>
+<target>&Var olan dosyaların üzerine yazılsın</target>
+
+<source>Copy</source>
+<target>Kopyala</target>
+
+<source>Placeholders represent differences between the names.</source>
+<target>Kodlar adlardaki farkların yerine geçer.</target>
+
+<source>Rename</source>
+<target>Yeniden adlandır</target>
+
+<source>The following settings are used for all synchronization jobs.</source>
+<target>Aşağıdaki ayarlar tüm eşitleme işlemleri için geçerlidir.</target>
+
+<source>
+Copy to a temporary file (*.ffs_tmp) before overwriting target.
+This guarantees a consistent state even in case of a serious error.
+</source>
+<target>
+Dosyalar önce geçici dosyaya kopyalanıp (*.ffs_tmp) sonra yeniden adlandırılır. 
+Bu yöntem, ciddi bir sorun çıkması durumunda bile işlemin tutarlı olarak yapılmasını sağlar.
+</target>
+
+<source>recommended</source>
+<target>önerilen</target>
+
+<source>Copy shared or locked files using the Volume Shadow Copy Service.</source>
+<target>Paylaşılan ya da kilitlenmiş dosyalar Birim Gölge Hizmetini kullanılarak kopyalanır.</target>
+
+<source>requires administrator rights</source>
+<target>yönetici izinleri gerekir</target>
+
+<source>Transfer file and folder permissions.</source>
+<target>Dosya ve klasör izinleri de aktarılır.</target>
+
+<source>Show hidden dialogs and warning messages again:</source>
+<target>Gizlenmiş pencere ve uyarı iletileri görüntülensin:</target>
+
+<source>&Show details</source>
+<target>&Ayrıntılara bakın</target>
+
+<source>Default log folder:</source>
+<target>Varsayılan günlük klasörü:</target>
+
+<source>&Delete logs after x days:</source>
+<target>&Günlük kayıtlarının silineceği gün sayısı:</target>
+
+<source>Log file format:</source>
+<target>Günlük dosyası biçimi:</target>
+
+<source>&Plain text</source>
+<target>&Düz metin</target>
+
+<source>Notification sounds:</source>
+<target>Bildirim sesleri:</target>
+
+<source>Synchronization finished:</source>
+<target>Eşitleme tamamlandı:</target>
+
+<source>Unattended error message:</source>
+<target>Etkileşimsiz hata iletisi:</target>
+
+<source>Customize context menu:</source>
+<target>Sağ tık menüsü uyarlamaları:</target>
+
+<source>Full file or folder path</source>
+<target>Tam dosya ya da klasör yolu</target>
+
+<source>Temporary local copy for SFTP and MTP storage</source>
+<target>SFTP ve MTP depolama için geçici yerel kopya</target>
+
+<source>File or folder name</source>
+<target>Dosya ya da klasör adı</target>
+
+<source>Parent folder path</source>
+<target>Üst klasör yolu</target>
+
+<source>Description</source>
+<target>Açıklama</target>
+
+<source>Get the Donation Edition with bonus features and help keep FreeFileSync ad-free.</source>
+<target>Hediye özellikleri edinmek ve FreeFileSync yazılımını reklamsız kullanmak için Bağış sürümünü alın.</target>
+
+<source>Support with a donation</source>
+<target>Bağış yaparak destek olun</target>
+
+<source>Share your feedback and ideas:</source>
+<target>Değerlendirme ve fikirlerinizi paylaşın:</target>
+
+<source>Many thanks for translation:</source>
+<target>Çeviriye emeği geçenler:</target>
+
+<source>Thank you, %x, for your support!</source>
+<target>Desteğiniz için teşekkürler %x!</target>
+
+<source>&Donate</source>
+<target>&Bağış yapın</target>
+
+<source>Highlight configurations that have not been run for more than the following number of days:</source>
+<target>Şu kadar gündür çalıştırılmayan yapılandırmalar vurgulansın:</target>
+
+<source>Password:</source>
+<target>Parola:</target>
+
+<source>Activate the FreeFileSync Donation Edition by one of the following methods:</source>
+<target>FreeFileSync Bağış sürümü şu yöntemlerden biri ile etkinleştirilebilir:</target>
+
+<source>Activate via internet now:</source>
+<target>İnternet üzerinden etkinleştirme:</target>
+
+<source>Activate online</source>
+<target>Çevrim içi etkinleştir</target>
+
+<source>Retrieve an offline activation key from the following URL:</source>
+<target>Şu adresten bir çevrim dışı etkinleştirme anahtarı alarak:</target>
+
+<source>&Copy to clipboard</source>
+<target>&Panoya kopyala</target>
+
+<source>Enter activation key:</source>
+<target>Etkinleştirme anahtarını yazın:</target>
+
+<source>Activate offline</source>
+<target>Çevrim dışı etkinleştir</target>
+
+<source>FreeFileSync requires access rights to avoid "Operation not permitted" errors when synchronizing your data (e.g. Mail, Messages, Calendars).</source>
+<target>FreeFileSync uygulaması verilerinizi (e-posta, iletiler, takvim gibi) eşitlerken oluşabilecek "İşleme izin verilmiyor" hatalarıyla karşılaşmamak için tam disk erişimi iznine gerek duyuyor.</target>
+
+<source>Locate the FreeFileSync app</source>
+<target>FreeFileSync uygulamasını seçin</target>
+
+<source>Open Security && Privacy</source>
+<target>Güvenlik ve gizlilik ayarlarını açın</target>
+
+<source>Click the lock to allow changes.</source>
+<target>Değişiklik yapmak için kilit üzerine tıklayın.</target>
+
+<source>Drag FreeFileSync into the panel.</source>
+<target>FreeFileSync simgesini panoya sürükleyin.</target>
+
+<source>Synchronization Settings</source>
+<target>Eşitleme ayarları</target>
+
+<source>Access Online Storage</source>
+<target>Çevrim içi depolama erişimi</target>
+
+<source>Save as a Batch Job</source>
+<target>Toplu iş olarak kaydet</target>
+
+<source>Delete Items</source>
+<target>Ögeleri sil</target>
+
+<source>Copy Items</source>
+<target>Ögeleri kopyala</target>
+
+<source>Rename Items</source>
+<target>Ögeleri yeniden adlandır</target>
+
+<source>Options</source>
+<target>Ayarlar</target>
+
+<source>Select Time Span</source>
+<target>Zaman aralığı</target>
+
+<source>Highlight Configurations</source>
+<target>Yapılandırmalar vurgulansın</target>
+
+<source>Grant Full Disk Access</source>
+<target>Tam disk erişimi izni verin</target>
+
+<source>Info</source>
+<target>Bilgi</target>
+
+<source>No log entries</source>
+<target>Herhangi bir günlük kaydı yok</target>
+
+<source>Select all</source>
+<target>Tümünü seç</target>
+
+<source>Folder Comparison and Synchronization</source>
+<target>Klasör karşılaştırma ve eşitleme</target>
+
+<source>Select view:</source>
+<target>Eşit dosya görünümü:</target>
+
+<source>Show filtered or temporarily excluded files</source>
+<target>Süzülmüş ya da geçici olarak katılmayan dosyaları görüntüler ya da gizler</target>
+
+<source>Show files that are equal</source>
+<target>Eşit dosyaları görüntüler ya da gizler</target>
+
+<source>Show conflicts</source>
+<target>Uyuşmazlıkları görüntüler ya da gizler</target>
+
+<source>Show files that will be created on the left side</source>
+<target>Sol tarafa eklenecek dosyaları görüntüler ya da gizler</target>
+
+<source>Show files that will be created on the right side</source>
+<target>Sağ tarafa eklenecek dosyaları görüntüler ya da gizler</target>
+
+<source>Show files that will be deleted on the left side</source>
+<target>Sol tarafta silinecek dosyaları görüntüler ya da gizler</target>
+
+<source>Show files that will be deleted on the right side</source>
+<target>Sağ tarafta silinecek dosyaları görüntüler ya da gizler</target>
+
+<source>Show files that will be updated on the left side</source>
+<target>Sol tarafta güncellenecek dosyaları görüntüler ya da gizler</target>
+
+<source>Show files that will be updated on the right side</source>
+<target>Sağ tarafta güncellenecek dosyaları görüntüler ya da gizler</target>
+
+<source>Show files that won't be copied</source>
+<target>Kopyalanmayacak dosyaları görüntüler ya da gizler</target>
+
+<source>Show files that exist on left side only</source>
+<target>Yalnızca sol tarafta bulunan dosyaları görüntüler ya da gizler</target>
+
+<source>Show files that exist on right side only</source>
+<target>Yalnızca sağ tarafta bulunan dosyaları görüntüler ya da gizler</target>
+
+<source>Show files that are newer on left</source>
+<target>Solda daha yeni olan dosyaları görüntüler ya da gizler</target>
+
+<source>Show files that are newer on right</source>
+<target>Sağda daha yeni olan dosyaları görüntüler ya da gizler</target>
+
+<source>Show files that are different</source>
+<target>Farklı olan dosyaları görüntüler ya da gizler</target>
+
+<source>&Options</source>
+<target>&Ayarlar</target>
+
+<source>Main Bar</source>
+<target>Ana çubuk</target>
+
+<source>Folder Pairs</source>
+<target>Klasör çiftleri</target>
+
+<source>Find</source>
+<target>Arama</target>
+
+<source>View Settings</source>
+<target>Görünüm ayarları</target>
+
+<source>Configuration</source>
+<target>İşlemler</target>
+
+<source>Overview</source>
+<target>Genel</target>
+
+<source>Swap sides</source>
+<target>Sağ ve sol tarafları değiştir</target>
+
+<source>Show "%x"</source>
+<target>"%x" panosu görüntülensin</target>
+
+<source>Local path not available for %x.</source>
+<target>%x için yerel yol bulunamadı.</target>
+
+<source>Confirm</source>
+<target>Onaylayın</target>
+
+<source>
+	<pluralform>Do you really want to execute the command %y for one item?</pluralform>
+	<pluralform>Do you really want to execute the command %y for %x items?</pluralform>
+</source>
+<target>
+	<pluralform>Bir öge için %y komutunu çalıştırmak istediğinize emin misiniz?</pluralform>
+	<pluralform>%x öge için %y komutunu çalıştırmak istediğinize emin misiniz?</pluralform>
+</target>
+
+<source>&Execute</source>
+<target>Çalış&tır</target>
+
+<source>Set direction:</source>
+<target>Yönü seçin:</target>
+
+<source>multiple selection</source>
+<target>çoklu seçim</target>
+
+<source>&Include via filter:</source>
+<target>&Katılacak ögelere ekle:</target>
+
+<source>&Exclude via filter:</source>
+<target>Katıl&mayacak ögelere ekle:</target>
+
+<source>Include temporarily</source>
+<target>Geçici olarak kat</target>
+
+<source>Exclude temporarily</source>
+<target>Geçici olarak katma</target>
+
+<source>&Synchronize selection</source>
+<target>&Seçimi eşitle</target>
+
+<source>&Copy to...</source>
+<target>&Farklı konuma kopyala...</target>
+
+<source>Multi-&Rename</source>
+<target>Çoklu &yeniden adlandır</target>
+
+<source>&Rename</source>
+<target>&Yeniden adlandır</target>
+
+<source>&Delete</source>
+<target>&Sil</target>
+
+<source>Show icons:</source>
+<target>Simgeler görüntülensin:</target>
+
+<source>Small</source>
+<target>Küçük</target>
+
+<source>Medium</source>
+<target>Orta</target>
+
+<source>Large</source>
+<target>Büyük</target>
+
+<source>Select time span...</source>
+<target>Zaman aralığını seçin...</target>
+
+<source>Donation Edition</source>
+<target>Bağış sürümü</target>
+
+<source>Edited</source>
+<target>Düzenlendi</target>
+
+<source>Administrator</source>
+<target>Yönetici</target>
+
+<source>Configuration saved</source>
+<target>Yapılandırma kaydedildi</target>
+
+<source>FreeFileSync batch</source>
+<target>FreeFileSync toplu işi</target>
+
+<source>Do you want to save changes to %x?</source>
+<target>Değişiklikleri %x dosyasına kaydetmek istiyor musunuz?</target>
+
+<source>Never save &changes</source>
+<target>Değişiklikler asla &kaydedilmesin</target>
+
+<source>Do&n't save</source>
+<target>Kaydedilmesi&n</target>
+
+<source>%x cannot be renamed.</source>
+<target>%x yeniden adlandırılamadı.</target>
+
+<source>New name:</source>
+<target>Yeni ad:</target>
+
+<source>Rename Configuration</source>
+<target>Yapılandırmayı yeniden adlandır</target>
+
+<source>Configuration name must not be empty.</source>
+<target>Yapılandırma adı boş olamaz.</target>
+
+<source>Red</source>
+<target>Kırmızı</target>
+
+<source>Yellow</source>
+<target>Sarı</target>
+
+<source>Green</source>
+<target>Yeşil</target>
+
+<source>Cyan</source>
+<target>Cam göbeği</target>
+
+<source>Blue</source>
+<target>Mavi</target>
+
+<source>Purple</source>
+<target>Mor</target>
+
+<source>Gray</source>
+<target>Gri</target>
+
+<source>Different color...</source>
+<target>Farklı renk...</target>
+
+<source>Background color</source>
+<target>Arka plan</target>
+
+<source>&Hide</source>
+<target>&Gizle</target>
+
+<source>Highlight...</source>
+<target>Vurgula...</target>
+
+<source>View settings saved</source>
+<target>Görünüm ayarları kaydedildi</target>
+
+<source>&Save as default</source>
+<target>&Varsayılan olarak kaydet</target>
+
+<source>Filter</source>
+<target>Süzme</target>
+
+<source>No files to synchronize</source>
+<target>Eşitlenecek bir dosya yok</target>
+
+<source>Please confirm you want to swap sides.</source>
+<target>Tarafları değiştirmek istediğinizi onaylayın.</target>
+
+<source>&Swap</source>
+<target>&Değiştir</target>
+
+<source>Left and right sides have been swapped</source>
+<target>Sol ve sağ panoların yeri değiştirildi</target>
+
+<source>
+	<pluralform>1 directory</pluralform>
+	<pluralform>%x directories</pluralform>
+</source>
+<target>
+	<pluralform>1 klasör</pluralform>
+	<pluralform>%x klasör</pluralform>
+</target>
+
+<source>
+	<pluralform>1 file</pluralform>
+	<pluralform>%x files</pluralform>
+</source>
+<target>
+	<pluralform>1 dosya</pluralform>
+	<pluralform>%x dosya</pluralform>
+</target>
+
+<source>Cannot find %x</source>
+<target>%x bulunamadı</target>
+
+<source>Move up</source>
+<target>Yukarı taşı</target>
+
+<source>Move down</source>
+<target>Aşağı taşı</target>
+
+<source>File list exported</source>
+<target>Dosya listesi dışa aktarıldı</target>
+
+<source>Searching for program updates...</source>
+<target>Yazılım güncellemesine bakılıyor...</target>
+
+<source>FreeFileSync %x is available!</source>
+<target>FreeFileSync %x sürümü yayınlanmış!</target>
+
+<source>Paused</source>
+<target>Duraklatıldı</target>
+
+<source>Stop requested...</source>
+<target>Durdurulması istendi...</target>
+
+<source>Initializing...</source>
+<target>Başlatılıyor...</target>
+
+<source>Comparing content...</source>
+<target>İçerik karşılaştırılıyor...</target>
+
+<source>&Continue</source>
+<target>&Devam</target>
+
+<source>Progress</source>
+<target>İlerleme</target>
+
+<source>Old name</source>
+<target>Eski ad</target>
+
+<source>New name</source>
+<target>Yeni ad</target>
+
+<source>
+	<pluralform>Do you really want to rename the following item?</pluralform>
+	<pluralform>Do you really want to rename the following %x items?</pluralform>
+</source>
+<target>
+	<pluralform>Şu ögeyi yeniden adlandırmak istediğinize emin misiniz?</pluralform>
+	<pluralform>Şu %x ögeyi yeniden adlandırmak istediğinize emin misiniz?</pluralform>
+</target>
+
+<source>Installation files are corrupted. Please reinstall FreeFileSync.</source>
+<target>Kurulum dosyaları bozulmuş. Lütfen FreeFileSync uygulamasını yeniden kurun.</target>
+
+<source>My Drive</source>
+<target>Sürücüm</target>
+
+<source>Connections</source>
+<target>Bağlantılar</target>
+
+<source>Defined by context of use</source>
+<target>Kullanım şekline göre tanımlı</target>
+
+<source>Recommended range:</source>
+<target>Önerilen aralık:</target>
+
+<source>Do you really want to disconnect from user account %x?</source>
+<target>%x kullanıcı hesabının bağlantısını kesmek istediğinize emin misiniz?</target>
+
+<source>Key passphrase:</source>
+<target>Anahtar parolası:</target>
+
+<source>Please select a user account first.</source>
+<target>Lütfen önce bir kullanıcı hesabı seçin.</target>
+
+<source>Please enter a username.</source>
+<target>Lütfen bir kullanıcı adı yazın.</target>
+
+<source>Please enter a file path.</source>
+<target>Lütfen bir dosya yolu yazın.</target>
+
+<source>
+	<pluralform>Copy the following item to another folder?</pluralform>
+	<pluralform>Copy the following %x items to another folder?</pluralform>
+</source>
+<target>
+	<pluralform>Öge başka bir klasöre kopyalansın mı?</pluralform>
+	<pluralform>%x öge başka bir klasöre kopyalansın mı?</pluralform>
+</target>
+
+<source>
+	<pluralform>Do you really want to move the following item to the recycle bin?</pluralform>
+	<pluralform>Do you really want to move the following %x items to the recycle bin?</pluralform>
+</source>
+<target>
+	<pluralform>Aşağıdaki ögeyi geri dönüşüm kutusuna atmak istediğinize emin misiniz?</pluralform>
+	<pluralform>Aşağıdaki %x ögeyi geri dönüşüm kutusuna atmak istediğinize emin misiniz?</pluralform>
+</target>
+
+<source>Move</source>
+<target>Atılsın</target>
+
+<source>
+	<pluralform>Do you really want to delete the following item?</pluralform>
+	<pluralform>Do you really want to delete the following %x items?</pluralform>
+</source>
+<target>
+	<pluralform>Aşağıdaki ögeyi silmek istediğinize emin misiniz?</pluralform>
+	<pluralform>Aşağıdaki %x ögeyi silmek istediğinize emin misiniz?</pluralform>
+</target>
+
+<source>Start to synchronize the selection?</source>
+<target>Seçim eşitlenmeye başlansın mı?</target>
+
+<source>Start synchronization now?</source>
+<target>Eşitleme başlatılsın mı?</target>
+
+<source>Leave progress dialog open after synchronization. (don't auto-close)</source>
+<target>Eşitleme sonrası ilerleme penceresi açık kalsın (kapatılmasın)</target>
+
+<source>Copy DACL, SACL, Owner, Group</source>
+<target>DACL, SACL, Sahip, Grup kopyalansın</target>
+
+<source>No dialogs hidden</source>
+<target>Gizlenmiş bir ileti yok</target>
+
+<source>
+	<pluralform>1 dialog hidden</pluralform>
+	<pluralform>%x dialogs hidden</pluralform>
+</source>
+<target>
+	<pluralform>1 pencere gizlenmiş</pluralform>
+	<pluralform>%x pencere gizlenmiş</pluralform>
+</target>
+
+<source>Please enter a key for offline activation.</source>
+<target>Lütfen çevrim dışı etkinleştirme için bir anahtar yazın.</target>
+
+<source>Downloading update...</source>
+<target>Güncelleme indiriliyor...</target>
+
+<source>Remove:</source>
+<target>Sil:</target>
+
+<source>Each filter item must be a path relative to the selected folder pairs. The following changes are suggested:</source>
+<target>Her süzgeç ögesi, seçilmiş klasör çiftlerine göre bir yol olmalıdır. Şu değişiklikler öneriliyor:</target>
+
+<source>&Change</source>
+<target>&Değiştir</target>
+
+<source>Identify equal files by comparing modification time and size.</source>
+<target>Dosyaların eşit olup olmadığı, son değişiklik zamanı ve boyuta göre belirlenir.</target>
+
+<source>Identify equal files by comparing the file content.</source>
+<target>Dosyaların eşit olup olmadığı, içeriklerine göre belirlenir.</target>
+
+<source>Identify equal files by comparing their file size.</source>
+<target>Dosyaların eşit olup olmadığı boyutlarına göre belirlenir.</target>
+
+<source>Identify and propagate changes on both sides. Deletions, moves and conflicts are detected automatically using a database.</source>
+<target>İki taraftaki değişiklikler de belirlenir ve kopyalanır. Silinme, taşınma ve çakışmalar, veri tabanı kullanılarak otomatik olarak belirlenir.</target>
+
+<source>Create a mirror backup of the left folder by adapting the right folder to match.</source>
+<target>Sağ klasör, sola uyacak şekilde değiştirilerek, sol klasörün yansı yedeği oluşturulur.</target>
+
+<source>Copy new and updated files to the right folder.</source>
+<target>Sol taraftaki yeni ya da güncellenmiş dosyalar sağ tarafa kopyalanır.</target>
+
+<source>Configure your own synchronization rules.</source>
+<target>Eşitleme kuralları kullanıcının isteğine göre yapılandırılır.</target>
+
+<source>Comparison</source>
+<target>Karşılaştırma</target>
+
+<source>Synchronization</source>
+<target>Eşitleme</target>
+
+<source>This week</source>
+<target>Bu hafta</target>
+
+<source>This month</source>
+<target>Bu ay</target>
+
+<source>This year</source>
+<target>Bu yıl</target>
+
+<source>Byte</source>
+<target>Bayt</target>
+
+<source>KB</source>
+<target>KB</target>
+
+<source>MB</source>
+<target>MB</target>
+
+<source>Retain deleted and overwritten files in the recycle bin</source>
+<target>Silinmiş ve üzerine yazılmış dosyalar geri dönüşüm kutusunda tutulsun</target>
+
+<source>Delete and overwrite files permanently</source>
+<target>Dosyalar silinsin ve kalıcı olarak üzerine yazılsın</target>
+
+<source>Replace</source>
+<target>Ad değiştirme</target>
+
+<source>Move files and replace if existing</source>
+<target>Dosyalar taşınır ve varsa üzerine yazılır</target>
+
+<source>Time stamp</source>
+<target>Zaman damgalama</target>
+
+<source>Move files into a time-stamped subfolder</source>
+<target>Dosyalar zaman damgalı bir alt klasöre taşınır</target>
+
+<source>File</source>
+<target>Dosya</target>
+
+<source>Append a time stamp to each file name</source>
+<target>Dosya adlarına zaman damgası eklenir</target>
+
+<source>On completion:</source>
+<target>Tamamlandığında:</target>
+
+<source>On errors:</source>
+<target>Sorun çıktığında:</target>
+
+<source>On success:</source>
+<target>Başarılı olduğunda:</target>
+
+<source>All folder pairs</source>
+<target>Tüm klasör çiftleri</target>
+
+<source>&Load factory default</source>
+<target>&Fabrika ayarlarına dön</target>
+
+<source>YYYY-MM-DD hhmmss</source>
+<target>YYYY-AA-GG SSddss</target>
+
+<source>Success</source>
+<target>Başarılı</target>
+
+<source>Minimum version count must be smaller than maximum count.</source>
+<target>En az sürüm sayısı en çok sürüm sayısı değerinden küçük olmalıdır.</target>
+
+<source>Please enter a folder path.</source>
+<target>Lütfen bir klasör yolu yazın.</target>
+
+<source>&Restore</source>
+<target>Gö&rüntülensin</target>
+
+<source>Files</source>
+<target>Dosyalar</target>
+
+<source>Percentage</source>
+<target>Yüzde</target>
+
+<source>Failed to retrieve update information.</source>
+<target>Güncelleme bilgileri alınamadı.</target>
+
+<source>Automatic updates:</source>
+<target>Otomatik güncellemeler:</target>
+
+<source>Check for Program Updates</source>
+<target>Güncelleme denetimi</target>
+
+<source>Auto-update now or download manually from the FreeFileSync home page?</source>
+<target>Şimdi otomatik olarak güncelle ya da FreeFileSync ana sayfasından indir</target>
+
+<source>&Auto-update</source>
+<target>&Otomatik güncelle</target>
+
+<source>&Home page</source>
+<target>&Ana sayfadan indir</target>
+
+<source>Download now?</source>
+<target>İndirmek ister misiniz?</target>
+
+<source>&Download</source>
+<target>İn&dirin</target>
+
+<source>FreeFileSync is up-to-date.</source>
+<target>FreeFileSync güncel.</target>
+
+<source>Cannot find current FreeFileSync version number online. A newer version is likely available. Check manually now?</source>
+<target>Geçerli FreeFileSync sürümü çevrim içi olarak öğrenilemedi. Yeni bir sürüm yayınlanmış gibi görünüyor. El ile denetlemek ister misiniz?</target>
+
+<source>&Check</source>
+<target>&Denetle</target>
+
+<source>Consistency check failed for %x.</source>
+<target>%x tutarlılık sınamasından geçemedi.</target>
+
+<source>Failed to activate FreeFileSync Donation Edition.</source>
+<target>FreeFileSync Bağış sürümü etkinleştirilemedi.</target>
+
+<source>Incorrect activation key.</source>
+<target>Etkinleştirme anahtarı hatalı.</target>
+
+<source>Installation was registered on a different operating system.</source>
+<target>Kurulum başka bir işletim sistemi üzerinde kayıt edilmiş.</target>
+
+<source>An exception occurred</source>
+<target>Olağan dışı bir durumla karşılaşıldı</target>
+
+<source>Unable to register to receive system messages.</source>
+<target>Sistem iletilerini alabilmek için gerekli kayıt eklenemedi.</target>
+
+<source>The %x installation option is only available in the FreeFileSync Donation Edition.</source>
+<target>%x kurulumu yalnızca FreeFileSync Bağış sürümü ile yapılabilir.</target>
+
+<source>Error description not available.</source>
+<target>Hata açıklaması bulunamadı.</target>
+
+<source>Cannot find system function %x.</source>
+<target>%x sistem işlevi bulunamadı.</target>
+
+<source>Unable to register device notifications for %x.</source>
+<target>%x aygıtının bildirimleri için gerekli kayıt eklenemedi.</target>
+
+<source>Cannot monitor directory %x.</source>
+<target>%x klasörü izlenemiyor.</target>
+
+<source>The file is locked by another process:</source>
+<target>Dosya başka bir işlem tarafından kilitlenmiş:</target>
+
+<source>Failed to determine file permission support for folder %x.</source>
+<target>%x klasörünün dosya izinleri desteği belirlenemedi.</target>
+
+<source>Cannot read security context of %x.</source>
+<target>%x için güvenlik bağlamı okunamadı.</target>
+
+<source>Cannot write security context of %x.</source>
+<target>%x için güvenlik bağlamı yazılamadı.</target>
+
+<source>Cannot read permissions of %x.</source>
+<target>%x izinleri okunamadı.</target>
+
+<source>Cannot copy permissions from %x to %y.</source>
+<target>İzinler %x üzerinden %y üzerine kopyalanamadı.</target>
+
+<source>Cannot copy attributes from %x to %y.</source>
+<target>Öznitelikler %x üzerinden %y üzerine kopyalanamadı.</target>
+
+<source>%x TB</source>
+<target>%x TB</target>
+
+<source>%x PB</source>
+<target>%x PB</target>
+
+<source>
+	<pluralform>1 min</pluralform>
+	<pluralform>%x min</pluralform>
+</source>
+<target>
+	<pluralform>1 dakika</pluralform>
+	<pluralform>%x dakika</pluralform>
+</target>
+
+<source>
+	<pluralform>1 hour</pluralform>
+	<pluralform>%x hours</pluralform>
+</source>
+<target>
+	<pluralform>1 saat</pluralform>
+	<pluralform>%x saat</pluralform>
+</target>
+
+<source>Unable to suspend system sleep mode.</source>
+<target>Sistem uyku kipine geçirilemedi.</target>
+
+<source>Cannot change process I/O priorities.</source>
+<target>Giriş/çıkış işlemi öncelikleri değiştirilemedi.</target>
+
+<source>Checking recycle bin failed for folder %x.</source>
+<target>%x klasörü için Geri Dönüşüm Kutusu denetlenemedi.</target>
+
+<source>Unable to shut down the system.</source>
+<target>Bilgisayar kapatılamıyor.</target>
+
+<source>Select</source>
+<target>Seçin</target>
+
+<source>Prepare installation</source>
+<target>Kuruluma hazırlanıyor</target>
+
+<source>Choose which components you want to install.</source>
+<target>Kurmak istediğiniz bileşenleri seçin.</target>
+
+<source>Select installation type:</source>
+<target>Kurulum türünü seçin:</target>
+
+<source>Local</source>
+<target>Yerel</target>
+
+<source>Portable</source>
+<target>Taşınabilir</target>
+
+<source>Save settings in %x</source>
+<target>Ayarlar %x üzerine kaydedilsin</target>
+
+<source>Register FreeFileSync file extensions</source>
+<target>FreeFileSync dosya uzantıları ilişkilendirilsin</target>
+
+<source>Create Explorer context menu entries</source>
+<target>Windows Gezgini sağ tık menü kayıtları eklensin</target>
+
+<source>Save settings in installation directory</source>
+<target>Ayarlar kurulum klasörüne kaydedilsin</target>
+
+<source>Do not write to Registry</source>
+<target>Kayıt defterine yazılmasın</target>
+
+<source>Just copy the files</source>
+<target>Yalnızca dosyalar kopyalansın</target>
+
+<source>Create shortcuts:</source>
+<target>Oluşturulacak kısayollar:</target>
+
+<source>Desktop</source>
+<target>Masaüstü</target>
+
+<source>Start Menu</source>
+<target>Başlat menüsü</target>
+
+<source>Send To</source>
+<target>Gönder</target>
+
+<source>Registering FreeFileSync file extensions</source>
+<target>FreeFileSync dosya uzantıları kayıt defterine ekleniyor</target>
+
+<source>Unregistering FreeFileSync file extensions</source>
+<target>FreeFileSync dosya uzantıları kayıt defterinden siliniyor</target>
+
+<source>FreeFileSync Configuration</source>
+<target>FreeFileSync yapılandırması</target>
+
+<source>FreeFileSync Batch File</source>
+<target>FreeFileSync toplu işlem dosyası</target>
+
+<source>FreeFileSync Synchronization Database</source>
+<target>FreeFileSync eşitleme veri tabanı</target>
+
+<source>RealTimeSync Configuration</source>
+<target>RealTimeSync yapılandırması</target>
+
+<source>Edit with FreeFileSync</source>
+<target>FreeFileSync ile düzenlensin</target>
+
+<source>If you like FreeFileSync:</source>
+<target>FreeFileSync hoşunuza gittiyse:</target>
+
+<source>Instead of an ad, here's an animal.</source>
+<target>Burada bir reklam yerine bir hayvan var.</target>
+
+<source>The FreeFileSync portable version cannot install into a subfolder of %x.</source>
+<target>FreeFileSync taşınabilir sürümü bir %x alt klasörüne yüklenemez.</target>
+
+<source>Please choose the local installation type or select a different folder for installation.</source>
+<target>Kurulum için farklı bir klasör ya da yerel kurulum türünü seçin.</target>
+

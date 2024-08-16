@@ -1,0 +1,2317 @@
+<header>
+	<language>Slovenčina</language>
+	<translator>LubosL</translator>
+	<locale>sk</locale>
+	<image>flag_slovakia</image>
+	<plural_count>3</plural_count>
+	<plural_definition>n==1 ? 0 : n>=2 && n<=4 ? 1 : 2</plural_definition>
+</header>
+
+<source>Activate FreeFileSync by one of the following methods:</source>
+<target></target>
+
+<source>Business</source>
+<target></target>
+
+<source>version unknown</source>
+<target></target>
+
+<source>Failed to activate FreeFileSync.</source>
+<target></target>
+
+<source>The %x installation option is only available in the FreeFileSync Business Edition.</source>
+<target></target>
+
+<source>Supporter Edition</source>
+<target></target>
+
+<source>Cannot read file %x.</source>
+<target>Nie je možné načítať súbor %x.</target>
+
+<source>Unexpected size of data stream:</source>
+<target>Neočakávaná veľkosť streamu dát:</target>
+
+<source>Expected:</source>
+<target>Očakávané:</target>
+
+<source>Cannot write file %x.</source>
+<target>Nie je možné zapísať súbor %x.</target>
+
+<source>Cannot write permissions of %x.</source>
+<target>Nie je možné zapísať oprávnenie pre %x.</target>
+
+<source>Operation not supported between different devices.</source>
+<target>Operácia nie je podporovaná medzi rôznymi zariadeniami.</target>
+
+<source>Cannot create directory %x.</source>
+<target>Nie je možné vytvoriť adresár %x.</target>
+
+<source>The name %x is already used by another item.</source>
+<target>Názov %x sa už používa pre inú položku.</target>
+
+<source>Cannot delete directory %x.</source>
+<target>Nie je možné zmazať adresár %x.</target>
+
+<source>Cannot rename %x to %y.</source>
+<target>Nie je možné premenovať %x na %y.</target>
+
+<source>Cannot move %x to %y.</source>
+<target>Nie je možné presunúť %x na %y.</target>
+
+<source>Cannot copy symbolic link %x to %y.</source>
+<target>Nie je možné kopírovať symbolický odkaz %x do %y.</target>
+
+<source>The item %x is currently in use.</source>
+<target>Položka %x sa používa.</target>
+
+<source>Invalid character encoding:</source>
+<target>Neplatné kódovanie znakov:</target>
+
+<source>Failed to auto-detect character encoding:</source>
+<target>Nepodarilo sa automaticky určiť kódovanie znakov:</target>
+
+<source>Server name must not be empty.</source>
+<target>Názov servru nemôže byť prázdny.</target>
+
+<source>Cannot resolve symbolic link %x.</source>
+<target>Nie je možné nájsť odkaz zástupcu %x.</target>
+
+<source>Cannot read directory %x.</source>
+<target>Nie je možné načítať adresár %x.</target>
+
+<source>Cannot write modification time of %x.</source>
+<target>Nie je možné zmeniť atribút času zmeny pre %x.</target>
+
+<source>Unable to connect to %x.</source>
+<target>Nie je možné vytvoriť pripojenie k %x.</target>
+
+<source>%x does not exist.</source>
+<target>%x neexistuje.</target>
+
+<source>Cannot read file attributes of %x.</source>
+<target>Nie je možné načítať atribúty súboru %x.</target>
+
+<source>Cannot delete file %x.</source>
+<target>Nie je možné zmazať súbor %x.</target>
+
+<source>Cannot delete symbolic link %x.</source>
+<target>Nie je možné zmazať symbolický odkaz %x.</target>
+
+<source>Cannot determine final path for %x.</source>
+<target>Nie je možné určiť konečnú cestu pre %x.</target>
+
+<source>Operation not supported by device.</source>
+<target>Operácia nie je podporovaná zariadením.</target>
+
+<source>Password prompt not permitted by current settings.</source>
+<target>Príkazový riadok na heslo nie je povolený aktuálnym nastavením.</target>
+
+<source>Please enter your password to connect to %x.</source>
+<target>Prosím zadajte heslo pre pripojenie do %x.</target>
+
+<source>The password will only be remembered until FreeFileSync is closed.</source>
+<target>Heslo bude zapamätané iba do zavretia FreeFileSync.</target>
+
+<source>The recycle bin is not available for %x.</source>
+<target>Kôš nie je dostupný pre %x.</target>
+
+<source>empty</source>
+<target>prázdne</target>
+
+<source>Error code %x</source>
+<target>Kód chyby %x</target>
+
+<source>Authentication completed.</source>
+<target>Overenie dokončené.</target>
+
+<source>You may close this page now and continue with FreeFileSync.</source>
+<target>Teraz môžete zavrieť túto stránku a pokračovať s FreeFileSync.</target>
+
+<source>Authentication failed.</source>
+<target>Overenie neúspešné.</target>
+
+<source>Please set up a shorter time out for Google Drive.</source>
+<target>Prosím nastavte nižší timeout pre Google Drive.</target>
+
+<source>
+	<pluralform>1 sec</pluralform>
+	<pluralform>%x sec</pluralform>
+</source>
+<target>
+	<pluralform>1 sekunda</pluralform>
+	<pluralform>%x sekundy</pluralform>
+	<pluralform>%x sekúnd</pluralform>
+</target>
+
+<source>The name %x is used by more than one item in the folder.</source>
+<target>Názov %x sa používa pre viacero položiek priečinka.</target>
+
+<source>Please add a connection to user account %x first.</source>
+<target>Prosím najprv pridajte pripojenie pre užívateľa %x.</target>
+
+<source>File content is corrupted.</source>
+<target>Obsah súboru je porušený.</target>
+
+<source>Unsupported data format.</source>
+<target>Nepodporovaný formát dát.</target>
+
+<source>Version: %x</source>
+<target>Verzia: %x</target>
+
+<source>Cannot read database file %x.</source>
+<target>Nie je možné prečítať databázový súbor %x.</target>
+
+<source>Cannot open file %x.</source>
+<target>Nie je možné otvoriť súbor %x.</target>
+
+<source>Cannot copy file %x to %y.</source>
+<target>Nie je možné kopírovať súbor %x do %y.</target>
+
+<source>Cannot determine free disk space for %x.</source>
+<target>Nie je možné zistiť voľné miesto na disku %x.</target>
+
+<source>Unable to move %x to the recycle bin.</source>
+<target>Nie je možné presunúť %x do Koša.</target>
+
+<source>Unable to disconnect from %x.</source>
+<target>Nepodarilo sa odpojiť z %x.</target>
+
+<source>Cannot find device %x.</source>
+<target>Nie je možné nájsť zariadenie %x.</target>
+
+<source>Cannot open directory %x.</source>
+<target>Nie je možné otvoriť adresár %x.</target>
+
+<source>Unsupported item type.</source>
+<target>Nepodporovaný typ.</target>
+
+<source>The server does not support authentication via %x.</source>
+<target>Server nepodporuje overenie pomocou %x.</target>
+
+<source>Required:</source>
+<target>Požadované:</target>
+
+<source>
+	<pluralform>Operation timed out after 1 second.</pluralform>
+	<pluralform>Operation timed out after %x seconds.</pluralform>
+</source>
+<target>
+	<pluralform>Vypršal čas 1 sekunda pre dokončenie operácie.</pluralform>
+	<pluralform>Vypršal čas %x sekundy pre dokončenie operácie.</pluralform>
+	<pluralform>Vypršal čas %x sekúnd pre dokončenie operácie.</pluralform>
+</target>
+
+<source>
+	<pluralform>Cannot wait on more than 1 connection at a time.</pluralform>
+	<pluralform>Cannot wait on more than %x connections at a time.</pluralform>
+</source>
+<target>
+	<pluralform>Nie je možné čakať na viac ako 1 pripojenie naraz.</pluralform>
+	<pluralform>Nie je možné čakať na viac ako %x pripojenia naraz.</pluralform>
+	<pluralform>Nie je možné čakať na viac ako %x pripojení naraz.</pluralform>
+</target>
+
+<source>Failed to open SFTP channel number %x.</source>
+<target>Nie je možné otvoriť SFTP kanál číslo %x.</target>
+
+<source>Temporary access error:</source>
+<target>Chyba dočasného prístupu:</target>
+
+<source>Command line</source>
+<target>Príkazový riadok</target>
+
+<source>Syntax:</source>
+<target>Syntax:</target>
+
+<source>config files:</source>
+<target>konfiguračné súbory:</target>
+
+<source>directory</source>
+<target>adresár</target>
+
+<source>global config file:</source>
+<target>globálny konfiguračný súbor:</target>
+
+<source>Any number of FreeFileSync "ffs_gui" and/or "ffs_batch" configuration files.</source>
+<target>Ľubovolný počet konfiguračných súborov FreeFileSync typu "ffs_gui" a/alebo "ffs_batch".</target>
+
+<source>Any number of alternative directory pairs for at most one config file.</source>
+<target>Ľubovolný počet alternatívnych dvojíc adresárov na aspoň jednu konfiguráciu.</target>
+
+<source>Open the selected configuration for editing only, without executing it.</source>
+<target>Otvoriť vybranú konfiguráciu na úpravu bez jej spustenia.</target>
+
+<source>Path to an alternate GlobalSettings.xml file.</source>
+<target>Cesta k alternatívnemu súboru GlobalSettings.xml.</target>
+
+<source>Error</source>
+<target>Chyba</target>
+
+<source>Error during process initialization.</source>
+<target>Chyba inicializácie procesu.</target>
+
+<source>A left and a right directory path are expected after %x.</source>
+<target>Bude očakávaná pravá a ľavá adresárová cesta po %x.</target>
+
+<source>Unexpected file extension:</source>
+<target>Neočakávaný typ súboru:</target>
+
+<source>The config file must not contain settings at directory pair level when directories are set via command line.</source>
+<target>Konfiguračný súbor nesmie obsahovať nastavenia na úrovni adresárových párov pokiaľ je zadány cez príkazový riadok.</target>
+
+<source>Directories cannot be set for more than one configuration file.</source>
+<target>Adresáre nemôžu obsahovať viac ako jeden konfiguračný súbor.</target>
+
+<source>The following batch options have been changed because the current process does not allow user interaction:</source>
+<target>Nasledujúce nastavenia sa zmenili pretože aktuálny process nepodporuje interakciu s užívateľom:</target>
+
+<source>Auto-close</source>
+<target>Automaticky zavrieť</target>
+
+<source>Enabled</source>
+<target>Povolené</target>
+
+<source>Errors:</source>
+<target>Chyby:</target>
+
+<source>Stop synchronization at first error</source>
+<target>Ukončiť synchronizáciu pri prvej chybe</target>
+
+<source>Exit code %x</source>
+<target>Kód ukončenia %x</target>
+
+<source>Executing command:</source>
+<target>Vykonávaný príkaz:</target>
+
+<source>Command %x failed.</source>
+<target>Príkaz %x sa nepodaril.</target>
+
+<source>Sending email notification to %x</source>
+<target>Odosielanie e-mailovej notifikácie na adresu %x</target>
+
+<source>Cannot determine sync-direction:</source>
+<target>Nie je možné určit smer synchronizácie:</target>
+
+<source>The items have different names, but it's unknown which side was renamed.</source>
+<target><Súbory majú rozdielne názvy, ale nie je známe ktorá strana sa zmenila.</target>
+
+<source>The items have different content, but it's unknown which side has changed.</source>
+<target>Súbory majú rozdielny obsah, ale nie je známe ktorá strana sa zmenila.</target>
+
+<source>Both sides have changed since last synchronization.</source>
+<target>Od poslednej synchronizácie došlo ku zmene obidvoch strán.</target>
+
+<source>No change since last synchronization.</source>
+<target>Žiadne zmeny od poslednej synchronizácie.</target>
+
+<source>The database entry is not in sync, considering current settings.</source>
+<target>Databázové položky nie sú podľa aktuálnej konfigurácie synchronné.</target>
+
+<source>The database entry is ambiguous.</source>
+<target>Záznam v databáze je nejednoznačný.</target>
+
+<source>Database file is not available: Setting default directions for synchronization.</source>
+<target>Databázový súbor nie je dostupný: Nastavovanie predvoleného priečinku pre synchronizáciu.</target>
+
+<source>Calculating sync directions...</source>
+<target>Príprava adresárov synchronizácie...</target>
+
+<source>Creating file %x</source>
+<target>Vytváranie súboru %x</target>
+
+<source>Creating folder %x</source>
+<target>Vytváranie priečinka %x</target>
+
+<source>Creating symbolic link %x</source>
+<target>Vytváranie symbolického odkazu %x</target>
+
+<source>Deleting file %x</source>
+<target>Zmazanie súboru %x</target>
+
+<source>Moving file %x to the recycle bin</source>
+<target>Presúvanie súboru %x do Koša</target>
+
+<source>Deleting symbolic link %x</source>
+<target>Zmazanie symbolického odkazu %x</target>
+
+<source>Moving symbolic link %x to the recycle bin</source>
+<target>Presúvanie symbolického odkazu %x do Koša</target>
+
+<source>Deleting folder %x</source>
+<target>Zmazanie priečinka %x</target>
+
+<source>Moving folder %x to the recycle bin</source>
+<target>Presúvanie priečinka %x do Koša</target>
+
+<source>Ignore and delete permanently each time recycle bin is unavailable?</source>
+<target>Ignorovať a permanentne vymazať kždy keď je kôš nedostupný.</target>
+
+<source>Recycle bin unavailable</source>
+<target>Kôš je nedostupný.</target>
+
+<source>Renaming file %x to %y</source>
+<target>Prenovávanie súboru %x na %y</target>
+
+<source>Renaming symbolic link %x to %y</source>
+<target>Prenovávanie symbolického odkazu %x na %y</target>
+
+<source>Renaming folder %x to %y</source>
+<target>Prenovávanie zložky %x na %y</target>
+
+<source>Normalizing folder paths...</source>
+<target>Normalizácia ciest priečinkov...</target>
+
+<source>Cannot find the following folders:</source>
+<target>Nie je možné nájsť následujúce priečinky:</target>
+
+<source>The following folders do not yet exist:</source>
+<target>Nasledujúce priečinky ešte neexistujú:</target>
+
+<source>The folders are created automatically when needed.</source>
+<target>V prípade potrewby sa priečinky vytvoria automaticky.</target>
+
+<source>The following folder paths differ in case. Please use a single form in order to avoid duplicate accesses.</source>
+<target>Nasledujúce cesty priečinkov sa líšia. Prosím použite jeden formulár, aby ste sa vyhli duplicitnému prístupu.</target>
+
+<source>Scanning:</source>
+<target>Vyhľadávanie:</target>
+
+<source>Comparison finished:</source>
+<target>Dokončilo sa porovnávanie:</target>
+
+<source>
+	<pluralform>1 item found</pluralform>
+	<pluralform>%x items found</pluralform>
+</source>
+<target>
+	<pluralform>Nájdená 1 položka</pluralform>
+	<pluralform>Nájdené %x položky</pluralform>
+	<pluralform>Nájdených %x položiek</pluralform>
+</target>
+
+<source>Time elapsed:</source>
+<target>Uplynulý čas:</target>
+
+<source>File %x has an invalid date.</source>
+<target>Súbor %x má chybný dátum.</target>
+
+<source>Date:</source>
+<target>Dátum:</target>
+
+<source>Files have the same date but a different size.</source>
+<target>Súbory majú rovnaký dátum, ale rozdielnú veľkosť.</target>
+
+<source>Size:</source>
+<target>Veľkosť:</target>
+
+<source>Content comparison was skipped for excluded files.</source>
+<target>Porovnanie obsahu bolo vynechané pre vybrané súbory.</target>
+
+<source>Resolving symbolic link %x</source>
+<target>Nasledovať odkaz symbolického zástupcu %x</target>
+
+<source>Comparing content of files %x</source>
+<target>Porovnávanie obsahu súborov %x</target>
+
+<source>Generating file list...</source>
+<target>Vytváranie zoznamu súborov...</target>
+
+<source>A folder input field is empty.</source>
+<target>Nie je zadaná vstupný priečinok.</target>
+
+<source>The corresponding folder will be considered as empty.</source>
+<target>Odpovedajúci priečinok bude považovaný za prázdny.</target>
+
+<source>Exclude:</source>
+<target>Vynechať:</target>
+
+<source>One folder of the folder pair is a subfolder of the other.</source>
+<target>Jedna zložka z páru je podzložkou inej.</target>
+
+<source>The folder should be excluded via filter.</source>
+<target>Zložka by mala byť vynechaná pomocou filtra.</target>
+
+<source>Out of memory.</source>
+<target>Nedostatok pracovnej pamäti.</target>
+
+<source>Database file %x does not yet exist.</source>
+<target>Databázový súbor %x neexistuje.</target>
+
+<source>Loading file %x...</source>
+<target>Načítavanie súboru %x...</target>
+
+<source>Saving file %x...</source>
+<target>Ukládanie súboru %x...</target>
+
+<source>Searching for folder %x...</source>
+<target>Vyhľadávanie priečinka %x...</target>
+
+<source>Cannot get process information.</source>
+<target>Nie je možné získať informácie procesu.</target>
+
+<source>Waiting while directory is in use:</source>
+<target>Čaká sa kým je adresár používaný:</target>
+
+<source>Username:</source>
+<target>Uživateľské meno:</target>
+
+<source>Lock file apparently abandoned...</source>
+<target>Súbor zámku bol opustený...</target>
+
+<source>Both sides are equal</source>
+<target>Obe strany sú zhodné</target>
+
+<source>Items differ in name only</source>
+<target>Súbory sa odlišujú iba v mene</target>
+
+<source>Item exists on left side only</source>
+<target>Položky existujúce iba vľavo</target>
+
+<source>Item exists on right side only</source>
+<target>Položky existujúce iba vpravo</target>
+
+<source>Left side is newer</source>
+<target>Ľavá strana je novšia</target>
+
+<source>Right side is newer</source>
+<target>Pravá strana je novšia</target>
+
+<source>Items have different content</source>
+<target>Obsah položiek je rozdielny</target>
+
+<source>Conflict/item cannot be categorized</source>
+<target>Konflikty/položky ktoré nemožno zaradiť</target>
+
+<source>Copy new item to left</source>
+<target>Kopírovať novú položku doľava</target>
+
+<source>Copy new item to right</source>
+<target>Kopírovať novou položku doprava</target>
+
+<source>Delete left item</source>
+<target>Zmazať položku naľavo</target>
+
+<source>Delete right item</source>
+<target>Zmazať položku napravo</target>
+
+<source>Move left file</source>
+<target>Presunúť ľavý súbor</target>
+
+<source>Move right file</source>
+<target>Presunúť pravý súbor</target>
+
+<source>Update left item</source>
+<target>Aktualizovať ľavú položku</target>
+
+<source>Update right item</source>
+<target>Aktualizovať pravú položku</target>
+
+<source>Do nothing</source>
+<target>Nerobiť nič</target>
+
+<source>Rename left item</source>
+<target>Premenovať ľavý súbor</target>
+
+<source>Rename right item</source>
+<target>Premenovať pravý súbor</target>
+
+<source>Cannot set directory locks for the following folders:</source>
+<target>Nie je možné nastaviť uzamknutie adresárov pre nasledujúce priečinky:</target>
+
+<source>
+	<pluralform>1 thread</pluralform>
+	<pluralform>%x threads</pluralform>
+</source>
+<target>
+	<pluralform>1 proces</pluralform>
+	<pluralform>%x procesy</pluralform>
+	<pluralform>%x procesov</pluralform>
+</target>
+
+<source>Please run the 64-bit version of FreeFileSync to create shadow copies on this system.</source>
+<target>Prosím spustite 64-bitovú verziu FreeFileSync, pre vytvorenie Tieň. kópie v tomto systéme.</target>
+
+<source>Drive path %x not found at the start of file path %y.</source>
+<target>Cesta k disku %x nebola nájdená na začiatku súboru %y.</target>
+
+<source>The Volume Shadow Copy Service could not create a snapshot of %x.</source>
+<target>Služba Tieňová kópia zväzku nemôže vytvoriť snímku z %x.</target>
+
+<source>%x/sec</source>
+<target>%x/sek</target>
+
+<source>%x items</source>
+<target>%x položka</target>
+
+<source>Multiple...</source>
+<target>Rôzne...</target>
+
+<source>File time and size</source>
+<target>Podľa času a veľkosti súboru</target>
+
+<source>File content</source>
+<target>Podľa obsahu súboru</target>
+
+<source>File size</source>
+<target>Podľa veľkosti súboru</target>
+
+<source>Two way</source>
+<target>Obidve strany</target>
+
+<source>Mirror</source>
+<target>Zrkadlenie</target>
+
+<source>Update</source>
+<target>Aktualizácia</target>
+
+<source>Custom</source>
+<target>Vlastné</target>
+
+<source>Cannot write file attributes of %x.</source>
+<target>Nie je možné zapísať atribúty súboru %x.</target>
+
+<source>%x and %y have different content.</source>
+<target>%x a %y majú odlišný obsah.</target>
+
+<source>Data verification error:</source>
+<target>Chyba verifikácie údajov:</target>
+
+<source>Moving file %x to %y</source>
+<target>Presúvanie súboru %x do %y</target>
+
+<source>Moving symbolic link %x to %y</source>
+<target>Presúvanie symbolického odkazu %x do %y</target>
+
+<source>Moving folder %x to %y</source>
+<target>Presúvanie priečinka %x do %y</target>
+
+<source>Updating file %x</source>
+<target>Aktualizácia súboru %x</target>
+
+<source>Updating symbolic link %x</source>
+<target>Aktualizácia symbolického odkazu %x</target>
+
+<source>Verifying file %x</source>
+<target>Verifikácia súboru %x</target>
+
+<source>Source item %x is not existing</source>
+<target>Zdrojový súbor %x neexistuje</target>
+
+<source>Parent folder %x is not existing.</source>
+<target>Nadradený priečinok %x neexistuje.</target>
+
+<source>Creating a Volume Shadow Copy for %x...</source>
+<target>Vytváranie Tieňovej kópie zväzkov pre %x...</target>
+
+<source>The folder %x is already existing, but was not found earlier during comparison.</source>
+<target>Zložka %x už existuje, ale nebola nájdené pri porovnávaní.</target>
+
+<source>Skipping folder pair because %x could not be accessed during comparison.</source>
+<target>Preskočený pár priečinkov pretože %x nebol prístupný počas porovnávania.</target>
+
+<source>Source folder %x not found.</source>
+<target>Zdrojový priečinok %x nie je možné nájsť.</target>
+
+<source>Please enter a target folder.</source>
+<target>Prosím zadajte cieľový priečinok.</target>
+
+<source>The following items have unresolved conflicts and will not be synchronized:</source>
+<target>Následujúce položky majú nevyriešené konflikty a nebudú synchronizované:</target>
+
+<source>Folder pair:</source>
+<target>Dvojica priečinkov:</target>
+
+<source>
+	<pluralform>Showing %y of 1 item</pluralform>
+	<pluralform>Showing %y of %x items</pluralform>
+</source>
+<target>
+	<pluralform>Zobrazuje sa %y z 1 položky</pluralform>
+	<pluralform>Zobrazuje sa %y z %x položiek</pluralform>
+	<pluralform>Zobrazuje sa %y z %x položiek</pluralform>
+</target>
+
+<source>The following folders are significantly different. Please check that the correct folders are selected for synchronization.</source>
+<target>Nasledujúce priečinky sa signifikantne líšia. Prosím overte, či sú vybrané správne priečinky pre synchronizáciu.</target>
+
+<source>Not enough free disk space available in:</source>
+<target>Nedostatok miesta na disku:</target>
+
+<source>Available:</source>
+<target>K dispozícií:</target>
+
+<source>Some files will be synchronized as part of multiple folder pairs.</source>
+<target>Niektoré zložky budú synchronizované ako súčasť viacerých párov zložiek.</target>
+
+<source>To avoid conflicts, set up exclude filters so that each updated file is included by only one folder pair.</source>
+<target>Pre zabránenie konfliktom, nastavte filter tak aby každý pár zložiek bol zahrnutý iba raz.</target>
+
+<source>Write access</source>
+<target>Povoliť zapisovanie</target>
+
+<source>Read access</source>
+<target>Povoliť čítanie</target>
+
+<source>Selected folder:</source>
+<target>Vybrať zložku:</target>
+
+<source>Versioning folder:</source>
+<target>Priečinok verzovania:</target>
+
+<source>The versioning folder is part of the synchronization.</source>
+<target>Zložka na verzovanie je súčasťou synchronizácie.</target>
+
+<source>Synchronizing folder pair:</source>
+<target>Synchronizácia dvojice priečinkov:</target>
+
+<source>Searching for old file versions:</source>
+<target>Vyhľadávanie starých verzií súborov:</target>
+
+<source>Removing old file versions:</source>
+<target>Odstraňovanie starých verzií súborov:</target>
+
+<source>Unable to create time stamp for versioning:</source>
+<target>Nie je možné vytvoriť časovú značku verzovania:</target>
+
+<source>Fail-safe file copy</source>
+<target>Bezpečné kopírovanie súborov</target>
+
+<source>Disabled</source>
+<target>Zakázané</target>
+
+<source>Copy locked files</source>
+<target>Kopírovať zamknuté súbory</target>
+
+<source>Copy file access permissions</source>
+<target>Kopírovať prístupové oprávnenie súborov</target>
+
+<source>File time tolerance</source>
+<target>Časová tolerancia súboru</target>
+
+<source>Run with background priority</source>
+<target>Vykonať s prioritou na pozadí</target>
+
+<source>Lock directories during sync</source>
+<target>Uzamknúť priečinky počas synchronizácie</target>
+
+<source>Verify copied files</source>
+<target>Overiť skopírované súbory</target>
+
+<source>Using non-default global settings:</source>
+<target>Použiť ne-predvolené globálne nastavenia:</target>
+
+<source>Show in Explorer</source>
+<target>Zobraziť v Prieskumníkovi</target>
+
+<source>Show in file manager</source>
+<target>Zobraziť v správcovi súborov</target>
+
+<source>Reveal in Finder</source>
+<target>Zorbaziť vo Finderi</target>
+
+<source>Open with default application</source>
+<target>Otvoriť predvolenou aplikáciou</target>
+
+<source>Configuration file %x is incomplete. The missing elements have been set to their default values.</source>
+<target>Konfiguračný súbor %x nie je kompletný. Chýbajúce položky boli nastavené na defaultnú hodnotu.</target>
+
+<source>The following XML elements could not be read:</source>
+<target>Nasledujúce XML elementy sa nedajú prečítať:</target>
+
+<source>File %x does not contain a valid configuration.</source>
+<target>Súbor %x neobsahuje platnú konfiguráciu.</target>
+
+<source>Error parsing file %x, row %y, column %z.</source>
+<target>Chyba spracovania súboru %x: na riadku %y v stĺpci %z.</target>
+
+<source>Services</source>
+<target>Služby</target>
+
+<source>Hide Others</source>
+<target>Skryť Ostatné</target>
+
+<source>Show All</source>
+<target>Zobraziť Všetko</target>
+
+<source>Hide %x</source>
+<target>Skryť %x</target>
+
+<source>Quit %x</source>
+<target>Ukončiť %x</target>
+
+<source>Warnings:</source>
+<target>Varovania:</target>
+
+<source>Items processed:</source>
+<target>Spracovaných položiek:</target>
+
+<source>Items remaining:</source>
+<target>Ostáva položiek:</target>
+
+<source>Total time:</source>
+<target>Celkový čas:</target>
+
+<source>Errors and warnings:</source>
+<target>Chyby a varovania:</target>
+
+<source>Log file:</source>
+<target>Súbor denníka:</target>
+
+<source>Cleaning up log files:</source>
+<target>Odstránenie log súborov:</target>
+
+<source>
+	<pluralform>1 day</pluralform>
+	<pluralform>%x days</pluralform>
+</source>
+<target>
+	<pluralform>1 deň</pluralform>
+	<pluralform>%x dni</pluralform>
+	<pluralform>%x dní</pluralform>
+</target>
+
+<source>Warning</source>
+<target>Varovanie</target>
+
+<source>Stopped</source>
+<target>Zastavené</target>
+
+<source>Please enter a valid email address.</source>
+<target>Prosím zadajte platný e-mail.</target>
+
+<source>Requires FreeFileSync Donation Edition</source>
+<target>Je potrebná FreeFileSync Donation Edition</target>
+
+<source>Cannot send notification email to %x.</source>
+<target>Odoslanie e-mailovej notifikácie na adresu %x nebolo úspešné.</target>
+
+<source>Drag && drop</source>
+<target>Pretiahni sem && pusť</target>
+
+<source>%x is not a valid folder path.</source>
+<target>%x nie je validná cesta k zložke.</target>
+
+<source>Select a folder</source>
+<target>Vyberte priečinok</target>
+
+<source>&New</source>
+<target>&Nový</target>
+
+<source>&Open...</source>
+<target>&Otvoriť...</target>
+
+<source>Save &as...</source>
+<target>Uložiť &ako...</target>
+
+<source>E&xit</source>
+<target>U&končiť</target>
+
+<source>&File</source>
+<target>&Súbor</target>
+
+<source>&View help</source>
+<target>&Nápoveda (iba anglicky)</target>
+
+<source>&About</source>
+<target>O &programe</target>
+
+<source>&Help</source>
+<target>&Pomoc</target>
+
+<source>To get started, just import a "ffs_batch" file.</source>
+<target>Začnite importom "ffs_batch" súboru.</target>
+
+<source>Show examples</source>
+<target>Ukázať príklady</target>
+
+<source>Folders to watch for changes:</source>
+<target>Sledovať zmeny v zložke:</target>
+
+<source>Add folder</source>
+<target>Pridať priečinok</target>
+
+<source>Remove folder</source>
+<target>Odstrániť priečinok</target>
+
+<source>Browse</source>
+<target>Prechádzať</target>
+
+<source>Command line to run when changes are detected:</source>
+<target>Pri detekovaní zmien spustiť príkaz:</target>
+
+<source>
+The command is triggered if:
+- files or subfolders change
+- new folders arrive (e.g. USB stick insert)
+</source>
+<target>
+Príkaz bude spustení ak:
+- dôjde k zmene v súboru alebo v priečinku
+- je zistený nový priečinok (napr. vložením USB disku)
+</target>
+
+<source>Minimum idle time (in seconds) before running command:</source>
+<target>Minimálna odba nečinnosti (v sekundách) pred spustením príkazu:</target>
+
+<source>Idle time between last detected change and execution of command</source>
+<target>Doba nečinnosti medzi zistením poslednej zmeny a spustením príkazu</target>
+
+<source>Start</source>
+<target>Štart</target>
+
+<source>Automated Synchronization</source>
+<target>Automatická synchronizácia</target>
+
+<source>About</source>
+<target>O programe</target>
+
+<source>All files</source>
+<target>Všetky súbory</target>
+
+<source>The %x protocol does not support directory monitoring:</source>
+<target>Protokol %x nepodporuje monitorovanie adresárov:</target>
+
+<source>Directory monitoring active</source>
+<target>Sledovanie adresárov je aktivne</target>
+
+<source>Waiting until directory is available:</source>
+<target>Čaká sa, kým nie je k dispozícii adresár:</target>
+
+<source>&Configure</source>
+<target>&Konfigurovať</target>
+
+<source>&Show error message</source>
+<target>&Zobraziť chybové hlásenie</target>
+
+<source>&Quit</source>
+<target>U&končiť</target>
+
+<source>&Retry</source>
+<target>&Opakovať</target>
+
+<source>Completed successfully</source>
+<target>Dokončenie bolo úspešné</target>
+
+<source>Completed with warnings</source>
+<target>Ukončené s varovaniami</target>
+
+<source>Completed with errors</source>
+<target>Ukončené s chybami</target>
+
+<source>
+	<pluralform>1 byte</pluralform>
+	<pluralform>%x bytes</pluralform>
+</source>
+<target>
+	<pluralform>%x B</pluralform>
+	<pluralform>%x B</pluralform>
+	<pluralform>%x B</pluralform>
+</target>
+
+<source>%x MB</source>
+<target>%x MB</target>
+
+<source>%x KB</source>
+<target>%x KB</target>
+
+<source>%x GB</source>
+<target>%x GB</target>
+
+<source>Loading...</source>
+<target>Načítanie...</target>
+
+<source>Scanning...</source>
+<target>Vyhľadávanie...</target>
+
+<source>configuration file</source>
+<target>konfiguračný súbor</target>
+
+<source>System: Sleep</source>
+<target>Systém: Uspať</target>
+
+<source>System: Shut down</source>
+<target>Systém: Vypnúť</target>
+
+<source>Nothing to synchronize</source>
+<target>Nie je čo synchronizovať</target>
+
+<source>You can switch to FreeFileSync's main window to resolve this issue.</source>
+<target>K odstráneniu tohoto problému sa môžete prepnúť do hlavného okna FreeFileSync.</target>
+
+<source>&Don't show this warning again</source>
+<target>&Nezobrazovať znova toto varovanie</target>
+
+<source>&Ignore</source>
+<target>&Ignorovať</target>
+
+<source>&Switch</source>
+<target>&Prepnúť</target>
+
+<source>Switching to FreeFileSync's main window</source>
+<target>Prepínanie do hlavného okna FreeFileSync</target>
+
+<source>Automatic retry</source>
+<target>Automatické opakovanie</target>
+
+<source>Ignore &all</source>
+<target>Ignorovať &všetky</target>
+
+<source>Retrying operation...</source>
+<target>Opakovanie operácie...</target>
+
+<source>Last session</source>
+<target>Posledné sedenie</target>
+
+<source>Today</source>
+<target>Dnes</target>
+
+<source>Name</source>
+<target>Názov</target>
+
+<source>Last sync</source>
+<target>Posledná synchronizácia</target>
+
+<source>Log</source>
+<target>Záznam spracovania</target>
+
+<source>Folder</source>
+<target>Priečinok</target>
+
+<source>Symlink</source>
+<target>Symlink</target>
+
+<source>Item name</source>
+<target>Názov položky</target>
+
+<source>Relative path</source>
+<target>Relatívna cesta</target>
+
+<source>Full path</source>
+<target>Plná cesta</target>
+
+<source>Size</source>
+<target>Veľkosť</target>
+
+<source>Date</source>
+<target>Dátum</target>
+
+<source>Extension</source>
+<target>Prípona</target>
+
+<source>Item not existing</source>
+<target>Položka neexistuje</target>
+
+<source>Difference</source>
+<target>Rozdiel</target>
+
+<source>Action</source>
+<target>Akcia</target>
+
+<source>Local comparison settings</source>
+<target>Lokálne nastavenie porovnánia</target>
+
+<source>Local synchronization settings</source>
+<target>Lokálne nastavenie synchronizácie</target>
+
+<source>Local filter</source>
+<target>Lokálny filter</target>
+
+<source>Active</source>
+<target>Zapnutý</target>
+
+<source>None</source>
+<target>Žiadna</target>
+
+<source>Remove local settings</source>
+<target>Zrušiť lokálne nastavenie</target>
+
+<source>Cu&t</source>
+<target>Vy&strihnúť</target>
+
+<source>&Copy</source>
+<target>&Kopírovať</target>
+
+<source>&Paste</source>
+<target>&Vložiť</target>
+
+<source>The selected folder %x cannot be used with FreeFileSync.</source>
+<target>Vybraný priečinok %x nie je možné použíť s FreeFileSync.</target>
+
+<source>Please select a folder on a local file system, network or an MTP device.</source>
+<target>Prosím vyberte priečinok v lokálnom súborovom systéme, sieti alebo multimediálnom zariadení.</target>
+
+<source>&Save</source>
+<target>&Uložiť</target>
+
+<source>Save as &batch job...</source>
+<target>Uložiť ako &dávku...</target>
+
+<source>Show &log</source>
+<target>Zobraziť &log</target>
+
+<source>Start &comparison</source>
+<target>Spustiť &porovnanie</target>
+
+<source>C&omparison settings</source>
+<target>Nastavenia p&orovnania</target>
+
+<source>&Filter settings</source>
+<target>Nastavenia &filtra</target>
+
+<source>S&ynchronization settings</source>
+<target>Nastavenia s&ynchronizácie</target>
+
+<source>Start &synchronization</source>
+<target>Spustiť &synchronizáciu</target>
+
+<source>&Actions</source>
+<target>&Akcie</target>
+
+<source>&Preferences</source>
+<target>&Predvoľby...</target>
+
+<source>&Language</source>
+<target>&Jazyk</target>
+
+<source>&Find...</source>
+<target>&Hľadať...</target>
+
+<source>&Export file list</source>
+<target>&Exportovať zoznam súborov</target>
+
+<source>&Reset layout</source>
+<target>&Obnoviť rozloženie</target>
+
+<source>&Tools</source>
+<target>&Nastavenie</target>
+
+<source>&Check for updates now</source>
+<target>&Skontrolovať aktualizácie teraz</target>
+
+<source>Cancel</source>
+<target>Zrušiť</target>
+
+<source>Compare</source>
+<target>Porovnanie</target>
+
+<source>Synchronize</source>
+<target>Synchronizácia</target>
+
+<source>Add folder pair</source>
+<target>Pridať priečinok pre porovnanie</target>
+
+<source>Remove folder pair</source>
+<target>Odstrániť dvojicu priečinkov</target>
+
+<source>Access online storage</source>
+<target>Prístup k online úložisku</target>
+
+<source>Close search bar</source>
+<target>Zavrieť hľadanie</target>
+
+<source>Find:</source>
+<target>Hľadať:</target>
+
+<source>Match case</source>
+<target>Rozlišovať malé a veľké písmená</target>
+
+<source>Processed:</source>
+<target>Spracované:</target>
+
+<source>Remaining:</source>
+<target>Zostáva:</target>
+
+<source>New</source>
+<target>Nový</target>
+
+<source>Open...</source>
+<target>Otvoriť...</target>
+
+<source>Save</source>
+<target>Uložiť</target>
+
+<source>Save as...</source>
+<target>Uložiť ako...</target>
+
+<source>Statistics:</source>
+<target>Štatistika:</target>
+
+<source>Number of files and folders that will be deleted</source>
+<target>Počet súborov a priečinkov k zmazaniu</target>
+
+<source>Number of files that will be updated</source>
+<target>Počet súborov k aktualizácií</target>
+
+<source>Number of files and folders that will be created</source>
+<target>Počet súborov a priečinkov k vytvoreniu</target>
+
+<source>Total bytes to copy</source>
+<target>Celkový objem kopírovaných údajov</target>
+
+<source>Arrange folder pair</source>
+<target>Usporiadať dvojicu priečinkov</target>
+
+<source>Common settings:</source>
+<target>Bežné nastavenia:</target>
+
+<source>Use local settings:</source>
+<target>Použiť lokálne nastavenie:</target>
+
+<source>Select a variant:</source>
+<target>Výber varianty:</target>
+
+<source>Include &symbolic links:</source>
+<target>Aj &symbolické odkazy:</target>
+
+<source>&Follow</source>
+<target>&Nasledovať</target>
+
+<source>As &link</source>
+<target>Ako &odkaz</target>
+
+<source>More information</source>
+<target>Viac informácií</target>
+
+<source>&Ignore exact time shift [hh:mm]</source>
+<target>&Ignorovať presný posun času [hh:mm]</target>
+
+<source>List of file time offsets to ignore</source>
+<target>Zoznam ignorovaných časových posunov súborov</target>
+
+<source>Example:</source>
+<target>Príklad:</target>
+
+<source>Handle daylight saving time</source>
+<target>Používať letný čas</target>
+
+<source>Ignore errors</source>
+<target>Ignorovať chyby</target>
+
+<source>Retry count:</source>
+<target>Počet opakovaní:</target>
+
+<source>Delay (in seconds):</source>
+<target>Oneskorenie (v sekundách):</target>
+
+<source>Performance improvements:</source>
+<target>Zlepšenie výkonu:</target>
+
+<source>Parallel file operations:</source>
+<target>Paralélne operácie súborov:</target>
+
+<source>How to get the best performance?</source>
+<target>Ako získať najlepší výkon:</target>
+
+<source>Local settings:</source>
+<target>Lokálne Nastavenia:</target>
+
+<source>Include:</source>
+<target>Zahrnúť:</target>
+
+<source>File size:</source>
+<target>Veľkosť súboru:</target>
+
+<source>Minimum:</source>
+<target>Od:</target>
+
+<source>Maximum:</source>
+<target>Do:</target>
+
+<source>Time span:</source>
+<target>Časová doba:</target>
+
+<source>Select filter rules to exclude certain files from synchronization. Enter file paths relative to their corresponding folder pair.</source>
+<target>Nastavte pravidlá filtra pre vynechanie niekterých súborov zo synchronizácie. Zadávajte cesty súborov relativne k odpovedajúcej dvojici priečinkov.</target>
+
+<source>&Default</source>
+<target>&Predvolené</target>
+
+<source>C&lear</source>
+<target>Vy&mazať</target>
+
+<source>Use database file to detect changes</source>
+<target>Použiť databázový súbor na detekovanie zmien</target>
+
+<source>
+- Not supported by all file systems
+- Requires and creates database files
+- Detection not available for first sync
+</source>
+<target>
+- Nie je podporované vštkými souborovými systémami
+- Vyžaduje vytvorenie databázového súboru
+- Detekcia rozdielov je dostupná až po prvej synchronizácií
+</target>
+
+<source>Detect moved files</source>
+<target>Detekcia presunutých súborov</target>
+
+<source>Create:</source>
+<target>Vytvoriť:</target>
+
+<source>Update:</source>
+<target>Aktualizovať:</target>
+
+<source>Delete:</source>
+<target>Vymazať:</target>
+
+<source>Left</source>
+<target>Ľavá</target>
+
+<source>Right</source>
+<target>Pravá</target>
+
+<source>Delete and overwrite:</source>
+<target>Vymazať a prepísať:</target>
+
+<source>&Recycle bin</source>
+<target>&Kôš</target>
+
+<source>&Permanent</source>
+<target>&Trvale</target>
+
+<source>&Versioning</source>
+<target>&Verzovanie</target>
+
+<source>Move files to a user-defined folder</source>
+<target>Presunúť súbory do uživateľom zadaného priečinka</target>
+
+<source>Naming convention:</source>
+<target>Pomenovanie:</target>
+
+<source>Limit file versions:</source>
+<target>Limit súborových verzií:</target>
+
+<source>Last x days:</source>
+<target>Posledných x dní:</target>
+
+<source>Send email notification:</source>
+<target>Poslať notifikáciu e-mailom:</target>
+
+<source>&Change log folder:</source>
+<target>&Zmeniť priečinok logovania:</target>
+
+<source>Run a command:</source>
+<target>Spustiť príkaz:</target>
+
+<source>Notes:</source>
+<target>Poznámky:</target>
+
+<source>Add &notes</source>
+<target>Pridať poz&námku</target>
+
+<source>OK</source>
+<target>OK</target>
+
+<source>Connection type:</source>
+<target>typ pripojenia:</target>
+
+<source>Connected user accounts:</source>
+<target>Pripojené užívateľské účty:</target>
+
+<source>&Add connection</source>
+<target>&Pridať pripojenie</target>
+
+<source>&Disconnect</source>
+<target>&Odpojiť</target>
+
+<source>Select drive:</source>
+<target>Vybrať disk:</target>
+
+<source>Server name or IP address:</source>
+<target>Meno servera alebo jeho IP adresa:</target>
+
+<source>Port:</source>
+<target>Port:</target>
+
+<source>Encryption:</source>
+<target>Šifrovanie:</target>
+
+<source>&Disabled</source>
+<target>&Zakázané</target>
+
+<source>&Explicit SSL/TLS</source>
+<target>&Explicitné SSl/TLS</target>
+
+<source>Authentication:</source>
+<target>Overenie:</target>
+
+<source>&Password</source>
+<target>&Heslo</target>
+
+<source>&Key file</source>
+<target>&Súbor kľúča</target>
+
+<source>&SSH agent</source>
+<target>&SSH agent</target>
+
+<source>Private key file:</source>
+<target>Súbor súkromného kľúča:</target>
+
+<source>&Show password</source>
+<target>&Zobraziť heslo</target>
+
+<source>Prompt during login</source>
+<target>Výzva počas prihlasovania</target>
+
+<source>Directory on server:</source>
+<target>Adresár na servery:</target>
+
+<source>Access timeout (in seconds):</source>
+<target>Čas prístupu (v sekundách):</target>
+
+<source>SFTP channels per connection:</source>
+<target>SFTP kanály na pripojenie:</target>
+
+<source>Detect server limit</source>
+<target>Zistiť limit serveru</target>
+
+<source>Enable &compression</source>
+<target>Povoliť &kompresiu</target>
+
+<source>Select Folder</source>
+<target>Výber priečinka</target>
+
+<source>Variant:</source>
+<target>Varianta:</target>
+
+<source>&Don't show this dialog again</source>
+<target>Tento dialog už &nezobrazovať</target>
+
+<source>Bytes:</source>
+<target>Bajtov:</target>
+
+<source>Items:</source>
+<target>Položky:</target>
+
+<source>Synchronizing...</source>
+<target>Synchronizujem...</target>
+
+<source>Minimize to notification area</source>
+<target>Minimalizovať do oznamovacej oblasti</target>
+
+<source>Bytes</source>
+<target>Bytov</target>
+
+<source>Items</source>
+<target>Položky</target>
+
+<source>When finished:</source>
+<target>Po dokončení:</target>
+
+<source>Close</source>
+<target>Zavrieť</target>
+
+<source>&Pause</source>
+<target>&Pauza</target>
+
+<source>Stop</source>
+<target>Zastaviť</target>
+
+<source>Create a batch file for unattended synchronization. To start, double-click this file or schedule in a task planner: %x</source>
+<target>Vytvorí dávkový súbor pre automatickú synchronizáciu. Ku spusteniu dávky jednoducho pokliknite na vytvorený súbor alebo využite plánovač úloh vašeho systému: %x</target>
+
+<source>Progress dialog:</source>
+<target>Dialóg procesu:</target>
+
+<source>Run minimized</source>
+<target>Spustiť minimalizované</target>
+
+<source>Show pop-up on errors or warnings</source>
+<target>Zobraziť hlásenie pri chybe alebo varovaní</target>
+
+<source>&Cancel</source>
+<target>&Zrušiť</target>
+
+<source>How can I schedule a batch job?</source>
+<target>Ako nastaviť spustenie dávky v Plánovači?</target>
+
+<source>&Keep relative paths</source>
+<target>&Zachovať relatívnu cesty</target>
+
+<source>&Overwrite existing files</source>
+<target>&Prepísať existujúce súbory</target>
+
+<source>Copy</source>
+<target>Kopírovať</target>
+
+<source>Placeholders represent differences between the names.</source>
+<target>Zástupný symbol reprezentuje rozdiel medzi názvami.</target>
+
+<source>&Rename</source>
+<target>P&remenovať</target>
+
+<source>The following settings are used for all synchronization jobs.</source>
+<target>Toto nastavenie je platné pre všetky synchronizačné úlohy.</target>
+
+<source>
+Copy to a temporary file (*.ffs_tmp) before overwriting target.
+This guarantees a consistent state even in case of a serious error.
+</source>
+<target>Kopírovať najprv do dočasného súboru (*.ffs_tmp), pred prepisom cieľa. Tento postup zaisťuje bezpečný chod aj v prípade závažnej chyby.</target>
+
+<source>recommended</source>
+<target>doporučené</target>
+
+<source>Copy shared or locked files using the Volume Shadow Copy Service.</source>
+<target>Kopírovať zdielané alebo zamknuté súbory pomocou služby Tieňové kópie zväzkov.</target>
+
+<source>requires administrator rights</source>
+<target>vyžadujú sa práva správcu</target>
+
+<source>Transfer file and folder permissions.</source>
+<target>Preniesť prístupové oprávnenie súborov a priečinkov.</target>
+
+<source>Show hidden dialogs and warning messages again:</source>
+<target>Zobraziť skryté dialógy a upozornenia znovu:</target>
+
+<source>&Show details</source>
+<target>&Zobraziť podrobnosti</target>
+
+<source>Default log folder:</source>
+<target>Predvolený priečinok logovania:</target>
+
+<source>&Delete logs after x days:</source>
+<target>&Zmazať log po x dňoch:</target>
+
+<source>Log file format:</source>
+<target>Formát súboru denníka:</target>
+
+<source>&Plain text</source>
+<target>&Obyčajný text</target>
+
+<source>Notification sounds:</source>
+<target>Zvuk oznámenia:</target>
+
+<source>Synchronization finished:</source>
+<target>Synchronizácia dokončená:</target>
+
+<source>Unattended error message:</source>
+<target>Chyba automatickej synchronizácie:</target>
+
+<source>Customize context menu:</source>
+<target>Prispôsobiť kontextovú ponuku:</target>
+
+<source>Full file or folder path</source>
+<target>Úplná cesta k súboru alebo priečinku</target>
+
+<source>Temporary local copy for SFTP and MTP storage</source>
+<target>Dočasná lokálna kópia pre SFTP a MTP úložisko</target>
+
+<source>File or folder name</source>
+<target>Názov súboru alebo priečinku</target>
+
+<source>Parent folder path</source>
+<target>Cesta k nadriadenému priečinku</target>
+
+<source>Description</source>
+<target>Popis</target>
+
+<source>Get the Donation Edition with bonus features and help keep FreeFileSync ad-free.</source>
+<target>Získajte Donation Edition s bonusovými funkciami a pomôžte udržať FreeFileSync bez reklám.</target>
+
+<source>Support with a donation</source>
+<target>Podporiť darom</target>
+
+<source>Share your feedback and ideas:</source>
+<target>Zdielajte Váš názor a nápady:</target>
+
+<source>Many thanks for translation:</source>
+<target>Veľká vďaka za preklad:</target>
+
+<source>Thank you, %x, for your support!</source>
+<target>Ďakujem, %x, za tvoju podporu!</target>
+
+<source>&Donate</source>
+<target>&Prispieť</target>
+
+<source>Highlight configurations that have not been run for more than the following number of days:</source>
+<target>Zvýrazniť konfigurácie, ktoré neboli vykonané viac ako nasledujúci počet dní:</target>
+
+<source>Password:</source>
+<target>Heslo:</target>
+
+<source>Activate via internet now:</source>
+<target>Aktivovať teraz cez internet:</target>
+
+<source>Activate online</source>
+<target>Aktivovať online</target>
+
+<source>Retrieve an offline activation key from the following URL:</source>
+<target>Získať offline aktivačný kľúč z URL adresy:</target>
+
+<source>&Copy to clipboard</source>
+<target>&Skopírovať do schránky</target>
+
+<source>Enter activation key:</source>
+<target>Zadať aktivačný kľúč:</target>
+
+<source>Activate offline</source>
+<target>Aktivovať offline</target>
+
+<source>FreeFileSync requires access rights to avoid "Operation not permitted" errors when synchronizing your data (e.g. Mail, Messages, Calendars).</source>
+<target>FreeFileSync potrebuje povolenie pre prístup aby predišlo "Operácia nie je povolená" chybám počas synchronizácie dát (napr. Email, Správy, Kalendár).</target>
+
+<source>Locate the FreeFileSync app</source>
+<target>Lokalizovať FreeFileSync aplikáciou</target>
+
+<source>Open Security && Privacy</source>
+<target>Otvoriť Bezpečnosť a súkromie</target>
+
+<source>Click the lock to allow changes.</source>
+<target>Pre povolenie zmien klikni na zámok.</target>
+
+<source>Drag FreeFileSync into the panel.</source>
+<target>Potiahni FreeFileSync na panel.</target>
+
+<source>Synchronization Settings</source>
+<target>Nastavenia synchronizácie</target>
+
+<source>Access Online Storage</source>
+<target>Prístup k Online Storage</target>
+
+<source>Save as a Batch Job</source>
+<target>Uložiť ako Batch Job</target>
+
+<source>Delete Items</source>
+<target>Zmazať položky</target>
+
+<source>Copy Items</source>
+<target>Kopírovať položky</target>
+
+<source>Rename Items</source>
+<target>Premenovať položky</target>
+
+<source>Options</source>
+<target>Nastavenie programu</target>
+
+<source>Select Time Span</source>
+<target>Zadať časové rozmedzie</target>
+
+<source>Highlight Configurations</source>
+<target>Zvýrazniť konfigurácie</target>
+
+<source>Grant Full Disk Access</source>
+<target>Povoliť plný prístup k disku</target>
+
+<source>Info</source>
+<target>Info</target>
+
+<source>No log entries</source>
+<target>Žiadne logy</target>
+
+<source>Select all</source>
+<target>Vybrať všetko</target>
+
+<source>Folder Comparison and Synchronization</source>
+<target>Porovnanie a synchronizácia priečinkov</target>
+
+<source>Select view:</source>
+<target>Výber zobrazenia:</target>
+
+<source>Show filtered or temporarily excluded files</source>
+<target>Zobraziť filtrované alebo dočasne vynechané súbory</target>
+
+<source>Show files that are equal</source>
+<target>Zobraziť rovnaké súbory</target>
+
+<source>Show conflicts</source>
+<target>Zobraziť konflikty</target>
+
+<source>Show files that will be created on the left side</source>
+<target>Zobraziť súbory, ktoré budú vľavo vytvorené</target>
+
+<source>Show files that will be created on the right side</source>
+<target>Zobraziť súbory, ktoré budú vpravo vytvorené</target>
+
+<source>Show files that will be deleted on the left side</source>
+<target>Zobraziť súbory, ktoré budú vľavo zmazané</target>
+
+<source>Show files that will be deleted on the right side</source>
+<target>Zobraziť súbory, ktoré budú vpravo zmazané</target>
+
+<source>Show files that will be updated on the left side</source>
+<target>Zobraziť súbory, ktoré budú vľavo aktualizované</target>
+
+<source>Show files that will be updated on the right side</source>
+<target>Zobraziť súbory, ktoré budú vpravo aktualizované</target>
+
+<source>Show files that won't be copied</source>
+<target>Zobraziť súbory, ktoré nebudú kopírované</target>
+
+<source>Show files that exist on left side only</source>
+<target>Zobraziť súbory existujúce iba vľavo</target>
+
+<source>Show files that exist on right side only</source>
+<target>Zobraziť súbory existujúce iba vpravo</target>
+
+<source>Show files that are newer on left</source>
+<target>Zobraziť novšie súbory vľavo</target>
+
+<source>Show files that are newer on right</source>
+<target>Zobraziť novšie súbory vpravo</target>
+
+<source>Show files that are different</source>
+<target>Zobraziť rozdielne súbory</target>
+
+<source>&Options</source>
+<target>Nastavenie &programu</target>
+
+<source>Main Bar</source>
+<target>Hlavná lišta</target>
+
+<source>Folder Pairs</source>
+<target>Priečinkové dvojice</target>
+
+<source>Find</source>
+<target>Hľadať</target>
+
+<source>View Settings</source>
+<target>Nastavenie zobrazenia</target>
+
+<source>Configuration</source>
+<target>Konfigurácia</target>
+
+<source>Overview</source>
+<target>Prehľad</target>
+
+<source>Swap sides</source>
+<target>Zámena strán</target>
+
+<source>Show "%x"</source>
+<target>Zobraziť "%x"</target>
+
+<source>Local path not available for %x.</source>
+<target>Lokálna cesta pre %x nie je k dispozícií.</target>
+
+<source>Confirm</source>
+<target>Potvrdiť</target>
+
+<source>
+	<pluralform>Do you really want to execute the command %y for one item?</pluralform>
+	<pluralform>Do you really want to execute the command %y for %x items?</pluralform>
+</source>
+<target>
+	<pluralform>Naozaj chcete vykonať príkaz %y pre 1 položku?</pluralform>
+	<pluralform>Naozaj chcete vykonať príkaz %y pre %x položky?</pluralform>
+	<pluralform>Naozaj chcete vykonať príkaz %y pro %x položiek?</pluralform>
+</target>
+
+<source>&Execute</source>
+<target>&Spustiť</target>
+
+<source>Set direction:</source>
+<target>Zadať smer:</target>
+
+<source>multiple selection</source>
+<target>viacnásobný výber</target>
+
+<source>&Include via filter:</source>
+<target>&Zahrnúť podľa filtru:</target>
+
+<source>&Exclude via filter:</source>
+<target>&Vylúčiť podľa filtru:</target>
+
+<source>Include temporarily</source>
+<target>Pridať dočasne</target>
+
+<source>Exclude temporarily</source>
+<target>Vynechať dočasne</target>
+
+<source>&Synchronize selection</source>
+<target>&Synchronizovať vybrané</target>
+
+<source>&Copy to...</source>
+<target>&Kopírovať do...</target>
+
+<source>Multi-&Rename</source>
+<target>P&remenovať všetky</target>
+
+<source>&Delete</source>
+<target>&Zmazať</target>
+
+<source>Show icons:</source>
+<target>Zobraziť ikony:</target>
+
+<source>Small</source>
+<target>Malé</target>
+
+<source>Medium</source>
+<target>Stredné</target>
+
+<source>Large</source>
+<target>Veľké</target>
+
+<source>Select time span...</source>
+<target>Zadajte časové rozmedzie...</target>
+
+<source>Donation Edition</source>
+<target>Donation Edition</target>
+
+<source>Edited</source>
+<target>Zmenené</target>
+
+<source>Administrator</source>
+<target>Administrátor</target>
+
+<source>Configuration saved</source>
+<target>Konfigurácia uložená</target>
+
+<source>FreeFileSync batch</source>
+<target>FreeFileSync dávka</target>
+
+<source>Do you want to save changes to %x?</source>
+<target>Uložiť zmeny do %x?</target>
+
+<source>Never save &changes</source>
+<target>Nikdy &neukladať zmeny</target>
+
+<source>Do&n't save</source>
+<target>&Neukladať</target>
+
+<source>%x cannot be renamed.</source>
+<target>%x nemôže byť premenované.</target>
+
+<source>New name:</source>
+<target>Nový názov:</target>
+
+<source>Rename Configuration</source>
+<target>Premenovať Konfiguráciu</target>
+
+<source>Configuration name must not be empty.</source>
+<target>Názov konfigurácie nemôže zostať prázdny.</target>
+
+<source>Red</source>
+<target>Červená</target>
+
+<source>Yellow</source>
+<target>Žltá</target>
+
+<source>Green</source>
+<target>Zelená</target>
+
+<source>Cyan</source>
+<target>Tyrkysová</target>
+
+<source>Blue</source>
+<target>Modrá</target>
+
+<source>Purple</source>
+<target>Fialová</target>
+
+<source>Gray</source>
+<target>Sivá</target>
+
+<source>Different color...</source>
+<target>Iná farba...</target>
+
+<source>Background color</source>
+<target>Farba pozadia</target>
+
+<source>&Hide</source>
+<target>&Schovať</target>
+
+<source>Highlight...</source>
+<target>Zvýrazniť...</target>
+
+<source>View settings saved</source>
+<target>Zobraziť uložené nastavenia</target>
+
+<source>&Save as default</source>
+<target>&Uložiť ako predvolené</target>
+
+<source>Filter</source>
+<target>Filter</target>
+
+<source>No files to synchronize</source>
+<target>Žiadne súbory k synchronizácií</target>
+
+<source>Please confirm you want to swap sides.</source>
+<target>Prosím potvrďte výmenu strán.</target>
+
+<source>&Swap</source>
+<target>&Vymeniť</target>
+
+<source>Left and right sides have been swapped</source>
+<target>Ľavá a pravá strana boli vymenené.</target>
+
+<source>
+	<pluralform>1 directory</pluralform>
+	<pluralform>%x directories</pluralform>
+</source>
+<target>
+	<pluralform>1 adresár</pluralform>
+	<pluralform>%x adresáre</pluralform>
+	<pluralform>%x adresárov</pluralform>
+</target>
+
+<source>
+	<pluralform>1 file</pluralform>
+	<pluralform>%x files</pluralform>
+</source>
+<target>
+	<pluralform>1 súbor</pluralform>
+	<pluralform>%x súbory</pluralform>
+	<pluralform>%x súborov</pluralform>
+</target>
+
+<source>Cannot find %x</source>
+<target>Nie je možné nájsť %x</target>
+
+<source>Move up</source>
+<target>Dohora</target>
+
+<source>Move down</source>
+<target>Dodola</target>
+
+<source>File list exported</source>
+<target>Zoznam súborov bol exportovaný</target>
+
+<source>FreeFileSync %x is available!</source>
+<target>Je dostupná FreeFileSync verzia %x!</target>
+
+<source>Searching for program updates...</source>
+<target>Hľadanie aktualizácií programu...</target>
+
+<source>Paused</source>
+<target>Pauza</target>
+
+<source>Stop requested...</source>
+<target>Zastavenie požiadavky...</target>
+
+<source>Initializing...</source>
+<target>Inicializácia...</target>
+
+<source>Comparing content...</source>
+<target>Porovnávanie obsahu...</target>
+
+<source>&Continue</source>
+<target>&Pokračovať</target>
+
+<source>Progress</source>
+<target>Priebeh</target>
+
+<source>Old name</source>
+<target>Starý názov</target>
+
+<source>New name</source>
+<target>Nový názov</target>
+
+<source>
+	<pluralform>Do you really want to rename the following item?</pluralform>
+	<pluralform>Do you really want to rename the following %x items?</pluralform>
+</source>
+<target>
+	<pluralform>Chcete skutočne premenovať tento súbor?</pluralform>
+	<pluralform>Chcete skutočne premenovať %x súbory?</pluralform>
+	<pluralform>Chcete skutočne premenovať %x súborov?</pluralform>
+</target>
+
+<source>Installation files are corrupted. Please reinstall FreeFileSync.</source>
+<target>Inštalačný súbor je poškodený. Prosím preinštalujte FreeFileSync.</target>
+
+<source>My Drive</source>
+<target>Môj disk</target>
+
+<source>Connections</source>
+<target>Pripojenia</target>
+
+<source>Defined by context of use</source>
+<target>Definované podľa kontextu používania</target>
+
+<source>Recommended range:</source>
+<target>Odporúčaný rozsah:</target>
+
+<source>Do you really want to disconnect from user account %x?</source>
+<target>Skutočne sa chcete odpojiť z užívateľského účtu %x?</target>
+
+<source>Key passphrase:</source>
+<target>Prístupová fráza:</target>
+
+<source>Please select a user account first.</source>
+<target>Prosím najprv si vyberte účet.</target>
+
+<source>Please enter a username.</source>
+<target>Prosím zadajte používateľské meno.</target>
+
+<source>Please enter a file path.</source>
+<target>Prosím zadajte cestu k súboru.</target>
+
+<source>
+	<pluralform>Copy the following item to another folder?</pluralform>
+	<pluralform>Copy the following %x items to another folder?</pluralform>
+</source>
+<target>
+	<pluralform>Kopírovať následujúcu položku do iného priečinka?</pluralform>
+	<pluralform>Kopírovať následujúce %x položky do iného priečinka?</pluralform>
+	<pluralform>Kopírovať následujúcich %x položiek do iného priečinka?</pluralform>
+</target>
+
+<source>
+	<pluralform>Do you really want to move the following item to the recycle bin?</pluralform>
+	<pluralform>Do you really want to move the following %x items to the recycle bin?</pluralform>
+</source>
+<target>
+	<pluralform>Naozaj chcete presunúť následujúcu položku do Koša?</pluralform>
+	<pluralform>Naozaj chcete presunúť následujúce %x položky do Koša?</pluralform>
+	<pluralform>Naozaj chcete presunúť následujúcich %x položiek do Koša?</pluralform>
+</target>
+
+<source>Move</source>
+<target>Presunúť</target>
+
+<source>
+	<pluralform>Do you really want to delete the following item?</pluralform>
+	<pluralform>Do you really want to delete the following %x items?</pluralform>
+</source>
+<target>
+	<pluralform>Naozaj chcete zmazať následujúcu položku?</pluralform>
+	<pluralform>Naozaj chcete zmazať následujúce %x položky?</pluralform>
+	<pluralform>Naozaj chcete zmazať následujúcich %x položiek?</pluralform>
+</target>
+
+<source>Start to synchronize the selection?</source>
+<target>Spustiť synchronyzáciu vybraných?</target>
+
+<source>Start synchronization now?</source>
+<target>Spustiť synchronizáciu teraz?</target>
+
+<source>Leave progress dialog open after synchronization. (don't auto-close)</source>
+<target>Nechať dialóg progresu otvorený po synchronizácií. (nezatvárať automaticky)</target>
+
+<source>Copy DACL, SACL, Owner, Group</source>
+<target>Kopírovať DACL, SACL, Owner, Group</target>
+
+<source>No dialogs hidden</source>
+<target>Žiadne dialógové okná neboli schované</target>
+
+<source>
+	<pluralform>1 dialog hidden</pluralform>
+	<pluralform>%x dialogs hidden</pluralform>
+</source>
+<target>
+	<pluralform>1 dialóg skrytý</pluralform>
+	<pluralform>%x dialógy skryté</pluralform>
+	<pluralform>%x dialógov skrytých</pluralform>
+</target>
+
+<source>Please enter a key for offline activation.</source>
+<target>Prosím zadajte kľúč pre offline aktiváciu.</target>
+
+<source>Downloading update...</source>
+<target>Sťahovanie aktualizácie...</target>
+
+<source>Remove:</source>
+<target>Odstrániť:</target>
+
+<source>Each filter item must be a path relative to the selected folder pairs. The following changes are suggested:</source>
+<target>Každá položka z filtra musí byť relatívna cesta k vybranému páru zložiek. Navrhované zmeny:</target>
+
+<source>&Change</source>
+<target>&Zmena</target>
+
+<source>Identify equal files by comparing modification time and size.</source>
+<target>Rozpoznať rovnaké súbory porovnaním ich času úpravy a veľkosti.</target>
+
+<source>Identify equal files by comparing the file content.</source>
+<target>Rozpoznať rovnaké súbory porovnaním ich obsahu.</target>
+
+<source>Identify equal files by comparing their file size.</source>
+<target>Rozpoznať rovnaké súbory porovnaním ich veľkosti.</target>
+
+<source>Identify and propagate changes on both sides. Deletions, moves and conflicts are detected automatically using a database.</source>
+<target>Rozpoznať a vykonať zmeny na oboch stranách. Odstránené, presunuté alebo premenované súbory a konflikty budú detekované automaticky pomocou databázy.</target>
+
+<source>Create a mirror backup of the left folder by adapting the right folder to match.</source>
+<target>Vytvoriť zrkadlovú kópiu ľavého priečinka tak, aby po synchronizácií pravého priečinka presne odpovedal ľavému.</target>
+
+<source>Copy new and updated files to the right folder.</source>
+<target>Kopírovať nové a aktualizované súbory do pravého priečinka.</target>
+
+<source>Configure your own synchronization rules.</source>
+<target>Nastavenie vlastných pravidiel synchronizácie.</target>
+
+<source>Comparison</source>
+<target>Porovnanie</target>
+
+<source>Synchronization</source>
+<target>Synchronizácia</target>
+
+<source>This week</source>
+<target>Tento týždeň</target>
+
+<source>This month</source>
+<target>Tento mesiac</target>
+
+<source>This year</source>
+<target>Tento rok</target>
+
+<source>Byte</source>
+<target>Byte</target>
+
+<source>KB</source>
+<target>KB</target>
+
+<source>MB</source>
+<target>MB</target>
+
+<source>Retain deleted and overwritten files in the recycle bin</source>
+<target>Ponechať zmazané a prepísané sobory v Koši</target>
+
+<source>Delete and overwrite files permanently</source>
+<target>Zmazať a prepísať súbory natrvalo</target>
+
+<source>Replace</source>
+<target>Nahradiť</target>
+
+<source>Move files and replace if existing</source>
+<target>Presunúť a nahradiť súbory pokiaľ už existujú</target>
+
+<source>Time stamp</source>
+<target>Časová značka</target>
+
+<source>Move files into a time-stamped subfolder</source>
+<target>Presunúť súbory do podpriečinka s časovou značkou</target>
+
+<source>File</source>
+<target>Súbor</target>
+
+<source>Append a time stamp to each file name</source>
+<target>Pridať časovú značku ku každému názvu súboru</target>
+
+<source>On completion:</source>
+<target>Po dokončení:</target>
+
+<source>On errors:</source>
+<target>Pri chybách:</target>
+
+<source>On success:</source>
+<target>Pri úspechu:</target>
+
+<source>All folder pairs</source>
+<target>Všetky páry priečinkov</target>
+
+<source>&Load factory default</source>
+<target>&Načítať predvolené</target>
+
+<source>YYYY-MM-DD hhmmss</source>
+<target>RRRR-MM-DD hhmmss</target>
+
+<source>Success</source>
+<target>Úspešné</target>
+
+<source>Minimum version count must be smaller than maximum count.</source>
+<target>Minimálny počet verzií musí byť menší ako maximálny počet.</target>
+
+<source>Please enter a folder path.</source>
+<target>Prosím zadajte cestu k priečinku.</target>
+
+<source>&Restore</source>
+<target>&Obnoviť</target>
+
+<source>Files</source>
+<target>Súbory</target>
+
+<source>Percentage</source>
+<target>Percentný podiel</target>
+
+<source>Failed to retrieve update information.</source>
+<target>Získanie informácie o aktualizácií bolo neúspešné.</target>
+
+<source>Automatic updates:</source>
+<target>Automatická aktualizácia:</target>
+
+<source>Check for Program Updates</source>
+<target>Hľadanie aktualizácií programu</target>
+
+<source>Auto-update now or download manually from the FreeFileSync home page?</source>
+<target>Automaticky aktualizovať teraz alebo ručne z domovskej stránky FreeFileSync?</target>
+
+<source>&Auto-update</source>
+<target>&Automatická aktualizácia</target>
+
+<source>&Home page</source>
+<target>&Domovská stránka</target>
+
+<source>Download now?</source>
+<target>Stiahúť teraz?</target>
+
+<source>&Download</source>
+<target>&Sťahovannie</target>
+
+<source>FreeFileSync is up-to-date.</source>
+<target>FreeFileSync je aktuálny.</target>
+
+<source>Cannot find current FreeFileSync version number online. A newer version is likely available. Check manually now?</source>
+<target>Nie je možné nájsť online číslo verzie FreeFileSync. pravdepodobne je k dispozícií novšia verzia. Overiť teraz manuálne?</target>
+
+<source>&Check</source>
+<target>&Kontrola</target>
+
+<source>Consistency check failed for %x.</source>
+<target>Overenie konzistencie pre %x zlyhalo.</target>
+
+<source>Incorrect activation key.</source>
+<target>Neplatný aktivačný kľúč.</target>
+
+<source>Installation was registered on a different operating system.</source>
+<target>Inštalácia bola registrovaná na inom operačnom systéme.</target>
+
+<source>An exception occurred</source>
+<target>Vyskytla sa chyba</target>
+
+<source>Unable to register to receive system messages.</source>
+<target>Nepodarilo sa registrovať k odberu systémových správ.</target>
+
+<source>Error description not available.</source>
+<target>Podrobnosti chyby nie sú k dispozícií.</target>
+
+<source>Cannot find system function %x.</source>
+<target>Nie je možné nájsť systémovú funkciu %x.</target>
+
+<source>Unable to register device notifications for %x.</source>
+<target>Nepodarilo sa registrovať správy zaiadenia %x.</target>
+
+<source>Cannot monitor directory %x.</source>
+<target>Nie je možné nastaviť monitorovanie adresára %x.</target>
+
+<source>The file is locked by another process:</source>
+<target>Súbor je uzamknutý iným procesom:</target>
+
+<source>Failed to determine file permission support for folder %x.</source>
+<target>Nepodarilo sa načítať oprávnenia pre zložku %x.</target>
+
+<source>Cannot read security context of %x.</source>
+<target>Nie je možné načítať prístupové práva pre %x.</target>
+
+<source>Cannot write security context of %x.</source>
+<target>Nie je možné zapísať prístupové práva pre %x.</target>
+
+<source>Cannot read permissions of %x.</source>
+<target>Nie je možné načítať oprávnenie pre %x.</target>
+
+<source>Cannot copy permissions from %x to %y.</source>
+<target>Nie je možné kopírovať oprávnenie z %x do %y.</target>
+
+<source>Cannot copy attributes from %x to %y.</source>
+<target>Nie je možné kopírovať atribúty z %x do %y.</target>
+
+<source>%x TB</source>
+<target>%x TB</target>
+
+<source>%x PB</source>
+<target>%x PB</target>
+
+<source>
+	<pluralform>1 min</pluralform>
+	<pluralform>%x min</pluralform>
+</source>
+<target>
+	<pluralform>1 minúta</pluralform>
+	<pluralform>%x minúty</pluralform>
+	<pluralform>%x minút</pluralform>
+</target>
+
+<source>
+	<pluralform>1 hour</pluralform>
+	<pluralform>%x hours</pluralform>
+</source>
+<target>
+	<pluralform>1 hodina</pluralform>
+	<pluralform>%x hodiny</pluralform>
+	<pluralform>%x hodín</pluralform>
+</target>
+
+<source>Unable to suspend system sleep mode.</source>
+<target>Nie je možné pozastaviť Režím spánku.</target>
+
+<source>Cannot change process I/O priorities.</source>
+<target>Nie je možné nastaviť I/O priority procesu.</target>
+
+<source>Checking recycle bin failed for folder %x.</source>
+<target>Zlyhala kontrola Koša pre priečinok %x.</target>
+
+<source>Unable to shut down the system.</source>
+<target>Systém sa nedá vypnúť.</target>
+
+<source>Select</source>
+<target>Vybrať</target>
+
+<source>Prepare installation</source>
+<target>Príprava inštalácie</target>
+
+<source>Choose which components you want to install.</source>
+<target>Vyberte komponenty k inštalácií.</target>
+
+<source>Select installation type:</source>
+<target>Vyberte typ inštalácie:</target>
+
+<source>Local</source>
+<target>Lokálne</target>
+
+<source>Portable</source>
+<target>Prenosná</target>
+
+<source>Save settings in %x</source>
+<target>Uložiť nastavenia do %x</target>
+
+<source>Register FreeFileSync file extensions</source>
+<target>Zaregistruje prípony súborov FreeFileSync</target>
+
+<source>Create Explorer context menu entries</source>
+<target>Vytvoriť položky v kontextovej pnuke Prieskumníka</target>
+
+<source>Save settings in installation directory</source>
+<target>Uložiť nastavenia do zložky inštalácie</target>
+
+<source>Do not write to Registry</source>
+<target>Nezapisovať do Registrov</target>
+
+<source>Just copy the files</source>
+<target>Skopíruje iba súbory</target>
+
+<source>Create shortcuts:</source>
+<target>Vytvoriť zástupcu:</target>
+
+<source>Desktop</source>
+<target>Plocha</target>
+
+<source>Start Menu</source>
+<target>Ponuka Štart</target>
+
+<source>Send To</source>
+<target>Odoslať kam</target>
+
+<source>Registering FreeFileSync file extensions</source>
+<target>Zaregistrovať príponu súborov FreeFileSync</target>
+
+<source>Unregistering FreeFileSync file extensions</source>
+<target>Odregistrovať príponu súborov FreeFileSync</target>
+
+<source>FreeFileSync Configuration</source>
+<target>FreeFileSync konfigurácia</target>
+
+<source>FreeFileSync Batch File</source>
+<target>Dávkový súbor FreeFileSync</target>
+
+<source>FreeFileSync Synchronization Database</source>
+<target>Synchronizačná databáza FreeFileSync</target>
+
+<source>RealTimeSync Configuration</source>
+<target>Konfigurácia RealTimeSync</target>
+
+<source>Edit with FreeFileSync</source>
+<target>Upraviť vo FreeFileSync</target>
+
+<source>If you like FreeFileSync:</source>
+<target>Pokiaľ sa Vám FreeFileSync páči:</target>
+
+<source>Instead of an ad, here's an animal.</source>
+<target>Namiesto reklamy je tu obrázok zvieraťa.</target>
+
+<source>The FreeFileSync portable version cannot install into a subfolder of %x.</source>
+<target>Prenosnú verziu FreeFileSync nie je možné inštalovať do podpriečinka %x.</target>
+
+<source>Please choose the local installation type or select a different folder for installation.</source>
+<target>Prosím zvoľte lokálny typ inštalácie alebo vyberte iný priečinok pre inštaláciu.</target>
+
