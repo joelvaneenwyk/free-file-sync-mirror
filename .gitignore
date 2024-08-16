@@ -8,3 +8,10 @@ test-output.xml
 .cache/
 
 /gcc-*/
+
+.task/
+.git/
+
+/*.tar.xz
+/*.tar.gz
+/curl-*/
