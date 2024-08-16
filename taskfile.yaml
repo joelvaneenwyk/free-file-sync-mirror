@@ -3,12 +3,14 @@
 version: '3'
 
 vars:
-  GREETING: Hello, World!
+  BUILD_DIR_NAME: .build
 
 tasks:
   default:
     deps: [build]
 
   build:
+    sources:
+      - .github/build/build.sh
     cmds:
-      - '{{.ROOT_DIR}}/.github/build/build.sh'
+      - cmd: sh "{{joinPath .TASKFILE_DIR ".github" "build" "build.sh"}}"
