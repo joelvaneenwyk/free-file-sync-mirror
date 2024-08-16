@@ -1,13 +1,22 @@
-FreeFileSync 13.7 [2024-06-20]
-------------------------------
+# Changelog
+
+<!--
+Find:
+ | ^([a-zA-Z\d\-\]\[ \.]+)$
+ | [-]+$
+Replace:
+ | ## $1
+-->
+
+## FreeFileSync 13.7 [2024-06-20]
+
 Support copying symlinks between SFTP devices
 Fixed input focus not being restored after comparison/sync
 Fixed log file pruning not considering selected configuration
 Show startup error details when running outside terminal (Linux)
 
+## FreeFileSync 13.6 [2024-05-10]
 
-FreeFileSync 13.6 [2024-05-10]
-------------------------------
 Compact parent path display for medium/large row sizes
 Fixed crash when mouse inputs are queued due to system lag
 Don't steal focus from other app when sync progress dialog is shown
@@ -15,27 +24,24 @@ Fix crackling sound at the beginning of WAV playback (Linux)
 Prevent middle grid tooltip from covering sync direction
 Disable Nagle algorithm for SFTP connections
 
+## FreeFileSync 13.5 [2024-04-01]
 
-FreeFileSync 13.5 [2024-04-01]
-------------------------------
 Wrap file grid folder paths instead of truncate
 Fixed sync operation arrows for RTL layout
 Fixed FTP hang during connection (libcurl regression)
 Consider user-defined file time tolerance for DB comparisons
 Don't log folder pair paths if nothing to sync
 
+## FreeFileSync 13.4 [2024-02-16]
 
-FreeFileSync 13.4 [2024-02-16]
-------------------------------
 Ignore leading/trailing space when matching file names
 Work around wxWidgets system logger clearing error code
 Fixed registration info not found after App Translocation (macOS)
 Avoid modal dialog hang on KDE when compiling with GTK3
 Change app location without losing Donation Edition status (macOS)
 
+## FreeFileSync 13.3 [2024-01-07]
 
-FreeFileSync 13.3 [2024-01-07]
-------------------------------
 Completed CASA security assessment for Google Drive
 Use system temp folder for auto-updating
 Ignore errors when setting directory attributes is unsupported
@@ -43,9 +49,8 @@ Save GUI sync log file even when cancelled
 Fixed Business Edition install over existing installation
 Updated code signing certificates (Windows)
 
+## FreeFileSync 13.2 [2023-11-23]
 
-FreeFileSync 13.2 [2023-11-23]
-------------------------------
 Complete high-DPI/Retina display support (macOS)
 Prevent files from being moved to versioning recursively
 Fixed tooltip line wrap bug for moved files (Windows)
@@ -55,18 +60,16 @@ Fixed setting modification times on certain storage devices (Windows)
 Fixed bogus "Sound playback failed" error message (macOS)
 Fixed rename dialog text selection wobble (macOS)
 
+## FreeFileSync 13.1 [2023-10-23]
 
-FreeFileSync 13.1 [2023-10-23]
-------------------------------
 Keep comparison results when only changing cloud connection settings
 Sync button: indicate if database will be used
 Remove leading/trailing space during manual file rename
 Set environment variable "DISPLAY=:0" if missing (Linux)
 Support dropping ffs_gui/ffs_real config on RealTimeSync directory input field
 
+## FreeFileSync 13.0 [2023-09-12]
 
-FreeFileSync 13.0 [2023-09-12]
-------------------------------
 Rename (multiple) files manually (F2 key)
 Configure individual directions for DB-based sync
 Detect moved files with "Update" sync variant (requires sync.ffs_db files)
@@ -77,9 +80,8 @@ Fixed error during process initialization while connecting with quick launch
 Avoid redundant file reopen when setting file times during copy
 Set working directory to match FFS configuration file when double-clicking (Linux)
 
+## FreeFileSync 12.5 [2023-07-21]
 
-FreeFileSync 12.5 [2023-07-21]
-------------------------------
 Merge logs of individual steps (comparison, manual operation, sync)
 Show total percentage in progress dialog header
 Log and report errors during cleanup or exception handling
@@ -91,9 +93,8 @@ Don't clear other side when right-clicking file selection
 Fixed passive FTP when using different IP than control connection
 Work around FTP servers silently renaming unsupported characters of temporary file
 
+## FreeFileSync 12.4 [2023-06-20]
 
-FreeFileSync 12.4 [2023-06-20]
-------------------------------
 Show dynamic error and warning count in progress dialogs
 Show process elevation status in title bar (Administrator, root)
 Fixed libcurl bug CURLE_URL_MALFORMAT for numerical host name
@@ -103,9 +104,8 @@ Fixed Btrfs compression not being applied during copy (Linux)
 Run on file systems with buggy GetFinalPathNameByHandle() implementation, e.g. Dokany-based
 Save selected view mode (F11) in batch config file
 
+## FreeFileSync 12.3 [2023-05-17]
 
-FreeFileSync 12.3 [2023-05-17]
-------------------------------
 Add custom notes to sync configurations
 Highlight comparison and sync buttons
 Show sync stats in config panel tool tip
@@ -117,9 +117,8 @@ Fixed config panel metadata being reset after renaming
 Fixed config panel keyboard cursor after deletion/rename
 Improved small icon resolution for high-DPI monitors
 
+## FreeFileSync 12.2 [2023-04-02]
 
-FreeFileSync 12.2 [2023-04-02]
-------------------------------
 Fixed temporary access error when creating multiple folders in parallel
 Log failure to copy folder attributes as warning only
 Enable UTF-8, even if FTP server does not advertize in FEAT (vsftpd)
@@ -129,9 +128,8 @@ Fixed crash when parsing SFTP package from stream
 Revert back to GTK2 build due to GTK3 hangs on KDE (Linux)
 Fixed missing COM initialization for MTP path parsing
 
+## FreeFileSync 12.1 [2023-02-20]
 
-FreeFileSync 12.1 [2023-02-20]
-------------------------------
 First official build based on GTK3 (Linux)
 Allow cancel during folder path normalization (e.g. delay during HDD spin up)
 Fixed slow FTP comparison performance due to libcurl regression
@@ -145,9 +143,8 @@ Mouse hover effects for config and overview grid
 Always update existing shortcuts during installation (Windows, Linux)
 Fixed another "Some files will be synchronized as part of multiple base folders" false-negative
 
+## FreeFileSync 12.0 [2023-01-21]
 
-FreeFileSync 12.0 [2023-01-21]
-------------------------------
 Don't save password and show prompt instead for (S)FTP
 Fast path check failure on access errors
 Support PuTTY private key file version 3
@@ -163,9 +160,8 @@ Don't require sudo during non-root installation (Linux)
 Stricter type checking when deleting file/folder/symlinks
 Succinct error messages when path component is not existing
 
+## FreeFileSync 11.29 [2022-12-16]
 
-FreeFileSync 11.29 [2022-12-16]
--------------------------------
 Fixed crash after 1-byte file copy from MTP device
 Fixed incorrect installer z-order during auto-update (macOS)
 Compress copied file only if target folder is marked as NTFS-compressed (Windows)
@@ -178,9 +174,8 @@ Show path conflict warning aggregated into groups
 Don't assume path conflict if single write and multiple ignored items
 Fixed CTRL + Insert clipboard copy for some text controls (Windows, Linux)
 
+## FreeFileSync 11.28 [2022-11-16]
 
-FreeFileSync 11.28 [2022-11-16]
--------------------------------
 Recover from corrupted database file
 Save database files pair-wise as a transaction
 Fixed FTP access for Xiaomi "File Manager"
@@ -189,9 +184,8 @@ Fixed recycle bin double initialization bug (Windows)
 Fixed incorrect case-insensitive string comparison for i and ı
 Round progress percentage numbers down
 
+## FreeFileSync 11.27 [2022-10-17]
 
-FreeFileSync 11.27 [2022-10-17]
--------------------------------
 Fixed "Some files will be synchronized as part of multiple base folders" false-negative
 Fixed "Unexpected size of data stream" for Google Drive
 Fixed crash when downloading empty file from Google Drive
@@ -201,9 +195,8 @@ Fixed progress dialog font on Ubuntu MATE
 Support cut/copy/paste for filter settings
 Fixed free disk space calculation if target folder not yet created
 
+## FreeFileSync 11.26 [2022-10-06]
 
-FreeFileSync 11.26 [2022-10-06]
--------------------------------
 Faster file copy for SSD-based hard drives (Linux, macOS)
 Don't fill the OS file cache during file copy (macOS)
 Removed redundant memory buffering during file copy
@@ -215,18 +208,16 @@ Fixed normalizing strings with broken UTF encoding
 Fixed sound playback not working (Linux)
 Don't allow creating file names ending with dot character (Windows)
 
+## FreeFileSync 11.25 [2022-08-31]
 
-FreeFileSync 11.25 [2022-08-31]
--------------------------------
 Fixed crash when normalizing Unicode non-characters
 Fixed crash when accesssing Google Drive
 Fixed regession for decomposed Unicode comparison
 Fixed "exit code 106: --sign is required" error on macOS
 Reset icon cache after each comparison
 
+## FreeFileSync 11.24 [2022-08-28]
 
-FreeFileSync 11.24 [2022-08-28]
--------------------------------
 Enhanced filter syntax to match files only (append ':')
 Fixed "Some files will be synchronized as part of multiple base folders": no more false-positives
 Detect full path filter items and convert to relative path
@@ -237,9 +228,8 @@ Require config type and file extension to match
 Fixed view filter panel vertical layout
 Strict validation of UTF encoding
 
+## FreeFileSync 11.23 [2022-07-23]
 
-FreeFileSync 11.23 [2022-07-23]
--------------------------------
 Format local file times with no limits on time span
 Deferred child item failure when traversing MTP folder
 Fixed occasional wrong thumbnail orientation for MTP
@@ -250,9 +240,8 @@ Fixed some images being stretched on high-DPI monitors
 Fixed config panel tab text being mirrored in RTL layout
 Fixed parsing file times one second before Unix epoch (Gdrive, FTP)
 
+## FreeFileSync 11.22 [2022-06-23]
 
-FreeFileSync 11.22 [2022-06-23]
--------------------------------
 Allow to change default log folder in global settings
 Fixed sort order when items existing on one side only
 Consider HOME environment variable for home path (Linux)
@@ -261,9 +250,8 @@ Start comparison, then sync by only pressing Enter after startup
 Fall back to default path when failing to save log file
 Improved relative config path handling in portable mode
 
+## FreeFileSync 11.21 [2022-05-17]
 
-FreeFileSync 11.21 [2022-05-17]
--------------------------------
 Support volume GUID as path: \\?\Volume{01234567-89ab-cdef-0123-456789abcdef} (Windows)
 Avoid Two-Way conflict when changing folder name upper/lower-case
 List hidden warning messages in options dialog
@@ -273,15 +261,13 @@ Log time when error occured, not when it is reported
 Swap sides: Require confirmation only after comparison
 Updated translation files
 
+## FreeFileSync 11.20 [2022-04-17]
 
-FreeFileSync 11.20 [2022-04-17]
--------------------------------
 Fixed broken icon scaling on high-DPI displays
 Fixed user language set to English after update
 
+## FreeFileSync 11.19 [2022-04-16]
 
-FreeFileSync 11.19 [2022-04-16]
--------------------------------
 Improved performance for huge exclusion filter lists: linear to constant(!) time
 Support sync with Google Drive starred folders
 Access "My Computers" (as created by Google Backup and Sync) if starred
@@ -292,9 +278,8 @@ Work around WBEM_E_INVALID_NAMESPACE error during installation
 Fixed login user incorrectly displayed as root (macOS)
 Save Google Drive buffer before system shutdown
 
+## FreeFileSync 11.18 [2022-03-07]
 
-FreeFileSync 11.18 [2022-03-07]
--------------------------------
 Add comparison time to sync log when using GUI
 Added user-configurable timeout for Google Drive
 Consider port when comparing (S)FTP paths for equality
@@ -303,9 +288,8 @@ Add error details for NSFileReadUnknownError (macOS)
 Disable new config button when already at default
 Use user language instead of region locale during installation
 
+## FreeFileSync 11.17 [2022-02-04]
 
-FreeFileSync 11.17 [2022-02-04]
--------------------------------
 Show per-file progress in percent when copying large files
 Log app initialization errors
 Fixed uncaught exception after installation
@@ -314,9 +298,8 @@ Consider ReFS 128-bit file ID failure states (Windows)
 Refer to volume by name: support names including brackets
 Support local installation with non-standard home (Linux)
 
+## FreeFileSync 11.16 [2022-01-02]
 
-FreeFileSync 11.16 [2022-01-02]
--------------------------------
 Allow to select and remove invalid config file
 Migrated all HTTPS requests to use libcurl (Linux, macOS)
 Set keyboard focus on config panel after startup
@@ -330,9 +313,8 @@ Boxed app icon to fit OS theme (macOS)
 Fixed manual retry after automatic update check error
 Fixed missing ampersands in middle grid tooltip
 
+## FreeFileSync 11.15 [2021-12-03]
 
-FreeFileSync 11.15 [2021-12-03]
--------------------------------
 Play sound reminder when waiting for user confirmation
 Enhanced crash diagnostics with known triggers
 Defer reporting third-party incompatibilities until after crashing
@@ -340,18 +322,16 @@ Fixed Server 2019 not being detected for log file
 Use native representation for modified config (macOS)
 Improved WinMerge detection for external app integration
 
+## FreeFileSync 11.14 [2021-09-20]
 
-FreeFileSync 11.14 [2021-09-20]
--------------------------------
 Authenticate (S)FTP connections using OpenSSL 3.0
 Fixed E_NOINTERFACE error after synchronization
 Preempt crashes due to Nahimic Sonic Studio 3
 Hide main window when minimizing progress window (macOS)
 Avoid second dock icon when minimizing progress window (macOS)
 
+## FreeFileSync 11.13 [2021-08-17]
 
-FreeFileSync 11.13 [2021-08-17]
--------------------------------
 Manage default filter settings via GUI
 Support arbitrary location for local app installation (macOS)
 Fixed ERROR_FILE_NOT_FOUND masking real file access error (Windows)
@@ -360,9 +340,8 @@ Preserve clipboard contents until after program exit
 Always enable external command if independent of file items
 Support installation without Rosetta2 on ARM64 (macOS)
 
+## FreeFileSync 11.12 [2021-07-15]
 
-FreeFileSync 11.12 [2021-07-15]
--------------------------------
 Native ARM64 build to support Apple silicon M1 (macOS)
 Non-intrusive mouse highlight on file grid
 Fixed /lib/i386-linux-gnu/libgcc_s.so.1: version `GCC_7.0.0' not found
@@ -372,9 +351,8 @@ Show user name for (S)FTP display paths
 Fixed FTP connection lost error with TLS 1.3
 Present file sizes in powers of 1000 bytes (Linux, macOS)
 
+## FreeFileSync 11.11 [2021-06-11]
 
-FreeFileSync 11.11 [2021-06-11]
--------------------------------
 Fixed Shared Drive synchronization with Google Drive
 Directly open exported file list (.CSV) as temporary file
 Avoid EIO error for F_PREALLOCATE (macOS)
@@ -382,9 +360,8 @@ Watch socket using "poll" instead of "select" (Linux, macOS)
 Fixed user-specific time/date format (Windows)
 Fixed system_profiler not found error (macOS)
 
+## FreeFileSync 11.10 [2021-05-09]
 
-FreeFileSync 11.10 [2021-05-09]
--------------------------------
 Fixed comparison results cleared after mouse-scrolling the first folder pair
 Stricter base folder existence checks before synchronization
 Disable all file pairs when base folder status cannot be determined
@@ -397,9 +374,8 @@ Fixed incomplete item path in log if source item is missing
 Fixed installation error when running ConEmu
 Support starting FreeFileSync as root login user (Linux)
 
+## FreeFileSync 11.9 [2021-04-01]
 
-FreeFileSync 11.9 [2021-04-01]
-------------------------------
 Save different layouts depending on screen resolution
 Fixed large file icon scaling quality (Windows)
 Fixed broken default filter excluding DocumentRevisions (macOS)
@@ -411,14 +387,12 @@ Added automatic socket close on execv (Linux, macOS)
 Fixed Google Drive login hanging after authentication (Linux)
 Correctly generate and parse Windows epoch time (Windows, macOS)
 
+## FreeFileSync 11.8 [2021-03-03]
 
-FreeFileSync 11.8 [2021-03-03]
-------------------------------
 Fixed unexpected file size error when copying to (S)FTP, and Google Drive
 
+## FreeFileSync 11.7 [2021-03-01]
 
-FreeFileSync 11.7 [2021-03-01]
-------------------------------
 Detect moved files on FTP (if server supports MLSD)
 Allow installation only for current or all users (Linux)
 Added application uninstaller: uninstall.sh (Linux)
@@ -436,9 +410,8 @@ Fixed "Operation not supported" error when setting directory locks
 Show folder picker despite SHCreateItemFromParsingName() error
 Work around "OLE received a packet with an invalid header" error
 
+## FreeFileSync 11.6 [2021-02-01]
 
-FreeFileSync 11.6 [2021-02-01]
-------------------------------
 New FreeFileSync installer (Linux)
 New auto-updater for the Donation Edition (macOS, Linux)
 Support reading FTP file symlinks
@@ -457,9 +430,8 @@ Fixed startup failure when app folder contains back quote char (macOS)
 Fixed network card not found error on virtual machine (KVM Linux)
 Fixed RTL layout direction in popup dialogs
 
+## FreeFileSync 11.5 [2021-01-02]
 
-FreeFileSync 11.5 [2021-01-02]
-------------------------------
 New configuration context menu option to delete from disk
 Start auto retry delay at time of error instead of reporting
 Added error details to status message before retry
@@ -477,9 +449,8 @@ Keep correct panel sizes after log panel maximize
 Support modern folder picker in installer
 Don't raise progress dialog after sync when resuming from systray
 
+## FreeFileSync 11.4 [2020-12-04]
 
-FreeFileSync 11.4 [2020-12-04]
-------------------------------
 New progress graph "this one sparks joy"
 Remember progress dialog size
 New config file context menu option "Show in file manager"
@@ -493,9 +464,8 @@ Fix grid scrolling with small mouse rotations (macOS)
 Faster mouse scrolling on high-DPI resolution displays
 Keep previous windows size when maximized during auto-exit
 
+## FreeFileSync 11.3 [2020-11-01]
 
-FreeFileSync 11.3 [2020-11-01]
-------------------------------
 Enhanced main grid color scheme
 Mouse-highlight for file selection
 Added file create/delete indicators
@@ -508,9 +478,8 @@ Move error dialogs to foreground during batch sync
 Align context menu popup positions
 Updated translation files
 
+## FreeFileSync 11.2 [2020-10-02]
 
-FreeFileSync 11.2 [2020-10-02]
-------------------------------
 Improved grid layout with file icons hidden
 Improved rendering of inactive and disabled grid items
 Remember last user-selected paths for file and folder pickers
@@ -523,9 +492,8 @@ Use localized start of week for %WeekDay% (Linux, macOS)
 Swap sides using CTRL+W instead of F10
 Show confirmation dialog before swapping sides
 
+## FreeFileSync 11.1 [2020-08-31]
 
-FreeFileSync 11.1 [2020-08-31]
-------------------------------
 New file group layout on main grid (reloaded)
 Alternate colors for main grid folder groups
 Added file group context menu
@@ -547,9 +515,8 @@ Clear preview after folder history selection
 Pre-allocate target file without setting size
 Unified system error message formatting
 
+## FreeFileSync 11.0 [2020-07-21]
 
-FreeFileSync 11.0 [2020-07-21]
-------------------------------
 Revised file layout on main grid
 Skip download/upload when copying Google Drive files inside account
 Support moving Google Drive files between shared drives and My Drive
@@ -571,9 +538,8 @@ Avoid race condition during parallel file icon rendering (Linux)
 Allow creating folder name with leading/trailing spaces
 Start supporting GTK3 (Linux)
 
+## FreeFileSync 10.25 [2020-06-18]
 
-FreeFileSync 10.25 [2020-06-18]
--------------------------------
 New file tree layout for main grid
 Support Google Drive Shared Drives
 Support Google Drive Shortcuts
@@ -594,9 +560,8 @@ Fixed Google Drive owned+shared files being unlinked instead of deleted
 Fixed Google Drive change notification evaluation for item without parents
 Support double-click/"Browse directory" for (S)FTP/Google Drive (Linux)
 
+## FreeFileSync 10.24 [2020-05-17]
 
-FreeFileSync 10.24 [2020-05-17]
--------------------------------
 Increased SFTP buffer sizes for faster upload/download
 New %WeekDay%, %WeekDayName", and %MonthName% macros
 Support Linux systems without lsb_release
@@ -610,9 +575,8 @@ Show error code constants for Windows Shell errors
 Suppport ProFTPD with "MultilineRFC2228 on"
 SFTP option to enable/disable zlib compression
 
+## FreeFileSync 10.23 [2020-04-17]
 
-FreeFileSync 10.23 [2020-04-17]
--------------------------------
 Run "on completion" commands on console (no need for "cmd.exe /c")
 Check exit code and report errors for external applications
 Report stream output of failed command line calls (macOs, Linux)
@@ -636,14 +600,12 @@ RealTimeSync: distinguish drive unmount from folder change notification
 Avoid blocking command scripts waiting for user input
 Updated translation files
 
+## FreeFileSync 10.22 [2020-03-18]
 
-FreeFileSync 10.22 [2020-03-18]
--------------------------------
 Fixed upper-case conversion bug for non-ASCII strings
 
+## FreeFileSync 10.21 [2020-03-17]
 
-FreeFileSync 10.21 [2020-03-17]
--------------------------------
 Preselect last-used email address
 Select log file format (HTML or plain text)
 Aggregate email notifications when hitting sending limits
@@ -659,9 +621,8 @@ Show emoji instead of Unicode icon in email subject
 Fixed IWbemServices::ConnectServer error after sync
 Fixed aggregate email logs incomplete truncation
 
+## FreeFileSync 10.20 [2020-02-14]
 
-FreeFileSync 10.20 [2020-02-14]
--------------------------------
 Send email notifications after sync (Donation Edition)
 Generate log files in HTML format
 Detect sync database consistency errors
@@ -679,9 +640,8 @@ Fixed timeout for long-running FTP uploads by sending keep-alives
 Use Donation Edition on unlimited number of virtual machines
 Ignore accidental clicks in empty space of configuration panel
 
+## FreeFileSync 10.19 [2019-12-27]
 
-FreeFileSync 10.19 [2019-12-27]
--------------------------------
 Unified rendering of disabled grid layouts
 Count moved file pair as one update in view filter buttons
 Fix command button default sizes (Windows)
@@ -692,9 +652,8 @@ Fixed high DPI scaling issue on image borders
 Preserve system date format for RTL languages
 Fall back to folder path if resource archives are missing
 
+## FreeFileSync 10.18 [2019-11-19]
 
-FreeFileSync 10.18 [2019-11-19]
--------------------------------
 Save/load database files in parallel
 Show item count for each view filter category
 Group config history items via background colors
@@ -710,9 +669,8 @@ Detect MLSD support despite invalid FTP FEAT response
 Improved GUI responsiveness during config load
 Added Vietnamese translation
 
+## FreeFileSync 10.17 [2019-10-17]
 
-FreeFileSync 10.17 [2019-10-17]
--------------------------------
 Support PuTTY private key files for SFTP login
 Enable zlib compression for SFTP servers if supported
 Update last sync time despite differences if nothing to do
@@ -724,9 +682,8 @@ Detect common invalid SFTP key file formats
 Fixed startup crash caused by corrupted HDD properties
 Allow SFTP access via Ed25519 key in PKIX format
 
+## FreeFileSync 10.16 [2019-09-16]
 
-FreeFileSync 10.16 [2019-09-16]
--------------------------------
 Redesigned progress indicator graphs
 Avoid needless HTTP delay prior to Google Drive upload
 Skip redundant CWDs during FTP metadata updates
@@ -746,9 +703,8 @@ Use short naming convention when deleting abandoned folder lock
 Detect endless folder lock recursion on buggy file systems
 Fixed Google Drive parsing error for invalid file time
 
+## FreeFileSync 10.15 [2019-08-15]
 
-FreeFileSync 10.15 [2019-08-15]
--------------------------------
 Redesigned progress indicator stats
 Fixed crash when progress dialog is closed right before showing error
 Consider fail-safe file copy when creating sync.ffs_db files
@@ -761,9 +717,8 @@ Activated CDN for all web accesses
 Redirect error dialog to stderr during sound playback (Linux)
 Updated translation files
 
+## FreeFileSync 10.14 [2019-07-14]
 
-FreeFileSync 10.14 [2019-07-14]
--------------------------------
 Warn if versioning folder paths differ only in case
 Fixed empty HTTP response during update check (macOS/Linux)
 Warn if Donation Edition is active on unexpected number of machines
@@ -772,9 +727,8 @@ Consider cache control for HTTP GET requests
 Access all web endpoints over TLS
 Fixed character encoding issue in update reminder (macOS/Linux)
 
+## FreeFileSync 10.13 [2019-06-13]
 
-FreeFileSync 10.13 [2019-06-13]
--------------------------------
 Allow to rename configurations via context menu
 Work around hang on SMB network with broken FileFullDirectoryInformation
 Work around SMB share returning empty item name
@@ -791,9 +745,8 @@ Force LTR layout until wxWidgets supports RTL (macOS)
 Fixed pair scrolling mismatch when grid height is exceeded by one row
 Fixed startup failure due to missing /etc/machine-id (Linux)
 
+## FreeFileSync 10.12 [2019-05-12]
 
-FreeFileSync 10.12 [2019-05-12]
--------------------------------
 Show sync start time and date in progress dialog title
 Added duration of comparison to log
 Show all total times in full HH:MM:SS format
@@ -804,9 +757,8 @@ Support launching through symlink (Windows)
 Dropped support for Windows XP, Server 2003, and Vista
 Reduced installation size by 25%
 
+## FreeFileSync 10.11 [2019-04-11]
 
-FreeFileSync 10.11 [2019-04-11]
--------------------------------
 Last FreeFileSync version supporting Windows XP and Vista
 Fixed crash on multi-monitor set up
 Fixed dialogs not showing after opening UAC prompt
@@ -815,9 +767,8 @@ Added example desktop starter files (Linux)
 Fixed misleading error when determining file permissions support
 Updated wxWidgets, libcurl, libssh2, VS, GCC, Xcode
 
+## FreeFileSync 10.10 [2019-03-10]
 
-FreeFileSync 10.10 [2019-03-10]
--------------------------------
 New option: synchronize selection
 Dynamically disable unsuitable context menu options
 Support MTP devices without move command
@@ -838,9 +789,8 @@ Use native OpenSSL AES-CTR rather than libssh2 fallback
 Added context information for cloud connection errors
 Updated translation files
 
+## FreeFileSync 10.9 [2019-02-10]
 
-FreeFileSync 10.9 [2019-02-10]
-------------------------------
 Added FTP, SFTP, Google Drive support for Linux
 FreeFileSync Donation Edition available for Linux
 Compress file stream during Google Drive upload
@@ -861,9 +811,8 @@ Load next item after deleting from config history
 Avoid redundant Google Drive syncs after file/folder creation
 Avoid duplicate MTP item creation by multiple threads
 
+## FreeFileSync 10.8 [2019-01-15]
 
-FreeFileSync 10.8 [2019-01-15]
-------------------------------
 Support synchronization with Google Drive
 Don't reset sync directions when changing versioning or deletion handling
 Save last sync time before shutting down system
@@ -877,9 +826,8 @@ Fixed FreeFileSync sort order in Windows Uninstall Programs
 Fixed log override path being squashed on high DPI
 Fixed volume serial not considered when file id is missing
 
+## FreeFileSync 10.7 [2018-12-12]
 
-FreeFileSync 10.7 [2018-12-12]
-------------------------------
 Correctly resolve ambiguous paths in (S)FTP folder picker
 Fixed path alias check to not rely on volume serial number
 Check already existing move target by ID instead of path (Linux, macOS)
@@ -893,9 +841,8 @@ Exclude failed item paths containing backslash in names (Linux)
 Fixed RealTimeSync GUI distortion after drag & drop (Linux)
 Fixed parsing locale with unexpected format (Linux)
 
+## FreeFileSync 10.6 [2018-11-12]
 
-FreeFileSync 10.6 [2018-11-12]
-------------------------------
 Detect and skip traversing folder path aliases
 Report conflict when names differ only in Unicode normalization
 Unified 32 and 64 bit into single package (Linux)
@@ -915,9 +862,8 @@ Fixed temp file name hitting file system length limitations
 Fixed fatal errors not being written to console (Debian Linux)
 Updated translation files
 
+## FreeFileSync 10.5 [2018-10-11]
 
-FreeFileSync 10.5 [2018-10-11]
-------------------------------
 New file matching algorithm considering Unicode normalization
 User-configurable timeout for FTP and SFTP connections
 Ignore case sensitivity during filter matching (Linux)
@@ -934,9 +880,8 @@ Fixed manual activation input fields being disabled (macOS)
 Fixed FTP parsing error due to invalid folder time
 Fixed statistics boxes background distortion (macOS)
 
+## FreeFileSync 10.4 [2018-09-09]
 
-FreeFileSync 10.4 [2018-09-09]
-------------------------------
 Allow overriding log folder path for GUI and batch runs
 Fixed RealTimeSync not triggering when using volume path by name
 Fixed reading FTP folders including wildcard chars
@@ -946,9 +891,8 @@ Fixed crash when removing folder pair just before comparison (F5)
 Fixed crash when parent folder of newly-moved file is deleted after comparison
 Fixed statistics when folder containing moved files is found missing
 
+## FreeFileSync 10.3 [2018-08-07]
 
-FreeFileSync 10.3 [2018-08-07]
-------------------------------
 New log panel showing details about the last operation
 Show status of last syncs in configuration panel
 Access log files via the configuration panel
@@ -964,9 +908,8 @@ Open global log folder path via options dialog
 Limit global logs by age instead of size
 Deprecated batch-level log files and LastSyncs.log
 
+## FreeFileSync 10.2 [2018-07-06]
 
-FreeFileSync 10.2 [2018-07-06]
-------------------------------
 Limit number of file versions by age and count
 Report not yet existing folders as warning instead of error
 Improved comparison speed for high-latency traversals
@@ -979,9 +922,8 @@ Unbuffered folder lock file existence checking
 Fixed macOS Donation Edition not being recognized after bundle rename
 Updated translation files
 
+## FreeFileSync 10.1 [2018-06-03]
 
-FreeFileSync 10.1 [2018-06-03]
-------------------------------
 Binary-compare multiple files in parallel
 Copy file permissions when creating base folders
 Fixed hang when scrolling file list (Windows)
@@ -997,9 +939,8 @@ Support parallel folder traversal on Ubuntu 16.4
 Fixed missing shared library dependencies (Linux)
 Unified precompiled Linux binary packages
 
+## FreeFileSync 10.0 [2018-04-27]
 
-FreeFileSync 10.0 [2018-04-27]
-------------------------------
 The installer is now ad-free!
 Sync multiple files in parallel (Donation Edition)
 Compare multiple files in parallel within a single folder tree
@@ -1013,9 +954,8 @@ Handle concurrent intermediate folder creation for versioning
 Sync all folder level items before recursion (avoid CWDs)
 Updated translation files
 
+## FreeFileSync 9.9 [2018-03-09]
 
-FreeFileSync 9.9 [2018-03-09]
------------------------------
 High DPI display support
 Allow automatic retry at configuration level
 Show error handling settings during sync
@@ -1027,9 +967,8 @@ Workaround VSS provider implementation bug
 Respect macOS user settings for date and thousands separator
 Updated translation files
 
+## FreeFileSync 9.8 [2018-02-06]
 
-FreeFileSync 9.8 [2018-02-06]
------------------------------
 New option to auto-close progress dialog
 Update last sync time if no differences found
 Added 5 seconds countdown before shutdown/sleep
@@ -1045,9 +984,8 @@ Warn about outdated nviewH64.dll instead of crashing
 Show default log file path when saving a batch job
 Consider only full days for time since last sync
 
+## FreeFileSync 9.7 [2018-01-12]
 
-FreeFileSync 9.7 [2018-01-12]
------------------------------
 New configuration management panel
 New column showing days since last sync
 Support starting FreeFileSync via Windows Send To
@@ -1062,9 +1000,8 @@ Detect and notify LCMapString compatibility mode bug
 Fixed incorrect file permissions within macOS bundle
 Fixed wrong results dialog panel selection (Linux)
 
+## FreeFileSync 9.6 [2017-12-07]
 
-FreeFileSync 9.6 [2017-12-07]
------------------------------
 New installation command line option /disable_updates
 Fixed crash when closing main dialog during sync
 Fixed RealTimeSync crash after recursive mutex locking
@@ -1078,9 +1015,8 @@ Redirect escape key from main dialog to progress dialog
 Fixed startup delay during consistency checks
 Updated translation files
 
+## FreeFileSync 9.5 [2017-11-05]
 
-FreeFileSync 9.5 [2017-11-05]
------------------------------
 Allow to change error handling option on progress dialogs
 Set up shutdown behavior during sync (summary, exit, sleep, shutdown)
 Conditional execution of the post sync command line
@@ -1095,9 +1031,8 @@ Apply correct quotation for CSV-exported folder list
 Replace Unicode arrow chars with ASCII for variant description
 Updated libcurl, OpenSSL to latest builds
 
+## FreeFileSync 9.4 [2017-10-05]
 
-FreeFileSync 9.4 [2017-10-05]
------------------------------
 Fixed copying files with locked byte ranges using VSS
 Fixed wrong FTP working directory reuse in libcurl
 Allow retry upon failure during online update check
@@ -1113,9 +1048,8 @@ Refined installer error reporting
 Streamlined sync config dialogs
 Resized installer window dimensions
 
+## FreeFileSync 9.3 [2017-08-09]
 
-FreeFileSync 9.3 [2017-08-09]
------------------------------
 Support multiple connections per FTP folder traversal: N times speed up
 Improved folder traversal time by 35% for FTP servers supporting MLSD
 Use single CWD when changing FTP working directory
@@ -1129,9 +1063,8 @@ Fixed EOPNOTSUPP error on GVFS-mounted FTP (Linux)
 Prevent input focus stealing after manual comparison
 Flash task bar after comparison if other app has input focus
 
+## FreeFileSync 9.2 [2017-07-03]
 
-FreeFileSync 9.2 [2017-07-03]
------------------------------
 Use direct copy instead of transaction to speed up versioning
 Replaced file existing handling with use of unique temporary names
 Support SFTP authentication via Pageant/SSH agent
@@ -1145,9 +1078,8 @@ Narrow contract for file system abstraction regarding existing files
 Treat failure to load database as error rather than warning
 Save root folder access for certain FTP path checks
 
+## FreeFileSync 9.1 [2017-05-24]
 
-FreeFileSync 9.1 [2017-05-24]
------------------------------
 Fixed crash when getting invalid data after item type check
 Fixed copying symlinks pointing to network folders
 Support resolving network paths in the NT namespace
@@ -1162,9 +1094,8 @@ Support FTP servers returning non-routable IP in PASV response
 Support IPv6 when establishing FTP connections
 Start external application keyboard shortcuts with zero
 
+## FreeFileSync 9.0 [2017-04-16]
 
-FreeFileSync 9.0 [2017-04-16]
------------------------------
 Support synchronization via FTP (File Transfer Protocol) and FTPS (SSL/TLS)
 Notify failure to set modification time as a warning instead of an error
 Allow intermediate non-folder components when checking path status
@@ -1176,9 +1107,8 @@ Buffer (S)FTP sessions based on all login information
 Finalize all installation steps before showing finished page
 Updated translation files
 
+## FreeFileSync 8.10 [2017-03-12]
 
-FreeFileSync 8.10 [2017-03-12]
-------------------------------
 Fully preserve case-sensitive file paths (Windows, macOS)
 Support SFTP connections to local hosts
 Warn if versioning folder is contained in a base folder
@@ -1193,9 +1123,8 @@ Iterate over all matching SFTP connections available on a server (macOS)
 Reduced folder matching time by 12%, average memory use by 11%
 Added experimental FTP support
 
+## FreeFileSync 8.9 [2017-02-08]
 
-FreeFileSync 8.9 [2017-02-08]
------------------------------
 Detect when database file was copied and avoid "second part missing" error
 Further reduced size of database files by 20%
 Reduced amortized number of file operations during versioning
@@ -1210,9 +1139,8 @@ Refactored OpenSSL and libssh2 initialization/shutdown
 Case-insensitive grid sorting on Linux
 Added 32-bit precompiled Debian/Ubuntu release
 
+## FreeFileSync 8.8 [2017-01-08]
 
-FreeFileSync 8.8 [2017-01-08]
------------------------------
 Distinguish file access failure from not existing during sync
 Further optimized number of file I/O operations via file system abstraction
 Report unexpected prompts for keyboard-interactive SFTP authentication
@@ -1227,9 +1155,8 @@ Refactored file system abstraction layer for future FTP support
 Fixed failure to change file name case on MTP devices
 Fixed late failure for batch recycling when parsing of single item fails
 
+## FreeFileSync 8.7 [2016-12-06]
 
-FreeFileSync 8.7 [2016-12-06]
------------------------------
 New auto-updater feature for FreeFileSync Donation Edition
 Download zip archive of portable FreeFileSync Donation Edition
 New command line options to define parameters for silent installation
@@ -1244,9 +1171,8 @@ Enhanced file category descriptions with modification times
 Don't warn about missing recycle bin when only moving or updating attributes
 Fixed crash when switching to main dialog during batch sync
 
+## FreeFileSync 8.6 [2016-10-25]
 
-FreeFileSync 8.6 [2016-10-25]
------------------------------
 Added SFTP support for OS X
 Support SFTP authentication via public/private key
 Remember configuration history scroll position
@@ -1261,9 +1187,8 @@ Detailed error reporting after failed web access
 Suggest folder path macro substitutions also at inner positions
 Transfer folder creation times (OS X)
 
+## FreeFileSync 8.5 [2016-09-16]
 
-FreeFileSync 8.5 [2016-09-16]
------------------------------
 Support multiple SSH connections per SFTP folder traversal: N times speed up
 Support multiple SFTP channels per SSH connection: additional N times speed up
 Fixed installer crashes by using correct DEP-compatibility
@@ -1277,9 +1202,8 @@ Detect and discard unstable SSH sessions
 Pre-empt SFTP session disconnect via dedicated SFTP cleanup thread
 Run SFTP tasks directly on worker threads without helper thread overhead
 
+## FreeFileSync 8.4 [2016-08-12]
 
-FreeFileSync 8.4 [2016-08-12]
------------------------------
 Mark temporary copies created by %local_path% read-only
 Fixed crash when accessing Bitvise SFTP servers
 Support nanosecond-precision file time copying (Linux)
@@ -1292,9 +1216,8 @@ Thread-safe translation access and change during app shutdown
 Don't consider port and password when comparing SFTP paths
 Updated translation files
 
+## FreeFileSync 8.3 [2016-07-08]
 
-FreeFileSync 8.3 [2016-07-08]
------------------------------
 Make temporary local copy for non-native file paths: %local_path%
 Support selections from both grid sides at a time for external applications
 New external application macros: %item_path%, %folder_path%, %item_path2%, %folder_path2%
@@ -1308,9 +1231,8 @@ Calculate default message dialog height depending on screen size
 Don't substitute external applications path for empty base folder
 Fixed prolonged tooltip time not being evaluated
 
+## FreeFileSync 8.2 [2016-05-30]
 
-FreeFileSync 8.2 [2016-05-30]
------------------------------
 Unified item path representation on main grid
 New progress indicator control for binary comparison
 Fixed crash on exit when accessing already destructed constant
@@ -1324,9 +1246,8 @@ Normalize keyboard input encoding for all text fields (OS X)
 Report errors when cleaning up old log files
 Integrate external app WinMerge if installation is found
 
+## FreeFileSync 8.1 [2016-04-21]
 
-FreeFileSync 8.1 [2016-04-21]
------------------------------
 Follow shell links during drag and drop on main dialog (Windows)
 Significantly improved main grid rendering performance
 Log info about non-default global settings
@@ -1339,9 +1260,8 @@ Fixed access denied error when verifying read-only target file (Windows)
 New global option for sound cue after comparison
 Updated help file
 
+## FreeFileSync 8.0 [2016-03-15]
 
-FreeFileSync 8.0 [2016-03-15]
------------------------------
 Fine-tuned buffer sizes for 70% improved SFTP stream I/O speed
 Support incomplete read/write operations while maximizing buffer saturation
 Automatically check consistency of FreeFileSync installation
@@ -1361,9 +1281,8 @@ Revert to default scaling for non-dpi-aware apps
 Integrate FreeFileSync online manual
 Added Slovak translation
 
+## FreeFileSync 7.9 [2016-02-13]
 
-FreeFileSync 7.9 [2016-02-13]
------------------------------
 New comparison variant: compare by file size
 Buffer SFTP read/write accesses for optimal packet sizes
 Configure folder access time out via GlobalSettings.xml
@@ -1377,9 +1296,8 @@ Validate monitoring data to avoid RealTimeSync crash
 Updated help file
 Updated translation files
 
+## FreeFileSync 7.8 [2016-01-01]
 
-FreeFileSync 7.8 [2016-01-01]
------------------------------
 Correctly resolve environment variables containing MTP paths
 Support at and colon characters in SFTP user name
 New context buttons for quick sync config changes
@@ -1393,9 +1311,8 @@ Don't reuse timed-out SFTP sessions with thread affinity
 Workaround SFTP session hang after unsupported statvfs command
 Updated OpenSSL to 1.0.2e
 
+## FreeFileSync 7.7 [2015-12-01]
 
-FreeFileSync 7.7 [2015-12-01]
------------------------------
 Support variable drive letters for config history when using FreeFileSync portable
 Skip non-storage functional objects at MTP device level
 Log and show error messages without hanging when running as a service
@@ -1411,9 +1328,8 @@ Correctly detect system language for English UK
 Store program language by name to handle changing ids
 Fixed crash during application exit after using SFTP
 
+## FreeFileSync 7.6 [2015-11-01]
 
-FreeFileSync 7.6 [2015-11-01]
------------------------------
 Create missing synchronization base folders only on demand
 Improved main grid text search performance by 40%
 Restore correct main dialog height after restart (Linux)
@@ -1428,9 +1344,8 @@ Added COM initialization for worker threads (Windows)
 Forward focus to sync button after comparison
 Streamlined file system abstraction layer interfaces
 
+## FreeFileSync 7.5 [2015-10-01]
 
-FreeFileSync 7.5 [2015-10-01]
------------------------------
 Detect moved files on source even for targets with no (SFTP) or unstable (FAT) file id support
 Improved performance for detection of moved files by over 50%
 Added folder picker to select SFTP paths
@@ -1446,9 +1361,8 @@ Check folder recursion limit to catch stack overflows
 Doubled potential folder traversal recursion depth (Windows)
 Consider child elements of excluded folders during database clean up
 
+## FreeFileSync 7.4 [2015-09-01]
 
-FreeFileSync 7.4 [2015-09-01]
------------------------------
 Switch between all folder pair configurations directly in the sync config dialog
 Support macros, path by volume name for config files on command line
 Support slash as path separator on command line (Windows)
@@ -1463,9 +1377,8 @@ Fixed launcher error messages not being shown (Windows XP)
 Fixed launcher showing incorrect error about missing service pack (Windows XP)
 Revised help file and consolidated into online help
 
+## FreeFileSync 7.3 [2015-08-01]
 
-FreeFileSync 7.3 [2015-08-01]
------------------------------
 New context menu option to copy selected files to alternate folder (create diffs)
 Fill a folder pair by dropping two folders at a time from Explorer
 Added option to set non-standard SFTP port
@@ -1481,9 +1394,8 @@ Show manual deletion progress within comparison status panel
 Further reduced number of file accesses during versioning
 Fixed folder picker failing to select Desktop folder (Windows)
 
+## FreeFileSync 7.2 [2015-07-01]
 
-FreeFileSync 7.2 [2015-07-01]
------------------------------
 Support synchronization via SFTP (SSH File Transfer Protocol)
 Detailed error reporting when checking folder existence
 Synchronize MTP devices with no modification time support
@@ -1501,9 +1413,8 @@ Fixed about dialog layout for large font sizes
 Support Minidump creation for Windows XP
 Updated translation files
 
+## FreeFileSync 7.1 [2015-06-06]
 
-FreeFileSync 7.1 [2015-06-06]
------------------------------
 Avoid various access denied errors when synchronizing with admin rights (Windows)
 Accept Explorer drag and drop from MTP devices
 Support showing MTP files with Explorer
@@ -1526,9 +1437,8 @@ Support IP-based UNC paths with folder selector (Windows)
 Use standard file permissions for application bundle (OS X)
 Updated help file and added tips and tricks chapter
 
+## FreeFileSync 7.0 [2015-05-11]
 
-FreeFileSync 7.0 [2015-05-11]
------------------------------
 Support synchronization with MTP devices (Android, iPhone, tablet, digital camera)
 Implemented file system abstraction layer
 New database format supporting generic file ids
@@ -1545,9 +1455,8 @@ Fall back to file extension during file icon load error
 Show file icon by extension as temporary placeholder
 Work around silent failure to copy file times to external drives (Linux)
 
+## FreeFileSync 6.15 [2015-04-07]
 
-FreeFileSync 6.15 [2015-04-07]
-------------------------------
 Revert to log file naming convention without colon character
 Prevent endless recursion when traversing into folder on corrupted file system
 Fixed view filter button rendering issue for RTL languages
@@ -1566,9 +1475,8 @@ New menu item with download link after a version update
 Work around C-function memory race condition when formatting time
 Added Hindi language
 
+## FreeFileSync 6.14 [2015-02-10]
 
-FreeFileSync 6.14 [2015-02-10]
-------------------------------
 New buttons allow changing the order of folder pairs
 New keyboard shortcuts for rearranging folder pairs
 Preserve comparison results when deleting a specific folder pair
@@ -1584,9 +1492,8 @@ Fixed occasional failure to set modification times on Samba shares (OS X)
 Transfer creation times during file copy (OS X)
 Support copying file times with nanosecond precision (OS X)
 
+## FreeFileSync 6.13 [2015-01-11]
 
-FreeFileSync 6.13 [2015-01-11]
-------------------------------
 Fixed crash when failing to create log file during batch run
 Show directory traversal errors as conflict category on grid
 Improved file filter behavior for certain edge cases when updating the database
@@ -1603,9 +1510,8 @@ Copy directory permissions by default (Linux, OS X)
 Optimized construction of merged path filters
 Exclude items subject to traversal errors when updating the database
 
+## FreeFileSync 6.12 [2014-12-01]
 
-FreeFileSync 6.12 [2014-12-01]
-------------------------------
 New "Actions" menu bar entry with basic operations
 Fixed crash after comparison while needlessly copying traversal results
 Support update-checker URL redirection (Linux, OS X)
@@ -1620,9 +1526,8 @@ Fixed startup error due to invalid handle type
 Always log folder pair paths even if there is nothing to sync
 Updated translation files
 
+## FreeFileSync 6.11 [2014-11-03]
 
-FreeFileSync 6.11 [2014-11-03]
-------------------------------
 Updated recycle bin access for Windows 10
 New command line option "-edit" to load configuration without executing
 Case-insensitive command line argument evaluation
@@ -1640,11 +1545,10 @@ Keep user interface responsive while creating a volume shadow copy
 Fixed error when starting asynchronously from a batch script
 Show progress of writing log files
 Fixed updated file being left deleted when copying permissions failed
-New Project website: https://freefilesync.org/
+New Project website: <https://freefilesync.org/>
 
+## FreeFileSync 6.10 [2014-10-01]
 
-FreeFileSync 6.10 [2014-10-01]
-------------------------------
 Fixed crash when accessing recycle bin in compatibility mode (Windows 7, 8)
 Draw middle grid selection irrespective of focus column
 Don't show parts of progress graph if nothing to sync
@@ -1657,9 +1561,8 @@ Fixed number separator formatting for English locale
 Copying locked files now inactive by default
 Show all affected folders when warning about a shared sub folder
 
+## FreeFileSync 6.9 [2014-09-01]
 
-FreeFileSync 6.9 [2014-09-01]
------------------------------
 Reuse FreeFileSync taskbar link when available (Windows 7)
 Limit number of retries when creating temporary files
 Fixed bitmap rendering issue for high-contrast color schemes
@@ -1669,9 +1572,8 @@ Fixed retry when failing to determine recycle bin status
 Added progress graph legend
 Updated translation files
 
+## FreeFileSync 6.8 [2014-08-01]
 
-FreeFileSync 6.8 [2014-08-01]
------------------------------
 New comparison option to ignore file time shift in hours
 Tentatively disabled DST hack affecting FAT file creation times
 New menu option to reset GUI layout
@@ -1683,9 +1585,8 @@ Fixed high-precision tick count calculations
 Fully restart directory traversal on errors
 Updated help file with steps to schedule a batch job (OS X)
 
+## FreeFileSync 6.7 [2014-07-01]
 
-FreeFileSync 6.7 [2014-07-01]
------------------------------
 Redesigned comparison progress statistics
 Fixed crash when loading incompatible config file
 Added "new" button to config panel
@@ -1698,9 +1599,8 @@ Harmonized view category sequence
 Merged similar translation items
 Fixed crash when scrolling help window without focus
 
+## FreeFileSync 6.6 [2014-06-01]
 
-FreeFileSync 6.6 [2014-06-01]
------------------------------
 Fixed large font size standard button layout
 Fixed config dialog graphics glitch with large font sizes
 Exit FreeFileSync launcher process during update
@@ -1712,9 +1612,8 @@ Improved makefile (Linux, OS X)
 Reduced binary file size (Linux)
 Updated translation files
 
+## FreeFileSync 6.5 [2014-05-01]
 
-FreeFileSync 6.5 [2014-05-01]
------------------------------
 Support preview for RAW CR2 image files (Windows Vista and later)
 Fixed startup exception when using task scheduler (Windows XP)
 Correctly resolve SystemRoot NT path syntax for symbolic links
@@ -1725,9 +1624,8 @@ Code cleanup: removed support for old database and XML config formats
 Center sync progress dialog
 Updated help file
 
+## FreeFileSync 6.4 [2014-04-01]
 
-FreeFileSync 6.4 [2014-04-01]
------------------------------
 Combined comparison, filter and sync config dialogs
 Support alternate GlobalSettings.xml file via command line
 Toggle between config panels with F6, F7, F8
@@ -1739,9 +1637,8 @@ Resolved ERROR_ALREADY_EXISTS when creating temporary recycle bin subdirectory
 Added "save as GUI job" button on main dialog
 Added Bulgarian language
 
+## FreeFileSync 6.3 [2014-03-01]
 
-FreeFileSync 6.3 [2014-03-01]
------------------------------
 No wait time anymore while searching for recycle bin (Windows Vista and later)
 Revised synchronization progress graph
 Clean up "On completion" considering last usage
@@ -1752,9 +1649,8 @@ Added view filter labels
 Updated translation files
 Updated help file
 
+## FreeFileSync 6.2 [2014-02-01]
 
-FreeFileSync 6.2 [2014-02-01]
------------------------------
 New synchronization progress graph
 Skip binary comparison for files excluded via time span or size
 Fixed configuration panel ordering for entries starting with numbers
@@ -1768,9 +1664,8 @@ Translated external application default commands in global settings
 Support cancel while encoding extended time information
 Highlight non-zero synchronization statistics
 
+## FreeFileSync 6.1 [2014-01-01]
 
-FreeFileSync 6.1 [2014-01-01]
------------------------------
 Released RealTimeSync for OS X
 Handle errors loading reference batch config
 Disable user mode exception swallowing for Windows 7 SP1
@@ -1782,9 +1677,8 @@ Avoid file system race when creating temporary files
 Transfer creation and modification times on folder creation
 Fixed empty main dialog configuration migration issue on Mac OS X
 
+## FreeFileSync 6.0 [2013-12-01]
 
-FreeFileSync 6.0 [2013-12-01]
------------------------------
 Revised main dialog panel layout
 Show arrow icon for shortcut files and symlinks
 Execute the "on completion" command asynchronously
@@ -1799,9 +1693,8 @@ Removed libpng15.so dependency for openSUSE 13.1
 Updated help file
 Updated translation files
 
+## FreeFileSync 5.23 [2013-11-01]
 
-FreeFileSync 5.23 [2013-11-01]
-------------------------------
 Allow sorting root nodes on overview panel
 Support retry on failure to resolve path by volume name
 Copy high-precision modification times for files and symlinks
@@ -1820,9 +1713,8 @@ Fixed category icon background color issues
 Report error when reading active config file failed during save
 Preload adjacent file icons on grid
 
+## FreeFileSync 5.22 [2013-10-01]
 
-FreeFileSync 5.22 [2013-10-01]
-------------------------------
 New options for automatic retry after error
 Improved compliance with Windows User Experience guidelines
 Harmonized popup dialog layouts
@@ -1840,9 +1732,8 @@ Allow manual filter for short name on overview panel
 Don't treat file drops on directory input fields as URI (Linux)
 Updated translation files
 
+## FreeFileSync 5.21 [2013-09-02]
 
-FreeFileSync 5.21 [2013-09-02]
-------------------------------
 Detect moved/renamed files in mirror and custom variants
 New database format for two way variant: old database files are converted automatically
 Support double-clicking ffs_gui/ffs_batch files (OS X)
@@ -1867,14 +1758,12 @@ Follow symlinks when checking file/directory existence (Linux)
 Consistently set batch error codes during startup phase
 Updated translation files
 
+## FreeFileSync 5.20 [2013-08-03]
 
-FreeFileSync 5.20 [2013-08-03]
-------------------------------
 Fixed crash on startup due to wxWidgets 64-bit bug in font enumeration (Windows 8)
 
+## FreeFileSync 5.19 [2013-08-02]
 
-FreeFileSync 5.19 [2013-08-02]
-------------------------------
 Redesigned progress dialog including new items graph
 New command line syntax: set directory names of a .ffs_gui/.ffs_batch externally
 Explicit button on progress dialog to minimize to systray
@@ -1895,14 +1784,12 @@ Correctly execute file move before parent directory will be deleted
 Show a blinking system tray icon on errors instead of a modal dialog in RealTimeSync
 Added installation size for Windows' Add/Remove Programs
 
+## FreeFileSync 5.18 [2013-07-02]
 
-FreeFileSync 5.18 [2013-07-02]
-------------------------------
 Work around boost 1.54 bug "The procedure entry point GetTickCount64 could not be located in the dynamic link library KERNEL32.dll" (Windows XP)
 
+## FreeFileSync 5.17 [2013-07-02]
 
-FreeFileSync 5.17 [2013-07-02]
-------------------------------
 Consider target file when updating followed file symlinks
 Support moving files to recycle bin contained in followed directory symlinks
 Move instead of copy updated files into versioning directory
@@ -1930,9 +1817,8 @@ Don't show busy cursor on synchronization results dialog
 Log error message upon retry as type info only
 Updated translation files
 
+## FreeFileSync 5.16 [2013-06-01]
 
-FreeFileSync 5.16 [2013-06-01]
-------------------------------
 Integrated both category and sync action view into middle grid
 Condensed folder pair display names on overview panel
 Consider symlinks and junctions when copying locked files (Windows Vista)
@@ -1962,9 +1848,8 @@ Don't accept file deletion confirmation in less than 50ms
 Systematically resolved translation bugs
 Added Serbian language
 
+## FreeFileSync 5.15 [2013-05-01]
 
-FreeFileSync 5.15 [2013-05-01]
-------------------------------
 New menu option to activate/deactivate automatic update checking
 Show status message while checking for program updates
 Faster start up times through asynchronous config file checking
@@ -1993,9 +1878,8 @@ Reset main dialog layout to fix top panel default height being too small
 New help file topic "Expert Settings"
 Updated translation files
 
+## FreeFileSync 5.14 [2013-03-31]
 
-FreeFileSync 5.14 [2013-03-31]
-------------------------------
 Do not process child elements when parent directory creation fails
 Start comparison after pressing Enter in directory input fields
 Lead grid is determined via keyboard input instead of input focus change
@@ -2019,9 +1903,8 @@ Restored program logo in systray progress indicator
 Fit grid row label to match wide font sizes
 Added macros %csidl_Downloads%, %csidl_PublicDownloads%, %csidl_QuickLaunch% (Windows Vista and later)
 
+## FreeFileSync 5.13 [2013-03-06]
 
-FreeFileSync 5.13 [2013-03-06]
-------------------------------
 Prepared support for new build on Mac OS X
 Time out for not existing directories after 10 seconds
 Check directory existence in parallel
@@ -2034,9 +1917,8 @@ Accessibility: fixed unreadable labels
 More polished user interfaces
 Fixed time stamp not being set on NFS/Samba shares (Linux)
 
+## FreeFileSync 5.12 [2013-02-04]
 
-FreeFileSync 5.12 [2013-02-04]
-------------------------------
 Dynamic statistics adjustment during synchronization
 Allow to save active view filter settings as default (context menu)
 Stay responsive while checking recycle bin existence on slow disks
@@ -2050,9 +1932,8 @@ Binary comparison speed estimate considers errors and short-circuit evaluation
 Use full time window of sync phase when calculating overall speed
 Added Arabic language
 
+## FreeFileSync 5.11 [2013-01-06]
 
-FreeFileSync 5.11 [2013-01-06]
-------------------------------
 New file versioning scheme: move to folder replacing existing files
 Fixed high CPU consumption after longer syncs
 Improved .ffs_batch configuration file handling
@@ -2070,13 +1951,12 @@ Allow XML element values to contain non-escaped quotation marks
 Updated help file
 Updated translation files
 
+## FreeFileSync 5.10 [2012-12-03]
 
-FreeFileSync 5.10 [2012-12-03]
-------------------------------
 Show synchronization log as a grid in results dialog
 Improved grid scrolling performance (most noticeable on Linux)
 Allow grid selection starting from outside of the grid
-RealTimeSync: Support drag & drop on main dialog for *.ffs_real and *.ffs_batch files
+RealTimeSync: Support drag & drop on main dialog for *.ffs_real and*.ffs_batch files
 Optimized memory consumption when generating log for millions of items
 Optimized memory consumption when exporting to CSV file
 Have grid row height match window default font size
@@ -2090,9 +1970,8 @@ Improved copy routine minimizing file accesses (Linux)
 Copy file access permissions by default (Linux)
 Fixed unexpected "File or Directory not existing" error during file copy (Linux)
 
+## FreeFileSync 5.9 [2012-11-03]
 
-FreeFileSync 5.9 [2012-11-03]
------------------------------
 Scroll grid under mouse cursor
 Move files directly to recycle bin without parent "FFS 2012-05-15 131513" temporary folders
 Offer $HOME directory alias in directory drop down list (Linux)
@@ -2107,9 +1986,8 @@ Remember save config and folder picker dialog positions separately
 New sync completion sound
 Fixed sync completion sound not playing (Ubuntu)
 
+## FreeFileSync 5.8 [2012-10-01]
 
-FreeFileSync 5.8 [2012-10-01]
------------------------------
 New icon theme
 Dynamic save button and dialog title show unsaved configuration
 Exclude all folders if file size or time span filters are active
@@ -2122,9 +2000,8 @@ Set return codes in batch mode even if modal dialogs are shown
 Disabled UAC virtualization for 32-bit user-mode process
 Descriptive error message when setting invalid dates on FAT volumes
 
+## FreeFileSync 5.7 [2012-09-04]
 
-FreeFileSync 5.7 [2012-09-04]
------------------------------
 Modern directory selection dialog (Windows Vista and later)
 New file versioning scheme appending revision number to files
 New sync option to limit number of versions per file
@@ -2140,9 +2017,8 @@ Support environment variables everywhere: +on completion; +external applications
 Harmonized external application macros: %item_path%, %item_folder%, %item2_path%, %item2_folder%
 Updated translation files
 
+## FreeFileSync 5.6 [2012-08-02]
 
-FreeFileSync 5.6 [2012-08-02]
------------------------------
 Resize left and right grids equally
 Allow to move middle grid position via mouse
 Automatically resize file name columns
@@ -2157,9 +2033,8 @@ Mark begin of comparison phase in the log file
 More detailed tooltip describing items that differ in attributes only
 Added Scottish Gaelic translation
 
+## FreeFileSync 5.5 [2012-07-01]
 
-FreeFileSync 5.5 [2012-07-01]
------------------------------
 New database format for <automatic> variant: old database files are converted automatically
 Tuned performance for <automatic> variant when saving database for millions of files: > 95% faster
 Support partial database updates for <automatic> variant respecting current filter
@@ -2179,9 +2054,8 @@ Removed limitation for number of conflicts shown in the warning message and log
 Consider both global and local filter when estimating whether folder could contain matches
 Updated translation files
 
+## FreeFileSync 5.4 [2012-06-01]
 
-FreeFileSync 5.4 [2012-06-01]
------------------------------
 Copy all NTFS extended attributes
 Improved statistics panel
 Improved main grid
@@ -2206,9 +2080,8 @@ Support Citrix folder shares
 Support Arch Linux (Chakra)
 Updated translation files
 
+## FreeFileSync 5.3 [2012-05-02]
 
-FreeFileSync 5.3 [2012-05-02]
------------------------------
 Show which processes lock a file during synchronization (Windows Vista and later)
 Use unbuffered copy to speed up copying large files (Windows Vista and later)
 Preserve NTFS sparse files
@@ -2231,14 +2104,12 @@ Added Lithuanian translation
 Added Norwegian translation
 Updated translation files
 
+## FreeFileSync 5.2 [2012-04-01]
 
-FreeFileSync 5.2 [2012-04-01]
------------------------------
 Fixed runtime error "Error comparing strings! (LCMapString)" (Windows 2000, XP)
 
+## FreeFileSync 5.1 [2012-03-31]
 
-FreeFileSync 5.1 [2012-03-31]
------------------------------
 New category for time span filter: last x days
 Fixed "Error loading library function: GetVolumeInformationByHandleW" if NTFS permissions are copied
 Fixed command line issues: allow config name without extension, allow multiple directories instead of a config file
@@ -2272,17 +2143,15 @@ Installer remembers all settings for next installation (local installation only)
 All executables digitally signed
 Updated translation files
 
+## FreeFileSync 5.0 [2012-01-30]
 
-FreeFileSync 5.0 [2012-01-30]
------------------------------
 New grid control
 New tree control
 Revised Right to Left layout for Hebrew
 Updated translation files
 
+## FreeFileSync 4.6 [2011-12-25]
 
-FreeFileSync 4.6 [2011-12-25]
------------------------------
 Execute user-defined command after synchronization
 Option to automatically close synchronization progress dialog
 Automatically adjust statistics during sync if changes happened after comparison
@@ -2299,22 +2168,19 @@ New default font: Segoe UI (Windows Vista and later)
 Save settings before forced exit due to shutdown or log off
 Updated translation files
 
+## FreeFileSync 4.5 [2011-11-25]
 
-FreeFileSync 4.5 [2011-11-25]
------------------------------
 Fixed "Windows Error Code 50: The request is not supported"
 Fixed "Windows Error Code 124: The system call level is not correct"
 Fixed config load performance problem if network drive is not reachable
 Support traversing truly empty directories (no ., ..) (Windows)
 
+## FreeFileSync 4.4 [2011-11-22]
 
-FreeFileSync 4.4 [2011-11-22]
------------------------------
 Fixed error copying files containing alternate data streams (Windows)
 
+## FreeFileSync 4.3 [2011-11-20]
 
-FreeFileSync 4.3 [2011-11-20]
------------------------------
 Detection of moved and renamed files
 New database format for <Automatic> mode: a full sync is suggested before upgrading
 Fixed overwrite symlink with regular file
@@ -2324,9 +2190,8 @@ RealTimeSync: Fixed support for manual volume unmount (Windows)
 Added Croatian language
 Updated translation files
 
+## FreeFileSync 4.2 [2011-11-02]
 
-FreeFileSync 4.2 [2011-11-02]
------------------------------
 Implemented workaround for compiler bug leading to uncaught exceptions (Windows 32 bit)
 Shadow Copy Service: Native support for Windows7/Server 2008
 Fixed reference by volume name parsing issue
@@ -2338,9 +2203,8 @@ FAT 2 sec tolerance for files dated in the future
 Honor DACL/SACL inheritance flags when copying NTFS permissions (Windows)
 New option in GlobalSettings.xml: "RunWithBackgroundPriority" (Windows Vista and later)
 
+## FreeFileSync 4.1 [2011-10-09]
 
-FreeFileSync 4.1 [2011-10-09]
------------------------------
 Improved synchronization progress dialog
 Show all available aliases in directory history list
 Show password prompt when connecting to mapped network share
@@ -2352,9 +2216,8 @@ Fixed loading incorrect directory name when using multiple folder pairs
 Allow passing multiple configurations via command line
 Allow passing multiple directory names via command line
 
+## FreeFileSync 4.0 [2011-09-25]
 
-FreeFileSync 4.0 [2011-09-25]
------------------------------
 Thumbnail list view
 Option to specify comparison settings at folder pair level
 Correctly update parent-child relationship when changing sync directions
@@ -2384,16 +2247,14 @@ Plenty of GUI improvements
 Updated help file
 Updated translation files
 
+## FreeFileSync 3.21 [2011-08-19]
 
-FreeFileSync 3.21 [2011-08-19]
-------------------------------
 Fixed deleting to user-defined directory
 Fixed crash when using include filter
 New global option to disable transactional file copy
 
+## FreeFileSync 3.20 [2011-08-11]
 
-FreeFileSync 3.20 [2011-08-11]
-------------------------------
 Scan multiple directories in parallel
 Automatically resolve disconnected network maps
 Fixed temporal hang when dropping large files on main dialog
@@ -2403,9 +2264,8 @@ Keep FreeFileSync responsive when trying to access non-existent network folder
 Support for Ubuntu Unity Launcher (Linux)
 RealTimeSync: Failure notification if command line is invalid (Linux)
 
+## FreeFileSync 3.19 [2011-07-23]
 
-FreeFileSync 3.19 [2011-07-23]
-------------------------------
 Exclude sub directories from synchronization which cannot be accessed during comparison
 Warning if Recycle Bin is not available instead of deleting silently (Windows)
 Adapted log message if missing recycler leads to permanent deletion (Windows)
@@ -2425,9 +2285,8 @@ Database and lock files created by FreeFileSync do not trigger RealTimeSync anym
 Restrict maximum number of visible folder pairs to 6 (configurable via GlobalSettings.xml)
 New macros: %day%, %hour%, %min%, %sec%
 
+## FreeFileSync 3.18 [2011-07-03]
 
-FreeFileSync 3.18 [2011-07-03]
-------------------------------
 Launcher running synchronously and returning application error code
 Fixed sort by file extension
 Fixed drag and drop of SAMBA network folder
@@ -2440,9 +2299,8 @@ Added Hebrew language
 Added Danish language
 Updated translation files
 
+## FreeFileSync 3.17 [2011-05-20]
 
-FreeFileSync 3.17 [2011-05-20]
-------------------------------
 Filter files by size
 Filter latest files by time span
 Launcher automatically selecting 32/64 bit executable on start up
@@ -2466,15 +2324,13 @@ Allow base directory names having trailing white-space
 Added Ukrainian language
 Updated translation files
 
+## FreeFileSync 3.16 [2011-04-21]
 
-FreeFileSync 3.16 [2011-04-21]
-------------------------------
 Fixed file copy issues on SAMBA shares
 Small GUI fixes
 
+## FreeFileSync 3.15 [2011-04-19]
 
-FreeFileSync 3.15 [2011-04-19]
-------------------------------
 Overwriting a file as fully transactional operation
 Optimized synchronization speed (non-cached volumes, e.g. memory sticks in particular)
 Volumes can be specified by name: [<volume-name>]\<path> (use case: variable drive letters, RealTimeSync)
@@ -2492,9 +2348,8 @@ More tolerant directory creation (operation not supported/wrong parameter)
 More tolerant file move: ignore existing files (user-defined deletion directory)
 Added macro %weekday%
 
+## FreeFileSync 3.14 [2011-03-20]
 
-FreeFileSync 3.14 [2011-03-20]
-------------------------------
 New keyboard shortcuts: F5: compare F6: synchronize
 Skip to next folder pair if fatal error occurred (instead of abort)
 Reload last selected configuration on start up
@@ -2512,16 +2367,15 @@ Skip DST handling if drive does not support accurate file times
 Many small GUI/usability fixes
 Added Korean translation
 
+## FreeFileSync 3.13 [2011-01-16]
 
-FreeFileSync 3.13 [2011-01-16]
-------------------------------
 Implemented Advanced User Interface to allow user specified layout customizations
 Process case sensitive file/directory/symlink names
 Synchronize name/attributes only avoiding full copy if appropriate
 Prevent hibernation/sleep mode during comparison and synchronization (Windows)
 New database format: single file for FreeFileSync 32 and 64 bit versions
-	- full sync suggested before migrating to v3.13
-	- old sync.x64.ffs_db files may be deleted
+ - full sync suggested before migrating to v3.13
+ - old sync.x64.ffs_db files may be deleted
 Improved algorithm to calculate remaining time
 Allow resizing window containing multiple folder pairs
 Show folder short names in column file name
@@ -2537,9 +2391,8 @@ Aggregated warning messages for all folder pairs instead of one per pair
 Added privilege to access restricted symlink content
 Added Greek translation
 
+## FreeFileSync 3.12 [2010-11-28]
 
-FreeFileSync 3.12 [2010-11-28]
-------------------------------
 Allow empty folder pairs without complaining
 Automatically exclude database and lock files from all (sub-)directories (not only from base)
 Resize grid columns on both sides in parallel
@@ -2560,15 +2413,13 @@ Preserve custom changes to sync directions after manually deleting a file
 Handle empty tooltips correctly (Linux)
 Updated translation files
 
+## FreeFileSync 3.11 [2010-09-20]
 
-FreeFileSync 3.11 [2010-09-20]
-------------------------------
 Fixed migration issue: reasonable default value for number of folder pairs
 Better message box background color
 
+## FreeFileSync 3.10 [2010-09-19]
 
-FreeFileSync 3.10 [2010-09-19]
-------------------------------
 Automatically solve daylight saving time and time zone shift issues on FAT/FAT32 (finally)
 Instantly resolve abandoned directory locks associated with local computer
 Show expanded directory name as tooltip and label text (resolves macros and relative paths)
@@ -2588,16 +2439,15 @@ Toggle middle grid comparison result/sync preview with right mouse button click
 Further GUI enhancements/polishment/standard conformance
 Updated translation files
 
+## FreeFileSync 3.9 [2010-08-10]
 
-FreeFileSync 3.9 [2010-08-10]
------------------------------
 Advanced locking strategy to allow multiple processes synchronize the same directories (e.g. via network share)
-Merge multiple *.ffs_batch, *.ffs_gui files or combinations of both via drag & drop
+Merge multiple *.ffs_batch,*.ffs_gui files or combinations of both via drag & drop
 Copy file and folder permissions (requires admin rights):
-	- Windows: owner, group, DACL, SACL
-	- Linux: owner, group, permissions
-	- correctly handle Symbolic Links
-	- new option in global settings
+ - Windows: owner, group, DACL, SACL
+ - Linux: owner, group, permissions
+ - correctly handle Symbolic Links
+ - new option in global settings
 Compare by content evaluates Symbolic Links
 32-Bit build compiled with MinGW/GCC to preserve Windows 2000 compatibility
 RealTimeSync: Handle requests for device removal (USB stick) while monitoring
@@ -2607,9 +2457,8 @@ Touch database file when changes occurred only
 Moved settings "file time tolerance" and "verify copied files" to GlobalSettings.xml
 Updated translation files
 
+## FreeFileSync 3.8 [2010-06-20]
 
-FreeFileSync 3.8 [2010-06-20]
------------------------------
 New options handling Symlinks: ignore/direct/follow => warning: new database format for <Automatic> mode
 Fixed crash when starting sync for Windows XP SP2
 Prevent tooltip from stealing focus
@@ -2623,9 +2472,8 @@ Avoid losing manual changes when excluding via context menu
 Adjusted update-checker web-address
 Updated translation files
 
+## FreeFileSync 3.7 [2010-05-16]
 
-FreeFileSync 3.7 [2010-05-16]
------------------------------
 RealTimeSync: Trigger command line only if all directories are existing
 Allow for drag and drop of very large files
 Batch modus: New "Switch" button opens GUI modus when warnings occur
@@ -2642,14 +2490,12 @@ New Project website: freefilesync.sourceforge.net
 A lot of small GUI fixes
 Updated translation files
 
+## FreeFileSync 3.6 [2010-03-31]
 
-FreeFileSync 3.6 [2010-03-31]
------------------------------
 Fixed occasional crash when starting FreeFileSync
 
+## FreeFileSync 3.5 [2010-03-27]
 
-FreeFileSync 3.5 [2010-03-27]
------------------------------
 Allow <Automatic> mode syncs between 32 bit, 64 bit, Windows and Linux builds
 Show progress indicator in window title
 Support for progress indicator in Windows 7 Superbar
@@ -2661,9 +2507,8 @@ RealTimeSync: Fixed crash when double-clicking systray icon
 Allow aborting all operations via Escape key
 Added British English translation
 
+## FreeFileSync 3.4 [2010-03-04]
 
-FreeFileSync 3.4 [2010-03-04]
------------------------------
 Performance: Reduced Recycle Bin access time by 90%
 Recycle Bin support for Linux
 Performance: Reduced binary comparison sequential read time (by up to 75% for CD/DVD access)
@@ -2683,9 +2528,8 @@ Many small GUI enhancements
 Updated translation files
 New Linux .deb package: ppa:freefilesync/ffs
 
+## FreeFileSync 3.3 [2010-02-02]
 
-FreeFileSync 3.3 [2010-02-02]
------------------------------
 New installer package for portable/local/32/64-bit versions
 Built-in support for very long filenames: apply \\?\-prefix automatically
 New button for synchronization preview: show equal files
@@ -2703,9 +2547,8 @@ Enhanced conflict reporting
 Added Swedish translation
 Updated translation files
 
+## FreeFileSync 3.2 [2009-12-13]
 
-FreeFileSync 3.2 [2009-12-13]
------------------------------
 Native Windows 64-Bit version (including Volume Shadow Copy Service)
 Harmonized filter handling: global and local file filters
 Unified handling of first folder pair: all pairs now semantically equal
@@ -2724,18 +2567,16 @@ Created package for PortableApps.com
 Added Finnish translation
 Updated translation files
 
+## FreeFileSync 3.1 [2009-10-26]
 
-FreeFileSync 3.1 [2009-10-26]
------------------------------
 Support for multiple data sources in Automatic mode
 Copy file and folder create/access/modification times when synchronizing
 Progress dialog can be minimized to systray (Batch and GUI mode)
 Allow switching between silent/non-silent batch mode interactively
 Some GUI improvements
 
+## FreeFileSync 3.0 [2009-10-15]
 
-FreeFileSync 3.0 [2009-10-15]
------------------------------
 New synchronization mode: <Automatic>
 Consolidated batch mode error handling
 Fixed crash when comparing multiple pairs by content
@@ -2751,13 +2592,12 @@ Added Romanian translation
 Added Turkish translation
 Updated translation files
 
+## FreeFileSync 2.3 [2009-09-27]
 
-FreeFileSync 2.3 [2009-09-27]
------------------------------
 New filter and sync configuration at folder pair level
 Improved sorting: sort across multiple folder pairs
-				  stable sorting in middle grid
-				  consolidated sorting of sync-direction
+      stable sorting in middle grid
+      consolidated sorting of sync-direction
 Open external applications via context menu(customizable)
 Removed performance penalty when using include filters
 Improved filter syntax for strings beginning with wildcards
@@ -2766,7 +2606,7 @@ New option to show all hidden dialogs again
 Fixed issue with macros %nameCo, %dirCo
 New option in *.ffs_gui/ffs_batch files: Verify copied files
 Use Windows Volume Shadow Copy for shared and locked files(new)
-More detailed information in *.cvs export
+More detailed information in*.cvs export
 Use current working directory to save global configuration (portable version)
 Respect sub directories when manually changing sync-direction
 Allow import of batch configuration into GUI mode
@@ -2776,9 +2616,8 @@ Performance improvements: Reduced CPU time by 28%, (peak) memory consumption by 
 Added Traditional Chinese translation
 Updated translation files
 
+## FreeFileSync 2.2 [2009-08-16]
 
-FreeFileSync 2.2 [2009-08-16]
------------------------------
 New user-defined recycle bin directory
 Possibility to create synchronization directories automatically (if not existing)
 Support for relative directory names (e.g. \foo, ..\bar) respecting current working directory
@@ -2802,15 +2641,13 @@ Removed superfluous border for bitmap buttons (Linux only)
 Added Czech translation
 Updated translation files
 
+## FreeFileSync 2.1 [2009-07-03]
 
-FreeFileSync 2.1 [2009-07-03]
------------------------------
 Fixed bug that could cause FreeFileSync to crash after synchronization
 Compiled with MS Visual C++ 2008 using static runtime library
 
+## FreeFileSync 2.0 [2009-06-30]
 
-FreeFileSync 2.0 [2009-06-30]
------------------------------
 Copy locked files using Windows Volume Shadow Copy
 Load file icons asynchronously for maximum display performance
 Handle include filter correctly when comparing
@@ -2832,9 +2669,8 @@ Compiled successfully with GCC 4.4.0 and MS Visual C++ 2008
 Added Russian translation
 Updated translation files
 
+## FreeFileSync 1.19 [2009-06-01]
 
-FreeFileSync 1.19 [2009-06-01]
-------------------------------
 New synchronization preview
 Sync-direction can be adapted manually
 New category type "conflict"
@@ -2852,9 +2688,8 @@ Show only relevant synchronization options
 File icon display configurable via grid column context menu
 Updated translation files
 
+## FreeFileSync 1.18 [2009-05-10]
 
-FreeFileSync 1.18 [2009-05-10]
-------------------------------
 Linux build officially released: all major problems solved!
 New statistic: remaining time
 New statistic: bytes per second
@@ -2865,7 +2700,7 @@ Fixed overlapping grid cells
 Alternate log file directory configurable via GUI
 Added drag & drop support for batch job assembly
 Simplified filter usage: - <dirname> matches "<dirname>\*" as well as "<dirname>\"
-						 - only distinct filter entries are considered
+       - only distinct filter entries are considered
 Platform dependent line breaks in configuration *.xml files
 "Significant difference check" runs at folder pair level
 Sorting runs at folder pair level
@@ -2877,13 +2712,12 @@ A lot of smaller improvements
 Added Brazilian Portuguese translation
 Updated translation files
 
+## FreeFileSync 1.17 [2009-04-05]
 
-FreeFileSync 1.17 [2009-04-05]
-------------------------------
 Full support for Windows/Linux symbolic links:
-	- traverse, copy, delete symbolic links
-	- handle broken symbolic links
-	- new options in GlobalSettings.xml: TraverseDirectorySymlinks, CopyFileSymlinks
+ - traverse, copy, delete symbolic links
+ - handle broken symbolic links
+ - new options in GlobalSettings.xml: TraverseDirectorySymlinks, CopyFileSymlinks
 New menu option: "Check for new version"
 Copy folder attributes and security settings when implicitly creating folders
 Maximum file time difference now fully configurable
@@ -2908,9 +2742,8 @@ Added Hungarian translation
 Added Spanish translation
 Updated translation files
 
+## FreeFileSync 1.16 [2009-03-13]
 
-FreeFileSync 1.16 [2009-03-13]
-------------------------------
 Support for \\?\ path prefix for unrestricted path length (directory names > 255 characters) (windows only)
 Copy files even if target folder does not exist
 Fixed occasional error when switching languages
@@ -2928,19 +2761,18 @@ Fixed locale related issue when comparing. Big thanks to Persson Henric for prov
 New check if more than 50% of files will be overwritten/deleted
 Save memory by clearing old results before re-comparing
 Usability improvements:
-	- name of config file in window title
-	- refresh view filters on configuration load
-	- default to ascending sort when changing column
-	- maximum length of config file history customizable through xml
-	- new "load configuration" button
-	- check/uncheck option for middle grid
-	- support for CTRL + A (select all)
-	- enhanced error messages (windows only)
+ - name of config file in window title
+ - refresh view filters on configuration load
+ - default to ascending sort when changing column
+ - maximum length of config file history customizable through xml
+ - new "load configuration" button
+ - check/uncheck option for middle grid
+ - support for CTRL + A (select all)
+ - enhanced error messages (windows only)
 Updated translation files
 
+## FreeFileSync 1.15 [2009-02-22]
 
-FreeFileSync 1.15 [2009-02-22]
-------------------------------
 Fixed performance bottleneck in batch mode (non-silent)
 Improved performance of comparison by another 10%
 Configure column settings by right-click context menu
@@ -2961,10 +2793,10 @@ Added Portuguese translation
 Added Italian translation
 Updated translation files
 
+## FreeFileSync 1.14 [2009-02-01]
 
-FreeFileSync 1.14 [2009-02-01]
-------------------------------
 Massive performance improvements:
+
 - comprehensive analysis and optimization of comparison functionality
 - new, fast directory traversing algorithm
 - improved folder hierarchy compare algorithm
@@ -2978,9 +2810,8 @@ Many small fixes
 Added Chinese translation
 Updated translation files
 
+## FreeFileSync 1.13 [2009-01-06]
 
-FreeFileSync 1.13 [2009-01-06]
-------------------------------
 Automatically detect daylight saving time (DST) change for FAT/FAT32 drives
 Added directory dependency check when synchronizing multiple folder pairs
 New synchronization option: "update"
@@ -2989,9 +2820,8 @@ Fixed bug when sorting by filename
 Further GUI improvements
 Updated translation files
 
+## FreeFileSync 1.12 [2008-12-23]
 
-FreeFileSync 1.12 [2008-12-23]
-------------------------------
 Significantly improved speed of all sorting algorithms
 Keep sorting sequence when adding or removing rows
 'Sort by relative path' secondarily sorts by filename and respects folders
@@ -3005,9 +2835,8 @@ Multiple GUI improvements
 Added Dutch translation
 Updated translation files
 
+## FreeFileSync 1.11 [2008-11-23]
 
-FreeFileSync 1.11 [2008-11-23]
-------------------------------
 Support for multiple folder pairs
 Optimized performance of multiple pairs to scan each folder just once
 Enhanced batch file format
@@ -3015,9 +2844,8 @@ New context menu option to add files, file types or directories to exclude filte
 Reworked file filter dialog
 Updated translation files
 
+## FreeFileSync 1.10 [2008-11-09]
 
-FreeFileSync 1.10 [2008-11-09]
-------------------------------
 Transformed configuration file format to XML
 Exchanged batch files with shell links for full Unicode support (Windows-only)
 Improved filter usage: ignore leading/trailing white-space, upper/lower-case (Windows-only) chars
@@ -3028,9 +2856,8 @@ Multiple GUI improvements
 Added Japanese translation
 Updated translation files
 
+## FreeFileSync 1.9 [2008-10-26]
 
-FreeFileSync 1.9 [2008-10-26]
------------------------------
 Fixed wxWidgets multithreading issue that could cause synchronization to hang occasionally
 Fixed issue with %1 parameter
 Fixed issue with recycle bin usage in Unicode mode
@@ -3039,9 +2866,8 @@ New installer option to associate *.ffs files with FreeFileSync
 Transformed language files to Unicode (UTF-8)
 Delete elements in configuration history list via DELETE key
 
+## FreeFileSync 1.8 [2008-10-19]
 
-FreeFileSync 1.8 [2008-10-19]
------------------------------
 Enhanced status bar information
 Enhanced log file information
 Enhanced progress information
@@ -3050,9 +2876,8 @@ Program now waits until work is completed when abort is triggered during synchro
 Added French translation
 Updated German translation
 
+## FreeFileSync 1.7 [2008-10-12]
 
-FreeFileSync 1.7 [2008-10-12]
------------------------------
 Display only those view filter buttons that are actually needed
 Compare by size and date: last write time may differ by up to 2 seconds (NTFS vs FAT32)
 Fixed minor issue with trailing path separator when creating batch jobs
@@ -3060,9 +2885,8 @@ Fixed minor issue with window sizes not being remembered in some special situati
 Further improved Unicode compliance
 Updated German translation
 
+## FreeFileSync 1.6 [2008-10-05]
 
-FreeFileSync 1.6 [2008-10-05]
------------------------------
 Significantly improved speed of filtering files and view (< 10 ms for > 200,000 rows(!))
 Fixed minor grid mis-alignment under some special conditions
 Enhanced status bar with centered texts
@@ -3076,9 +2900,8 @@ Program language selectable from menu
 UI-option to create sync jobs (batch files) for automated synchronization
 Updated German translation
 
+## FreeFileSync 1.5 [2008-09-21]
 
-FreeFileSync 1.5 [2008-09-21]
------------------------------
 Improved speed of comparison by file content
 Simplified and optimized calculation of accumulated file sizes
 Added right-click context menu to main dialog
@@ -3087,9 +2910,8 @@ Improved usability of filtering and selecting rows
 Solved possible issue with different file time precisions in multi-OS environments
 Updated German translation
 
+## FreeFileSync 1.4 [2008-09-14]
 
-FreeFileSync 1.4 [2008-09-14]
------------------------------
 Implemented generic multithreading class to keep "compare by content" and "file synchronization" responsive
 Added status bar when comparing files (with additional status information for "compare by content")
 Some further speed optimizations
@@ -3099,13 +2921,12 @@ The result grid after synchronization now always consists of items that have not
 Added "remaining files" as sync-progress information
 Updated German translation
 
+## FreeFileSync 1.3 [2008-09-07]
 
-FreeFileSync 1.3 [2008-09-07]
------------------------------
 Maintain and load different configurations by drag&drop, load-button or command line
 New function to delete files (or move them to recycle bin) manually on the UI (without having to re-compare):
-	Deleting folders results in deletion of all dependent files, subfolders on UI grid (also no re-compare needed)
-	while catching error situations and allowing to resolve them
+ Deleting folders results in deletion of all dependent files, subfolders on UI grid (also no re-compare needed)
+ while catching error situations and allowing to resolve them
 Improved manual filtering of rows: If folders are marked all dependent subfolders and files are marked as well
 (keeping sort sequence when "hide filtered elements" is marked)
 Comprehensive performance optimization of the two features above (manual filtering, deletion) for large grids (> 200,000 rows)
@@ -3114,11 +2935,10 @@ Main window will remember restored position even if maximized
 Updated sources to become more Linux and Unicode friendly
 Updated German translation
 
+## FreeFileSync 1.2 [2008-08-31]
 
-FreeFileSync 1.2 [2008-08-31]
------------------------------
 New progress indicator and status information when synchronizing:
-	->available for command line mode and UI mode: Status update and final error report
+ ->available for command line mode and UI mode: Status update and final error report
 New progress information when comparing directories
 Multithreading for copying of files to keep program responsive
 Optimized all status dialogs and progress indicators for high performance: practically NO performance loss
@@ -3134,9 +2954,8 @@ New synchronization sequence: first delete files, then copy files to avoid disc 
 Added different return values when used in command line mode to report success or failure
 Updated German translation
 
+## FreeFileSync 1.1 [2008-08-24]
 
-FreeFileSync 1.1 [2008-08-24]
------------------------------
 Some further speed optimizations (sorting)
 Written custom wxGrid class to avoid mapping of data to UI: huge performance increase (especially with formatted grids > 100,000 items)
 Filter files to include/exclude them from synchronization
@@ -3148,7 +2967,6 @@ Simplified code concerning loading of UI resources
 Prepared code to support Unicode in some future version
 Updated German translation
 
+## FreeFileSync 1.0 [2008-08-10]
 
-FreeFileSync 1.0 [2008-08-10]
------------------------------
 Initial release
