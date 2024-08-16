@@ -1081,7 +1081,7 @@ imgFileManagerSmall_([]
     onResizeConfigPanel   (dummy3); //call once on window creation
     onResizeViewPanel     (dummy3); //
 
-    const int scrollDelta = m_buttonSelectFolderLeft->GetSize().y; //more approriate than GetCharHeight() here
+    const int scrollDelta = m_buttonSelectFolderLeft->GetSize().y; // more appropriate than GetCharHeight() here
     m_scrolledWindowFolderPairs->SetScrollRate(scrollDelta, scrollDelta);
 
     //event handler for manual (un-)checking of rows and setting of sync direction
