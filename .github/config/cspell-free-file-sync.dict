@@ -1,6 +1,7 @@
 # Custom Dictionary Words
 alives
 appdata
+Bitvise
 Btrfs
 Chakra
 Cryptomator
@@ -41,6 +42,7 @@ logfile
 Minidump
 MLSD
 MLST
+MMXIV
 Mycloud
 Nagle
 Nahimic
@@ -58,7 +60,9 @@ PKIX
 polishment
 POSIX
 precomposed
+Rclone
 reparse
+Restic
 returncode
 revisioned
 Revisioned
@@ -75,9 +79,11 @@ statvfs
 Subchunk
 subfolders
 Superbar
+Syncthing
 sysroot
 systray
 TASKFILE
+Tera
 TMPDIR
 transactionally
 unbuffered
