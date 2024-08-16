@@ -7,7 +7,13 @@ test-output.xml
 .clj-kondo/
 .cache/
 /gcc-*/
-.build/
+
 .task/
+.git/
+.build/
 out/
 vcpkg/
+
+/*.tar.xz
+/*.tar.gz
+/curl-*/
