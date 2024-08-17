@@ -5,23 +5,19 @@
  * @type {import("prettier").Config}
  */
 const config = {
-  trailingComma: "es5",
+  trailingComma: 'es5',
   semi: false,
   singleQuote: true,
-  plugins: [
-    "prettier-plugin-sh"
-  ],
-  "overrides": [
+  plugins: ['prettier-plugin-sh'],
+  overrides: [
     {
-      "files": "**/*.sh",
-      "excludeFiles": [
-        "**/*.dict"
-      ],
-      "options": {
-        "parser": "sh"
-      }
-    }
-  ]
-};
+      files: '**/*.sh',
+      excludeFiles: ['**/*.dict'],
+      options: {
+        parser: 'sh',
+      },
+    },
+  ],
+}
 
-export default config;
+export default config
