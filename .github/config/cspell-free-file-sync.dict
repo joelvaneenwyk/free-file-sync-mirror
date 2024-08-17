@@ -1,11 +1,12 @@
-# Custom Dictionary Words
 alives
 Andreas
 appdata
+armv
 Bitvise
 Brabandt
 Brinkhoff
 Btrfs
+cflags
 Chakra
 Cryptomator
 csidl
@@ -14,6 +15,7 @@ CURLE_URL_MALFORMAT
 DACL
 Delchev
 Dersch
+diaglog
 Diener
 Dokany
 Dukhovni
@@ -26,12 +28,16 @@ execv
 fadvise
 Fant
 framemanager
+Freefile
 freefilesync
+Freefilesync
 Friedl
 FTPD
 funcs
 Funcs
+gdrive
 Gdrive
+gnueabihf
 Golemon
 gtkmm
 Gusarov
@@ -49,12 +55,17 @@ Kryukov
 Kubuntu
 Kuzmich
 Kuznetsov
+ldconfig
+libcrypto
 libcurl
 libgcc
+libgtk
 libjpg
 libssh
 LIBSSH
+libstdc
 libunity
+libxtst
 logfile
 Markus
 Massar
@@ -70,6 +81,7 @@ NEWKEYS
 Nico
 noexec
 NOINTERFACE
+nproc
 NTFS
 numpad
 nview
@@ -82,6 +94,8 @@ polishment
 POSIX
 precomposed
 Rantwijk
+raspberrypi
+Raspbery
 Rclone
 reparse
 Restic
@@ -113,10 +127,13 @@ Tatham
 Tera
 TMPDIR
 transactionally
+tzip
 unbuffered
+uncompress
 uninitialization
 unmaximize
 unref
+verions
 Viktor
 vsftpd
 WBEM
@@ -124,5 +141,7 @@ Webdav
 Wnetaddconnection
 WXGTK
 wxwidgets
+WXWIDGETS
+xcopy
 zenju
 Zenju
