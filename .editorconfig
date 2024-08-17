@@ -22,3 +22,6 @@ indent_size = 2
 [*.{js,mjs,cjs}]
 indent_size = 2
 
+[*.{md,markdown}]
+indent_size = 2
+
