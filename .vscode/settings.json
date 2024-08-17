@@ -1,35 +1,35 @@
 {
-    "[c][cuda-cpp][cpp]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll": "never",
-            "source.fixAll.lint": "never"
-        },
-        "editor.formatOnPaste": false,
-        "editor.formatOnSave": false,
-        "editor.formatOnSaveMode": "modificationsIfAvailable",
-        "editor.formatOnType": false
+  "[c][cuda-cpp][cpp]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never",
+      "source.fixAll.lint": "never"
     },
-    "editor.wordWrapColumn": 120,
-    "C_Cpp.default.cppStandard": "c++17",
-    "C_Cpp.default.cStandard": "c17",
-    "C_Cpp.default.includePath": ["${workspaceFolder}", "./FreeFileSync/Source/"],
-    "C_Cpp.default.intelliSenseMode": "windows-msvc-x64",
-    "C_Cpp.default.mergeConfigurations": true,
-    "clangd.arguments": [
-        "--log",
-        "verbose",
-        "--pch-storage",
-        "memory",
-        "--offset-encoding",
-        "utf-32",
-        "--pretty",
-        "--clang-tidy",
-        "--path-mappings",
-        "/=${workspaceFolder}"
-    ],
-    "clangd.checkUpdates": true,
-    "clangd.onConfigChanged": "restart",
-    "clangd.trace": ".task/clangd.log",
-    "shellcheck.customArgs": ["--external-sources"],
-    "shellcheck.useWorkspaceRootAsCwd": false
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "editor.formatOnType": false
+  },
+  "editor.wordWrapColumn": 120,
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.includePath": ["${workspaceFolder}", "./FreeFileSync/Source/"],
+  "C_Cpp.default.intelliSenseMode": "windows-msvc-x64",
+  "C_Cpp.default.mergeConfigurations": true,
+  "clangd.arguments": [
+    "--log",
+    "verbose",
+    "--pch-storage",
+    "memory",
+    "--offset-encoding",
+    "utf-32",
+    "--pretty",
+    "--clang-tidy",
+    "--path-mappings",
+    "/=${workspaceFolder}"
+  ],
+  "clangd.checkUpdates": true,
+  "clangd.onConfigChanged": "restart",
+  "clangd.trace": ".task/clangd.log",
+  "shellcheck.customArgs": ["--external-sources"],
+  "shellcheck.useWorkspaceRootAsCwd": false
 }

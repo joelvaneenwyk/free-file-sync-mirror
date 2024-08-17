@@ -51,12 +51,12 @@ tasks:
   zip-icons:
     cmds:
       - task: zip
-        vars: {ZIP_RESOURCE_NAME: Icons}
+        vars: { ZIP_RESOURCE_NAME: Icons }
 
   zip-languages:
     cmds:
       - task: zip
-        vars: {ZIP_RESOURCE_NAME: Languages}
+        vars: { ZIP_RESOURCE_NAME: Languages }
 
   zip:
     internal: true
@@ -71,3 +71,7 @@ tasks:
           7z a -tzip \
             "{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME "Resources" .ZIP_RESOURCE_NAME}}.zip" \
             "{{joinPath .TASKFILE_DIR "FreeFileSync" .ZIP_RESOURCE_NAME}}"
+
+  format:
+    cmds:
+      - cmd: pnpm exec prettier --write .
