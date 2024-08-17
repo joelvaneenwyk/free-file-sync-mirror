@@ -17,3 +17,9 @@ vcpkg/
 /*.tar.xz
 /*.tar.gz
 /curl-*/
+
+/.build/
+
+node_modules/
+.yarn/
+pnpm-lock.yaml
