@@ -1,14 +1,14 @@
 #!/bin/bash
 # https://raw.githubusercontent.com/Subere/build-FreeFileSync-on-raspberry-pi/master/build_gcc.sh
-
+# cspell:ignore dphys,gnueabihf,neon,SWAPSIZE,swapfile,armv,Odroid,vfpv,multilib
 set -eaux
+REPO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && cd ../../ && pwd)
 
 #
 #  This is the new GCC version to install.
 #
 # takes about 4 hours (Raspberry Pi 4, 4GB)
 #
-VERSION="${VERSION:-${1:-10.1.0}}"
 
 #
 #  For the Pi or any computer with less than 2GB of memory.
@@ -18,16 +18,23 @@ if [ -f /etc/dphys-swapfile ]; then
     sudo /etc/init.d/dphys-swapfile restart
 fi
 
-if [ -d "gcc-$VERSION" ]; then
-    cd "gcc-$VERSION" || exit
-    rm -rf obj
-else
-    wget "ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-$VERSION/gcc-$VERSION.tar.xz"
-    tar xf "gcc-$VERSION.tar.xz"
-    rm -f "gcc-$VERSION.tar.xz"
-    cd "gcc-$VERSION" || exit
-    contrib/download_prerequisites
+GCC_VERSION="${GCC_VERSION:-${1:-10.1.0}}"
+BUILD_DIR="$REPO_ROOT/.build"
+FILENAME="gcc-$GCC_VERSION.tar.xz"
+if [ ! -e "$BUILD_DIR/$FILENAME" ]; then
+    wget \
+        "ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" \
+        -O "$BUILD_DIR/$FILENAME"
 fi
+
+GCC_BUILD_DIR="$BUILD_DIR/gcc-$GCC_VERSION"
+if [ ! -d "$GCC_BUILD_DIR" ]; then
+    tar xf "$BUILD_DIR/$FILENAME" -C "$BUILD_DIR"
+fi
+
+cd "$BUILD_DIR/gcc-$GCC_VERSION" || exit
+./contrib/download_prerequisites
+cd "$GCC_BUILD_DIR" || exit
 mkdir -p obj
 cd obj || exit
 
