@@ -3,7 +3,7 @@
 set -eaux
 
 # Use BASH_SOURCE to get the current directory of the script
-REPO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && cd ../../ && pwd)
+REPO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && cd ../../ && pwd)
 
 # shellcheck source=./build-gcc.sh
 source "$REPO_ROOT/.github/build/build-gcc.sh"
