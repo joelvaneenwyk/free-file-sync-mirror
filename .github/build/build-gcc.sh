@@ -1,8 +1,9 @@
 #!/bin/bash
 # https://raw.githubusercontent.com/Subere/build-FreeFileSync-on-raspberry-pi/master/build_gcc.sh
 # cspell:ignore dphys,gnueabihf,neon,SWAPSIZE,swapfile,armv,Odroid,vfpv,multilib
+
 set -eaux
-REPO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && cd ../../ && pwd)
+REPO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && cd ../../ && pwd)
 
 #
 #  This is the new GCC version to install.
@@ -14,22 +15,22 @@ REPO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && cd ../../ &
 #  For the Pi or any computer with less than 2GB of memory.
 #
 if [ -f /etc/dphys-swapfile ]; then
-    sudo sed -i 's/^CONF_SWAPSIZE=[0-9]*$/CONF_SWAPSIZE=1024/' /etc/dphys-swapfile
-    sudo /etc/init.d/dphys-swapfile restart
+  sudo sed -i 's/^CONF_SWAPSIZE=[0-9]*$/CONF_SWAPSIZE=1024/' /etc/dphys-swapfile
+  sudo /etc/init.d/dphys-swapfile restart
 fi
 
 GCC_VERSION="${GCC_VERSION:-${1:-10.1.0}}"
 BUILD_DIR="$REPO_ROOT/.build"
 FILENAME="gcc-$GCC_VERSION.tar.xz"
 if [ ! -e "$BUILD_DIR/$FILENAME" ]; then
-    wget \
-        "ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" \
-        -O "$BUILD_DIR/$FILENAME"
+  wget \
+    "ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" \
+    -O "$BUILD_DIR/$FILENAME"
 fi
 
 GCC_BUILD_DIR="$BUILD_DIR/gcc-$GCC_VERSION"
 if [ ! -d "$GCC_BUILD_DIR" ]; then
-    tar xf "$BUILD_DIR/$FILENAME" -C "$BUILD_DIR"
+  tar xf "$BUILD_DIR/$FILENAME" -C "$BUILD_DIR"
 fi
 
 cd "$BUILD_DIR/gcc-$GCC_VERSION" || exit
@@ -81,10 +82,10 @@ cd obj || exit
 #  in /usr/bin and may be used by giving its version gcc-6 (say).
 #
 if make -j "$(nproc)"; then
-    echo
-    read -r -p "Do you wish to install the new GCC (y/n)? " yn
-    case $yn in
+  echo
+  read -r -p "Do you wish to install the new GCC (y/n)? " yn
+  case $yn in
     [Yy]*) sudo make install ;;
     *) exit ;;
-    esac
+  esac
 fi
