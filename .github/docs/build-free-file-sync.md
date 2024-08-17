@@ -1,30 +1,29 @@
-# FreeFileSync - Build Instructions
+# Build Instructions // FreeFileSync
 
 FreeFileSync is a great open source file synchronization tool.
 
-Building from source on linux is straightfoward *if* all the necessary dependencies are installed.
+Building from source on linux is straightforward _if_ all the necessary dependencies are installed.
 These instruction capture the necessary steps for installing the various dependencies and compiling FreeFileSync on 32-bit Raspberry Pi OS (formerly referred to as Raspbian)
 
 These instructions are applicable to the following versions:
 
-| Item                              | Release/Version                                                                                            |
-|-----------------------------------|------------------------------------------------------------------------------------------------------------|
-| 32 Bit Raspberry Pi OS (Raspbian) | Linux raspberrypi 6.1.21-v7+ #1642 SMP Mon Apr  3 17:20:52 BST 2023 armv7l GNU/Linux (from ```uname -a```) |
-| FreeFileSync                      | ```v13.2```                                                                                                |
+| Item                              | Release // Version // `uname -a`                                                                                       |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------|
+| 32-bit Raspberry Pi (`Raspbian`) | <br/>Linux raspberrypi 6.1.21-v7+ #1642 SMP Mon Apr 3 17:20:52 BST 2023 armv7l GNU/Linux |
+| FreeFileSync                      | `v13.2`                                                                                               |
 
 ## 1. Download and extract the FreeFilesSync source code
 
 As of this writing, the latest version of FreeFileSync is 13.2 and it can be downloaded from:
 
-<https://freefilesync.org/download/FreeFileSync_13.2_Source.zip>
+> [freefilesync.org/download/FreeFileSync_13.2_Source.zip](https://freefilesync.org/download/FreeFileSync_13.2_Source.zip)
 
 Move the .zip file to the desired directory and uncompress
-```unzip FreeFileSync_13.2_Source.zip```
+`unzip FreeFileSync_13.2_Source.zip`
 
 ## 2. Install available dependencies via apt-get
 
-These instructions reflect building FreeFileSync using libgtk-3 but using libgtk-3 may lead to a non-optimal user experience- see:
-<https://freefilesync.org/forum/viewtopic.php?t=7660#p26057>
+These instructions reflect building FreeFileSync using `libgtk-3` but using `libgtk-3` may lead to a non-optimal user experience e.g., [Is 11.1 supposed to have addressed the view issue? - FreeFileSync Forum](https://freefilesync.org/forum/viewtopic.php?t=7660#p26057)
 
 The following dependencies need to be installed to compile:
 
@@ -44,7 +43,7 @@ sudo apt-get install -y --no-install-recommends \
 
 The following dependencies could not be installed via `apt-get` and need to be compiled from their source code.
 
-### 3.1 gcc w/ good C++20 support
+### 3.1 GCC // C++20 Support
 
 FreeFileSync requires good support of the C++20 standard and often takes advantage of the latest refinements once available across the major compilers (see <https://freefilesync.org/vision.php> for some background). As such, if you want to compile FreeFileSync on Raspberry Pi OS, you'll need a fresh version of gcc (the default version of gcc with RaspberyPi OS will not have all the necessary support).
 
@@ -136,7 +135,9 @@ sudo make install
 ```
 
 The need to disable WxWidget exception handling (using the '--enable-no_exceptions' options) was mentioned with the introduction of FFSv13.2 in the forums at:
-<https://freefilesync.org/forum/viewtopic.php?t=10794>
+
+> [Unable to build Freefilesync 13.1 on Ubuntu 23.10 (mantic) - FreeFileSync Forum](https://freefilesync.org/forum/viewtopic.php?t=10794)
+
 If exceptions are enable on wxWidgets, FreeFileSync code could be modified to remove the check or to throw a warning instead of an error.
 
 ## 4. Tweak FreeFileSync code
@@ -159,15 +160,15 @@ While previously mentioned, use of GTK3 can result in poor UI experience (see th
 On line 20:
 
 ```bash
-change: cxxFlags  += `pkg-config --cflags gtk+-2.0`
-to:     cxxFlags  += `pkg-config --cflags gtk+-3.0`
+change: cxxFlags += $(pkg-config --cflags gtk+-2.0)
+to: cxxFlags += $(pkg-config --cflags gtk+-3.0)
 ```
 
 On line 22:
 
 ```bash
-change: cxxFlags  += -isystem/usr/include/gtk-2.0
-to:     cxxFlags  += -isystem/usr/include/gtk-3.0
+change: cxxFlags += -isystem/usr/include/gtk-2.0
+to: cxxFlags += -isystem/usr/include/gtk-3.0
 ```
 
 ### 4.3 [Optional] Populate Google client_id and client_key in Freefilesync/Source/afs/gdrive.cpp
@@ -185,7 +186,7 @@ std::string getGdriveClientSecret() { return ""; } //
 
 ## 5. Compile in FreefileSync/Source directory
 
-Run ```make``` in the folder FreeFileSync/Source.
+Run `make` in the folder FreeFileSync/Source.
 
 Assuming the command completed without fatal errors, the binary should be waiting for you in FreeFileSync/Build/Bin.
 
@@ -218,32 +219,32 @@ The shared libraries that need to be copied are:
 Then end zip file should look like this:
 
 ```bash
-Archive:  FreeFileSync_11.4_armv7l.zip
-  Length      Date    Time    Name
----------  ---------- -----   ----
-        0  2020-04-27 22:38   Bin/
-  9074216  2020-04-27 22:35   Bin/FreeFileSync_armv7l
-   560412  2020-04-17 13:40   Bin/libssl.so.3
- 17574572  2020-04-10 15:12   Bin/libstdc++.so.6
-   492832  2020-04-17 14:14   Bin/libcurl.so.4
-  7543332  2020-04-10 15:10   Bin/libgcc_s.so.1
-  3476740  2020-04-17 13:40   Bin/libcrypto.so.3
-   961484  2020-04-17 14:07   Bin/libssh2.so.1
-      349  2020-03-18 21:57   FreeFileSync.desktop
-        0  2020-03-18 21:57   Resources/
-      234  2020-03-18 21:57   Resources/Gtk3Styles.css
-    12402  2020-03-18 21:57   Resources/RealTimeSync.png
-   182060  2020-03-18 21:57   Resources/harp.wav
-    87678  2020-03-18 21:57   Resources/bell2.wav
-    13232  2020-03-18 21:57   Resources/FreeFileSync.png
-   223687  2020-03-18 21:57   Resources/cacert.pem
-      440  2020-03-18 21:57   Resources/Gtk2Styles.rc
-    67340  2020-03-18 21:57   Resources/ding.wav
-   143370  2020-03-18 21:57   Resources/bell.wav
-   230274  2020-03-18 21:57   Resources/gong.wav
-   388959  2020-03-18 21:57   Resources/Icons.zip
-   522150  2020-03-18 21:57   Resources/Languages.zip
-    55006  2020-03-18 21:57   Resources/notify.wav
+Archive: FreeFileSync_11.4_armv7l.zip
+Length Date Time Name
+--------- ---------- ----- ----
+0 2020-04-27 22:38 Bin/
+9074216 2020-04-27 22:35 Bin/FreeFileSync_armv7l
+560412 2020-04-17 13:40 Bin/libssl.so.3
+17574572 2020-04-10 15:12 Bin/libstdc++.so.6
+492832 2020-04-17 14:14 Bin/libcurl.so.4
+7543332 2020-04-10 15:10 Bin/libgcc_s.so.1
+3476740 2020-04-17 13:40 Bin/libcrypto.so.3
+961484 2020-04-17 14:07 Bin/libssh2.so.1
+349 2020-03-18 21:57 FreeFileSync.desktop
+0 2020-03-18 21:57 Resources/
+234 2020-03-18 21:57 Resources/Gtk3Styles.css
+12402 2020-03-18 21:57 Resources/RealTimeSync.png
+182060 2020-03-18 21:57 Resources/harp.wav
+87678 2020-03-18 21:57 Resources/bell2.wav
+13232 2020-03-18 21:57 Resources/FreeFileSync.png
+223687 2020-03-18 21:57 Resources/cacert.pem
+440 2020-03-18 21:57 Resources/Gtk2Styles.rc
+67340 2020-03-18 21:57 Resources/ding.wav
+143370 2020-03-18 21:57 Resources/bell.wav
+230274 2020-03-18 21:57 Resources/gong.wav
+388959 2020-03-18 21:57 Resources/Icons.zip
+522150 2020-03-18 21:57 Resources/Languages.zip
+55006 2020-03-18 21:57 Resources/notify.wav
 ```
 
 Now the zip file should contain all the dependencies and the binary `Bin/FreeFileSync_armv7l` is able to run on a new raspberry pi assuming the target is running a current verions of Raspbian.
@@ -256,7 +257,7 @@ extract to:
 /home/pi/Desktop/FFS_11.4_ARM/
 ```
 
-## 3. Copy all lib* files to /usr/lib
+## 3. Copy all lib\* files to /usr/lib
 
 ```bash
 sudo cp /home/pi/Desktop/FFS_11.4_ARM/Bin/lib* /usr/lib
@@ -281,7 +282,7 @@ The issue seems to have been reported at:
 
 ### Error due to missing shared libraries
 
-> *./FreeFileSync_armv7l: error while loading shared libraries: libssl.so.3: cannot open shared object file: No such file or directory*
+> _./FreeFileSync_armv7l: error while loading shared libraries: libssl.so.3: cannot open shared object file: No such file or directory_
 
 ```bash
 sudo cp /home/pi/Desktop/FFS_11.3_ARM/Bin/lib* /usr/lib
