@@ -1,16 +1,73 @@
-# https://taskfile.dev
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+# cspell:ignore taskfile,vcpkg,msbuild,makefiles,deinit
 
 version: '3'
 
 vars:
   BUILD_DIR_NAME: .build
+  BUILD_SCRIPT_PATH: .github/build/build.sh
 
 tasks:
   default:
     deps: [build]
 
+  rebuild:
+    cmds:
+      - task clean
+      - task build
+
   build:
     sources:
-      - .github/build/build.sh
+      - '{{.BUILD_SCRIPT_PATH}}'
     cmds:
-      - cmd: sh "{{joinPath .TASKFILE_DIR ".github" "build" "build.sh"}}"
+      - cmd: |
+          sh "{{joinPath .TASKFILE_DIR .BUILD_SCRIPT_PATH | toSlash}}"
+
+  clean:
+    cmds:
+      - cmd: rm -rf "{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME}}"
+        ignore_error: true
+      - cmd: cmd.exe /d /e:on /c rmdir /s /q "{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME}}"
+        ignore_error: true
+
+  copy-resources:
+    sources:
+      - '{{joinPath .TASKFILE_DIR "FreeFileSync" "Build" "Resources"}}/*'
+    generates:
+      - '{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME "Resources"}}/*'
+    cmds:
+      - cmd: |
+          (
+            echo ".zip\\"
+          ) > "{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME "ExcludedResources.lst"}}"
+      - cmd: |
+          xcopy \
+            /Y \
+            /EXCLUDE:"{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME "ExcludedResources.lst"}}" \
+            /E /I /H /B /R /C \
+            "{{joinPath .TASKFILE_DIR "FreeFileSync" "Build" "Resources"}}" \
+            "{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME "Resources"}}" \
+
+  zip-icons:
+    cmds:
+      - task: zip
+        vars: {ZIP_RESOURCE_NAME: Icons}
+
+  zip-languages:
+    cmds:
+      - task: zip
+        vars: {ZIP_RESOURCE_NAME: Languages}
+
+  zip:
+    internal: true
+    requires:
+      vars: [BUILD_DIR_NAME, TASKFILE_DIR, ZIP_RESOURCE_NAME]
+    sources:
+      - '{{joinPath .TASKFILE_DIR "FreeFileSync" .ZIP_RESOURCE_NAME}}/*'
+    generates:
+      - '{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME "Resources" .ZIP_RESOURCE_NAME}}.zip'
+    cmds:
+      - cmd: |
+          7z a -tzip \
+            "{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME "Resources" .ZIP_RESOURCE_NAME}}.zip" \
+            "{{joinPath .TASKFILE_DIR "FreeFileSync" .ZIP_RESOURCE_NAME}}"
