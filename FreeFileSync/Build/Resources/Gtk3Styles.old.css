@@ -3,41 +3,34 @@
 	
 	https://docs.gtk.org/gtk3/css-overview.html
 	https://docs.gtk.org/gtk3/css-properties.html               */
-*
-{
-	/* see wx+/grid.cpp: spacing wouldn't hurt, but let's be consistent */
-	-GtkScrolledWindow-scrollbar-spacing: 0;
+* {
+    /* see wx+/grid.cpp: spacing wouldn't hurt, but let's be consistent */
+    -gtkscrolledwindow-scrollbar-spacing: 0;
 }
 
-GtkButton
-{
-	padding: 4px 5px; /*remove excessive inner border*/
-	/*	min-width:  0;  => Debian: Error code 3: Gtk3Styles.css:13:10'min-width' is not a valid property name [gtk_css_provider_load_from_path]
+GtkButton {
+    padding: 4px 5px; /*remove excessive inner border*/
+    /*	min-width:  0;  => Debian: Error code 3: Gtk3Styles.css:13:10'min-width' is not a valid property name [gtk_css_provider_load_from_path]
 		min-height: 0;      */
 }
 
-GtkPaned 
-{
-	border: 10px solid #d0d0d0; /*hack wxAUI panel splitter: not sure why "color" and "background-color" are not working*/
+GtkPaned {
+    border: 10px solid #d0d0d0; /*hack wxAUI panel splitter: not sure why "color" and "background-color" are not working*/
 }
 
-GtkEntry
-{
-	padding: 2px 5px; /*fix excessive padding for text input fields*/
+GtkEntry {
+    padding: 2px 5px; /*fix excessive padding for text input fields*/
 }
 
-GtkComboBox GtkEntry
-{
-	padding: 4px 5px;
+GtkComboBox GtkEntry {
+    padding: 4px 5px;
 }
 
-GtkSpinButton /*GtkEntry*/
-{
-	padding: 4px 5px;
+GtkSpinButton /*GtkEntry*/ {
+    padding: 4px 5px;
 }
 
-.tooltip /* why not GtkTooltip!? */
-{
-	color: white;
-	background-color: #343434; /*fix "Adwaita" theme glitch (Debian): background is *light grey*, while text color is white!*/
+.tooltip /* why not GtkTooltip!? */ {
+    color: white;
+    background-color: #343434; /*fix "Adwaita" theme glitch (Debian): background is *light grey*, while text color is white!*/
 }
