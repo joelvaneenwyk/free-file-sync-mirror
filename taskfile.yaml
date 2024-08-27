@@ -21,7 +21,7 @@ tasks:
       - '{{.BUILD_SCRIPT_PATH}}'
     cmds:
       - cmd: |
-          sh "{{joinPath .TASKFILE_DIR .BUILD_SCRIPT_PATH | toSlash}}"
+          bash "{{joinPath .TASKFILE_DIR .BUILD_SCRIPT_PATH | toSlash}}"
 
   clean:
     cmds:
