@@ -9,8 +9,8 @@ test-output.xml
 
 /gcc-*/
 
-.task/
-.git/
+/.task/
+/.git/
 
 /*.tar.xz
 /*.tar.gz
