@@ -3,7 +3,7 @@
 # cspell:ignore dphys,gnueabihf,neon,SWAPSIZE,swapfile,armv,Odroid,vfpv,multilib
 
 set -eaux
-REPO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && cd ../../ && pwd)
+REPO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && cd ../../ && pwd)
 
 #
 #  This is the new GCC version to install.
@@ -23,6 +23,7 @@ GCC_VERSION="${GCC_VERSION:-${1:-12.1.0}}"
 BUILD_DIR="$REPO_ROOT/.build"
 FILENAME="gcc-$GCC_VERSION.tar.xz"
 if [ ! -e "$BUILD_DIR/$FILENAME" ]; then
+  mkdir -p "$BUILD_DIR"
   wget \
     "ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" \
     -O "$BUILD_DIR/$FILENAME"
@@ -37,7 +38,7 @@ cd "$BUILD_DIR/gcc-$GCC_VERSION" || exit
 ./contrib/download_prerequisites
 cd "$GCC_BUILD_DIR" || exit
 mkdir -p obj
-cd obj || exit
+cd obj || exit 34
 
 #
 #  Now run the ./configure which must be checked/edited beforehand.
@@ -46,31 +47,34 @@ cd obj || exit
 #  To alter the target directory set --prefix=<dir>
 #
 
+PLATFORM="$(uname -m)"
 # Pi4
-#../configure --enable-languages=c,c++ --with-cpu=cortex-a72 \
-#    --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf \
-#    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
-
+if [ "$PLATFORM" = "Pi4" ]; then
+  ../configure --enable-languages=c,c++ --with-cpu=cortex-a72 \
+    --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf \
+    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
 # Pi3+, Pi3, and new Pi2
-#../configure --enable-languages=c,c++ --with-cpu=cortex-a53 \
-#  --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf \
-#  --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
-
+elif [ "$PLATFORM" = "Pi3" ]; then
+  ../configure --enable-languages=c,c++ --with-cpu=cortex-a53 \
+    --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf \
+    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
 # Pi Zero's
-#../configure --enable-languages=c,d,c++,fortran --with-cpu=arm1176jzf-s \
-#  --with-fpu=vfp --with-float=hard --build=arm-linux-gnueabihf \
-#  --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
-
+elif [ "$PLATFORM" = "PiZero" ]; then
+  ../configure --enable-languages=c,d,c++,fortran --with-cpu=arm1176jzf-s \
+    --with-fpu=vfp --with-float=hard --build=arm-linux-gnueabihf \
+    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
 # x86_64
-../configure --disable-multilib --enable-languages=c,d,c++,fortran --enable-checking=no
-
-# Odroid-C2 AArch64
-#../configure --enable-languages=c,d,c++,fortran --with-cpu=cortex-a53 --enable-checking=no
-
-# Old Pi2
-#../configure --enable-languages=c,d,c++,fortran --with-cpu=cortex-a7 \
-#  --with-fpu=neon-vfpv4 --with-float=hard --build=arm-linux-gnueabihf \
-#  --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
+elif [ "$PLATFORM" = "x86_64" ] || [ "$PLATFORM" = "MINGW64_NT-10.0-22631" ]; then
+  ../configure --disable-multilib --enable-languages=c,d,c++,fortran --enable-checking=no
+elif [ "$PLATFORM" = "Pi3" ]; then
+  # Odroid-C2 AArch64
+  ../configure --enable-languages=c,d,c++,fortran --with-cpu=cortex-a53 --enable-checking=no
+elif [ "$PLATFORM" = "Pi3" ]; then
+  # Old Pi2
+  ../configure --enable-languages=c,d,c++,fortran --with-cpu=cortex-a7 \
+    --with-fpu=neon-vfpv4 --with-float=hard --build=arm-linux-gnueabihf \
+    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
+fi
 
 #
 #  Now build GCC which will take a long time.  This could range from
@@ -85,7 +89,7 @@ if make -j "$(nproc)"; then
   echo
   read -r -p "Do you wish to install the new GCC (y/n)? " yn
   case $yn in
-    [Yy]*) sudo make install ;;
-    *) exit ;;
+  [Yy]*) sudo make install ;;
+  *) exit ;;
   esac
 fi
