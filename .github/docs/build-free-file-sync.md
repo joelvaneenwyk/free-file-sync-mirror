@@ -20,7 +20,7 @@ These instruction capture the necessary steps for installing the various depende
   - [Tweak FreeFileSync code](#tweak-freefilesync-code)
     - [FreeFileSync/Source/afs/sftp.cpp](#freefilesyncsourceafssftpcpp)
     - [Update FreeFileSync/Source/Makefile to use GTK3 instead of GTK2](#update-freefilesyncsourcemakefile-to-use-gtk3-instead-of-gtk2)
-    - [\[Optional\] Populate Google client_id and client_key in Freefilesync/Source/afs/gdrive.cpp](#optional-populate-google-client_id-and-client_key-in-freefilesyncsourceafsgdrivecpp)
+    - [\[Optional\] Populate Google client\_id and client\_key in Freefilesync/Source/afs/gdrive.cpp](#optional-populate-google-client_id-and-client_key-in-freefilesyncsourceafsgdrivecpp)
   - [Compile in FreefileSync/Source directory](#compile-in-freefilesyncsource-directory)
   - [Run FreeFileSync](#run-freefilesync)
   - [Running FreeFileSync on another Raspberry Pi {UNTESTED/UNVERIFIED since v11.19}](#running-freefilesync-on-another-raspberry-pi-untestedunverified-since-v1119)
@@ -37,10 +37,10 @@ These instruction capture the necessary steps for installing the various depende
 
 These instructions are applicable to the following versions:
 
-| Item                             | Release // Version // `uname -a`                                                         |
-| -------------------------------- | ---------------------------------------------------------------------------------------- |
-| 32-bit Raspberry Pi (`Raspbian`) | <br/>Linux raspberrypi 6.1.21-v7+ #1642 SMP Mon Apr 3 17:20:52 BST 2023 armv7l GNU/Linux |
-| FreeFileSync                     | `v13.2`                                                                                  |
+| Item                             | Release // Version // `uname -a`                                                    |
+|----------------------------------|-------------------------------------------------------------------------------------|
+| 32-bit Raspberry Pi (`Raspbian`) | Linux raspberrypi 6.1.21-v7+ #1642 SMP Mon Apr 3 17:20:52 BST 2023 armv7l GNU/Linux |
+| FreeFileSync                     | `v13.2`                                                                             |
 
 ## Download and extract the FreeFilesSync source code
 
