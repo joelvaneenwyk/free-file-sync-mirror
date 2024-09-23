@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://json.schemastore.org/clangd.json
 CompileFlags:
   Add:
-    - "-xc++"
-    - "-W2"
-    - "-isystem=./"
-    - "-I./FreeFileSync/Source/"
+    - '-xc++'
+    - '-W2'
+    - '-isystem=./'
+    - '-I./FreeFileSync/Source/'
