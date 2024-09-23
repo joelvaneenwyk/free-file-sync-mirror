@@ -44,7 +44,7 @@ https://github.com/curl/curl/issues/4342
 + result = ftp_nb_type(conn, data->set.prefer_ascii, FTP_LIST_TYPE);
 ```
 
-__________________________________________________________________________________________________________
+---
 
 ## libssh2 master 2022-11-11
 

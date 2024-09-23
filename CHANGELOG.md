@@ -784,7 +784,7 @@ Work around GetFileInformationByHandle error code 58 on WD My Cloud EX
 Changing deletion handling now correctly triggers updated config
 Support root-relative FTP file paths (e.g. FreeNAS)
 Move and rename MTP items as a transaction
-Exclude AppleDouble files (._) via default filter on macOS
+Exclude AppleDouble files (.\_) via default filter on macOS
 Support home path for FTP folder picker
 Use server default permissions when creating SFTP folder
 Use native OpenSSL AES-CTR rather than libssh2 fallback
@@ -1744,7 +1744,7 @@ Merged variant names into top button labels
 Hide dock icon while minimized to notification area (OS X)
 New keyboard shortcuts: F5, F6, F7, F8, F9, F10
 Further reduced size of database files by 10%
-Fixed Outlook *.ost files found missing on VSS snapshot volumes
+Fixed Outlook \*.ost files found missing on VSS snapshot volumes
 Added include filter context menu option
 Correctly scroll to search hits on different grid
 Always remove .ffs_tmp files permanently
@@ -1958,7 +1958,7 @@ Updated translation files
 Show synchronization log as a grid in results dialog
 Improved grid scrolling performance (most noticeable on Linux)
 Allow grid selection starting from outside of the grid
-RealTimeSync: Support drag & drop on main dialog for *.ffs_real and*.ffs_batch files
+RealTimeSync: Support drag & drop on main dialog for _.ffs_real and_.ffs_batch files
 Optimized memory consumption when generating log for millions of items
 Optimized memory consumption when exporting to CSV file
 Have grid row height match window default font size
@@ -2007,7 +2007,7 @@ Descriptive error message when setting invalid dates on FAT volumes
 Modern directory selection dialog (Windows Vista and later)
 New file versioning scheme appending revision number to files
 New sync option to limit number of versions per file
-Revised configuration format for *.ffs_gui/*.ffs_batch files: old format will be supported for some time
+Revised configuration format for _.ffs_gui/_.ffs_batch files: old format will be supported for some time
 Fixed crash on invalid file modification times
 Fixed zlib error on empty database stream
 GlobalSettings.xml: added "MaxSize" parameter to "ConfigHistory"
@@ -2123,8 +2123,8 @@ Fixed wrong tooltip being shown if directory name changes
 Date range selector does not trim year field anymore
 Show action "do nothing" on mouse-hover for conflicts in middle grid
 Fixed "Windows Error Code 59: An unexpected network error occurred"
-New filter pattern: *\* matches all files in sub directories of base directories
-Fixed "*?" filter sub-sequence
+New filter pattern: _\* matches all files in sub directories of base directories
+Fixed "_?" filter sub-sequence
 Fixed "Cannot convert from the charset 'Unknown encoding (-1)'!"
 Support <kbd>CTRL</kbd> + <kbd>A</kbd> in filter dialog
 Support large filter lists > 32 kByte
@@ -2362,7 +2362,7 @@ Fixed possible application crash after comparison
 Fixed possible network freeze when comparing
 Maximum number of log files can be specified
 Don't condense white-space when loading XML configuration
-RealTimeSync: Put executable name in quotes when parsing *.ffs_batch file
+RealTimeSync: Put executable name in quotes when parsing \*.ffs_batch file
 Large program icons - 256 x 256
 Handle daylight saving time(DST) on FAT network shares
 Skip DST handling if drive does not support accurate file times
@@ -2379,20 +2379,20 @@ New database format: single file for FreeFileSync 32 and 64 bit versions
 
 - full sync suggested before migrating to v3.13
 - old sync.x64.ffs_db files may be deleted
-Improved algorithm to calculate remaining time
-Allow resizing window containing multiple folder pairs
-Show folder short names in column file name
-Correctly report message "nothing to sync" in batch mode
-Removed libjpg-8 dependency (Linux)
-Fixed loading correct maximized position on multi-screen desktop
-RealTimeSync: Removed blank icons in ALT-TAB list during execution of command line
-Show RealTimeSync job name as systray tooltip
-Last used configurations as sorted list without size limitation
-Remove redundant configuration when merging multiple ffs_gui/ffs_batch files
-Warning if folder is modified that is part of multiple folder pairs
-Aggregated warning messages for all folder pairs instead of one per pair
-Added privilege to access restricted symlink content
-Added Greek translation
+  Improved algorithm to calculate remaining time
+  Allow resizing window containing multiple folder pairs
+  Show folder short names in column file name
+  Correctly report message "nothing to sync" in batch mode
+  Removed libjpg-8 dependency (Linux)
+  Fixed loading correct maximized position on multi-screen desktop
+  RealTimeSync: Removed blank icons in ALT-TAB list during execution of command line
+  Show RealTimeSync job name as systray tooltip
+  Last used configurations as sorted list without size limitation
+  Remove redundant configuration when merging multiple ffs_gui/ffs_batch files
+  Warning if folder is modified that is part of multiple folder pairs
+  Aggregated warning messages for all folder pairs instead of one per pair
+  Added privilege to access restricted symlink content
+  Added Greek translation
 
 ## FreeFileSync 3.12 [2010-11-28]
 
@@ -2445,21 +2445,21 @@ Updated translation files
 ## FreeFileSync 3.9 [2010-08-10]
 
 Advanced locking strategy to allow multiple processes synchronize the same directories (e.g. via network share)
-Merge multiple *.ffs_batch,*.ffs_gui files or combinations of both via drag & drop
+Merge multiple _.ffs_batch,_.ffs_gui files or combinations of both via drag & drop
 Copy file and folder permissions (requires admin rights):
 
 - Windows: owner, group, DACL, SACL
 - Linux: owner, group, permissions
 - correctly handle Symbolic Links
 - new option in global settings
-Compare by content evaluates Symbolic Links
-32-Bit build compiled with MinGW/GCC to preserve Windows 2000 compatibility
-RealTimeSync: Handle requests for device removal (USB stick) while monitoring
-Sort by file size: group symlinks before directories
-Added macros `%week%`, `%month%`, `%year%` for creating time-stamped directories
-Touch database file when changes occurred only
-Moved settings "file time tolerance" and "verify copied files" to GlobalSettings.xml
-Updated translation files
+  Compare by content evaluates Symbolic Links
+  32-Bit build compiled with MinGW/GCC to preserve Windows 2000 compatibility
+  RealTimeSync: Handle requests for device removal (USB stick) while monitoring
+  Sort by file size: group symlinks before directories
+  Added macros `%week%`, `%month%`, `%year%` for creating time-stamped directories
+  Touch database file when changes occurred only
+  Moved settings "file time tolerance" and "verify copied files" to GlobalSettings.xml
+  Updated translation files
 
 ## FreeFileSync 3.8 [2010-06-20]
 
@@ -2489,7 +2489,7 @@ NSIS installer: Support for /D and /S switches
 Fixed resource loading if installation folder is not working directory (Linux build)
 Consolidated batch creation dialog
 <Automatic> mode: Detect conflict when a directory shall be deleted while new sub-elements are to be copied
-Automatically mark left behind temporary files (*.ffs_tmp) for deletion with next sync
+Automatically mark left behind temporary files (\*.ffs_tmp) for deletion with next sync
 New Project website: freefilesync.sourceforge.net
 A lot of small GUI fixes
 Updated translation files
@@ -2538,7 +2538,7 @@ New installer package for portable/local/32/64-bit versions
 Built-in support for very long filenames: apply \\?\-prefix automatically
 New button for synchronization preview: show equal files
 RealTimeSync: Respond to directory or volume arrival, e.g. USB stick insert
-Start comparison automatically when double-clicking on *.ffs_gui files
+Start comparison automatically when double-clicking on \*.ffs_gui files
 Visual progress indicator for sys-tray icon
 Fixed string comparison for 'ß' and 'ss' (all Windows versions)
 Fixed general string comparison for Windows 2000
@@ -2600,17 +2600,17 @@ Updated translation files
 
 New filter and sync configuration at folder pair level
 Improved sorting: sort across multiple folder pairs
-      stable sorting in middle grid
-      consolidated sorting of sync-direction
+stable sorting in middle grid
+consolidated sorting of sync-direction
 Open external applications via context menu(customizable)
 Removed performance penalty when using include filters
 Improved filter syntax for strings beginning with wildcards
 Default handling for conflict files now configurable
 New option to show all hidden dialogs again
 Fixed issue with macros %nameCo, %dirCo
-New option in *.ffs_gui/ffs_batch files: Verify copied files
+New option in _.ffs_gui/ffs_batch files: Verify copied files
 Use Windows Volume Shadow Copy for shared and locked files(new)
-More detailed information in*.cvs export
+More detailed information in_.cvs export
 Use current working directory to save global configuration (portable version)
 Respect sub directories when manually changing sync-direction
 Allow import of batch configuration into GUI mode
@@ -2703,9 +2703,8 @@ Fixed issue with file icon display
 Fixed overlapping grid cells
 Alternate log file directory configurable via GUI
 Added drag & drop support for batch job assembly
-Simplified filter usage: - <dirname> matches "<dirname>\*" as well as "<dirname>\"
-       - only distinct filter entries are considered
-Platform dependent line breaks in configuration *.xml files
+Simplified filter usage: - <dirname> matches "<dirname>\*" as well as "<dirname>\" - only distinct filter entries are considered
+Platform dependent line breaks in configuration \*.xml files
 "Significant difference check" runs at folder pair level
 Sorting runs at folder pair level
 New check for sufficient free disk space (considering recycle bin usage)
@@ -2723,29 +2722,29 @@ Full support for Windows/Linux symbolic links:
 - traverse, copy, delete symbolic links
 - handle broken symbolic links
 - new options in GlobalSettings.xml: TraverseDirectorySymlinks, CopyFileSymlinks
-New menu option: "Check for new version"
-Copy folder attributes and security settings when implicitly creating folders
-Maximum file time difference now fully configurable
-New history of last selected folders
-Fixed "Year-2038-Problem" for time_t
-Upgraded to wxWidgets 2.8.10
-Individual folder pairs can be selected for removal
-Performance: Reduced CPU time by 9%, memory consumption by 36%
-Support for cancellation when copying and comparing large files
-Smooth progress indicators when copying and comparing large files
-Support for Shift-PageUp/PageDown
-Support for Home/End and Shift-Home/End
-Alternative log file directory configurable via *.ffs_batch Xml
-Show explorer file icons in grid (windows only)
-Fixed compilation issues for Linux build
-Fixed grid alignment issue in Linux build
-Enhanced error messages for Linux build
-Optimized traversing algorithm for Linux build
-Fixed graphical misalignment with multiple folder pairs
-Added Slovenian translation
-Added Hungarian translation
-Added Spanish translation
-Updated translation files
+  New menu option: "Check for new version"
+  Copy folder attributes and security settings when implicitly creating folders
+  Maximum file time difference now fully configurable
+  New history of last selected folders
+  Fixed "Year-2038-Problem" for time_t
+  Upgraded to wxWidgets 2.8.10
+  Individual folder pairs can be selected for removal
+  Performance: Reduced CPU time by 9%, memory consumption by 36%
+  Support for cancellation when copying and comparing large files
+  Smooth progress indicators when copying and comparing large files
+  Support for Shift-PageUp/PageDown
+  Support for Home/End and Shift-Home/End
+  Alternative log file directory configurable via \*.ffs_batch Xml
+  Show explorer file icons in grid (windows only)
+  Fixed compilation issues for Linux build
+  Fixed grid alignment issue in Linux build
+  Enhanced error messages for Linux build
+  Optimized traversing algorithm for Linux build
+  Fixed graphical misalignment with multiple folder pairs
+  Added Slovenian translation
+  Added Hungarian translation
+  Added Spanish translation
+  Updated translation files
 
 ## FreeFileSync 1.16 [2009-03-13]
 
@@ -2775,7 +2774,7 @@ Usability improvements:
 - check/uncheck option for middle grid
 - support for <kbd>CTRL</kbd> + <kbd>A</kbd> (select all)
 - enhanced error messages (windows only)
-Updated translation files
+  Updated translation files
 
 ## FreeFileSync 1.15 [2009-02-22]
 
@@ -2808,13 +2807,13 @@ Massive performance improvements:
 - improved folder hierarchy compare algorithm
 - lazy evaluation of formatted date strings
 - new high-performance string class
-=> reduction of CPU time by more than 90%!
-Folder attributes are copied during synchronization
-Sorting now case-insensitive (Windows-only)
-Allow column positioning on main grid
-Many small fixes
-Added Chinese translation
-Updated translation files
+  => reduction of CPU time by more than 90%!
+  Folder attributes are copied during synchronization
+  Sorting now case-insensitive (Windows-only)
+  Allow column positioning on main grid
+  Many small fixes
+  Added Chinese translation
+  Updated translation files
 
 ## FreeFileSync 1.13 [2009-01-06]
 
@@ -2868,7 +2867,7 @@ Fixed wxWidgets multithreading issue that could cause synchronization to hang oc
 Fixed issue with %1 parameter
 Fixed issue with recycle bin usage in Unicode mode
 Added uninstaller
-New installer option to associate *.ffs files with FreeFileSync
+New installer option to associate \*.ffs files with FreeFileSync
 Transformed language files to Unicode (UTF-8)
 Delete elements in configuration history list via DELETE key
 
@@ -2931,8 +2930,8 @@ Updated German translation
 
 Maintain and load different configurations by drag&drop, load-button or command line
 New function to delete files (or move them to recycle bin) manually on the UI (without having to re-compare):
- Deleting folders results in deletion of all dependent files, subfolders on UI grid (also no re-compare needed)
- while catching error situations and allowing to resolve them
+Deleting folders results in deletion of all dependent files, subfolders on UI grid (also no re-compare needed)
+while catching error situations and allowing to resolve them
 Improved manual filtering of rows: If folders are marked all dependent subfolders and files are marked as well
 (keeping sort sequence when "hide filtered elements" is marked)
 Comprehensive performance optimization of the two features above (manual filtering, deletion) for large grids (> 200,000 rows)
@@ -2944,7 +2943,7 @@ Updated German translation
 ## FreeFileSync 1.2 [2008-08-31]
 
 New progress indicator and status information when synchronizing:
- ->available for command line mode and UI mode: Status update and final error report
+->available for command line mode and UI mode: Status update and final error report
 New progress information when comparing directories
 Multithreading for copying of files to keep program responsive
 Optimized all status dialogs and progress indicators for high performance: practically NO performance loss
