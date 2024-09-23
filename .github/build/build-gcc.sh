@@ -19,7 +19,7 @@ if [ -f /etc/dphys-swapfile ]; then
   sudo /etc/init.d/dphys-swapfile restart
 fi
 
-GCC_VERSION="${GCC_VERSION:-${1:-10.1.0}}"
+GCC_VERSION="${GCC_VERSION:-${1:-12.1.0}}"
 BUILD_DIR="$REPO_ROOT/.build"
 FILENAME="gcc-$GCC_VERSION.tar.xz"
 if [ ! -e "$BUILD_DIR/$FILENAME" ]; then
