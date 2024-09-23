@@ -10,7 +10,7 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 max_line_length = 120
 
-[*.{yaml,yml}]
+[{*.yaml,*.yml,.clangd}]
 indent_size = 2
 
 [*.{json,jsonc}]
@@ -24,4 +24,3 @@ indent_size = 2
 
 [*.{md,markdown}]
 indent_size = 2
-
