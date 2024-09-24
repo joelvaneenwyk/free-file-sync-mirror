@@ -65,7 +65,7 @@ elif [ "$PLATFORM" = "PiZero" ]; then
     --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
 # x86_64
 elif [ "$PLATFORM" = "x86_64" ] || [ "$PLATFORM" = "MINGW64_NT-10.0-22631" ]; then
-  ../configure --disable-multilib --enable-languages=c,d,c++,fortran --enable-checking=no
+  ../configure --disable-multilib --enable-languages=c,c++ --enable-checking=no
 elif [ "$PLATFORM" = "Pi3" ]; then
   # Odroid-C2 AArch64
   ../configure --enable-languages=c,d,c++,fortran --with-cpu=cortex-a53 --enable-checking=no
