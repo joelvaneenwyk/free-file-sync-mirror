@@ -2,7 +2,7 @@
 
 set -eaux
 WXWIDGETS_VERSION="${WXWIDGETS_VERSION:-${1:-3.2.3}}"
-REPO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && cd ../../ && pwd)
+REPO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && cd ../../ && pwd)
 BUILD_DIR="$REPO_ROOT/.build"
 FILENAME="wxWidgets-$WXWIDGETS_VERSION.tar.gz"
 if [ ! -e "$BUILD_DIR/$FILENAME" ]; then
@@ -16,4 +16,4 @@ mkdir -p gtk-build
 cd gtk-build/ || exit
 ../configure --disable-shared --enable-unicode --enable-no_exceptions
 make -j "$(nproc)"
-sudo make install
+# sudo make install

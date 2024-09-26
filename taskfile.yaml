@@ -15,9 +15,9 @@ vars:
 tasks:
   default:
     cmds:
+      - task: build
       - cmd: cmake -B .build -S .
       - cmd: cmake --build .build
-      - task: build
 
   rebuild:
     cmds:
@@ -92,17 +92,21 @@ tasks:
       - task: build-wxwidgets
 
   build-gcc:
+    aliases: [gcc]
     cmds:
-      - '{{.ROOT_DIR}}/.github/build/build-gcc.sh'
+      - bash '{{ joinPath .TASKFILE_DIR ".github/build/build-gcc.sh" | toSlash }}'
 
   build-curl:
+    aliases: [curl]
     cmds:
-      - '{{.ROOT_DIR}}/.github/build/build-curl.sh'
+      - bash '{{ joinPath .TASKFILE_DIR ".github/build/build-curl.sh" | toSlash }}'
 
   build-openssl:
+    aliases: [openssl]
     cmds:
-      - '{{.ROOT_DIR}}/.github/build/build-openssl.sh'
+      - bash '{{ joinPath .TASKFILE_DIR ".github/build/build-openssl.sh" | toSlash }}'
 
   build-wxwidgets:
+    aliases: [wxwidgets, wx]
     cmds:
-      - '{{.ROOT_DIR}}/.github/build/build-wxwidgets.sh'
+      - bash '{{ joinPath .TASKFILE_DIR ".github/build/build-wxwidgets.sh" | toSlash }}'
