@@ -86,6 +86,7 @@ noexec
 NOINTERFACE
 nproc
 NTFS
+nullglob
 numpad
 nview
 OTFE
@@ -111,6 +112,7 @@ scrollbars
 Segoe
 Serv
 shellcheck
+shopt
 shortkeys
 shrinked
 skiperrors
