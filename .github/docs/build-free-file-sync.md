@@ -61,7 +61,7 @@ The following dependencies need to be installed to compile:
 - libxtst-dev
 - libssh2-1-dev
 
-```bash
+```shell
 sudo apt-get update
 sudo apt-get install -y --no-install-recommends \
   libgtk-3-dev \
