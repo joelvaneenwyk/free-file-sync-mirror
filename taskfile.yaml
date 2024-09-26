@@ -3,13 +3,19 @@
 
 version: '3'
 
+# set -eaux
+shopt:
+  - expand_aliases
+  - nullglob
+
 vars:
   BUILD_DIR_NAME: .build
   BUILD_SCRIPT_PATH: .github/build/build.sh
 
 tasks:
   default:
-    deps: [build]
+    cmds:
+      - task: build
 
   rebuild:
     cmds:
@@ -75,3 +81,26 @@ tasks:
   format:
     cmds:
       - cmd: pnpm exec prettier --write .
+
+  build-all:
+    cmds:
+      - task: build-gcc
+      - task: build-curl
+      - task: build-openssl
+      - task: build-wxwidgets
+
+  build-gcc:
+    cmds:
+      - '{{.ROOT_DIR}}/.github/build/build-gcc.sh'
+
+  build-curl:
+    cmds:
+      - '{{.ROOT_DIR}}/.github/build/build-curl.sh'
+
+  build-openssl:
+    cmds:
+      - '{{.ROOT_DIR}}/.github/build/build-openssl.sh'
+
+  build-wxwidgets:
+    cmds:
+      - '{{.ROOT_DIR}}/.github/build/build-wxwidgets.sh'
