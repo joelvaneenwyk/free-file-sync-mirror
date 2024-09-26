@@ -21,3 +21,6 @@ test-output.xml
 node_modules/
 .yarn/
 pnpm-lock.yaml
+
+.idea/
+cmake-build-*/

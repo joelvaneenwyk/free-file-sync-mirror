@@ -15,6 +15,8 @@ vars:
 tasks:
   default:
     cmds:
+      - cmd: cmake -B .build -S .
+      - cmd: cmake --build .build
       - task: build
 
   rebuild:
