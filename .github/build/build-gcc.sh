@@ -8,15 +8,8 @@ BUILD_DIR="$REPO_ROOT/.build"
 ARCHIVE_DIR="$REPO_ROOT/.build/archives"
 INSTALL_DIR="$REPO_ROOT/.build/lib"
 SOURCE_DIR="$REPO_ROOT/.build/src"
-GCC_VERSION="${GCC_VERSION:-${1:-10.1.0}}"
+GCC_VERSION="${GCC_VERSION:-${1:-12.1.0}}"
 FILENAME="gcc-$GCC_VERSION.tar.xz"
-
-#
-#  This is the new GCC version to install.
-#
-# takes about 4 hours (Raspberry Pi 4, 4GB)
-#
-
 #
 #  For the Pi or any computer with less than 2GB of memory.
 #
@@ -88,7 +81,8 @@ elif [ "$PLATFORM" = "Pi3" ]; then
 fi
 
 cd "$TARGET_BUILD_DIR" || exit 12
-"$TARGET_DIR/configure" "${CONFIGURE_ARGS[@]}"
+CONFIG="$(realpath -s --relative-to="$TARGET_BUILD_DIR" "$TARGET_DIR/configure")"
+"$CONFIG" "${CONFIGURE_ARGS[@]}"
 
 #
 #  Now build GCC which will take a long time.  This could range from
@@ -99,6 +93,6 @@ cd "$TARGET_BUILD_DIR" || exit 12
 #  The new compiler is placed in /usr/local/bin, the existing compiler remains
 #  in /usr/bin and may be used by giving its version gcc-6 (say).
 #
-cd "$TARGET_DIR" || exit 13
-make -C "$TARGET_BUILD_DIR" -v -j "$(nproc)"
-make -C "$TARGET_BUILD_DIR" install
+cd "$TARGET_BUILD_DIR" || exit 13
+make -j "$(nproc)"
+make install

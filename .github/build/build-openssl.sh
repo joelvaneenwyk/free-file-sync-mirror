@@ -9,6 +9,7 @@ INSTALL_DIR="$REPO_ROOT/.build/lib"
 SOURCE_DIR="$REPO_ROOT/.build/src"
 FILENAME="openssl-$OPENSSL_VERSION.tar.gz"
 if [ ! -e "$ARCHIVE_DIR/$FILENAME" ]; then
+  mkdir -p "$ARCHIVE_DIR"
   wget \
     "https://www.openssl.org/source/$FILENAME" \
     -O "$ARCHIVE_DIR/$FILENAME"
