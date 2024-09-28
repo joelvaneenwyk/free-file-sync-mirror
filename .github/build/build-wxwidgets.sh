@@ -17,6 +17,7 @@ if [ ! -e "$ARCHIVE_DIR/$FILENAME" ]; then
 fi
 TARGET_DIR="$SOURCE_DIR/wxWidgets-$WXWIDGETS_VERSION"
 if [ ! -d "$TARGET_DIR" ]; then
+  mkdir -p "$SOURCE_DIR"
   tar xf "$ARCHIVE_DIR/$FILENAME" -C "$SOURCE_DIR"
 fi
 TARGET_BUILD_DIR="$BUILD_DIR/tmp/wx"
@@ -27,6 +28,7 @@ if [ ! -e "$TARGET_BUILD_DIR/Makefile" ]; then
   "$CONFIG" \
     --prefix="$INSTALL_DIR" \
     --disable-shared \
+    --disable-stc \
     --enable-unicode \
     --enable-no_exceptions
 fi
