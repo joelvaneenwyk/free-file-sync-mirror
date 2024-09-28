@@ -15,6 +15,7 @@ test-output.xml
 /*.tar.xz
 /*.tar.gz
 /curl-*/
+/wxWidgets-*/
 
 /.build/
 

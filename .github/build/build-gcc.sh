@@ -3,7 +3,7 @@
 # cspell:ignore dphys,gnueabihf,neon,SWAPSIZE,swapfile,armv,Odroid,vfpv,multilib
 
 set -eaux
-REPO_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && cd ../../ && pwd)
+REPO_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && cd ../../ && pwd)"
 
 #
 #  This is the new GCC version to install.
@@ -34,11 +34,11 @@ if [ ! -d "$GCC_BUILD_DIR" ]; then
   tar xf "$BUILD_DIR/$FILENAME" -C "$BUILD_DIR"
 fi
 
-cd "$BUILD_DIR/gcc-$GCC_VERSION" || exit
+cd "$BUILD_DIR/gcc-$GCC_VERSION" || exit 11
 ./contrib/download_prerequisites
-cd "$GCC_BUILD_DIR" || exit
+cd "$GCC_BUILD_DIR" || exit 12
 mkdir -p obj
-cd obj || exit 34
+cd obj || exit 13
 
 #
 #  Now run the ./configure which must be checked/edited beforehand.
@@ -50,28 +50,28 @@ cd obj || exit 34
 PLATFORM="$(uname -m)"
 # Pi4
 if [ "$PLATFORM" = "Pi4" ]; then
-  ../configure --enable-languages=c,c++ --with-cpu=cortex-a72 \
+  ../configure --install-prefix="$BUILD_DIR/install" --enable-languages=c,c++ --with-cpu=cortex-a72 \
     --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf \
     --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
 # Pi3+, Pi3, and new Pi2
 elif [ "$PLATFORM" = "Pi3" ]; then
-  ../configure --enable-languages=c,c++ --with-cpu=cortex-a53 \
+  ../configure --install-prefix="$BUILD_DIR/install" --enable-languages=c,c++ --with-cpu=cortex-a53 \
     --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf \
     --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
 # Pi Zero's
 elif [ "$PLATFORM" = "PiZero" ]; then
-  ../configure --enable-languages=c,d,c++,fortran --with-cpu=arm1176jzf-s \
+  ../configure --install-prefix="$BUILD_DIR/install" --enable-languages=c,d,c++,fortran --with-cpu=arm1176jzf-s \
     --with-fpu=vfp --with-float=hard --build=arm-linux-gnueabihf \
     --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
 # x86_64
 elif [ "$PLATFORM" = "x86_64" ] || [ "$PLATFORM" = "MINGW64_NT-10.0-22631" ]; then
-  ../configure --disable-multilib --enable-languages=c,c++ --enable-checking=no
+  ../configure --install-prefix="$BUILD_DIR/install" --disable-multilib --enable-languages=c,c++ --enable-checking=no
 elif [ "$PLATFORM" = "Pi3" ]; then
   # Odroid-C2 AArch64
-  ../configure --enable-languages=c,d,c++,fortran --with-cpu=cortex-a53 --enable-checking=no
+  ../configure --install-prefix="$BUILD_DIR/install" --enable-languages=c,d,c++,fortran --with-cpu=cortex-a53 --enable-checking=no
 elif [ "$PLATFORM" = "Pi3" ]; then
   # Old Pi2
-  ../configure --enable-languages=c,d,c++,fortran --with-cpu=cortex-a7 \
+  ../configure --install-prefix="$BUILD_DIR/install" --enable-languages=c,d,c++,fortran --with-cpu=cortex-a7 \
     --with-fpu=neon-vfpv4 --with-float=hard --build=arm-linux-gnueabihf \
     --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
 fi
@@ -85,11 +85,12 @@ fi
 #  The new compiler is placed in /usr/local/bin, the existing compiler remains
 #  in /usr/bin and may be used by giving its version gcc-6 (say).
 #
-if make -j "$(nproc)"; then
-  echo
-  read -r -p "Do you wish to install the new GCC (y/n)? " yn
-  case $yn in
-  [Yy]*) sudo make install ;;
-  *) exit ;;
-  esac
-fi
+make -v -j "$(nproc)"
+# if make -j "$(nproc)"; then
+#   echo
+#   read -r -p "Do you wish to install the new GCC (y/n)? " yn
+#   case $yn in
+#   [Yy]*) sudo make install ;;
+#   *) exit ;;
+#   esac
+# fi
