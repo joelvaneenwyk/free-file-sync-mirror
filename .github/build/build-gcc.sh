@@ -4,6 +4,9 @@
 
 set -eaux
 REPO_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && cd ../../ && pwd)"
+BUILD_DIR="$REPO_ROOT/.build"
+GCC_VERSION="${GCC_VERSION:-${1:-10.1.0}}"
+FILENAME="gcc-$GCC_VERSION.tar.xz"
 
 #
 #  This is the new GCC version to install.
@@ -19,9 +22,6 @@ if [ -f /etc/dphys-swapfile ]; then
   sudo /etc/init.d/dphys-swapfile restart
 fi
 
-GCC_VERSION="${GCC_VERSION:-${1:-12.1.0}}"
-BUILD_DIR="$REPO_ROOT/.build"
-FILENAME="gcc-$GCC_VERSION.tar.xz"
 if [ ! -e "$BUILD_DIR/$FILENAME" ]; then
   mkdir -p "$BUILD_DIR"
   wget \
@@ -29,16 +29,16 @@ if [ ! -e "$BUILD_DIR/$FILENAME" ]; then
     -O "$BUILD_DIR/$FILENAME"
 fi
 
-GCC_BUILD_DIR="$BUILD_DIR/gcc-$GCC_VERSION"
-if [ ! -d "$GCC_BUILD_DIR" ]; then
+TARGET_DIR="$BUILD_DIR/gcc-$GCC_VERSION"
+if [ ! -d "$TARGET_DIR" ]; then
   tar xf "$BUILD_DIR/$FILENAME" -C "$BUILD_DIR"
 fi
+TARGET_BUILD_DIR="$TARGET_DIR/.build"
+INSTALL_DIR="$TARGET_DIR/.build/lib"
+mkdir -p "$TARGET_BUILD_DIR" "$INSTALL_DIR"
 
-cd "$BUILD_DIR/gcc-$GCC_VERSION" || exit 11
-./contrib/download_prerequisites
-cd "$GCC_BUILD_DIR" || exit 12
-mkdir -p obj
-cd obj || exit 13
+cd "$TARGET_DIR" || exit 11
+"$TARGET_DIR/contrib/download_prerequisites"
 
 #
 #  Now run the ./configure which must be checked/edited beforehand.
@@ -48,33 +48,44 @@ cd obj || exit 13
 #
 
 PLATFORM="$(uname -m)"
+
+CONFIGURE_ARGS=()
+# CONFIGURE_ARGS+=(--prefix="$INSTALL_DIR")
+
+# x86_64
+if [ "$PLATFORM" = "x86_64" ] || [ "$PLATFORM" = "MINGW64_NT-10.0-22631" ] || [ "$PLATFORM" = "MSYS_NT-10.0-22631" ]; then
+  CONFIGURE_ARGS+=(
+    --enable-languages="c,c++,lto,objc"
+    --enable-checking=no
+    --disable-multilib
+  )
 # Pi4
-if [ "$PLATFORM" = "Pi4" ]; then
-  ../configure --install-prefix="$BUILD_DIR/install" --enable-languages=c,c++ --with-cpu=cortex-a72 \
-    --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf \
-    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
+elif [ "$PLATFORM" = "Pi4" ]; then
+  CONFIGURE_ARGS+=(--enable-languages="c,c++" --with-cpu=cortex-a72
+    --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf
+    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no)
 # Pi3+, Pi3, and new Pi2
 elif [ "$PLATFORM" = "Pi3" ]; then
-  ../configure --install-prefix="$BUILD_DIR/install" --enable-languages=c,c++ --with-cpu=cortex-a53 \
-    --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf \
-    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
+  CONFIGURE_ARGS+=(--enable-languages="c,c++" --with-cpu=cortex-a53
+    --with-fpu=neon-fp-armv8 --with-float=hard --build=arm-linux-gnueabihf
+    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no)
 # Pi Zero's
 elif [ "$PLATFORM" = "PiZero" ]; then
-  ../configure --install-prefix="$BUILD_DIR/install" --enable-languages=c,d,c++,fortran --with-cpu=arm1176jzf-s \
-    --with-fpu=vfp --with-float=hard --build=arm-linux-gnueabihf \
-    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
-# x86_64
-elif [ "$PLATFORM" = "x86_64" ] || [ "$PLATFORM" = "MINGW64_NT-10.0-22631" ]; then
-  ../configure --install-prefix="$BUILD_DIR/install" --disable-multilib --enable-languages=c,c++ --enable-checking=no
+  CONFIGURE_ARGS+=(--enable-languages="c,d,c++,fortran" --with-cpu=arm1176jzf-s
+    --with-fpu=vfp --with-float=hard --build=arm-linux-gnueabihf
+    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no)
 elif [ "$PLATFORM" = "Pi3" ]; then
   # Odroid-C2 AArch64
-  ../configure --install-prefix="$BUILD_DIR/install" --enable-languages=c,d,c++,fortran --with-cpu=cortex-a53 --enable-checking=no
+  CONFIGURE_ARGS+=(--enable-languages="c,d,c++,fortran" --with-cpu=cortex-a53 --enable-checking=no)
 elif [ "$PLATFORM" = "Pi3" ]; then
   # Old Pi2
-  ../configure --install-prefix="$BUILD_DIR/install" --enable-languages=c,d,c++,fortran --with-cpu=cortex-a7 \
-    --with-fpu=neon-vfpv4 --with-float=hard --build=arm-linux-gnueabihf \
-    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no
+  CONFIGURE_ARGS+=(--enable-languages="c,d,c++,fortran" --with-cpu=cortex-a7
+    --with-fpu=neon-vfpv4 --with-float=hard --build=arm-linux-gnueabihf
+    --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --enable-checking=no)
 fi
+
+cd "$TARGET_BUILD_DIR" || exit 12
+"$TARGET_DIR/configure" "${CONFIGURE_ARGS[@]}"
 
 #
 #  Now build GCC which will take a long time.  This could range from
@@ -85,12 +96,6 @@ fi
 #  The new compiler is placed in /usr/local/bin, the existing compiler remains
 #  in /usr/bin and may be used by giving its version gcc-6 (say).
 #
-make -v -j "$(nproc)"
-# if make -j "$(nproc)"; then
-#   echo
-#   read -r -p "Do you wish to install the new GCC (y/n)? " yn
-#   case $yn in
-#   [Yy]*) sudo make install ;;
-#   *) exit ;;
-#   esac
-# fi
+cd "$TARGET_DIR" || exit 13
+mingw32-make -C "$TARGET_BUILD_DIR" -v -j "$(nproc)"
+mingw32-make -C "$TARGET_BUILD_DIR" install
