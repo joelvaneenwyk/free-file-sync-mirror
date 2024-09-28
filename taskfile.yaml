@@ -11,6 +11,7 @@ shopt:
 vars:
   BUILD_DIR_NAME: .build
   BUILD_SCRIPT_PATH: .github/build/build.sh
+  SHELL: C:/Program Files/Git/bin/bash.exe
 
 tasks:
   default:
@@ -25,11 +26,11 @@ tasks:
       - task build
 
   build:
-    sources:
-      - '{{.BUILD_SCRIPT_PATH}}'
     cmds:
-      - cmd: |
-          bash "{{joinPath .TASKFILE_DIR .BUILD_SCRIPT_PATH | toSlash}}"
+      - task: build-gcc
+      - task: build-curl
+      - task: build-openssl
+      - task: build-wxwidgets
 
   clean:
     cmds:
@@ -84,29 +85,42 @@ tasks:
     cmds:
       - cmd: pnpm exec prettier --write .
 
-  build-all:
-    cmds:
-      - task: build-gcc
-      - task: build-curl
-      - task: build-openssl
-      - task: build-wxwidgets
-
   build-gcc:
     aliases: [gcc]
+    sources:
+      - .github/build/build-gcc.sh
+    generates:
+      - .build/gcc-12.1.0/obj/Makefile
     cmds:
-      - bash '{{ joinPath .TASKFILE_DIR ".github/build/build-gcc.sh" | toSlash }}'
+      - cmd: |
+          "{{ fromSlash .SHELL }}" "{{ joinPath .TASKFILE_DIR ".github/build/build-gcc.sh" | toSlash }}"
 
   build-curl:
     aliases: [curl]
+    sources:
+      - .github/build/build-curl.sh
+    generates:
+      - ./.build/curl-*/**/*
     cmds:
-      - bash '{{ joinPath .TASKFILE_DIR ".github/build/build-curl.sh" | toSlash }}'
+      - cmd: |
+          "{{ fromSlash .SHELL }}" "{{ joinPath .TASKFILE_DIR ".github/build/build-curl.sh" | toSlash }}"
 
   build-openssl:
     aliases: [openssl]
+    sources:
+      - .github/build/build-openssl.sh
+    generates:
+      - ./.build/openssl-*/**/*
     cmds:
-      - bash '{{ joinPath .TASKFILE_DIR ".github/build/build-openssl.sh" | toSlash }}'
+      - cmd: |
+          "{{ fromSlash .SHELL }}" "{{ joinPath .TASKFILE_DIR ".github/build/build-openssl.sh" | toSlash }}"
 
   build-wxwidgets:
     aliases: [wxwidgets, wx]
+    sources:
+      - .github/build/build-wxwidgets.sh
+    generates:
+      - ./.build/wxwidgets-*/**/*
     cmds:
-      - bash '{{ joinPath .TASKFILE_DIR ".github/build/build-wxwidgets.sh" | toSlash }}'
+      - cmd: |
+          "{{ fromSlash .SHELL }}" "{{ joinPath .TASKFILE_DIR ".github/build/build-wxwidgets.sh" | toSlash }}"
