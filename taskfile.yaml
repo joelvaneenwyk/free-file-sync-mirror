@@ -11,7 +11,10 @@ shopt:
 vars:
   BUILD_DIR_NAME: .build
   BUILD_SCRIPT_PATH: .github/build/build.sh
-  SHELL: C:/Program Files/Git/bin/bash.exe
+  # C:/Program Files/Git/bin/bash.exe
+  BASH: '{{ expandenv "$USERPROFILE/scoop/apps/msys2/current/usr/bin/bash.exe" }}'
+  MINGW64: '{{ expandenv "$USERPROFILE/scoop/apps/msys2/current/mingw64.exe" }}'
+  SHELL: '{{ .BASH }}'
 
 tasks:
   default:
@@ -27,10 +30,11 @@ tasks:
 
   build:
     cmds:
-      - task: build-gcc
-      - task: build-curl
-      - task: build-openssl
-      - task: build-wxwidgets
+      - task: build-free-file-sync
+      # - task: build-gcc
+      # - task: build-curl
+      # - task: build-openssl
+      # - task: build-wxwidgets
 
   clean:
     cmds:
@@ -85,16 +89,47 @@ tasks:
     cmds:
       - cmd: pnpm exec prettier --write .
 
+  build-free-file-sync:
+    deps: [wxwidgets, openssl, curl]
+    aliases: [ffs]
+    sources:
+      - FreeFileSync/Source/Makefile
+    generates:
+      - FreeFileSync/Build/Bin/**/*
+    cmds:
+      - cmd: |
+          "{{ fromSlash .SHELL }}" -c "make -C {{ joinPath .TASKFILE_DIR "FreeFileSync" "Source" | toSlash }}"
+
+  run-shell:
+    requires:
+      vars: [SHELL_SCRIPT]
+    env:
+      MSYSTEM: MINGW64
+    cmds:
+      - cmd: |
+          "{{ fromSlash .SHELL }}" --login -c "set -eax; {{joinPath .TASKFILE_DIR .SHELL_SCRIPT | toSlash | shellQuote}}"
+
   build-gcc:
     aliases: [gcc]
     sources:
       - .github/build/build-gcc.sh
     generates:
-      - .build/gcc-12.1.0/obj/Makefile
+      - .build/gcc-10.1.0/obj/Makefile
     cmds:
-      - cmd: |
-          "{{ fromSlash .SHELL }}" "{{ joinPath .TASKFILE_DIR ".github/build/build-gcc.sh" | toSlash }}"
+      - task: run-shell
+        vars: { SHELL_SCRIPT: .github/build/build-gcc.sh }
 
+  build-openssl:
+    aliases: [openssl, ssl]
+    sources:
+      - .github/build/build-openssl.sh
+    generates:
+      - ./.build/openssl-*/**/*
+    cmds:
+      - task: run-shell
+        vars: { SHELL_SCRIPT: .github/build/build-openssl.sh }
+
+  # Curl depends on OpenSSL libraries
   build-curl:
     aliases: [curl]
     sources:
@@ -102,18 +137,8 @@ tasks:
     generates:
       - ./.build/curl-*/**/*
     cmds:
-      - cmd: |
-          "{{ fromSlash .SHELL }}" "{{ joinPath .TASKFILE_DIR ".github/build/build-curl.sh" | toSlash }}"
-
-  build-openssl:
-    aliases: [openssl]
-    sources:
-      - .github/build/build-openssl.sh
-    generates:
-      - ./.build/openssl-*/**/*
-    cmds:
-      - cmd: |
-          "{{ fromSlash .SHELL }}" "{{ joinPath .TASKFILE_DIR ".github/build/build-openssl.sh" | toSlash }}"
+      - task: run-shell
+        vars: { SHELL_SCRIPT: .github/build/build-curl.sh }
 
   build-wxwidgets:
     aliases: [wxwidgets, wx]
@@ -122,5 +147,5 @@ tasks:
     generates:
       - ./.build/wxwidgets-*/**/*
     cmds:
-      - cmd: |
-          "{{ fromSlash .SHELL }}" "{{ joinPath .TASKFILE_DIR ".github/build/build-wxwidgets.sh" | toSlash }}"
+      - task: run-shell
+        vars: { SHELL_SCRIPT: .github/build/build-wxwidgets.sh }

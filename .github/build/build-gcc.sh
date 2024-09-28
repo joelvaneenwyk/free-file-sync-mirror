@@ -5,6 +5,9 @@
 set -eaux
 REPO_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && cd ../../ && pwd)"
 BUILD_DIR="$REPO_ROOT/.build"
+ARCHIVE_DIR="$REPO_ROOT/.build/archives"
+INSTALL_DIR="$REPO_ROOT/.build/lib"
+SOURCE_DIR="$REPO_ROOT/.build/src"
 GCC_VERSION="${GCC_VERSION:-${1:-10.1.0}}"
 FILENAME="gcc-$GCC_VERSION.tar.xz"
 
@@ -22,19 +25,18 @@ if [ -f /etc/dphys-swapfile ]; then
   sudo /etc/init.d/dphys-swapfile restart
 fi
 
-if [ ! -e "$BUILD_DIR/$FILENAME" ]; then
-  mkdir -p "$BUILD_DIR"
+if [ ! -e "$ARCHIVE_DIR/$FILENAME" ]; then
+  mkdir -p "$ARCHIVE_DIR"
   wget \
     "ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.xz" \
-    -O "$BUILD_DIR/$FILENAME"
+    -O "$ARCHIVE_DIR/$FILENAME"
 fi
 
-TARGET_DIR="$BUILD_DIR/gcc-$GCC_VERSION"
+TARGET_DIR="$SOURCE_DIR/gcc-$GCC_VERSION"
 if [ ! -d "$TARGET_DIR" ]; then
-  tar xf "$BUILD_DIR/$FILENAME" -C "$BUILD_DIR"
+  tar xf "$ARCHIVE_DIR/$FILENAME" -C "$SOURCE_DIR"
 fi
-TARGET_BUILD_DIR="$TARGET_DIR/.build"
-INSTALL_DIR="$TARGET_DIR/.build/lib"
+TARGET_BUILD_DIR="$BUILD_DIR/tmp/gcc"
 mkdir -p "$TARGET_BUILD_DIR" "$INSTALL_DIR"
 
 cd "$TARGET_DIR" || exit 11
@@ -97,5 +99,5 @@ cd "$TARGET_BUILD_DIR" || exit 12
 #  in /usr/bin and may be used by giving its version gcc-6 (say).
 #
 cd "$TARGET_DIR" || exit 13
-mingw32-make -C "$TARGET_BUILD_DIR" -v -j "$(nproc)"
-mingw32-make -C "$TARGET_BUILD_DIR" install
+make -C "$TARGET_BUILD_DIR" -v -j "$(nproc)"
+make -C "$TARGET_BUILD_DIR" install
