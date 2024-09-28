@@ -52,7 +52,8 @@ cd "$TARGET_DIR" || exit 11
 PLATFORM="$(uname -m)"
 
 CONFIGURE_ARGS=()
-# CONFIGURE_ARGS+=(--prefix="$INSTALL_DIR")
+
+CONFIGURE_ARGS+=(--prefix="$INSTALL_DIR")
 
 # x86_64
 if [ "$PLATFORM" = "x86_64" ] || [ "$PLATFORM" = "MINGW64_NT-10.0-22631" ] || [ "$PLATFORM" = "MSYS_NT-10.0-22631" ]; then
