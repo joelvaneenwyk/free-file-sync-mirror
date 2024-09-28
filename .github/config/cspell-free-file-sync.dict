@@ -33,6 +33,7 @@ EINVAL
 empt
 EOPNOTSUPP
 execv
+expandenv
 fadvise
 Fant
 framemanager
@@ -90,6 +91,8 @@ MLSD
 MLST
 MMXIV
 modversion
+msys
+MSYSTEM
 Mycloud
 Nagle
 Nahimic
@@ -157,6 +160,7 @@ uncompress
 uninitialization
 unmaximize
 unref
+USERPROFILE
 verions
 Viktor
 vsftpd
