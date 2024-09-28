@@ -27,7 +27,7 @@ These instruction capture the necessary steps for installing the various depende
     - [Create zip file with executable and all dependencies](#create-zip-file-with-executable-and-all-dependencies)
   - [On target host, copy and extract the zip archive you created](#on-target-host-copy-and-extract-the-zip-archive-you-created)
   - [Copy all lib\* files to /usr/lib](#copy-all-lib-files-to-usrlib)
-  - [Run FreeFileSync](#run-freefilesync-1)
+  - [Run FreeFileSync // Armv7l](#run-freefilesync--armv7l)
   - [Troubleshooting \& Known Issues](#troubleshooting--known-issues)
     - [Image used in 'About' diaglog is missing](#image-used-in-about-diaglog-is-missing)
     - [Error due to missing shared libraries](#error-due-to-missing-shared-libraries)
@@ -294,7 +294,7 @@ sudo cp /home/pi/Desktop/FFS_11.4_ARM/Bin/lib* /usr/lib
 sudo ldconfig
 ```
 
-## Run FreeFileSync
+## Run FreeFileSync // Armv7l
 
 Go to `/home/pi/Desktop/FFS_11.4_ARM/Bin/`
 
