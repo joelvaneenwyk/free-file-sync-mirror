@@ -21,7 +21,8 @@ fi
 TARGET_BUILD_DIR="$BUILD_DIR/tmp/openssl"
 mkdir -p "$TARGET_BUILD_DIR" "$INSTALL_DIR"
 cd "$TARGET_BUILD_DIR" || exit 21
-"$TARGET_DIR/config" --prefix="$INSTALL_DIR"
+CONFIG="$(realpath -s --relative-to="$TARGET_BUILD_DIR" "$TARGET_DIR/config")"
+"$CONFIG" --prefix="$INSTALL_DIR"
 make -j "$(nproc)"
 make install
 # sudo ldconfig
