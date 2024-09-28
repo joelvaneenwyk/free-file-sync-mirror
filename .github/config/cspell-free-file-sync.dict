@@ -83,6 +83,7 @@ libstdc
 libunity
 libxtst
 logfile
+makefiles
 Markus
 Massar
 Minidump
@@ -99,6 +100,7 @@ Nahimic
 Nethood
 NEWKEYS
 Nico
+nmap
 noexec
 NOINTERFACE
 nproc
@@ -108,6 +110,7 @@ numpad
 nvcc
 nview
 nvvm
+objc
 openmpi
 OTFE
 PASV
@@ -122,6 +125,7 @@ Rantwijk
 raspberrypi
 Raspbery
 Rclone
+realpath
 reparse
 Restic
 returncode
