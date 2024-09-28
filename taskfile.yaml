@@ -103,18 +103,22 @@ tasks:
   run-shell:
     requires:
       vars: [SHELL_SCRIPT]
+    sources:
+      - '{{.SHELL_SCRIPT}}'
+    vars:
+      SHELL_SCRIPT_PATH: '{{joinPath .TASKFILE_DIR .SHELL_SCRIPT}}'
     env:
       MSYSTEM: MINGW64
     cmds:
       - cmd: |
-          "{{ fromSlash .SHELL }}" --login -c "set -eax; {{joinPath .TASKFILE_DIR .SHELL_SCRIPT | toSlash | shellQuote}}"
+          "{{ fromSlash .SHELL }}" --login -c "set -eax; {{.SHELL_SCRIPT_PATH | toSlash | shellQuote}}"
 
   build-gcc:
     aliases: [gcc]
     sources:
-      - .github/build/build-gcc.sh
+      - .github/build/*
     generates:
-      - .build/gcc-10.1.0/obj/Makefile
+      - .build/gcc-*/obj/Makefile
     cmds:
       - task: run-shell
         vars: { SHELL_SCRIPT: .github/build/build-gcc.sh }
@@ -122,7 +126,7 @@ tasks:
   build-openssl:
     aliases: [openssl, ssl]
     sources:
-      - .github/build/build-openssl.sh
+      - .github/build/*
     generates:
       - ./.build/openssl-*/**/*
     cmds:
@@ -133,9 +137,9 @@ tasks:
   build-curl:
     aliases: [curl]
     sources:
-      - .github/build/build-curl.sh
+      - .github/build/*
     generates:
-      - ./.build/curl-*/**/*
+      - .build/lib/include/curl-*/curl.h
     cmds:
       - task: run-shell
         vars: { SHELL_SCRIPT: .github/build/build-curl.sh }
@@ -143,9 +147,9 @@ tasks:
   build-wxwidgets:
     aliases: [wxwidgets, wx]
     sources:
-      - .github/build/build-wxwidgets.sh
+      - .github/build/*
     generates:
-      - ./.build/wxwidgets-*/**/*
+      - .build/lib/include/wx-*/wx/wx.h
     cmds:
       - task: run-shell
         vars: { SHELL_SCRIPT: .github/build/build-wxwidgets.sh }
