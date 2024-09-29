@@ -1,13 +1,3 @@
-# OS is a defined variable for WIN systems, so "uname" will not be executed
-OS?=$(shell uname)
-# Values of OS:
-#   Windows => Windows_NT
-#   Mac     => Darwin
-#   Linux   => Linux
-ifeq ($(OS),Windows_NT)
-    export MSYS_NO_PATHCONV=1
-endif
-
 CXX ?= g++
 exeName = FreeFileSync_$(shell arch)
 
@@ -124,18 +114,53 @@ cppFiles+=../../wx+/popup_dlg.cpp
 cppFiles+=../../wx+/popup_dlg_generated.cpp
 cppFiles+=../../xBRZ/src/xbrz.cpp
 
-tmpPath = $(shell dirname "$(shell mktemp -u)")/$(exeName)_Make
+# OS is a defined variable for WIN systems, so "uname" will not be executed
+OS?=$(shell uname)
 
-objFiles = $(cppFiles:%=$(tmpPath)/ffs/src/%.o)
+# Values of OS:
+#   Windows => Windows_NT
+#   Mac     => Darwin
+#   Linux   => Linux
+ifeq ($(OS),Windows_NT)
+    export MSYS_NO_PATHCONV=1
+endif
+
+REPO_ROOT := $(abspath $(dir $(CURDIR))/..)
+
+tmpPath = $(REPO_ROOT)/.build/$(exeName)_Make
+
+objFiles = $(cppFiles:%=$(tmpPath)/%.o)
+
+# Check if cygpath is available and use it to convert paths
+ifeq ($(shell which cygpath 2>/dev/null),)
+	CYGPATH_CONVERT = $(1)
+else
+	CYGPATH_CONVERT = $(shell cygpath -w $(1))
+endif
+
+ifeq ($(OS),Windows_NT)
+    ifeq ($(SHELL),cmd.exe)
+        # Use Windows-style mkdir only if the shell is cmd
+        MKDIR = $(shell if not exist $(call CYGPATH_CONVERT,$(1)) mkdir $(call CYGPATH_CONVERT,$(1)))
+    else
+        # Use mkdir -p if using another shell like PowerShell or Bash
+        MKDIR = mkdir -p $(1)
+    endif
+else
+    MKDIR = mkdir -p $(1)
+endif
+
+export PATH := $(REPO_ROOT)/.build/lib/bin:$(PATH)
 
 all: ../Build/Bin/$(exeName)
+	@echo "Repo root is $(REPO_ROOT)"
 
 ../Build/Bin/$(exeName): $(objFiles)
-	mkdir -p $(dir $@)
+	$(call MKDIR,$(dir $@))
 	$(CXX) -o $@ $^ $(LDFLAGS)
 
-$(tmpPath)/ffs/src/%.o : %
-	mkdir -p $(dir $@)
+$(tmpPath)/%.o : %
+	$(call MKDIR,$(dir $@))
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
