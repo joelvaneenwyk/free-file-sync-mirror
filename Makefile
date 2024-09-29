@@ -9,16 +9,17 @@ LDFLAGS += -s -no-pie `wx-config --libs std, aui, richtext --debug=no` -pthread
 
 
 CXXFLAGS  += `pkg-config --cflags openssl`
-LDFLAGS += `pkg-config --libs   openssl`
+LDFLAGS   += `pkg-config --libs   openssl`
 
 CXXFLAGS  += `pkg-config --cflags libcurl`
-LDFLAGS += `pkg-config --libs   libcurl`
+LDFLAGS   += `pkg-config --libs   libcurl`
 
 CXXFLAGS  += `pkg-config --cflags libssh2`
-LDFLAGS += `pkg-config --libs   libssh2`
+LDFLAGS   += `pkg-config --libs   libssh2`
 
 CXXFLAGS  += `pkg-config --cflags gtk+-2.0`
-#treat as system headers so that warnings are hidden:
+
+# treat as system headers so that warnings are hidden:
 CXXFLAGS  += -isystem/usr/include/gtk-2.0
 
 #support for SELinux (optional)
