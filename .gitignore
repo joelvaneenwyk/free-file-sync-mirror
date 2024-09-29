@@ -6,20 +6,24 @@ test-output.xml
 .pytest_cache/
 .clj-kondo/
 .cache/
+
 /gcc-*/
 
-.task/
-.git/
-.build/
-out/
-vcpkg/
+/.task/
+/.git/
 
 /*.tar.xz
 /*.tar.gz
 /curl-*/
+/wxWidgets-*/
 
 /.build/
 
 node_modules/
 .yarn/
 pnpm-lock.yaml
+
+.idea/
+cmake-build-*/
+vcpkg_installed/
+out/

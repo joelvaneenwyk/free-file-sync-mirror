@@ -17,6 +17,8 @@ cuda
 CURLE
 CURLE_URL_MALFORMAT
 CXXFLAGS
+cygpath
+CYGPATH
 DACL
 Delchev
 Dersch
@@ -88,6 +90,7 @@ libstdc
 libunity
 libxtst
 logfile
+makefile
 makefiles
 Markus
 Massar
@@ -123,6 +126,7 @@ OTFE
 pacman
 pango
 PASV
+PATHCONV
 Pavel
 Persson
 pixbuf
