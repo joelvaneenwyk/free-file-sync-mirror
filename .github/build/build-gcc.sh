@@ -81,6 +81,8 @@ elif [ "$PLATFORM" = "Pi3" ]; then
 fi
 
 cd "$TARGET_BUILD_DIR" || exit 12
+export CFLAGS="-Wno-error"
+export CXXFLAGS="-Wno-error"
 CONFIG="$(realpath -s --relative-to="$TARGET_BUILD_DIR" "$TARGET_DIR/configure")"
 "$CONFIG" "${CONFIGURE_ARGS[@]}"
 
@@ -94,5 +96,5 @@ CONFIG="$(realpath -s --relative-to="$TARGET_BUILD_DIR" "$TARGET_DIR/configure")
 #  in /usr/bin and may be used by giving its version gcc-6 (say).
 #
 cd "$TARGET_BUILD_DIR" || exit 13
-make -j "$(nproc)"
+make -v -j "$(nproc)"
 make install
