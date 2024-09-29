@@ -3,6 +3,7 @@ alives
 Andreas
 appdata
 armv
+binutils
 Bitvise
 Brabandt
 Brinkhoff
@@ -19,6 +20,7 @@ CXXFLAGS
 DACL
 Delchev
 Dersch
+devel
 DHAVE
 diaglog
 Diener
@@ -52,6 +54,7 @@ gfortran
 gnueabihf
 gobject
 Golemon
+gstreamer
 gtkmm
 gtkscrolledwindow
 Gusarov
@@ -73,6 +76,7 @@ ldconfig
 libcoarrays
 libcrypto
 libcurl
+libepoxy
 libgcc
 libgirepository
 libgraphene
@@ -102,10 +106,12 @@ Nethood
 NEWKEYS
 Nico
 nmap
+noconfirm
 noexec
 NOINTERFACE
 nproc
 NTFS
+ntldd
 nullglob
 numpad
 nvcc
@@ -114,9 +120,13 @@ nvvm
 objc
 openmpi
 OTFE
+pacman
+pango
 PASV
 Pavel
 Persson
+pixbuf
+pkgconfig
 PKIX
 polishment
 POSIX
@@ -175,6 +185,7 @@ Wcast
 Webdav
 werror
 Wfatal
+winflexbison
 Wnetaddconnection
 Wnon
 Wshadow

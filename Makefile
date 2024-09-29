@@ -119,7 +119,7 @@ objFiles = $(cppFiles:%=$(tmpPath)/ffs/src/%.o)
 all: ./FreeFileSync/Build/Bin/$(exeName)
 
 free-file-sync:
-	make -C FreeFileSync/Source
+	make -C ./FreeFileSync/Source all
 
 ./FreeFileSync/Build/Bin/$(exeName): $(objFiles)
 	mkdir -p $(dir $@)
