@@ -1,3 +1,13 @@
+# OS is a defined variable for WIN systems, so "uname" will not be executed
+OS?=$(shell uname)
+# Values of OS:
+#   Windows => Windows_NT
+#   Mac     => Darwin
+#   Linux   => Linux
+ifeq ($(OS),Windows_NT)
+    export MSYS_NO_PATHCONV=1
+endif
+
 CXX ?= g++
 exeName = FreeFileSync_$(shell arch)
 
