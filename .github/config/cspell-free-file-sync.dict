@@ -167,6 +167,8 @@ Superbar
 Svyatoslav
 Syncthing
 sysroot
+SYSTEMDRIVE
+SYSTEMROOT
 systray
 TASKFILE
 Tatham
@@ -189,6 +191,8 @@ Wcast
 Webdav
 werror
 Wfatal
+windir
+WINDIR
 winflexbison
 Wnetaddconnection
 Wnon

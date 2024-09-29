@@ -152,10 +152,10 @@ endif
 
 export PATH := $(REPO_ROOT)/.build/lib/bin:$(PATH)
 
-all: ../Build/Bin/$(exeName)
+all: $(REPO_ROOT)/FreeFileSync/Build/Bin/$(exeName)
 	@echo "Repo root is $(REPO_ROOT)"
 
-../Build/Bin/$(exeName): $(objFiles)
+$(REPO_ROOT)/FreeFileSync/Build/Bin/$(exeName): $(objFiles)
 	$(call MKDIR,$(dir $@))
 	$(CXX) -o $@ $^ $(LDFLAGS)
 
@@ -165,4 +165,4 @@ $(tmpPath)/%.o : %
 
 clean:
 	rm -rf $(tmpPath)
-	rm -f ../Build/Bin/$(exeName)
+	rm -f $(REPO_ROOT)/FreeFileSync/Build/Bin/$(exeName)

@@ -68,9 +68,30 @@ tasks:
 
   build:
     deps: [vcpkg-download]
+    vars:
+      LOCAL_BUILD_DIR: '{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME "cmake"}}'
+    env:
+      # https://github.com/microsoft/vcpkg/issues/41235
+      # https://learn.microsoft.com/en-us/vcpkg/users/config-environment#vcpkg_keep_env_vars
+      VCPKG_KEEP_ENV_VARS: 'SystemDrive;SystemRoot;windir'
+      # SystemDrive: 'C:'
+      # SystemRoot: 'C:/Windows'
+      # windir: 'C:/Windows'
     cmds:
-      - cmd: cmake -B .build -S .
-      - cmd: cmake --build .build
+      - cmd: |
+          {{if .CLI_FORCE}}cmd.exe /d /e:on /c rmdir /s /q "{{.LOCAL_BUILD_DIR}}"{{end}}
+        platforms: [windows]
+      - cmd: |
+          {{if .CLI_FORCE}}rm -rf "{{.LOCAL_BUILD_DIR}}"{{end}}
+        platforms: [linux, darwin]
+      - cmd: |
+          cmake \
+            -B "{{.LOCAL_BUILD_DIR}}" \
+            -S "{{.TASKFILE_DIR}}" \
+            -G "Visual Studio 17 2022" -A x64
+      - cmd: |
+          cmake \
+            --build "{{.LOCAL_BUILD_DIR}}"
       # - task: build-free-file-sync
       # - task: build-gcc
       # - task: build-curl
