@@ -89,17 +89,6 @@ tasks:
     cmds:
       - cmd: pnpm exec prettier --write .
 
-  build-free-file-sync:
-    deps: [wxwidgets, openssl, curl]
-    aliases: [ffs]
-    sources:
-      - FreeFileSync/Source/Makefile
-    generates:
-      - FreeFileSync/Build/Bin/**/*
-    cmds:
-      - cmd: |
-          "{{ fromSlash .SHELL }}" -c "make -C {{ joinPath .TASKFILE_DIR "FreeFileSync" "Source" | toSlash }}"
-
   run-shell:
     requires:
       vars: [SHELL_SCRIPT]
@@ -112,6 +101,19 @@ tasks:
     cmds:
       - cmd: |
           "{{ fromSlash .SHELL }}" --login -c "set -eax; {{.SHELL_SCRIPT_PATH | toSlash | shellQuote}}"
+
+  build-free-file-sync:
+    aliases: [ffs]
+    sources:
+      - FreeFileSync/Source/Makefile
+    generates:
+      - FreeFileSync/Build/Bin/**/*
+    env:
+      MSYSTEM: MINGW64
+      MINGW_MOUNT_POINT: /mingw64
+    cmds:
+      - task: run-shell
+        vars: { SHELL_SCRIPT: .github/build/build-free-file-sync.sh }
 
   build-gcc:
     aliases: [gcc]

@@ -3,6 +3,8 @@ exeName = FreeFileSync_$(shell arch)
 
 CXXFLAGS += -std=c++23 -pipe -DWXINTL_NO_GETTEXT_MACRO -I../.. -I../../zenXml -include "zen/i18n.h" -include "zen/warn_static.h" \
            -I../../.build/lib/include \
+           -I../../.build/lib/include/wx-3.2 \
+           -I../../.build/lib/lib/wx/include/msw-unicode-static-3.2 \
            -Wall -Wfatal-errors -Wmissing-include-dirs -Wswitch-enum -Wcast-align -Wnon-virtual-dtor -Wno-unused-function -Wshadow -Wno-maybe-uninitialized \
            -O3 -DNDEBUG `wx-config --cxxflags --debug=no` -pthread
 

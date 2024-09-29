@@ -15,6 +15,7 @@ csidl
 cuda
 CURLE
 CURLE_URL_MALFORMAT
+CXXFLAGS
 DACL
 Delchev
 Dersch
