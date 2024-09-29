@@ -24,6 +24,35 @@ vars:
   VCPKG_BOOTSTRAP_SH: "{{.TASKFILE_DIR}}/vcpkg/bootstrap-vcpkg.sh"
   VCPKG_EXE: "{{.TASKFILE_DIR}}/vcpkg/vcpkg.exe"
 
+  BUILD_TOOLCHAIN:
+  BUILD_ARCH: x86_64
+  BUILD_CC: gcc
+  PACKAGE_PARTS:
+    - "mingw-w64"
+    - "{{.BUILD_TOOLCHAIN}}"
+    - "{{.BUILD_ARCH}}"
+  PACKAGE_NAME_PREFIX: '{{ without .PACKAGE_PARTS "" | join "-" }}'
+  MSYS2_PACKAGES:
+    - "git"
+    - "ncurses"
+    - "{{.PACKAGE_NAME_PREFIX}}-{{.BUILD_CC}}"
+    - "{{.PACKAGE_NAME_PREFIX}}-binutils"
+    - "{{.PACKAGE_NAME_PREFIX}}-cairo"
+    - "{{.PACKAGE_NAME_PREFIX}}-gcc"
+    - "{{.PACKAGE_NAME_PREFIX}}-toolchain"
+    - "{{.PACKAGE_NAME_PREFIX}}-base-devel"
+    - "{{.PACKAGE_NAME_PREFIX}}-gdk-pixbuf2"
+    - "{{.PACKAGE_NAME_PREFIX}}-glib2"
+    - "{{.PACKAGE_NAME_PREFIX}}-gstreamer"
+    - "{{.PACKAGE_NAME_PREFIX}}-gtk2"
+    - "{{.PACKAGE_NAME_PREFIX}}-libepoxy"
+    - "{{.PACKAGE_NAME_PREFIX}}-ncurses"
+    - "{{.PACKAGE_NAME_PREFIX}}-ntldd"
+    - "{{.PACKAGE_NAME_PREFIX}}-openssl"
+    - "{{.PACKAGE_NAME_PREFIX}}-pango"
+    - "{{.PACKAGE_NAME_PREFIX}}-pkgconf"
+    - "{{.PACKAGE_NAME_PREFIX}}-zlib"
+
 env:
   VCPKG_DISABLE_METRICS: 1
 
@@ -191,3 +220,60 @@ tasks:
     cmds:
       - task: run-shell
         vars: { SHELL_SCRIPT: .github/build/build-wxwidgets.sh }
+
+  install-packages:
+    cmds:
+      - task: install-packages-scoop-pkg-config
+      - task: install-packages-pacman
+
+  install-packages-scoop-pkg-config:
+    deps: [scoop-install]
+    platforms: [windows]
+    status:
+      - pkg-config --version
+    cmds:
+      - cmd: |
+          scoop install \
+            extras/pkg-config-lite \
+            main/winflexbison
+
+  install-packages-pacman:
+    vars:
+      PACKAGES: '{{.MSYS2_PACKAGES | join " "}}'
+    cmds:
+      - task: pacman-unlock
+      - cmd: 'pacman -Syu --noconfirm'
+        ignore_error: true
+      - cmd: 'pacman -S --needed --noconfirm {{ .PACKAGES }}'
+        ignore_error: true
+      - task: pacman-unlock
+
+  install-each-package:
+    deps: [update-packages]
+    vars:
+      PACKAGES: '{{.MSYS2_PACKAGES | join " "}}'
+    cmds:
+      - for:
+          var: MSYS2_PACKAGES
+        task: install-package-pacman
+        vars:
+          PACKAGE: '{{.ITEM}}'
+
+  pacman-unlock:
+    status:
+      - 'test ! -f /var/lib/pacman/db.lck'
+    cmds:
+      - cmd: 'rm -f /var/lib/pacman/db.lck'
+        ignore_error: true
+
+  install-package-pacman:
+    deps: [pacman-unlock]
+    requires:
+      vars: [PACKAGE]
+    desc: 'Install package {{.PACKAGE}}'
+    preconditions:
+      - 'pacman --version'
+    status:
+      - 'pacman -Qk {{.PACKAGE}}'
+    cmds:
+      - cmd: 'pacman -S --needed --noconfirm "{{.PACKAGE}}"'
