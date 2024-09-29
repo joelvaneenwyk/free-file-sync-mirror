@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.30)
 project(free_file_sync_mirror)
-
 set(CMAKE_CXX_STANDARD 14)
+
+include(${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(FreeFileSync/Source)

@@ -16,12 +16,21 @@ vars:
   MINGW64: '{{ expandenv "$USERPROFILE/scoop/apps/msys2/current/mingw64.exe" }}'
   SHELL: '{{ .BASH }}'
 
+  RUN_WINDOWS: 'cmd /d /c'
+  RUN_UNIX: 'sh -c'
+  RUN: '{{if eq OS "windows"}}{{.RUN_WINDOWS}}{{ else }}{{.RUN_UNIX}}{{ end }}'
+
+  VCPKG_BOOTSTRAP_BAT: "{{.TASKFILE_DIR}}/vcpkg/bootstrap-vcpkg.bat"
+  VCPKG_BOOTSTRAP_SH: "{{.TASKFILE_DIR}}/vcpkg/bootstrap-vcpkg.sh"
+  VCPKG_EXE: "{{.TASKFILE_DIR}}/vcpkg/vcpkg.exe"
+
+env:
+  VCPKG_DISABLE_METRICS: 1
+
 tasks:
   default:
     cmds:
       - task: build
-      - cmd: cmake -B .build -S .
-      - cmd: cmake --build .build
 
   rebuild:
     cmds:
@@ -29,8 +38,11 @@ tasks:
       - task build
 
   build:
+    deps: [vcpkg-download]
     cmds:
-      - task: build-free-file-sync
+      - cmd: cmake -B .build -S .
+      - cmd: cmake --build .build
+      # - task: build-free-file-sync
       # - task: build-gcc
       # - task: build-curl
       # - task: build-openssl
@@ -42,6 +54,30 @@ tasks:
         ignore_error: true
       - cmd: cmd.exe /d /e:on /c rmdir /s /q "{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME}}"
         ignore_error: true
+
+  git-submodule-init:
+    status:
+      - 'test -f "{{.VCPKG_BOOTSTRAP_BAT}}"'
+    cmds:
+      - cmd: 'git -C "{{.TASKFILE_DIR}}" submodule update --init --recursive'
+
+  vcpkg-integrate:
+    deps: [vcpkg-download]
+    internal: true
+    cmds:
+      - cmd: '{{.RUN}} "{{ fromSlash .VCPKG_EXE }}" integrate install'
+
+  vcpkg-download:
+    deps: [git-submodule-init]
+    status:
+      - 'test -f "{{.VCPKG_EXE}}"'
+    cmds:
+      - cmd: '{{.RUN}} "{{ fromSlash .VCPKG_BOOTSTRAP_BAT }}" -disableMetrics'
+
+  vcpkg:
+    deps: [vcpkg-download]
+    cmds:
+      - cmd: '{{.RUN}} "{{ fromSlash .VCPKG_EXE }}" {{.CLI_ARGS}}'
 
   copy-resources:
     sources:
