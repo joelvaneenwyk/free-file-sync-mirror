@@ -84,15 +84,15 @@ tasks:
       - cmd: |
           {{if .CLI_FORCE}}rm -rf "{{.LOCAL_BUILD_DIR}}"{{end}}
         platforms: [linux, darwin]
-      - cmd: |
-          cmake \
-            -B "{{.LOCAL_BUILD_DIR}}" \
-            -S "{{.TASKFILE_DIR}}" \
-            -G "Visual Studio 17 2022" -A x64
-      - cmd: |
-          cmake \
-            --build "{{.LOCAL_BUILD_DIR}}"
-      # - task: build-free-file-sync
+      # - cmd: |
+      #     cmake \
+      #       -B "{{.LOCAL_BUILD_DIR}}" \
+      #       -S "{{.TASKFILE_DIR}}" \
+      #       -G "Visual Studio 17 2022" -A x64
+      # - cmd: |
+      #     cmake \
+      #       --build "{{.LOCAL_BUILD_DIR}}"
+      - task: build-free-file-sync
       # - task: build-gcc
       # - task: build-curl
       # - task: build-openssl
@@ -189,6 +189,7 @@ tasks:
           "{{ fromSlash .SHELL }}" --login -c "set -eax; {{.SHELL_SCRIPT_PATH | toSlash | shellQuote}}"
 
   build-free-file-sync:
+    deps: [curl, ssl, wx]
     aliases: [ffs]
     sources:
       - FreeFileSync/Source/Makefile

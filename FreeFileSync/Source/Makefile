@@ -1,11 +1,30 @@
 CXX ?= g++
 exeName = FreeFileSync_$(shell arch)
 
-CXXFLAGS += -std=c++23 -pipe -DWXINTL_NO_GETTEXT_MACRO -I../.. -I../../zenXml -include "zen/i18n.h" -include "zen/warn_static.h" \
+# OS is a defined variable for WIN systems, so "uname" will not be executed
+OS?=$(shell uname)
+
+# Values of OS:
+#   Windows => Windows_NT
+#   Mac     => Darwin
+#   Linux   => Linux
+ifeq ($(OS),Windows_NT)
+    export MSYS_NO_PATHCONV=1
+endif
+
+REPO_ROOT := $(abspath $(dir $(CURDIR))/..)
+REPO_TMP_PATH = $(REPO_ROOT)/.build/$(exeName)_Make
+
+CXXFLAGS += -std=c++23 -pipe -DWXINTL_NO_GETTEXT_MACRO \
+           -I../.. \
+           -I../../zenXml \
            -I../../.build/lib/include \
            -I../../.build/lib/include/wx-3.2 \
            -I../../.build/lib/lib/wx/include/msw-unicode-static-3.2 \
-           -Wall -Wfatal-errors -Wmissing-include-dirs -Wswitch-enum -Wcast-align -Wnon-virtual-dtor -Wno-unused-function -Wshadow -Wno-maybe-uninitialized \
+           -include "zen/i18n.h" -include "zen/warn_static.h" \
+           -Wall -Wfatal-errors -Wmissing-include-dirs -Wswitch-enum \
+           -Wcast-align -Wnon-virtual-dtor -Wno-unused-function \
+           -Wshadow -Wno-maybe-uninitialized \
            -O3 -DNDEBUG `wx-config --cxxflags --debug=no` -pthread
 
 LDFLAGS += -s -no-pie `wx-config --libs std, aui, richtext --debug=no` -pthread
@@ -114,22 +133,7 @@ cppFiles+=../../wx+/popup_dlg.cpp
 cppFiles+=../../wx+/popup_dlg_generated.cpp
 cppFiles+=../../xBRZ/src/xbrz.cpp
 
-# OS is a defined variable for WIN systems, so "uname" will not be executed
-OS?=$(shell uname)
-
-# Values of OS:
-#   Windows => Windows_NT
-#   Mac     => Darwin
-#   Linux   => Linux
-ifeq ($(OS),Windows_NT)
-    export MSYS_NO_PATHCONV=1
-endif
-
-REPO_ROOT := $(abspath $(dir $(CURDIR))/..)
-
-tmpPath = $(REPO_ROOT)/.build/$(exeName)_Make
-
-objFiles = $(cppFiles:%=$(tmpPath)/%.o)
+objFiles = $(cppFiles:%=$(REPO_TMP_PATH)/%.o)
 
 # Check if cygpath is available and use it to convert paths
 ifeq ($(shell which cygpath 2>/dev/null),)
@@ -159,10 +163,10 @@ $(REPO_ROOT)/FreeFileSync/Build/Bin/$(exeName): $(objFiles)
 	$(call MKDIR,$(dir $@))
 	$(CXX) -o $@ $^ $(LDFLAGS)
 
-$(tmpPath)/%.o : %
+$(REPO_TMP_PATH)/%.o : %
 	$(call MKDIR,$(dir $@))
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -rf $(tmpPath)
+	rm -rf $(REPO_TMP_PATH)
 	rm -f $(REPO_ROOT)/FreeFileSync/Build/Bin/$(exeName)
