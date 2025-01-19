@@ -28,4 +28,4 @@ CONFIG="$(realpath -s --relative-to="$TARGET_BUILD_DIR" "$TARGET_DIR/configure")
   --with-libssh2 \
   --enable-versioned-symbols
 make -j "$(nproc)"
-make install
+make -j "$(nproc)" install
