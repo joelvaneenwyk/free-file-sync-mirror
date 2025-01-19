@@ -20,6 +20,7 @@ vars:
   RUN_UNIX: 'sh -c'
   RUN: '{{if eq OS "windows"}}{{.RUN_WINDOWS}}{{ else }}{{.RUN_UNIX}}{{ end }}'
 
+  VCPKG_ROOT: "{{.TASKFILE_DIR}}/vcpkg"
   VCPKG_BOOTSTRAP_BAT: "{{.TASKFILE_DIR}}/vcpkg/bootstrap-vcpkg.bat"
   VCPKG_BOOTSTRAP_SH: "{{.TASKFILE_DIR}}/vcpkg/bootstrap-vcpkg.sh"
   VCPKG_EXE: "{{.TASKFILE_DIR}}/vcpkg/vcpkg.exe"
@@ -68,18 +69,31 @@ tasks:
       - task build
 
   build:
+    cmds:
+      - task: build-free-file-sync
+
+  cmake:
     deps: [vcpkg-download]
-    vars:
-      LOCAL_BUILD_DIR: '{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME "cmake"}}'
     env:
       # https://github.com/microsoft/vcpkg/issues/41235
       # https://learn.microsoft.com/en-us/vcpkg/users/config-environment#vcpkg_keep_env_vars
-      VCPKG_KEEP_ENV_VARS: 'SystemDrive;SystemRoot;windir'
+      VCPKG_KEEP_ENV_VARS: SystemDrive;SystemRoot;windir
+    vars:
+      LOCAL_BUILD_DIR: '{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME "cmake"}}'
+    sources:
+      - CMakeLists.txt
+    generates:
+      - '{{.LOCAL_BUILD_DIR}}/FreeFileSync.sln'
     cmds:
-      - task: clean
-        vars:
-          TARGET_CLEAN_DIR: '{{.LOCAL_BUILD_DIR}}'
-      - task: build-free-file-sync
+      - cmd: |
+          cmake \
+            -DCMAKE_TOOLCHAIN_FILE="{{.VCPKG_ROOT}}/scripts/buildsystems/vcpkg.cmake"       \
+            -DCMAKE_INSTALL_PREFIX="{{.LOCAL_BUILD_DIR}}/install"                          \
+            -DCMAKE_BUILD_TYPE=Release                                                     \
+            -G "Visual Studio 17 2022"                                                     \
+            -A x64                                                                         \
+            -S "{{.TASKFILE_DIR}}"                                                         \
+            -B "{{.LOCAL_BUILD_DIR}}"
 
   clean:
     vars:
