@@ -26,4 +26,5 @@ pnpm-lock.yaml
 .idea/
 cmake-build-*/
 vcpkg_installed/
-out/
+
+/out/
