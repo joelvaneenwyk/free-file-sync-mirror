@@ -35,17 +35,18 @@ vars:
   MSYS2_PACKAGES:
     - "git"
     - "ncurses"
+    - "base-devel"
     - "{{.PACKAGE_NAME_PREFIX}}-{{.BUILD_CC}}"
     - "{{.PACKAGE_NAME_PREFIX}}-binutils"
     - "{{.PACKAGE_NAME_PREFIX}}-cairo"
     - "{{.PACKAGE_NAME_PREFIX}}-gcc"
     - "{{.PACKAGE_NAME_PREFIX}}-toolchain"
-    - "{{.PACKAGE_NAME_PREFIX}}-base-devel"
     - "{{.PACKAGE_NAME_PREFIX}}-gdk-pixbuf2"
     - "{{.PACKAGE_NAME_PREFIX}}-glib2"
     - "{{.PACKAGE_NAME_PREFIX}}-gstreamer"
     - "{{.PACKAGE_NAME_PREFIX}}-gtk2"
     - "{{.PACKAGE_NAME_PREFIX}}-libepoxy"
+    - "{{.PACKAGE_NAME_PREFIX}}-libpsl"
     - "{{.PACKAGE_NAME_PREFIX}}-ncurses"
     - "{{.PACKAGE_NAME_PREFIX}}-ntldd"
     - "{{.PACKAGE_NAME_PREFIX}}-openssl"
@@ -74,36 +75,29 @@ tasks:
       # https://github.com/microsoft/vcpkg/issues/41235
       # https://learn.microsoft.com/en-us/vcpkg/users/config-environment#vcpkg_keep_env_vars
       VCPKG_KEEP_ENV_VARS: 'SystemDrive;SystemRoot;windir'
-      # SystemDrive: 'C:'
-      # SystemRoot: 'C:/Windows'
-      # windir: 'C:/Windows'
     cmds:
-      - cmd: |
-          {{if .CLI_FORCE}}cmd.exe /d /e:on /c rmdir /s /q "{{.LOCAL_BUILD_DIR}}"{{end}}
-        platforms: [windows]
-      - cmd: |
-          {{if .CLI_FORCE}}rm -rf "{{.LOCAL_BUILD_DIR}}"{{end}}
-        platforms: [linux, darwin]
-      # - cmd: |
-      #     cmake \
-      #       -B "{{.LOCAL_BUILD_DIR}}" \
-      #       -S "{{.TASKFILE_DIR}}" \
-      #       -G "Visual Studio 17 2022" -A x64
-      # - cmd: |
-      #     cmake \
-      #       --build "{{.LOCAL_BUILD_DIR}}"
+      - task: clean
+        vars:
+          TARGET_CLEAN_DIR: '{{.LOCAL_BUILD_DIR}}'
       - task: build-free-file-sync
-      # - task: build-gcc
-      # - task: build-curl
-      # - task: build-openssl
-      # - task: build-wxwidgets
 
   clean:
+    vars:
+      CLEAN_BUILD_DIR: '{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME}}'
+      CLEAN_DIR: '{{.TARGET_CLEAN_DIR | default .CLEAN_BUILD_DIR}}'
+      CLEAN_FORCE: '{{if .CLI_FORCE}}true{{else}}false{{end}}'
     cmds:
-      - cmd: rm -rf "{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME}}"
+      - cmd: |
+          if {{.CLEAN_FORCE}}; then
+            rm -rf "{{.CLEAN_DIR}}"
+          fi
+        platforms: [linux, darwin]
+      - cmd: |
+          if {{.CLEAN_FORCE}}; then
+            cmd.exe /d /e:on /c rmdir /s /q "{{.CLEAN_DIR}}"
+          fi
         ignore_error: true
-      - cmd: cmd.exe /d /e:on /c rmdir /s /q "{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME}}"
-        ignore_error: true
+        platforms: [windows]
 
   git-submodule-init:
     status:
@@ -188,8 +182,17 @@ tasks:
       - cmd: |
           "{{ fromSlash .SHELL }}" --login -c "set -eax; {{.SHELL_SCRIPT_PATH | toSlash | shellQuote}}"
 
+  run-script:
+    requires:
+      vars: [SCRIPT_ARGS]
+    env:
+      MSYSTEM: MINGW64
+    cmds:
+      - cmd: |
+          "{{ fromSlash .SHELL }}" --login -c "set -eax; {{.SCRIPT_ARGS}}"
+
   build-free-file-sync:
-    deps: [curl, ssl, wx]
+    # deps: [curl, ssl, wx]
     aliases: [ffs]
     sources:
       - FreeFileSync/Source/Makefile
@@ -205,7 +208,7 @@ tasks:
   build-gcc:
     aliases: [gcc]
     sources:
-      - .github/build/*
+      - .github/build/build-gcc.sh
     generates:
       - .build/gcc-*/obj/Makefile
     cmds:
@@ -215,9 +218,9 @@ tasks:
   build-openssl:
     aliases: [openssl, ssl]
     sources:
-      - .github/build/*
+      - .github/build/build-openssl.sh
     generates:
-      - ./.build/openssl-*/**/*
+      - .build/lib/include/openssl/*.h
     cmds:
       - task: run-shell
         vars: { SHELL_SCRIPT: .github/build/build-openssl.sh }
@@ -226,7 +229,7 @@ tasks:
   build-curl:
     aliases: [curl]
     sources:
-      - .github/build/*
+      - .github/build/build-curl.sh
     generates:
       - .build/lib/include/curl-*/curl.h
     cmds:
@@ -239,14 +242,28 @@ tasks:
       - .github/build/*
     generates:
       - .build/lib/include/wx-*/wx/wx.h
+      - .build/lib/lib/libwx_*.a
     cmds:
       - task: run-shell
         vars: { SHELL_SCRIPT: .github/build/build-wxwidgets.sh }
 
   install-packages:
+    aliases: [setup]
     cmds:
       - task: install-packages-scoop-pkg-config
       - task: install-packages-pacman
+
+  scoop-install:
+    desc: Install libraries with scoop
+    status:
+      - "scoop --version"
+    cmds:
+      - cmd: pwsh -NoProfile -Command 'iex "& {$(irm get.scoop.sh)} -RunAsAdmin"'
+        platforms: [windows]
+        ignore_error: true
+      - cmd: pwsh -NoProfile -Command 'Join-Path (Resolve-Path ~).Path "scoop/shims" >> $Env:GITHUB_PATH'
+        platforms: [windows]
+        ignore_error: true
 
   install-packages-scoop-pkg-config:
     deps: [scoop-install]
@@ -264,10 +281,10 @@ tasks:
       PACKAGES: '{{.MSYS2_PACKAGES | join " "}}'
     cmds:
       - task: pacman-unlock
-      - cmd: 'pacman -Syu --noconfirm'
-        ignore_error: true
-      - cmd: 'pacman -S --needed --noconfirm {{ .PACKAGES }}'
-        ignore_error: true
+      - task: run-script
+        vars: { SCRIPT_ARGS: pacman -Syu --noconfirm }
+      - task: run-script
+        vars: { SCRIPT_ARGS: 'pacman -S --needed --noconfirm {{ .PACKAGES }}' }
       - task: pacman-unlock
 
   install-each-package:
@@ -282,11 +299,9 @@ tasks:
           PACKAGE: '{{.ITEM}}'
 
   pacman-unlock:
-    status:
-      - 'test ! -f /var/lib/pacman/db.lck'
     cmds:
-      - cmd: 'rm -f /var/lib/pacman/db.lck'
-        ignore_error: true
+      - task: run-script
+        vars: { SCRIPT_ARGS: rm -f /var/lib/pacman/db.lck }
 
   install-package-pacman:
     deps: [pacman-unlock]
