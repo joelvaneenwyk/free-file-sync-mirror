@@ -19,7 +19,7 @@ include_directories(zen)
 include_directories(zenXml)
 include_directories(zenXml/zenxml)
 
-add_executable(free_file_sync_mirror
+set(FREE_FILE_SYNC_FILES
     FreeFileSync/Source/afs/abstract.cpp
     FreeFileSync/Source/afs/abstract.h
     FreeFileSync/Source/afs/abstract_impl.h
@@ -265,3 +265,15 @@ add_executable(free_file_sync_mirror
     zenXml/zenxml/dom.h
     zenXml/zenxml/parser.h
     zenXml/zenxml/xml.h)
+
+find_package(OpenSSL REQUIRED)
+find_package(wxWidgets REQUIRED COMPONENTS core base)
+
+include_directories(${OPENSSL_INCLUDE_DIR})
+include_directories(${wxWidgets_INCLUDE_DIRS})
+
+target_link_libraries(free_file_sync_mirror ${OPENSSL_LIBRARIES})
+target_link_libraries(free_file_sync_mirror ${wxWidgets_LIBRARIES})
+
+add_executable(free_file_sync_mirror
+    ${FREE_FILE_SYNC_FILES})
