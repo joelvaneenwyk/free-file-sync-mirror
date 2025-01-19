@@ -33,4 +33,4 @@ if [ ! -e "$TARGET_BUILD_DIR/Makefile" ]; then
     --enable-no_exceptions
 fi
 make -j "$(nproc)"
-make install
+make -j "$(nproc)" install

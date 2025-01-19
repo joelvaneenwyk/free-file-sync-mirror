@@ -24,5 +24,4 @@ cd "$TARGET_BUILD_DIR" || exit 21
 CONFIG="$(realpath -s --relative-to="$TARGET_BUILD_DIR" "$TARGET_DIR/config")"
 "$CONFIG" --prefix="$INSTALL_DIR"
 make -j "$(nproc)"
-make install
-# sudo ldconfig
+make -j "$(nproc)" install_sw

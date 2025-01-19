@@ -6,7 +6,6 @@ if [ -e "/etc/profile" ]; then
 fi
 
 set -eaux
-CURL_VERSION="${CURL_VERSION:-${1:-8.10.1}}"
 REPO_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && cd ../../ && pwd)"
 BUILD_DIR="$REPO_ROOT/.build"
 INSTALL_DIR="$REPO_ROOT/.build/lib"

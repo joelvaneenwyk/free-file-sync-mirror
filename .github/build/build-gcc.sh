@@ -97,4 +97,4 @@ CONFIG="$(realpath -s --relative-to="$TARGET_BUILD_DIR" "$TARGET_DIR/configure")
 #
 cd "$TARGET_BUILD_DIR" || exit 13
 make -v -j "$(nproc)"
-make install
+make -j "$(nproc)" install
