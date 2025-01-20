@@ -9,7 +9,6 @@ test-output.xml
 
 /gcc-*/
 
-/.task/
 /.git/
 
 /*.tar.xz
@@ -17,7 +16,10 @@ test-output.xml
 /curl-*/
 /wxWidgets-*/
 
-/.build/
+.build/
+.task/
+out/
+vcpkg/
 
 node_modules/
 .yarn/
@@ -27,4 +29,3 @@ pnpm-lock.yaml
 cmake-build-*/
 vcpkg_installed/
 
-/out/
