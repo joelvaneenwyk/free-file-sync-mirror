@@ -1,4 +1,0 @@
-task = "3.37.2"
-
-[plugins]
-task = "source:https://raw.githubusercontent.com/Phault/proto-toml-plugins/main/task/plugin.toml"
