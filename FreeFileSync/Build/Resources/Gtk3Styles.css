@@ -3,32 +3,27 @@
 	
 	https://docs.gtk.org/gtk3/css-overview.html
 	https://docs.gtk.org/gtk3/css-properties.html                       */
-*
-{
-	/* see wx+/grid.cpp: spacing wouldn't hurt, but let's be consistent */
-	-GtkScrolledWindow-scrollbar-spacing: 0;
+* {
+    /* see wx+/grid.cpp: spacing wouldn't hurt, but let's be consistent */
+    -gtkscrolledwindow-scrollbar-spacing: 0;
 }
 
-button
-{
-	padding: 4px 5px; /*remove excessive inner border from bitmap buttons*/
-	min-width:  0;
-	min-height: 0;
-	/*border-radius: 5px;*/
+button {
+    padding: 4px 5px; /*remove excessive inner border from bitmap buttons*/
+    min-width: 0;
+    min-height: 0;
+    /*border-radius: 5px;*/
 }
 
-entry
-{
-	padding: 2px 5px; /*default is too small for text input*/
+entry {
+    padding: 2px 5px; /*default is too small for text input*/
 }
 
-combobox entry
-{
-	padding: 0 5px;
+combobox entry {
+    padding: 0 5px;
 }
 
-spinbutton entry
-{
-	padding: 0 5px;
-	/*margin-right: -50px; possible hack! but not needed right now */
+spinbutton entry {
+    padding: 0 5px;
+    /*margin-right: -50px; possible hack! but not needed right now */
 }

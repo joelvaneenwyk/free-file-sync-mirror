@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "free-file-sync",
+  "dependencies": [
+    "curl",
+    "openssl",
+    {
+      "name": "wxwidgets",
+      "version>=": "3.2.3"
+    }
+  ],
+  "builtin-baseline": "6f29f12e82a8293156836ad81cc9bf5af41fe836"
+}

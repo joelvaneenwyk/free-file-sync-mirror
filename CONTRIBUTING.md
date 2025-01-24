@@ -1,0 +1,175 @@
+# Contributing
+
+When manually compiling `FreeFileSync`, you should also fix the following bugs in its library dependencies.
+`FreeFileSync` generally uses the latest library versions and works with upstream to get the bugs fixed
+that affect `FreeFileSync`. Therefore it is **not recommended to compile against older library versions** other than
+the ones mentioned below. The remaining issues that are yet to be fixed are listed in the following:
+
+## libcurl 8.7.0
+
+```diff
+__________________________________________________________________________________________________________
+/lib/ftp.c
+https://github.com/curl/curl/issues/1455
++    static bool is_routable_ip_v4(unsigned int ip[4])
++    {
++        if (ip[0] == 127 || //127.0.0.0/8 (localhost)
++            ip[0] == 10  || //10.0.0.0/8 (private)
++            (ip[0] == 192 && ip[1] == 168) ||  //192.168.0.0/16 (private)
++            (ip[0] == 169 && ip[1] == 254) ||  //169.254.0.0/16 (link-local)
++            (ip[0] == 172 && ip[1] / 16 == 1)) //172.16.0.0/12 (private)
++            return false;
++        return true;
++    }
+
+
+- if (data->set.ftp_skip_ip)
++    bool skipIp = data->set.ftp_skip_ip;
++    if (!skipIp && !is_routable_ip_v4(ip))
++    {
++        unsigned int ip_ctrl[4];
++        if (4 != sscanf(control_address(conn), "%u.%u.%u.%u",
++                        &ip_ctrl[0], &ip_ctrl[1], &ip_ctrl[2], &ip_ctrl[3]) ||
++            is_routable_ip_v4(ip_ctrl))
++            skipIp = true;
++    }
++
++    if (skipIp)
+
+__________________________________________________________________________________________________________
+/lib/ftp.c
+https://github.com/curl/curl/issues/4342
+
+- result = ftp_nb_type(conn, TRUE, FTP_LIST_TYPE);
++ result = ftp_nb_type(conn, data->set.prefer_ascii, FTP_LIST_TYPE);
+```
+
+---
+
+## libssh2 master 2022-11-11
+
+```diff
+__________________________________________________________________________________________________________
+src/session.c
+memory leak: https://github.com/libssh2/libssh2/issues/28
+
+-if (session->state & LIBSSH2_STATE_NEWKEYS)
++//if (session->state & LIBSSH2_STATE_NEWKEYS)
+
+__________________________________________________________________________________________________________
+move the following constants from src/sftp.h to include/libssh2_sftp.h:
+
+    #define MAX_SFTP_OUTGOING_SIZE 30000
+    #define MAX_SFTP_READ_SIZE 30000
+__________________________________________________________________________________________________________
+```
+
+## wxWidgets 3.2.4
+
+```diff
+__________________________________________________________________________________________________________
+/include/wx/features.h
+wxWidgets/GTK2 on some Linux systems incorrectly detects high DPI: https://freefilesync.org/forum/viewtopic.php?t=6114
+=> hack away high-DPI support for GTK2 (= pretend GTK2 has device independent pixels, which it clearly has not!)
+
++ #if defined(__WXGTK20__)
++     #define wxHAS_DPI_INDEPENDENT_PIXELS
++ #endif
+
+__________________________________________________________________________________________________________
+/src/aui/framemanager.cpp:
+Fix incorrect pane height calculations:
+
+-        // determine the dock's minimum size
+-        bool plus_border = false;
+-        bool plus_caption = false;
+-        int dock_min_size = 0;
+-        for (j = 0; j < dock_pane_count; ++j)
+-        {
+-            wxAuiPaneInfo& pane = *dock.panes.Item(j);
+-            if (pane.min_size != wxDefaultSize)
+-            {
+-                if (pane.HasBorder())
+-                    plus_border = true;
+-                if (pane.HasCaption())
+-                    plus_caption = true;
+-                if (dock.IsHorizontal())
+-                {
+-                    if (pane.min_size.y > dock_min_size)
+-                        dock_min_size = pane.min_size.y;
+-                }
+-                else
+-                {
+-                    if (pane.min_size.x > dock_min_size)
+-                        dock_min_size = pane.min_size.x;
+-                }
+-            }
+-        }
+-
+-        if (plus_border)
+-            dock_min_size += (pane_borderSize*2);
+-        if (plus_caption && dock.IsHorizontal())
+-            dock_min_size += (caption_size);
+-
+-        dock.min_size = dock_min_size;
+
++        // determine the dock's minimum size
++        int dock_min_size = 0;
++       for (j = 0; j < dock_pane_count; ++j)
++        {
++            wxAuiPaneInfo& pane = *dock.panes.Item(j);
++            if (pane.min_size != wxDefaultSize)
++            {
++                int paneSize = dock.IsHorizontal() ? pane.min_size.y : pane.min_size.x;
++                if (pane.HasBorder())
++                    paneSize += 2 * pane_borderSize;
++                if (pane.HasCaption() && dock.IsHorizontal())
++                    paneSize += caption_size;
++
++                if (paneSize > dock_min_size)
++                    dock_min_size = paneSize;
++            }
++        }
++
++        dock.min_size = dock_min_size;
+
+__________________________________________________________________________________________________________
+/src/gtk/menu.cpp
+
+-g_signal_connect(m_menu, "map", G_CALLBACK(menu_map), this);
++g_signal_connect(m_menu, "show", G_CALLBACK(menu_map), this); //"map" is never called on Ubuntu Unity, but "show" is
+
+__________________________________________________________________________________________________________
+/src/gtk/window.cpp
+Backspace not working in filter dialog: http://www.freefilesync.org/forum/viewtopic.php?t=347
+
+ void wxWindowGTK::ConnectWidget( GtkWidget *widget )
+ {
+-     static bool isSourceAttached;
+-    if (!isSourceAttached)
+-    {
+-        // attach GSource to detect new GDK events
+-        isSourceAttached = true;
+-        static GSourceFuncs funcs =
+-        {
+-            source_prepare, source_check, source_dispatch,
+-            NULL, NULL, NULL
+-        };
+-        GSource* source = g_source_new(&funcs, sizeof(GSource));
+-        // priority slightly higher than GDK_PRIORITY_EVENTS
+-        g_source_set_priority(source, GDK_PRIORITY_EVENTS - 1);
+-        g_source_attach(source, NULL);
+-        g_source_unref(source);
+-    }
+
+     g_signal_connect (widget, "key_press_event",
+                       G_CALLBACK (gtk_window_key_press_callback), this);
+
+__________________________________________________________________________________________________________
+/src/unix/sound.cpp
+Fix crackling sound at the beginning of WAV playback:
+See: http://soundfile.sapp.org/doc/WaveFormat/ => skip 8 bytes (Subchunk2ID and Subchunk2 Size)
+
+-    m_data->m_data = (&m_data->m_dataWithHeader[data_offset]);
++    m_data->m_data = (&m_data->m_dataWithHeader[data_offset + 8]);
+```

@@ -1,0 +1,11 @@
+version: '0.2'
+ignorePaths: []
+dictionaryDefinitions:
+  - name: free-file-sync
+    path: .github/config/cspell-free-file-sync.dict
+    addWords: true
+dictionaries:
+  - free-file-sync
+words: []
+ignoreWords: []
+import: []

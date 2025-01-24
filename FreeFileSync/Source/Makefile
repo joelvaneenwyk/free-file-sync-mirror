@@ -1,12 +1,33 @@
 CXX ?= g++
 exeName = FreeFileSync_$(shell arch)
 
-CXXFLAGS += -std=c++23 -pipe -DWXINTL_NO_GETTEXT_MACRO -I../.. -I../../zenXml -include "zen/i18n.h" -include "zen/warn_static.h" \
-           -Wall -Wfatal-errors -Wmissing-include-dirs -Wswitch-enum -Wcast-align -Wnon-virtual-dtor -Wno-unused-function -Wshadow -Wno-maybe-uninitialized \
+# OS is a defined variable for WIN systems, so "uname" will not be executed
+OS?=$(shell uname)
+
+# Values of OS:
+#   Windows => Windows_NT
+#   Mac     => Darwin
+#   Linux   => Linux
+ifeq ($(OS),Windows_NT)
+    export MSYS_NO_PATHCONV=1
+endif
+
+REPO_ROOT := $(abspath $(dir $(CURDIR))/..)
+REPO_TMP_PATH = $(REPO_ROOT)/.build/$(exeName)_Make
+
+CXXFLAGS += -std=c++23 -pipe -DWXINTL_NO_GETTEXT_MACRO \
+           -I../.. \
+           -I../../zenXml \
+           -I../../.build/lib/include \
+           -I../../.build/lib/include/wx-3.2 \
+           -I../../.build/lib/lib/wx/include/msw-unicode-static-3.2 \
+           -include "zen/i18n.h" -include "zen/warn_static.h" \
+           -Wall -Wfatal-errors -Wmissing-include-dirs -Wswitch-enum \
+           -Wcast-align -Wnon-virtual-dtor -Wno-unused-function \
+           -Wshadow -Wno-maybe-uninitialized \
            -O3 -DNDEBUG `wx-config --cxxflags --debug=no` -pthread
 
 LDFLAGS += -s -no-pie `wx-config --libs std, aui, richtext --debug=no` -pthread
-
 
 CXXFLAGS  += `pkg-config --cflags openssl`
 LDFLAGS += `pkg-config --libs   openssl`
@@ -112,20 +133,40 @@ cppFiles+=../../wx+/popup_dlg.cpp
 cppFiles+=../../wx+/popup_dlg_generated.cpp
 cppFiles+=../../xBRZ/src/xbrz.cpp
 
-tmpPath = $(shell dirname "$(shell mktemp -u)")/$(exeName)_Make
+objFiles = $(cppFiles:%=$(REPO_TMP_PATH)/%.o)
 
-objFiles = $(cppFiles:%=$(tmpPath)/ffs/src/%.o)
+# Check if cygpath is available and use it to convert paths
+ifeq ($(shell which cygpath 2>/dev/null),)
+	CYGPATH_CONVERT = $(1)
+else
+	CYGPATH_CONVERT = $(shell cygpath -w $(1))
+endif
 
-all: ../Build/Bin/$(exeName)
+ifeq ($(OS),Windows_NT)
+    ifeq ($(SHELL),cmd.exe)
+        # Use Windows-style mkdir only if the shell is cmd
+        MKDIR = $(shell if not exist $(call CYGPATH_CONVERT,$(1)) mkdir $(call CYGPATH_CONVERT,$(1)))
+    else
+        # Use mkdir -p if using another shell like PowerShell or Bash
+        MKDIR = mkdir -p $(1)
+    endif
+else
+    MKDIR = mkdir -p $(1)
+endif
 
-../Build/Bin/$(exeName): $(objFiles)
-	mkdir -p $(dir $@)
+export PATH := $(REPO_ROOT)/.build/lib/bin:$(PATH)
+
+all: $(REPO_ROOT)/FreeFileSync/Build/Bin/$(exeName)
+	@echo "Repo root is $(REPO_ROOT)"
+
+$(REPO_ROOT)/FreeFileSync/Build/Bin/$(exeName): $(objFiles)
+	$(call MKDIR,$(dir $@))
 	$(CXX) -o $@ $^ $(LDFLAGS)
 
-$(tmpPath)/ffs/src/%.o : %
-	mkdir -p $(dir $@)
+$(REPO_TMP_PATH)/%.o : %
+	$(call MKDIR,$(dir $@))
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -rf $(tmpPath)
-	rm -f ../Build/Bin/$(exeName)
+	rm -rf $(REPO_TMP_PATH)
+	rm -f $(REPO_ROOT)/FreeFileSync/Build/Bin/$(exeName)

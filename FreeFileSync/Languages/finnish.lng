@@ -1,0 +1,2299 @@
+<header>
+	<language>Suomi</language>
+	<translator>Skyjack</translator>
+	<locale>fi</locale>
+	<image>flag_finland</image>
+	<plural_count>2</plural_count>
+	<plural_definition>n == 1 ? 0 : 1</plural_definition>
+</header>
+
+<source>Cannot read file %x.</source>
+<target>Tiedostoa %x ei voi lukea.</target>
+
+<source>Unexpected size of data stream:</source>
+<target>Tietovirran odottamaton koko:</target>
+
+<source>Expected:</source>
+<target>Odotettu:</target>
+
+<source>Cannot write file %x.</source>
+<target>Tiedoston %x kirjoittaminen ei onnistu.</target>
+
+<source>Cannot write permissions of %x.</source>
+<target>Ei voi tallentaa %x:n oikeuksia.</target>
+
+<source>Operation not supported between different devices.</source>
+<target>Toimintoa ei tueta eri laitteiden välillä.</target>
+
+<source>Cannot create directory %x.</source>
+<target>Hakemistoa %x ei voitu luoda.</target>
+
+<source>The name %x is already used by another item.</source>
+<target>Nimi %x on jo käytössä toidella kohteella.</target>
+
+<source>Cannot delete directory %x.</source>
+<target>Hakemistoa %x ei voida poistaa.</target>
+
+<source>Cannot rename %x to %y.</source>
+<target>%x:n nimeäminen %y:ksi ei onnistu.</target>
+
+<source>Cannot move %x to %y.</source>
+<target>%x:n siirtäminen %y:ksi ei onnistu.</target>
+
+<source>Cannot copy symbolic link %x to %y.</source>
+<target>Symbolisen linkin %x -> %y kopiointi epäonnistui.</target>
+
+<source>The item %x is currently in use.</source>
+<target>Kohde %x on tällä hetkellä käytössä.</target>
+
+<source>Invalid character encoding:</source>
+<target>Virheellinen merkkikoodaus:</target>
+
+<source>Failed to auto-detect character encoding:</source>
+<target>Merkkikoodauksen automaattinen tunnistus epäonnistui:</target>
+
+<source>Server name must not be empty.</source>
+<target>Palvelimen nimi ei voi olla tyhjä.</target>
+
+<source>Cannot resolve symbolic link %x.</source>
+<target>Symbolinen linkki %x on virheellinen.</target>
+
+<source>Cannot read directory %x.</source>
+<target>Hekemistoa %x ei voida lukea.</target>
+
+<source>Cannot write modification time of %x.</source>
+<target>Tiedoston %x muokkausaikaa ei voida kirjoittaa.</target>
+
+<source>Unable to connect to %x.</source>
+<target>Yhteyttä %x:n ei voi luoda.</target>
+
+<source>%x does not exist.</source>
+<target>%x ei ole olemassa.</target>
+
+<source>Cannot read file attributes of %x.</source>
+<target>Tiedoston %x määritteitä ei voitu lukea.</target>
+
+<source>Cannot delete file %x.</source>
+<target>Ei voi poistaa tiedostoa %x.</target>
+
+<source>Cannot delete symbolic link %x.</source>
+<target>Symbolisen linkkin %x poistaminen ei onnistu.</target>
+
+<source>Cannot determine final path for %x.</source>
+<target>%x:n lopullista polkua ei voida määrittää.</target>
+
+<source>Operation not supported by device.</source>
+<target>Laite ei tue toimitaa.</target>
+
+<source>Password prompt not permitted by current settings.</source>
+<target>Nykyiset asetukset eivät salli salasanan pyytämistä.</target>
+
+<source>Please enter your password to connect to %x.</source>
+<target>Ole hyvä ja syötä salasanasi yhdistääksesi %x.</target>
+
+<source>The password will only be remembered until FreeFileSync is closed.</source>
+<target>Salasana muistetaan vain siihen asti, kunnes FreeFileSync suljetaan.</target>
+
+<source>The recycle bin is not available for %x.</source>
+<target>Roskakori ei ole käytettävissä %x:lle.</target>
+
+<source>empty</source>
+<target>tyhjä</target>
+
+<source>Error code %x</source>
+<target>Virhekoori %x</target>
+
+<source>Authentication completed.</source>
+<target>Todennus valmis.</target>
+
+<source>You may close this page now and continue with FreeFileSync.</source>
+<target>Voit nyt sulkea tämän sivun ja jatkaa FreeFileSyncin kanssa.</target>
+
+<source>Authentication failed.</source>
+<target>Todentaminen epäonnistui.</target>
+
+<source>Please set up a shorter time out for Google Drive.</source>
+<target>Määritä Google Drivelle lyhyempi aikakatkaisu.</target>
+
+<source>
+	<pluralform>1 sec</pluralform>
+	<pluralform>%x sec</pluralform>
+</source>
+<target>
+	<pluralform>1 s</pluralform>
+	<pluralform>%x s</pluralform>
+</target>
+
+<source>The name %x is used by more than one item in the folder.</source>
+<target>Nimi %x on käytössä useammalla kohteella hakemistossa.</target>
+
+<source>Please add a connection to user account %x first.</source>
+<target>Lisää ensin yhteys käyttäjätiliin %x.</target>
+
+<source>File content is corrupted.</source>
+<target>Tiedoston sisältö on vioittunut.</target>
+
+<source>Unsupported data format.</source>
+<target>Tiedosto muotoa ei tueta.</target>
+
+<source>Version: %x</source>
+<target>Versio: %x</target>
+
+<source>Cannot read database file %x.</source>
+<target>Tietokantatiedostoa %x ei voi lukea.</target>
+
+<source>Cannot open file %x.</source>
+<target>Tiedostoa %x ei voi avata.</target>
+
+<source>Cannot copy file %x to %y.</source>
+<target>Tiedostoa %x ei voida kopioida kohteeseen %y.</target>
+
+<source>Cannot determine free disk space for %x.</source>
+<target>Vaapaan tilan määrittely %x:lle ei onnistu.</target>
+
+<source>Unable to move %x to the recycle bin.</source>
+<target>%x:n siirto Roskakoriin epäonnistui.</target>
+
+<source>Unable to disconnect from %x.</source>
+<target>Yhteyden katkaiseminen %x ei onnistu.</target>
+
+<source>Cannot find device %x.</source>
+<target>Laitetta %x ei löydy.</target>
+
+<source>Cannot open directory %x.</source>
+<target>Hakemistoa %x ei voi avata.</target>
+
+<source>Unsupported item type.</source>
+<target>Kohdetyyppiä ei tueta.</target>
+
+<source>The server does not support authentication via %x.</source>
+<target>Palvelin ei salli tunnistautumista %x:n kautta.</target>
+
+<source>Required:</source>
+<target>Vaadittu:</target>
+
+<source>
+	<pluralform>Operation timed out after 1 second.</pluralform>
+	<pluralform>Operation timed out after %x seconds.</pluralform>
+</source>
+<target>
+	<pluralform>Toiminto keskeytyy 1 sekunnin kuluttua.</pluralform>
+	<pluralform>Toiminto keskeytyy %x sekunnin kuluttua.</pluralform>
+</target>
+
+<source>
+	<pluralform>Cannot wait on more than 1 connection at a time.</pluralform>
+	<pluralform>Cannot wait on more than %x connections at a time.</pluralform>
+</source>
+<target>
+	<pluralform>Odottaminen sallittu vain 1 yhteydelle.</pluralform>
+	<pluralform>Odottaminen sallittu vain %x yhtäaikaiselle yhteydelle.</pluralform>
+</target>
+
+<source>Failed to open SFTP channel number %x.</source>
+<target>SFTP kanava %x ei voitu avata.</target>
+
+<source>Temporary access error:</source>
+<target>Tilapäinen pääsyvirhe:</target>
+
+<source>Command line</source>
+<target>Komentorivi</target>
+
+<source>Syntax:</source>
+<target>Syntaksi:</target>
+
+<source>config files:</source>
+<target>määritystiedostot:</target>
+
+<source>directory</source>
+<target>hakemisto</target>
+
+<source>global config file:</source>
+<target>yleinen määritystiedosto:</target>
+
+<source>Any number of FreeFileSync "ffs_gui" and/or "ffs_batch" configuration files.</source>
+<target>Vapaa määrä FreeFileSync "ffs_gui" ja/tai "ffs_batch" määrittelytiedostoja.</target>
+
+<source>Any number of alternative directory pairs for at most one config file.</source>
+<target>Vapaa määrä eri hakemistopareja yhdelle tietylle määritystiedostolle.</target>
+
+<source>Open the selected configuration for editing only, without executing it.</source>
+<target>Avaa asetus editointia varten, ei suoriteta.</target>
+
+<source>Path to an alternate GlobalSettings.xml file.</source>
+<target>Polku toiseen GlobalSettings.xml tiedostolle.</target>
+
+<source>Error</source>
+<target>Virhe</target>
+
+<source>Error during process initialization.</source>
+<target>Virhe prosessin alustuksen aikana.</target>
+
+<source>A left and a right directory path are expected after %x.</source>
+<target>Vasemman ja oikean hakemistopolun odotetaan olevan %x jälkeen.</target>
+
+<source>Unexpected file extension:</source>
+<target>Odottamaton tiedostopääte:</target>
+
+<source>The config file must not contain settings at directory pair level when directories are set via command line.</source>
+<target>Määritystiedosto ei saa sisältää hakemistoparitason asetuksia, jos hakemistot määritellään komentoriviltä.</target>
+
+<source>Directories cannot be set for more than one configuration file.</source>
+<target>Hakemistot voi asettaa vain yhtä määrittelyä varten.</target>
+
+<source>The following batch options have been changed because the current process does not allow user interaction:</source>
+<target>Seuraavia eräasetuksia on muutettu, koska nykyinen prosessi ei salli käyttäjän toimia:</target>
+
+<source>Auto-close</source>
+<target>Sulje automaattisesti</target>
+
+<source>Enabled</source>
+<target>Käytössä</target>
+
+<source>Errors:</source>
+<target>Virheet:</target>
+
+<source>Stop synchronization at first error</source>
+<target>Lopeta synkronointi ensimmäiseen virheeseen</target>
+
+<source>Exit code %x</source>
+<target>Lopetuskoodi %x</target>
+
+<source>Executing command:</source>
+<target>Suoritetaan komento:</target>
+
+<source>Command %x failed.</source>
+<target>Komento %x epäonnistui.</target>
+
+<source>Sending email notification to %x</source>
+<target>Lähetetään ilmoitus sähköpostiin %x</target>
+
+<source>Cannot determine sync-direction:</source>
+<target>Synkronointisuuntaa ei voida määrittää:</target>
+
+<source>The items have different names, but it's unknown which side was renamed.</source>
+<target>Kohteilla on eri nimet, mutta ei tiedetä, kumpi puoli nimettiin uudelleen.</target>
+
+<source>The items have different content, but it's unknown which side has changed.</source>
+<target>Kohteilla on erilainen sisältö, mutta ei tiedetä, kumpi puoli on muuttunut.</target>
+
+<source>Both sides have changed since last synchronization.</source>
+<target>Molemmat puolet muuttuneet edellisestä synkronoinnista.</target>
+
+<source>No change since last synchronization.</source>
+<target>Ei muutoksia edellisen synkronoinnin jälkeen.</target>
+
+<source>The database entry is not in sync, considering current settings.</source>
+<target>Tietokanta ei vastaa nykyisiä asetuksia.</target>
+
+<source>The database entry is ambiguous.</source>
+<target>Tietokannan merkintä on epäselvä.</target>
+
+<source>Database file is not available: Setting default directions for synchronization.</source>
+<target>Tietokantatiedosto ei ole käytettävissä: Synkronoinnin oletussuuntien asettaminen.</target>
+
+<source>Calculating sync directions...</source>
+<target>Lasketaan synkronoinnin suuntaa...</target>
+
+<source>Creating file %x</source>
+<target>Luodaan tiedosto %x</target>
+
+<source>Creating folder %x</source>
+<target>Luodaan hakemisto %x</target>
+
+<source>Creating symbolic link %x</source>
+<target>Luodaan symbolinen linkki %x</target>
+
+<source>Deleting file %x</source>
+<target>Poistetaan tiedosto %x</target>
+
+<source>Moving file %x to the recycle bin</source>
+<target>Siirretään tiedosto %x roskakoriin</target>
+
+<source>Deleting symbolic link %x</source>
+<target>Pistetaan symbolinen linkki %x</target>
+
+<source>Moving symbolic link %x to the recycle bin</source>
+<target>Siirretään symbolinen linkki %x roskakoriin</target>
+
+<source>Deleting folder %x</source>
+<target>Poistetaan hakemisto %x</target>
+
+<source>Moving folder %x to the recycle bin</source>
+<target>Siirretään hakemisto %x roskakoriin</target>
+
+<source>Ignore and delete permanently each time recycle bin is unavailable?</source>
+<target>Ohitetaanko ja poistetaanko pysyvästi aina, kun roskakori ei ole käytettävissä?</target>
+
+<source>Recycle bin unavailable</source>
+<target>Roskakori ei käytettävissä</target>
+
+<source>Renaming file %x to %y</source>
+<target>Nimetään tiedosto %x uudelleen nimeksi %y</target>
+
+<source>Renaming symbolic link %x to %y</source>
+<target>Nimetään symbolinen linkki %x uudelleen nimeksi %y</target>
+
+<source>Renaming folder %x to %y</source>
+<target>Nimetään kansio %x uudelleen nimeksi %y</target>
+
+<source>Normalizing folder paths...</source>
+<target>Normalisoidaan kansiopolkuja...</target>
+
+<source>Cannot find the following folders:</source>
+<target>Seuraavia hakemistoja ei löydy:</target>
+
+<source>The following folders do not yet exist:</source>
+<target>Seuraavia hakemistoja ei vielä ole:</target>
+
+<source>The folders are created automatically when needed.</source>
+<target>Tarvittaessa hakemistot luodaan automaattisesti.</target>
+
+<source>The following folder paths differ in case. Please use a single form in order to avoid duplicate accesses.</source>
+<target>Seuraavat hakemistopolut eroavat tapauksesta. Käytä yhtä lomaketta päällekkäisten pääsyjen välttämiseksi.</target>
+
+<source>Scanning:</source>
+<target>Skannaus:</target>
+
+<source>Comparison finished:</source>
+<target>Vertailu valmis:</target>
+
+<source>
+	<pluralform>1 item found</pluralform>
+	<pluralform>%x items found</pluralform>
+</source>
+<target>
+	<pluralform>1 kohde löytyi</pluralform>
+	<pluralform>%x kohdetta löytyi</pluralform>
+</target>
+
+<source>Time elapsed:</source>
+<target>Aikaa kulunut:</target>
+
+<source>File %x has an invalid date.</source>
+<target>Tiedostolla %x on virheellinen päiväys.</target>
+
+<source>Date:</source>
+<target>Pvm:</target>
+
+<source>Files have the same date but a different size.</source>
+<target>Tiedostojen päiväys on sama, mutta koko on eri.</target>
+
+<source>Size:</source>
+<target>Koko:</target>
+
+<source>Content comparison was skipped for excluded files.</source>
+<target>Sisällön tarkastus ohitettiin, tiedosto suljettu pois.</target>
+
+<source>Resolving symbolic link %x</source>
+<target>Tulkitaan symbolinen linkki %x</target>
+
+<source>Comparing content of files %x</source>
+<target>Verrataan tiedostojen %x sisältöä</target>
+
+<source>Generating file list...</source>
+<target>Luodaan tiedostoluettelo...</target>
+
+<source>A folder input field is empty.</source>
+<target>Hakemiston syötekenttä on tyhjä.</target>
+
+<source>The corresponding folder will be considered as empty.</source>
+<target>Vastaava hakemisto tulkitaan tyhjäksi.</target>
+
+<source>Exclude:</source>
+<target>Jätä pois:</target>
+
+<source>One folder of the folder pair is a subfolder of the other.</source>
+<target>Hakemistoparin toinen hakemisto on toisen alihakemisto.</target>
+
+<source>The folder should be excluded via filter.</source>
+<target>Hakemisto tulisi sulkea pois suodattimen avulla.</target>
+
+<source>Out of memory.</source>
+<target>Muisti loppui.</target>
+
+<source>Database file %x does not yet exist.</source>
+<target>Tietokantaa %x ei vielä ole.</target>
+
+<source>Loading file %x...</source>
+<target>Ladataan tiedostoa %x...</target>
+
+<source>Saving file %x...</source>
+<target>Tallennetaan tiedostoa %x...</target>
+
+<source>Searching for folder %x...</source>
+<target>Etsitään hakemistoa %x...</target>
+
+<source>Cannot get process information.</source>
+<target>Prosessin tietoja ei saada.</target>
+
+<source>Waiting while directory is in use:</source>
+<target>Odotetaan, kun hakemisto on käytössä:</target>
+
+<source>Username:</source>
+<target>Käyttäjänimi:</target>
+
+<source>Lock file apparently abandoned...</source>
+<target>Lukkotiedosto ilmeisesti hylätty...</target>
+
+<source>Both sides are equal</source>
+<target>Puolet ovat identtiset</target>
+
+<source>Items differ in name only</source>
+<target>Kohteet eroavat vain tiedostonimellisesti</target>
+
+<source>Item exists on left side only</source>
+<target>Kohde on vain vasemmalla</target>
+
+<source>Item exists on right side only</source>
+<target>Kohde on vain oikealla</target>
+
+<source>Left side is newer</source>
+<target>Uudempi vasemmalla</target>
+
+<source>Right side is newer</source>
+<target>Uudempi oikealla</target>
+
+<source>Items have different content</source>
+<target>Kohteilla on eri sisältö</target>
+
+<source>Conflict/item cannot be categorized</source>
+<target>Ristiriita/kohde ei ole luokiteltavissa</target>
+
+<source>Copy new item to left</source>
+<target>Kopioi uusi kohde vasemmalle</target>
+
+<source>Copy new item to right</source>
+<target>Kopioi uusi kohde oikealle</target>
+
+<source>Delete left item</source>
+<target>Poista vasen kohde</target>
+
+<source>Delete right item</source>
+<target>Poista oikea kohde</target>
+
+<source>Move left file</source>
+<target>Siirrä vasen tiedosto</target>
+
+<source>Move right file</source>
+<target>Siirrä oikea tiedosto</target>
+
+<source>Update left item</source>
+<target>Päivitä vasen kohde</target>
+
+<source>Update right item</source>
+<target>Päivitä oikea kohde</target>
+
+<source>Do nothing</source>
+<target>Älä tee mitään</target>
+
+<source>Rename left item</source>
+<target>Nimeä vasen kohde uudelleen</target>
+
+<source>Rename right item</source>
+<target>Nimeä oikea kohde uudelleen</target>
+
+<source>Cannot set directory locks for the following folders:</source>
+<target>Seuraavien hakemistojen lukkoja ei voida asettaa:</target>
+
+<source>
+	<pluralform>1 thread</pluralform>
+	<pluralform>%x threads</pluralform>
+</source>
+<target>
+	<pluralform>1 säie</pluralform>
+	<pluralform>%x säiettä</pluralform>
+</target>
+
+<source>Please run the 64-bit version of FreeFileSync to create shadow copies on this system.</source>
+<target>Käytä FreeFileSync:n 64-bittinen versio jos haluat luoda järjestelmästä tilannevedoksia.</target>
+
+<source>Drive path %x not found at the start of file path %y.</source>
+<target>Asemapolkua %x ei löydy tiedostopolun %y alusta.</target>
+
+<source>The Volume Shadow Copy Service could not create a snapshot of %x.</source>
+<target>Volume Shadow Copy -palvelu ei voinut luoda tilannekuvaa %x.</target>
+
+<source>%x/sec</source>
+<target>%x/s</target>
+
+<source>%x items</source>
+<target>%x kohdetta</target>
+
+<source>Multiple...</source>
+<target>Moninkertainen...</target>
+
+<source>File time and size</source>
+<target>Tiedoston aika ja koko</target>
+
+<source>File content</source>
+<target>Tiedoston sisältö</target>
+
+<source>File size</source>
+<target>Tiedostokoko</target>
+
+<source>Two way</source>
+<target>Kaksisuuntainen</target>
+
+<source>Mirror</source>
+<target>Peilaava</target>
+
+<source>Update</source>
+<target>Päivittävä</target>
+
+<source>Custom</source>
+<target>Mukautettu</target>
+
+<source>Cannot write file attributes of %x.</source>
+<target>Tiedoston %x määritteitä ei voitu tallentaa.</target>
+
+<source>%x and %y have different content.</source>
+<target>Eri sisältö %x:llä ja %y:llä.</target>
+
+<source>Data verification error:</source>
+<target>Tiedon tarkistusvirhe:</target>
+
+<source>Moving file %x to %y</source>
+<target>Siirretään tiedosto %x -> %y</target>
+
+<source>Moving symbolic link %x to %y</source>
+<target>Siirrä symbolinen linkki %x -> %y</target>
+
+<source>Moving folder %x to %y</source>
+<target>Siirretään hakemisto %x -> %y</target>
+
+<source>Updating file %x</source>
+<target>Tiedostoa %x päivitetään</target>
+
+<source>Updating symbolic link %x</source>
+<target>Symbolisia linkkejä %x päivitetään</target>
+
+<source>Verifying file %x</source>
+<target>Tarkistetaan tiedostoa %x</target>
+
+<source>Source item %x is not existing</source>
+<target>Lähdekohde %x ei ole olemassa</target>
+
+<source>Parent folder %x is not existing.</source>
+<target>Ylähakemistoa %x ei ole olemassa.</target>
+
+<source>Creating a Volume Shadow Copy for %x...</source>
+<target>Luodaan %x:n tilannevedos...</target>
+
+<source>The folder %x is already existing, but was not found earlier during comparison.</source>
+<target>Hakemisto %x on jo olemassa, mutta sitä ei löytynyt aiemmin vertailun aikana.</target>
+
+<source>Skipping folder pair because %x could not be accessed during comparison.</source>
+<target>Ohitetaan hakemistopari, koska %x ei ollut käytettävissä vertailun aikana.</target>
+
+<source>Source folder %x not found.</source>
+<target>Lähdehakemistoa %x ei löydy.</target>
+
+<source>Please enter a target folder.</source>
+<target>Kerro kohde hakemisto.</target>
+
+<source>The following items have unresolved conflicts and will not be synchronized:</source>
+<target>Näissä kohteissa on selvittämättömiä ristiriitoja, niitä ei synkronoida:</target>
+
+<source>Folder pair:</source>
+<target>Hakemistopari:</target>
+
+<source>
+	<pluralform>Showing %y of 1 item</pluralform>
+	<pluralform>Showing %y of %x items</pluralform>
+</source>
+<target>
+	<pluralform>Näytetään %y kohde 1 kohteesta</pluralform>
+	<pluralform>Näytetään %y kohdetta %x kohteesta</pluralform>
+</target>
+
+<source>The following folders are significantly different. Please check that the correct folders are selected for synchronization.</source>
+<target>Seuraavat hakemistot eroavat oleellisesti. Varmista valitut synkronoitavat hakemistot.</target>
+
+<source>Not enough free disk space available in:</source>
+<target>Vapaa levytila ei riitä:</target>
+
+<source>Available:</source>
+<target>Saatavilla:</target>
+
+<source>Some files will be synchronized as part of multiple folder pairs.</source>
+<target>Jotkut tiedostot synkronoidaan osana useita hakemistopareja.</target>
+
+<source>To avoid conflicts, set up exclude filters so that each updated file is included by only one folder pair.</source>
+<target>Voit välttää ristiriidat määrittämällä poissulkemissuodattimet siten, että jokainen päivitetty tiedosto sisältyy vain yhteen hakemistopariin.</target>
+
+<source>Write access</source>
+<target>Kirjoitusoikeus</target>
+
+<source>Read access</source>
+<target>Lukuoikeus</target>
+
+<source>Selected folder:</source>
+<target>Valittu hakemisto:</target>
+
+<source>Versioning folder:</source>
+<target>Versiointi hakemisto:</target>
+
+<source>The versioning folder is part of the synchronization.</source>
+<target>Versiointihakemisto on osa synkronointia.</target>
+
+<source>Synchronizing folder pair:</source>
+<target>Synkronoidaan hakemistoparia:</target>
+
+<source>Searching for old file versions:</source>
+<target>Etsi vanhat tiedostoversiot:</target>
+
+<source>Removing old file versions:</source>
+<target>Poista vanhat tiedostoversiot:</target>
+
+<source>Unable to create time stamp for versioning:</source>
+<target>Versionhallinnan aikaleimaa ei voida luoda:</target>
+
+<source>Fail-safe file copy</source>
+<target>Varmennettu tiedostokopiointi</target>
+
+<source>Disabled</source>
+<target>Ei käytössä</target>
+
+<source>Copy locked files</source>
+<target>Kopioi lukitut tiedostot</target>
+
+<source>Copy file access permissions</source>
+<target>Kopioi tiedoston käyttöoikeudet</target>
+
+<source>File time tolerance</source>
+<target>Tiedoston toleranssiaika</target>
+
+<source>Run with background priority</source>
+<target>Aja taustalla prioriteetillä</target>
+
+<source>Lock directories during sync</source>
+<target>Lukitse hakemistot synkronoinnin ajaksi</target>
+
+<source>Verify copied files</source>
+<target>Tarkista kopioidut tiedostot</target>
+
+<source>Using non-default global settings:</source>
+<target>Käytä mukautettuja yleisasetuksia:</target>
+
+<source>Show in Explorer</source>
+<target>Näytä Explorerissa</target>
+
+<source>Show in file manager</source>
+<target>Näytä tiedostonhallinnassa</target>
+
+<source>Reveal in Finder</source>
+<target>Paljasta Finderissa</target>
+
+<source>Open with default application</source>
+<target>Avaa oletussovelluksessa</target>
+
+<source>Configuration file %x is incomplete. The missing elements have been set to their default values.</source>
+<target>Asetustiedosto %x on keskeneräinen. Puuttuvat osat on asetettu oletusarvoihinsa.</target>
+
+<source>The following XML elements could not be read:</source>
+<target>Seuraavia XML-elementtejä ei voitu lukea:</target>
+
+<source>File %x does not contain a valid configuration.</source>
+<target>Tiedosto %x ei sisällä kelvollista määritystä.</target>
+
+<source>Error parsing file %x, row %y, column %z.</source>
+<target>Virhe tiedostoa %x jäsennettäessä, rivi: %y, sarake: %z.</target>
+
+<source>Services</source>
+<target>Palvelut</target>
+
+<source>Hide Others</source>
+<target>Piilota muut</target>
+
+<source>Show All</source>
+<target>Näytä kaikki</target>
+
+<source>Hide %x</source>
+<target>Piilota %x</target>
+
+<source>Quit %x</source>
+<target>Sulje %x</target>
+
+<source>Warnings:</source>
+<target>Varoitukset:</target>
+
+<source>Items processed:</source>
+<target>Kohdetta käsitelty:</target>
+
+<source>Items remaining:</source>
+<target>Kohdetta jäljellä:</target>
+
+<source>Total time:</source>
+<target>Kokonaisaika:</target>
+
+<source>Errors and warnings:</source>
+<target>Virheet ja varoitukset:</target>
+
+<source>Log file:</source>
+<target>Logi tiedosto:</target>
+
+<source>Cleaning up log files:</source>
+<target>Lokitiedostojen puhdistaminen:</target>
+
+<source>
+	<pluralform>1 day</pluralform>
+	<pluralform>%x days</pluralform>
+</source>
+<target>
+	<pluralform>1 päivä</pluralform>
+	<pluralform>%x päivää</pluralform>
+</target>
+
+<source>Warning</source>
+<target>Varoitus</target>
+
+<source>Stopped</source>
+<target>Keskeytys</target>
+
+<source>Please enter a valid email address.</source>
+<target>Ole hyvä ja syötä toimiva sähköpostiosoite.</target>
+
+<source>Requires FreeFileSync Donation Edition</source>
+<target>Edellyttää FreeFileSyncin Lahjoittajaversiota</target>
+
+<source>Cannot send notification email to %x.</source>
+<target>Imoitusta ei pystytty lähettämään osoitteeseen %x.</target>
+
+<source>Drag && drop</source>
+<target>Vedä ja pudota</target>
+
+<source>%x is not a valid folder path.</source>
+<target>%x ei ole kelvollinen hakemistopolku.</target>
+
+<source>Select a folder</source>
+<target>Valitse hakemisto</target>
+
+<source>&New</source>
+<target>&Uusi</target>
+
+<source>&Open...</source>
+<target>&Avaa...</target>
+
+<source>Save &as...</source>
+<target>Tallenna n&imellä...</target>
+
+<source>E&xit</source>
+<target>&Lopeta</target>
+
+<source>&File</source>
+<target>&Tiedosto</target>
+
+<source>&View help</source>
+<target>&Näytä ohje</target>
+
+<source>&About</source>
+<target>T&ietoja</target>
+
+<source>&Help</source>
+<target>&Ohje</target>
+
+<source>To get started, just import a "ffs_batch" file.</source>
+<target>Aloita tuomalla "ffs_batch"-tiedosto.</target>
+
+<source>Show examples</source>
+<target>Näytä esimerkkejä</target>
+
+<source>Folders to watch for changes:</source>
+<target>Tarkkailtavat kansiot muutoksien varalta:</target>
+
+<source>Add folder</source>
+<target>Lisää hakemisto</target>
+
+<source>Remove folder</source>
+<target>Poista hakemisto</target>
+
+<source>Browse</source>
+<target>Selaa</target>
+
+<source>Command line to run when changes are detected:</source>
+<target>Komentorivi, joka suoritetaan, kun muutoksia havaitaan:</target>
+
+<source>
+The command is triggered if:
+- files or subfolders change
+- new folders arrive (e.g. USB stick insert)
+</source>
+<target>
+Komento suoritetaan jos:
+- tiedosto tai alihakemisto muuttuu
+- uusi hakemisto ilmestyy (esim. muistitikku liitetään)
+</target>
+
+<source>Minimum idle time (in seconds) before running command:</source>
+<target>Minimi tyhjäkäyntiaika (sekunteina) ennen komennon suorittamista:</target>
+
+<source>Idle time between last detected change and execution of command</source>
+<target>Joutoaika edellisen havaitun muutoksen ja käskyn suorittamisen välillä</target>
+
+<source>Start</source>
+<target>Aloita</target>
+
+<source>Automated Synchronization</source>
+<target>Automaattinen synkronointi</target>
+
+<source>About</source>
+<target>Tietoja</target>
+
+<source>All files</source>
+<target>Kaikki tiedostot</target>
+
+<source>The %x protocol does not support directory monitoring:</source>
+<target>Valittu protokolla %x ei tue hakemistovalvontaa:</target>
+
+<source>Directory monitoring active</source>
+<target>Hakemistovalvonta päällä</target>
+
+<source>Waiting until directory is available:</source>
+<target>Odotetaan, kunnes hakemisto on käytettävissä:</target>
+
+<source>&Configure</source>
+<target>&Määritä</target>
+
+<source>&Show error message</source>
+<target>&Näytä virheviesti</target>
+
+<source>&Quit</source>
+<target>&Lopeta</target>
+
+<source>&Retry</source>
+<target>&Uudestaan</target>
+
+<source>Completed successfully</source>
+<target>Valmistui onnistuneesti</target>
+
+<source>Completed with warnings</source>
+<target>Valmistui varoituksilla</target>
+
+<source>Completed with errors</source>
+<target>Valmistui virheillä</target>
+
+<source>
+	<pluralform>1 byte</pluralform>
+	<pluralform>%x bytes</pluralform>
+</source>
+<target>
+	<pluralform>1 tavu</pluralform>
+	<pluralform>%x tavua</pluralform>
+</target>
+
+<source>%x MB</source>
+<target>%x Mt</target>
+
+<source>%x KB</source>
+<target>%x kt</target>
+
+<source>%x GB</source>
+<target>%x Gt</target>
+
+<source>Loading...</source>
+<target>Lataan...</target>
+
+<source>Scanning...</source>
+<target>Skannataan...</target>
+
+<source>configuration file</source>
+<target>määritys tiedosto</target>
+
+<source>System: Sleep</source>
+<target>Järjestelmä: Lepotilaan</target>
+
+<source>System: Shut down</source>
+<target>Järjestelmä: Sammuta</target>
+
+<source>Nothing to synchronize</source>
+<target>Ei mitään synkronoitavaa</target>
+
+<source>You can switch to FreeFileSync's main window to resolve this issue.</source>
+<target>Voit siirtyä FreeFileSyncin pääikkunaan ratkaistaksesi tämän ongelman.</target>
+
+<source>&Don't show this warning again</source>
+<target>&Älä näytä tätä varoitusta uudelleen</target>
+
+<source>&Ignore</source>
+<target>&Ohita</target>
+
+<source>&Switch</source>
+<target>&Vaihda</target>
+
+<source>Switching to FreeFileSync's main window</source>
+<target>Vaihdetaan FreeFileSyncin pääikkunaan</target>
+
+<source>Automatic retry</source>
+<target>Automaattinen uudelleenyritys</target>
+
+<source>Ignore &all</source>
+<target>Ohita &kaikki</target>
+
+<source>Retrying operation...</source>
+<target>Yritetään uudelleen...</target>
+
+<source>Last session</source>
+<target>Edellinen istunto</target>
+
+<source>Today</source>
+<target>Tänään</target>
+
+<source>Name</source>
+<target>Nimi</target>
+
+<source>Last sync</source>
+<target>Viimeisin synkronointi</target>
+
+<source>Log</source>
+<target>Loki</target>
+
+<source>Folder</source>
+<target>Hakemisto</target>
+
+<source>Symlink</source>
+<target>Symbolinen linkki</target>
+
+<source>Item name</source>
+<target>Kohteen nimi</target>
+
+<source>Relative path</source>
+<target>Suhteellinen polku</target>
+
+<source>Full path</source>
+<target>Koko polku</target>
+
+<source>Size</source>
+<target>Koko</target>
+
+<source>Date</source>
+<target>Päiväys</target>
+
+<source>Extension</source>
+<target>Tunniste</target>
+
+<source>Item not existing</source>
+<target>Kohdetta ei ole olemassa</target>
+
+<source>Difference</source>
+<target>Eroavuus</target>
+
+<source>Action</source>
+<target>Toiminto</target>
+
+<source>Local comparison settings</source>
+<target>Vertailun paikalliset asetukset</target>
+
+<source>Local synchronization settings</source>
+<target>Synkronoinnin paikalliset asetukset</target>
+
+<source>Local filter</source>
+<target>Paikallinen suodatin</target>
+
+<source>Active</source>
+<target>Aktiivinen</target>
+
+<source>None</source>
+<target>Ei mitään</target>
+
+<source>Remove local settings</source>
+<target>Poista paikalliset asetukset</target>
+
+<source>Cu&t</source>
+<target>Leika&ta</target>
+
+<source>&Copy</source>
+<target>&Kopio</target>
+
+<source>&Paste</source>
+<target>&Liitä</target>
+
+<source>The selected folder %x cannot be used with FreeFileSync.</source>
+<target>Hakemisto %x ei toimi FreeFileSync:n kanssa.</target>
+
+<source>Please select a folder on a local file system, network or an MTP device.</source>
+<target>Valitse hakemisto joka on paikallinen, verkossa tai MTP laitteella.</target>
+
+<source>&Save</source>
+<target>&Tallenna</target>
+
+<source>Save as &batch job...</source>
+<target>Tallenna e&räajona...</target>
+
+<source>Show &log</source>
+<target>Näytä &loki</target>
+
+<source>Start &comparison</source>
+<target>Aloita &vertailu</target>
+
+<source>C&omparison settings</source>
+<target>V&ertailu asetukset</target>
+
+<source>&Filter settings</source>
+<target>&Suodatin asetukset</target>
+
+<source>S&ynchronization settings</source>
+<target>S&ynkronoinnin asetukset</target>
+
+<source>Start &synchronization</source>
+<target>Aloita &synkronointi</target>
+
+<source>&Actions</source>
+<target>&Toiminnot</target>
+
+<source>&Preferences</source>
+<target>&Ominaisuudet</target>
+
+<source>&Language</source>
+<target>&Kieli</target>
+
+<source>&Find...</source>
+<target>&Etsi...</target>
+
+<source>&Export file list</source>
+<target>&Vie tiedostoluettelo</target>
+
+<source>&Reset layout</source>
+<target>&Nollaa asettelu</target>
+
+<source>&Tools</source>
+<target>&Työkalut</target>
+
+<source>&Check for updates now</source>
+<target>&Etsi päivityksiä nyt</target>
+
+<source>Check &automatically once a week</source>
+<target>Tarkista päivitykset &automaattisesti viikoittain</target>
+
+<source>Cancel</source>
+<target>Peruuta</target>
+
+<source>Compare</source>
+<target>Vertaile</target>
+
+<source>Synchronize</source>
+<target>Synkronoi</target>
+
+<source>Add folder pair</source>
+<target>Lisää hakemistopari</target>
+
+<source>Remove folder pair</source>
+<target>Poista hakemistopari</target>
+
+<source>Access online storage</source>
+<target>Käytä online-tallennustilaa</target>
+
+<source>Close search bar</source>
+<target>Sulje hakupalkki</target>
+
+<source>Find:</source>
+<target>Etsi:</target>
+
+<source>Match case</source>
+<target>Sama kirjainkoko</target>
+
+<source>Processed:</source>
+<target>Käsitelty:</target>
+
+<source>Remaining:</source>
+<target>Jäljellä:</target>
+
+<source>New</source>
+<target>Uusi</target>
+
+<source>Open...</source>
+<target>Avaa...</target>
+
+<source>Save</source>
+<target>Tallenna</target>
+
+<source>Save as...</source>
+<target>Tallenna nimellä...</target>
+
+<source>Statistics:</source>
+<target>Tilastot:</target>
+
+<source>Number of files and folders that will be deleted</source>
+<target>Poistettavien tiedostojen ja hakemistojen määrä</target>
+
+<source>Number of files that will be updated</source>
+<target>Päitettävien tiedostojen määrä</target>
+
+<source>Number of files and folders that will be created</source>
+<target>Luotavien tiedostojen ja hakemistojen määrä</target>
+
+<source>Total bytes to copy</source>
+<target>Kopioitava määrä tavuja</target>
+
+<source>Arrange folder pair</source>
+<target>Järjestä hakemistoparit</target>
+
+<source>Common settings:</source>
+<target>Yleiset asetukset:</target>
+
+<source>Use local settings:</source>
+<target>Käytä paikallisia asetuksia:</target>
+
+<source>Select a variant:</source>
+<target>Valitse vaihtoehto:</target>
+
+<source>Include &symbolic links:</source>
+<target>Sisällytä &symboliset linkit:</target>
+
+<source>&Follow</source>
+<target>&Seuraa</target>
+
+<source>As &link</source>
+<target>&Linkkinä</target>
+
+<source>More information</source>
+<target>Lisätietoja</target>
+
+<source>&Ignore exact time shift [hh:mm]</source>
+<target>&Ohita tarkka aikasiirto [hh:mm]</target>
+
+<source>List of file time offsets to ignore</source>
+<target>Aikasiirtymät joita ei huomioida</target>
+
+<source>Example:</source>
+<target>Esim.:</target>
+
+<source>Handle daylight saving time</source>
+<target>Käsittele kesäaika</target>
+
+<source>Ignore errors</source>
+<target>Ohita virheet</target>
+
+<source>Retry count:</source>
+<target>Uudelleenyritysten määrä:</target>
+
+<source>Delay (in seconds):</source>
+<target>Viive (sekunneissa):</target>
+
+<source>Performance improvements:</source>
+<target>Suorituskyvyn parannuksia:</target>
+
+<source>Parallel file operations:</source>
+<target>Rinnakkaiset tiedosto-operaatiot:</target>
+
+<source>How to get the best performance?</source>
+<target>Miten saan parhaan suorituskyvyn?</target>
+
+<source>Local settings:</source>
+<target>Paikalliset aseukset:</target>
+
+<source>Include:</source>
+<target>Sisällytä:</target>
+
+<source>File size:</source>
+<target>Tiedoston koko:</target>
+
+<source>Minimum:</source>
+<target>Vähintään:</target>
+
+<source>Maximum:</source>
+<target>Enintään:</target>
+
+<source>Time span:</source>
+<target>Aikaväli:</target>
+
+<source>Select filter rules to exclude certain files from synchronization. Enter file paths relative to their corresponding folder pair.</source>
+<target>Määrittele suodatussäännöt synkronoinnista pois jätettäville tiedostoille. Anna hakemistopariin nähden suhteellinen osoite.</target>
+
+<source>&Default</source>
+<target>&Oletus</target>
+
+<source>C&lear</source>
+<target>&Nollaa</target>
+
+<source>Use database file to detect changes</source>
+<target>Käytä tietokantatiedostoa muutosten havaitsemiseen</target>
+
+<source>
+- Not supported by all file systems
+- Requires and creates database files
+- Detection not available for first sync
+</source>
+<target>
+- Ei tueta kaikissa tiedostojärjestelmissä
+- Vaatii ja luo tarvittavat tietokannat
+- Tunnistus alkaa ensimmäisestä synkronoinnista
+</target>
+
+<source>Detect moved files</source>
+<target>Tunnista siirretyt tiedostot</target>
+
+<source>Create:</source>
+<target>Luo:</target>
+
+<source>Update:</source>
+<target>Päivitä:</target>
+
+<source>Delete:</source>
+<target>Poista:</target>
+
+<source>Left</source>
+<target>Vasen</target>
+
+<source>Right</source>
+<target>Oikea</target>
+
+<source>Delete and overwrite:</source>
+<target>Poista ja korvaa:</target>
+
+<source>&Recycle bin</source>
+<target>&Roskakori</target>
+
+<source>&Permanent</source>
+<target>&Pysyvä</target>
+
+<source>&Versioning</source>
+<target>&Versiointi</target>
+
+<source>Move files to a user-defined folder</source>
+<target>Siirrä tiedostot itse määräämäsi hakemistoon</target>
+
+<source>Naming convention:</source>
+<target>Nimeämiskäytäntö:</target>
+
+<source>Limit file versions:</source>
+<target>Rajoita tiedostoversioita:</target>
+
+<source>Last x days:</source>
+<target>Viimeiset x päivää:</target>
+
+<source>Send email notification:</source>
+<target>Lähetä sähköposti ilmoitus:</target>
+
+<source>&Change log folder:</source>
+<target>&Muuta lokihakemistoa:</target>
+
+<source>Run a command:</source>
+<target>Aja komento:</target>
+
+<source>Notes:</source>
+<target>Muistiinpanot:</target>
+
+<source>Add &notes</source>
+<target>Lisää &muistiinpanoja</target>
+
+<source>OK</source>
+<target>OK</target>
+
+<source>Connection type:</source>
+<target>Yhteystapa:</target>
+
+<source>Connected user accounts:</source>
+<target>Yhdistetyt käyttäjätilit:</target>
+
+<source>&Add connection</source>
+<target>&Lisää yhteys</target>
+
+<source>&Disconnect</source>
+<target>&Katkaista</target>
+
+<source>Select drive:</source>
+<target>Valitse asema:</target>
+
+<source>Server name or IP address:</source>
+<target>Palvelimen nimi tai IP osoite:</target>
+
+<source>Port:</source>
+<target>Portti:</target>
+
+<source>Encryption:</source>
+<target>Salaus:</target>
+
+<source>&Disabled</source>
+<target>&ei käytössä</target>
+
+<source>&Explicit SSL/TLS</source>
+<target>&Valikoiva SSL/TLS</target>
+
+<source>Authentication:</source>
+<target>Todennus:</target>
+
+<source>&Password</source>
+<target>&Salasana</target>
+
+<source>&Key file</source>
+<target>&Avaintiedosto</target>
+
+<source>&SSH agent</source>
+<target>&SSH agentti</target>
+
+<source>Private key file:</source>
+<target>Yksityisavaintiedosto:</target>
+
+<source>&Show password</source>
+<target>&Näytä salasana</target>
+
+<source>Prompt during login</source>
+<target>Kehote kirjautumisen aikana</target>
+
+<source>Directory on server:</source>
+<target>Hakemisto palvelimella:</target>
+
+<source>Access timeout (in seconds):</source>
+<target>Pääsyn aikakatkaisu (sekunteina):</target>
+
+<source>SFTP channels per connection:</source>
+<target>SFTP kanavia per yhteys:</target>
+
+<source>Detect server limit</source>
+<target>Tunnista palvelimen rajat</target>
+
+<source>Enable &compression</source>
+<target>Ota käyttöön &pakkaus</target>
+
+<source>Select Folder</source>
+<target>Valitse hakemisto</target>
+
+<source>Variant:</source>
+<target>Vaihtoehto:</target>
+
+<source>&Don't show this dialog again</source>
+<target>&Älä näytä tätä uudestaan</target>
+
+<source>Bytes:</source>
+<target>Tavut:</target>
+
+<source>Items:</source>
+<target>Kohteet:</target>
+
+<source>Synchronizing...</source>
+<target>Synkronoidaan...</target>
+
+<source>Minimize to notification area</source>
+<target>Pienennä ilmaisinalueelle</target>
+
+<source>Bytes</source>
+<target>Tavua</target>
+
+<source>Items</source>
+<target>Kohteita</target>
+
+<source>When finished:</source>
+<target>Kun valmis:</target>
+
+<source>Close</source>
+<target>Sulje</target>
+
+<source>&Pause</source>
+<target>&Tauko</target>
+
+<source>Stop</source>
+<target>Lopeta</target>
+
+<source>Create a batch file for unattended synchronization. To start, double-click this file or schedule in a task planner: %x</source>
+<target>Luo eräajotiedosto automaattista synkronointia varten. Käynnistä kaksoisnapsauttamalla tai ajasta tehtävä: %x</target>
+
+<source>Progress dialog:</source>
+<target>Edistymisikkuna:</target>
+
+<source>Run minimized</source>
+<target>Suorita pienennettynä</target>
+
+<source>Show pop-up on errors or warnings</source>
+<target>Näytä ponnahdusikkuna virheiden tai varoituksien kohdalla</target>
+
+<source>&Cancel</source>
+<target>&Peruuta</target>
+
+<source>How can I schedule a batch job?</source>
+<target>Miten ajastan eräajon?</target>
+
+<source>&Keep relative paths</source>
+<target>&Säilytä suhteelliset polut</target>
+
+<source>&Overwrite existing files</source>
+<target>&Korvaa olemassa olevat tiedostot</target>
+
+<source>Copy</source>
+<target>Monista</target>
+
+<source>Placeholders represent differences between the names.</source>
+<target>Paikkamerkit edustavat nimien välisiä eroja.</target>
+
+<source>Rename</source>
+<target>Nimeä uudelleen</target>
+
+<source>The following settings are used for all synchronization jobs.</source>
+<target>Näitä asetuksia käytetään kaikkiin synkronointeihin.</target>
+
+<source>
+Copy to a temporary file (*.ffs_tmp) before overwriting target.
+This guarantees a consistent state even in case of a serious error.
+</source>
+<target>
+Kopioi väliaikaistiedostoon (*.ffs_tmp) ennen kohteen korvaamista.
+Tällä varmistetaan eheys, vaikka vakava virhe tapahtuisi.
+</target>
+
+<source>recommended</source>
+<target>suositus</target>
+
+<source>Copy shared or locked files using the Volume Shadow Copy Service.</source>
+<target>Jaettujen tai lukittujen tiedostojen kopiointi käyttäen aseman tilannevedospalvelua.</target>
+
+<source>requires administrator rights</source>
+<target>edellyttää järjestelmänvalvojan oikeuksia</target>
+
+<source>Transfer file and folder permissions.</source>
+<target>Siirrä tiedostojen ja hakemistojen käyttöoikeudet.</target>
+
+<source>Show hidden dialogs and warning messages again:</source>
+<target>Näytä piilotetut valintaikkunat ja varoitusviestit uudelleen:</target>
+
+<source>&Show details</source>
+<target>&Näytä tiedot</target>
+
+<source>Default log folder:</source>
+<target>Oletuslokihakemisto:</target>
+
+<source>&Delete logs after x days:</source>
+<target>&Poista lokitiedostot x päivän jälkeen:</target>
+
+<source>Log file format:</source>
+<target>Logi tiedoston formaatti:</target>
+
+<source>&Plain text</source>
+<target>&Pelkkä teksti</target>
+
+<source>Notification sounds:</source>
+<target>Ilmoitusäänet:</target>
+
+<source>Synchronization finished:</source>
+<target>Synkronointi valmis:</target>
+
+<source>Unattended error message:</source>
+<target>Valvomaton virheilmoitus:</target>
+
+<source>Customize context menu:</source>
+<target>Muokkaa pikavalikkoa:</target>
+
+<source>Full file or folder path</source>
+<target>Koko tiedosto/hakemisto-polku</target>
+
+<source>Temporary local copy for SFTP and MTP storage</source>
+<target>Tilapäinen paikalliskopio SFTP/MTP:lle</target>
+
+<source>File or folder name</source>
+<target>Tiedoston tai hakemiston nimi</target>
+
+<source>Parent folder path</source>
+<target>Päähakemiston polku</target>
+
+<source>Description</source>
+<target>Kuvaus</target>
+
+<source>Get the Donation Edition with bonus features and help keep FreeFileSync ad-free.</source>
+<target>Hanki Lahjoitusversio bonusominaisuuksilla ja auta pitämään FreeFileSync mainoksettomana.</target>
+
+<source>Support with a donation</source>
+<target>Tue meitä lahjoituksella</target>
+
+<source>Share your feedback and ideas:</source>
+<target>Jaa palautteesi ja ideasi:</target>
+
+<source>Many thanks for translation:</source>
+<target>Paljon kiitoksia käännöksestä:</target>
+
+<source>Thank you, %x, for your support!</source>
+<target>Kiitos, %x, tuestanne!</target>
+
+<source>&Donate</source>
+<target>&Lahjoita</target>
+
+<source>Highlight configurations that have not been run for more than the following number of days:</source>
+<target>Korosta määritykset, joita ei ole ajettu yli seuraavien päivien lukumäärän:</target>
+
+<source>Password:</source>
+<target>Salasana:</target>
+
+<source>Activate the FreeFileSync Donation Edition by one of the following methods:</source>
+<target>Aktivoi FreeFileSyncin Lahjoittajaversio käyttäen seuraavia tapoja:</target>
+
+<source>Activate via internet now:</source>
+<target>Aktivoi internetin kautta:</target>
+
+<source>Activate online</source>
+<target>Aktivoi verkossa</target>
+
+<source>Retrieve an offline activation key from the following URL:</source>
+<target>Hae erillinen aktivointiavain URL-osoitteesta:</target>
+
+<source>&Copy to clipboard</source>
+<target>&Kopioi leikepöydälle</target>
+
+<source>Enter activation key:</source>
+<target>Syötä aktivointiavain:</target>
+
+<source>Activate offline</source>
+<target>Aktivoi offline-tilassa</target>
+
+<source>FreeFileSync requires access rights to avoid "Operation not permitted" errors when synchronizing your data (e.g. Mail, Messages, Calendars).</source>
+<target>FreeFileSync vaatii käyttöoikeudet, jotta vältytään "Operaatio ei sallittu" -virheiltä synkronoidessasi tietoja (esim. Sähköpostit, Viestit, Kalenterit).</target>
+
+<source>Locate the FreeFileSync app</source>
+<target>Etsi FreeFileSync-sovellus</target>
+
+<source>Open Security && Privacy</source>
+<target>Avaa Suojaus ja yksityisyys</target>
+
+<source>Click the lock to allow changes.</source>
+<target>Napsauta lukkoa salliaksesi muutokset.</target>
+
+<source>Drag FreeFileSync into the panel.</source>
+<target>Vedä FreeFileSync paneeliin.</target>
+
+<source>Synchronization Settings</source>
+<target>Synkronoinnin asetukset</target>
+
+<source>Access Online Storage</source>
+<target>Pääsy Online-tallennustilaan</target>
+
+<source>Save as a Batch Job</source>
+<target>Tallenna eräajona</target>
+
+<source>Delete Items</source>
+<target>Poista kohteet</target>
+
+<source>Copy Items</source>
+<target>Kopioi kohteita</target>
+
+<source>Rename Items</source>
+<target>Nimeä kohteet uudelleen</target>
+
+<source>Options</source>
+<target>Asetukset</target>
+
+<source>Select Time Span</source>
+<target>Valitse aikaväli</target>
+
+<source>Highlight Configurations</source>
+<target>Korosta määritykset</target>
+
+<source>Grant Full Disk Access</source>
+<target>Myönnä koko levyn käyttö</target>
+
+<source>Info</source>
+<target>Tiedot</target>
+
+<source>No log entries</source>
+<target>Ei lokimerkintöjä</target>
+
+<source>Select all</source>
+<target>Valitse kaikki</target>
+
+<source>Folder Comparison and Synchronization</source>
+<target>Hakemistojen vertailu ja synkronointi</target>
+
+<source>Select view:</source>
+<target>Valitse näkymä:</target>
+
+<source>Show filtered or temporarily excluded files</source>
+<target>Näytä suodatetut tai tilapäisesti pois suljetut tiedostot</target>
+
+<source>Show files that are equal</source>
+<target>Näytä yhteneväiset tiedostot</target>
+
+<source>Show conflicts</source>
+<target>Näytä ristiriidat</target>
+
+<source>Show files that will be created on the left side</source>
+<target>Näytä vasemmalle luotavat tiedostot</target>
+
+<source>Show files that will be created on the right side</source>
+<target>Näytä oikealle luotavat tiedostot</target>
+
+<source>Show files that will be deleted on the left side</source>
+<target>Näytä vasemmalta poistettavat tiedostot</target>
+
+<source>Show files that will be deleted on the right side</source>
+<target>Näytä oikealta poistettavat tiedostot</target>
+
+<source>Show files that will be updated on the left side</source>
+<target>Näytä ne tiedostot vasemmalla joita päivitetään</target>
+
+<source>Show files that will be updated on the right side</source>
+<target>Näytä ne tiedostot oikealla joita päivitetään</target>
+
+<source>Show files that won't be copied</source>
+<target>Näytä tiedostot, joita ei kopioida</target>
+
+<source>Show files that exist on left side only</source>
+<target>Näytä vain vasemmalla esiintyvät tiedostot</target>
+
+<source>Show files that exist on right side only</source>
+<target>Näytä vain oikealla esiintyvät tiedostot</target>
+
+<source>Show files that are newer on left</source>
+<target>Näytä vasemmalla olevat uudemmat tiedostot</target>
+
+<source>Show files that are newer on right</source>
+<target>Näytä oikealla olevat uudemmat tiedostot</target>
+
+<source>Show files that are different</source>
+<target>Näytä erilaiset tiedostot</target>
+
+<source>&Options</source>
+<target>&Asetukset</target>
+
+<source>Main Bar</source>
+<target>Pääpalkki</target>
+
+<source>Folder Pairs</source>
+<target>Hakemistoparit</target>
+
+<source>Find</source>
+<target>Etsi</target>
+
+<source>View Settings</source>
+<target>Näytä asetukset</target>
+
+<source>Configuration</source>
+<target>Määritykset</target>
+
+<source>Overview</source>
+<target>Yleiskatsaus</target>
+
+<source>Swap sides</source>
+<target>Puoltenvaihto</target>
+
+<source>Show "%x"</source>
+<target>Näytä "%x"</target>
+
+<source>Local path not available for %x.</source>
+<target>Paikallinen polku %x ei ole käytettävissä.</target>
+
+<source>Confirm</source>
+<target>Vahvista</target>
+
+<source>
+	<pluralform>Do you really want to execute the command %y for one item?</pluralform>
+	<pluralform>Do you really want to execute the command %y for %x items?</pluralform>
+</source>
+<target>
+	<pluralform>Haluatko varmasti suorittaa komennon %y tälle kohteelle?</pluralform>
+	<pluralform>Haluatko varmasti suorittaa komennon %y näille %x kohteelle?</pluralform>
+</target>
+
+<source>&Execute</source>
+<target>&Suorita</target>
+
+<source>Set direction:</source>
+<target>Aseta suunta:</target>
+
+<source>multiple selection</source>
+<target>monivalinta</target>
+
+<source>&Include via filter:</source>
+<target>&Mukaan ottava suodatin:</target>
+
+<source>&Exclude via filter:</source>
+<target>&Pois sulkeva suodatin:</target>
+
+<source>Include temporarily</source>
+<target>Sisällytä tilapäisesti</target>
+
+<source>Exclude temporarily</source>
+<target>Suodat tilapäisesti</target>
+
+<source>&Synchronize selection</source>
+<target>&Synkronoi valittu</target>
+
+<source>&Copy to...</source>
+<target>&Kopioi kohteeseen...</target>
+
+<source>Multi-&Rename</source>
+<target>Usean &nimen muutos</target>
+
+<source>&Rename</source>
+<target>&Nimeä uudelleen</target>
+
+<source>&Delete</source>
+<target>&Poista</target>
+
+<source>Show icons:</source>
+<target>Näytä kuvakkeet:</target>
+
+<source>Small</source>
+<target>Pieni</target>
+
+<source>Medium</source>
+<target>Keskikoko</target>
+
+<source>Large</source>
+<target>Iso</target>
+
+<source>Select time span...</source>
+<target>Valitse aikaväli...</target>
+
+<source>Donation Edition</source>
+<target>Lahjoitusversio</target>
+
+<source>Edited</source>
+<target>Muokattu</target>
+
+<source>Administrator</source>
+<target>Järjestelmänvalvoja</target>
+
+<source>Configuration saved</source>
+<target>Asetukset tallennettu</target>
+
+<source>FreeFileSync batch</source>
+<target>FreeFileSync eräajo</target>
+
+<source>Do you want to save changes to %x?</source>
+<target>Haluatko tallentaa muutokset: %x?</target>
+
+<source>Never save &changes</source>
+<target>Älä tallenna &muutoksia</target>
+
+<source>Do&n't save</source>
+<target>Äl&ä tallenna</target>
+
+<source>%x cannot be renamed.</source>
+<target>%x ei voi nimetä uudelleen.</target>
+
+<source>New name:</source>
+<target>Uusi nimi:</target>
+
+<source>Rename Configuration</source>
+<target>Määrityksen nimeäminen uudelleen</target>
+
+<source>Configuration name must not be empty.</source>
+<target>Määrityksen nimi ei saa olla tyhjä.</target>
+
+<source>Red</source>
+<target>Punainen</target>
+
+<source>Yellow</source>
+<target>Keltainen</target>
+
+<source>Green</source>
+<target>Vihreä</target>
+
+<source>Cyan</source>
+<target>Syaani</target>
+
+<source>Blue</source>
+<target>Sininen</target>
+
+<source>Purple</source>
+<target>Violetti</target>
+
+<source>Gray</source>
+<target>Harmaa</target>
+
+<source>Different color...</source>
+<target>Erivärinen...</target>
+
+<source>Background color</source>
+<target>Taustaväri</target>
+
+<source>&Hide</source>
+<target>&Piilota</target>
+
+<source>Highlight...</source>
+<target>Korostaa...</target>
+
+<source>View settings saved</source>
+<target>Näytä asetukset tallennettu</target>
+
+<source>&Save as default</source>
+<target>&Tallenna oletuksena</target>
+
+<source>Filter</source>
+<target>Suodatus</target>
+
+<source>No files to synchronize</source>
+<target>Ei synkronoitavia tiedostoja</target>
+
+<source>Please confirm you want to swap sides.</source>
+<target>Vahvista, että haluat vaihtaa puolet.</target>
+
+<source>&Swap</source>
+<target>&Vaihda</target>
+
+<source>Left and right sides have been swapped</source>
+<target>Vasen ja oikea puoli vaihdettu keskenään</target>
+
+<source>
+	<pluralform>1 directory</pluralform>
+	<pluralform>%x directories</pluralform>
+</source>
+<target>
+	<pluralform>1 hakemisto</pluralform>
+	<pluralform>%x hakemistoja</pluralform>
+</target>
+
+<source>
+	<pluralform>1 file</pluralform>
+	<pluralform>%x files</pluralform>
+</source>
+<target>
+	<pluralform>1 tiedosto</pluralform>
+	<pluralform>%x tiedostoja</pluralform>
+</target>
+
+<source>Cannot find %x</source>
+<target>En löydä %x</target>
+
+<source>Move up</source>
+<target>Siirrä ylös</target>
+
+<source>Move down</source>
+<target>Siirrä alas</target>
+
+<source>File list exported</source>
+<target>Tiedostolista viety</target>
+
+<source>Searching for program updates...</source>
+<target>Ohjelmapäivytystä haetaan...</target>
+
+<source>FreeFileSync %x is available!</source>
+<target>FreeFileSync %x on saatavilla!</target>
+
+<source>Paused</source>
+<target>Pysäytetty</target>
+
+<source>Stop requested...</source>
+<target>Pysäytä pyydetty...</target>
+
+<source>Initializing...</source>
+<target>Valmistellaan...</target>
+
+<source>Comparing content...</source>
+<target>Sisältöä vertaillaan...</target>
+
+<source>&Continue</source>
+<target>&Jatka</target>
+
+<source>Progress</source>
+<target>Tilanne</target>
+
+<source>Old name</source>
+<target>Vanha nimi</target>
+
+<source>New name</source>
+<target>Uusi nimi</target>
+
+<source>
+	<pluralform>Do you really want to rename the following item?</pluralform>
+	<pluralform>Do you really want to rename the following %x items?</pluralform>
+</source>
+<target>
+	<pluralform>Haluatko todella nimetä seuraavan kohteen uudelleen?</pluralform>
+	<pluralform>Haluatko todella nimetä seuraavat %x kohdetta uudelleen?</pluralform>
+</target>
+
+<source>Installation files are corrupted. Please reinstall FreeFileSync.</source>
+<target>Asennustiedostot ovat viottuneet. Yritä asentaa FreeFileSync uudestaan.</target>
+
+<source>My Drive</source>
+<target>Oma Drive</target>
+
+<source>Connections</source>
+<target>Yhteydet</target>
+
+<source>Defined by context of use</source>
+<target>Määritellään käyttöyhteyden perusteella</target>
+
+<source>Recommended range:</source>
+<target>Suositeltu alue:</target>
+
+<source>Do you really want to disconnect from user account %x?</source>
+<target>Haluatko todella irroittaa käyttäjätilin %x?</target>
+
+<source>Key passphrase:</source>
+<target>Avain tunnuslause:</target>
+
+<source>Please select a user account first.</source>
+<target>Ole hyvä ja valitse käyttäjätili ensin.</target>
+
+<source>Please enter a username.</source>
+<target>Ole hyvä ja syötä käyttäjätunnus.</target>
+
+<source>Please enter a file path.</source>
+<target>Anna tiedostopolku.</target>
+
+<source>
+	<pluralform>Copy the following item to another folder?</pluralform>
+	<pluralform>Copy the following %x items to another folder?</pluralform>
+</source>
+<target>
+	<pluralform>Monistetaanko kohde toiseen hakemistoon?</pluralform>
+	<pluralform>Monista %x kohteet toiseen hakemistoon?</pluralform>
+</target>
+
+<source>
+	<pluralform>Do you really want to move the following item to the recycle bin?</pluralform>
+	<pluralform>Do you really want to move the following %x items to the recycle bin?</pluralform>
+</source>
+<target>
+	<pluralform>Haluatko varmasti siirtää kohteen Roskakoriin?</pluralform>
+	<pluralform>Haluatko varmasti siirtää nämä %x kohteet Roskakoriin?</pluralform>
+</target>
+
+<source>Move</source>
+<target>Siirrä</target>
+
+<source>
+	<pluralform>Do you really want to delete the following item?</pluralform>
+	<pluralform>Do you really want to delete the following %x items?</pluralform>
+</source>
+<target>
+	<pluralform>Haluatko todella poistaa tämän kohteen?</pluralform>
+	<pluralform>Haluatko todella poistaa nämä %x kohdetta?</pluralform>
+</target>
+
+<source>Start to synchronize the selection?</source>
+<target>Aloitetaanko valittujen synkronointi?</target>
+
+<source>Start synchronization now?</source>
+<target>Aloitetaanko synkronointi heti?</target>
+
+<source>Leave progress dialog open after synchronization. (don't auto-close)</source>
+<target>Jätä edistymisikkuna auki synkronoinnin jälkeen. (älä sulje automaattisesti)</target>
+
+<source>Copy DACL, SACL, Owner, Group</source>
+<target>Monista DACL, SACL, omistaja, ryhmä</target>
+
+<source>No dialogs hidden</source>
+<target>Ei piilotettuja valintaikkunoita</target>
+
+<source>
+	<pluralform>1 dialog hidden</pluralform>
+	<pluralform>%x dialogs hidden</pluralform>
+</source>
+<target>
+	<pluralform>1 valintaikkuna piilotettu</pluralform>
+	<pluralform>%x valintaikkunaa piilotettu</pluralform>
+</target>
+
+<source>Please enter a key for offline activation.</source>
+<target>Anna avain offline-aktivointia varten.</target>
+
+<source>Downloading update...</source>
+<target>Ladataan päivitystä...</target>
+
+<source>Remove:</source>
+<target>Poista:</target>
+
+<source>Each filter item must be a path relative to the selected folder pairs. The following changes are suggested:</source>
+<target>Jokaisen suodatinkohteen tulee olla polku suhteessa valittuihin hakemistopareihin. Seuraavia muutoksia ehdotetaan:</target>
+
+<source>&Change</source>
+<target>&Muuttaa</target>
+
+<source>Identify equal files by comparing modification time and size.</source>
+<target>Tunnista identtiset tiedostot aikaleimoja ja kokoa vertailemalla.</target>
+
+<source>Identify equal files by comparing the file content.</source>
+<target>Tunnista identtiset tiedostot sisältöä vertailemalla.</target>
+
+<source>Identify equal files by comparing their file size.</source>
+<target>Löydä vastaavat tiedostot tiedostokoon mukaan.</target>
+
+<source>Identify and propagate changes on both sides. Deletions, moves and conflicts are detected automatically using a database.</source>
+<target>Löydä ja monista muutokset molemmille puolille. Poistot, siirrot ja eroavuudet tunnistetaan tietokannan avulla.</target>
+
+<source>Create a mirror backup of the left folder by adapting the right folder to match.</source>
+<target>Luo peilikuva vasemmasta hakemistosta muokkaamalla oikeata hakemistoa samanlaiseksi.</target>
+
+<source>Copy new and updated files to the right folder.</source>
+<target>Monista uudet ja päivitetyt tiedostot oikealle.</target>
+
+<source>Configure your own synchronization rules.</source>
+<target>Määritä omat synkronointisäännöt.</target>
+
+<source>Comparison</source>
+<target>Vertailu</target>
+
+<source>Synchronization</source>
+<target>Synkronointi</target>
+
+<source>This week</source>
+<target>Tällä viikolla</target>
+
+<source>This month</source>
+<target>Tässä kuussa</target>
+
+<source>This year</source>
+<target>Tänä vuonna</target>
+
+<source>Byte</source>
+<target>tavua</target>
+
+<source>KB</source>
+<target>kt</target>
+
+<source>MB</source>
+<target>Mt</target>
+
+<source>Retain deleted and overwritten files in the recycle bin</source>
+<target>Säilytä poistetut ja korvatut tiedostot roskakorissa</target>
+
+<source>Delete and overwrite files permanently</source>
+<target>Poista ja korvaa tiedostot pysyvästi</target>
+
+<source>Replace</source>
+<target>Korvaa</target>
+
+<source>Move files and replace if existing</source>
+<target>Siirrä tiedostot ja korvaa olemassaolevat</target>
+
+<source>Time stamp</source>
+<target>Aikaleima</target>
+
+<source>Move files into a time-stamped subfolder</source>
+<target>Siirrä tiedostot aikaleimattuun alihakemistoon</target>
+
+<source>File</source>
+<target>Tiedosto</target>
+
+<source>Append a time stamp to each file name</source>
+<target>Lisää tiedostoihin aikaleimat</target>
+
+<source>On completion:</source>
+<target>Kun valmis:</target>
+
+<source>On errors:</source>
+<target>Kun virheitä:</target>
+
+<source>On success:</source>
+<target>Kun onnistui:</target>
+
+<source>All folder pairs</source>
+<target>Kaikki hakemisto parit</target>
+
+<source>&Load factory default</source>
+<target>&Lataa tehdasoletus</target>
+
+<source>YYYY-MM-DD hhmmss</source>
+<target>VVVV-KK-PP ttmmss</target>
+
+<source>Success</source>
+<target>Onnistui</target>
+
+<source>Minimum version count must be smaller than maximum count.</source>
+<target>Versioiden minimi määrä on oltava pienempi kuin maksimi määrä.</target>
+
+<source>Please enter a folder path.</source>
+<target>Anna hakemistopolku.</target>
+
+<source>&Restore</source>
+<target>&Palauta</target>
+
+<source>Files</source>
+<target>Tiedostot</target>
+
+<source>Percentage</source>
+<target>Prosenttia</target>
+
+<source>Failed to retrieve update information.</source>
+<target>Päivytyksen noutaminen epäonnistui.</target>
+
+<source>Automatic updates:</source>
+<target>Automaattinen päivitys:</target>
+
+<source>Check for Program Updates</source>
+<target>Etsi ohjelmaan päivityksiä</target>
+
+<source>Auto-update now or download manually from the FreeFileSync home page?</source>
+<target>Päivitä automaattisesti tai lataa päivitys FreeFileSyncin kotisivulta?</target>
+
+<source>&Auto-update</source>
+<target>&Automattisesti</target>
+
+<source>&Home page</source>
+<target>&Kotisivu</target>
+
+<source>Download now?</source>
+<target>Ladataanko nyt?</target>
+
+<source>&Download</source>
+<target>&Lataa</target>
+
+<source>FreeFileSync is up-to-date.</source>
+<target>FreeFileSync on ajan tasalla.</target>
+
+<source>Cannot find current FreeFileSync version number online. A newer version is likely available. Check manually now?</source>
+<target>Tätä FreeFileSync versiota ei lödy. Uudempi versio luultavasti löytyy, tarkistetaanko manuaalisesti?</target>
+
+<source>&Check</source>
+<target>&Tarkista</target>
+
+<source>Consistency check failed for %x.</source>
+<target>%x:n yhtenäisyystarkistus epäonnistui.</target>
+
+<source>Failed to activate FreeFileSync Donation Edition.</source>
+<target>FreeFileSyncin Lahjoittajaversio ei aktivoitunut.</target>
+
+<source>Incorrect activation key.</source>
+<target>Väärä aktivointiavain.</target>
+
+<source>Installation was registered on a different operating system.</source>
+<target>Asennus on rekisteröity toiselle käyttöjärjestelmälle.</target>
+
+<source>An exception occurred</source>
+<target>Kohdattin poikkeus</target>
+
+<source>Unable to register to receive system messages.</source>
+<target>Rekistöinti järjestelmäviestien vastaanottamiseksi ei onnistu.</target>
+
+<source>The %x installation option is only available in the FreeFileSync Donation Edition.</source>
+<target>Seuraava asennus vaihtoehto on käytettävissä FreeFileSyncin Lahjoitusversiossa: %x.</target>
+
+<source>Error description not available.</source>
+<target>Virheen kuvaus ei ole saatavilla.</target>
+
+<source>Cannot find system function %x.</source>
+<target>Järjestelmäfunktiota %x ei löydy.</target>
+
+<source>Unable to register device notifications for %x.</source>
+<target>%x laiteviestien kirjaaminen ei onnistu.</target>
+
+<source>Cannot monitor directory %x.</source>
+<target>Hakemistoa %x ei voida tarkkaila.</target>
+
+<source>The file is locked by another process:</source>
+<target>Tiedosto on toisen prosessin lukitsema:</target>
+
+<source>Failed to determine file permission support for folder %x.</source>
+<target>Tiedosto oikeuksien määrittäminen epäonnistui hakemistolle %x.</target>
+
+<source>Cannot read security context of %x.</source>
+<target>Ei voi lukea %x:n suojauskontekstia.</target>
+
+<source>Cannot write security context of %x.</source>
+<target>Ei voi tallentaa %x:n suojauskontekstia.</target>
+
+<source>Cannot read permissions of %x.</source>
+<target>Ei voi lukea %x:n oikeuksia.</target>
+
+<source>Cannot copy permissions from %x to %y.</source>
+<target>Oikeuksia ei voida kopioida %x:ltä %y:lle.</target>
+
+<source>Cannot copy attributes from %x to %y.</source>
+<target>Määritteitä ei voida kopioida %x:ltä %y:lle.</target>
+
+<source>%x TB</source>
+<target>%x Tt</target>
+
+<source>%x PB</source>
+<target>%x Pt</target>
+
+<source>
+	<pluralform>1 min</pluralform>
+	<pluralform>%x min</pluralform>
+</source>
+<target>
+	<pluralform>1 min</pluralform>
+	<pluralform>%x min</pluralform>
+</target>
+
+<source>
+	<pluralform>1 hour</pluralform>
+	<pluralform>%x hours</pluralform>
+</source>
+<target>
+	<pluralform>1 tunti</pluralform>
+	<pluralform>%x tuntia</pluralform>
+</target>
+
+<source>Unable to suspend system sleep mode.</source>
+<target>Lepotilan keskeyttäminen ei onnistu.</target>
+
+<source>Cannot change process I/O priorities.</source>
+<target>Prosessin I/O-prioriteetin muutos ei onnistu.</target>
+
+<source>Checking recycle bin failed for folder %x.</source>
+<target>Roskakorin tarkistus hakemistolle %x epäonnistui.</target>
+
+<source>Unable to shut down the system.</source>
+<target>Järjestelmää ei voi sammuttaa.</target>
+
+<source>Select</source>
+<target>Valitse</target>
+
+<source>Prepare installation</source>
+<target>Alusta asennus</target>
+
+<source>Choose which components you want to install.</source>
+<target>Valitse asennettavat komponentit, jotka haluat asentaa.</target>
+
+<source>Select installation type:</source>
+<target>Valitse asennustapa:</target>
+
+<source>Local</source>
+<target>Paikallinen</target>
+
+<source>Portable</source>
+<target>Siirrettävä</target>
+
+<source>Save settings in %x</source>
+<target>Tallenna asetukset kohteeseen %x</target>
+
+<source>Register FreeFileSync file extensions</source>
+<target>Rekisteröi FreeFileSync tiedostotunnisteet</target>
+
+<source>Create Explorer context menu entries</source>
+<target>Luo merkinnät Explorer-pikavalikoon</target>
+
+<source>Save settings in installation directory</source>
+<target>Tallenna asetukset asennus hakemistoon</target>
+
+<source>Do not write to Registry</source>
+<target>Älä kirjoita rekisteriin</target>
+
+<source>Just copy the files</source>
+<target>Kopio vain tiedostot</target>
+
+<source>Create shortcuts:</source>
+<target>Luodaan pikakuvakkeet:</target>
+
+<source>Desktop</source>
+<target>Työpöydälle</target>
+
+<source>Start Menu</source>
+<target>Käynnistävalikko</target>
+
+<source>Send To</source>
+<target>Lähetä</target>
+
+<source>Registering FreeFileSync file extensions</source>
+<target>Liitään FreeFileSync tiedostotunnisteet</target>
+
+<source>Unregistering FreeFileSync file extensions</source>
+<target>Poistetaan liitos, FreeFileSync tiedostotunnisteet</target>
+
+<source>FreeFileSync Configuration</source>
+<target>FreeFileSync määrittelyt</target>
+
+<source>FreeFileSync Batch File</source>
+<target>FreeFileSync eräajo</target>
+
+<source>FreeFileSync Synchronization Database</source>
+<target>FreeFileSync Synkronoinnin tietokanta</target>
+
+<source>RealTimeSync Configuration</source>
+<target>RealTimeSync määrittelyt</target>
+
+<source>Edit with FreeFileSync</source>
+<target>Muokkaa FreeFileSync:llä</target>
+
+<source>If you like FreeFileSync:</source>
+<target>Jos pidät FreeFileSyncistä:</target>
+
+<source>Instead of an ad, here's an animal.</source>
+<target>Mainoksen sijasta tässä on eläin.</target>
+
+<source>The FreeFileSync portable version cannot install into a subfolder of %x.</source>
+<target>FreeFileSync:n siirrettävä versio ei voi asentaa alihakemistoon %x.</target>
+
+<source>Please choose the local installation type or select a different folder for installation.</source>
+<target>Valitse paikallinen asennus tai vaihda asennushakemistoa.</target>
+
