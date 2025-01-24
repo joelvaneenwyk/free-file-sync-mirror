@@ -12,6 +12,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: ./.github/build/build.sh
+        with:
+          fetch-depth: 0
+          submodules: recursive
